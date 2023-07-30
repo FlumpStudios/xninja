@@ -969,7 +969,8 @@
 					"uid": 23,
 					"instanceVariables": {
 						"Sines": false,
-						"IsScared": false
+						"IsScared": false,
+						"Static": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1304,7 +1305,8 @@
 					"uid": 30,
 					"instanceVariables": {
 						"Sines": true,
-						"IsScared": false
+						"IsScared": false,
+						"Static": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1796,7 +1798,8 @@
 					"uid": 234,
 					"instanceVariables": {
 						"Sines": true,
-						"IsScared": false
+						"IsScared": false,
+						"Static": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -3902,7 +3905,8 @@
 					"uid": 338,
 					"instanceVariables": {
 						"Sines": true,
-						"IsScared": false
+						"IsScared": false,
+						"Static": false
 					},
 					"behaviors": {
 						"Bullet": {

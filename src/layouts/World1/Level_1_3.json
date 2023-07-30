@@ -490,7 +490,8 @@
 					"uid": 182,
 					"instanceVariables": {
 						"Sines": true,
-						"IsScared": false
+						"IsScared": false,
+						"Static": false
 					},
 					"behaviors": {
 						"Bullet": {

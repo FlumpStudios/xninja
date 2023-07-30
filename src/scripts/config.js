@@ -150,7 +150,7 @@ export const levelConfig =
         cameraFocusOffset: { x: 0, y: 125 }
     },
     "Level_1_7": {
-        name: "[PLACE HOLDER]",
+        name: "Skate and destroy",
         startingStars: 0,
         bronzeTarget: 5,
         silverTarget: 3,
@@ -158,9 +158,9 @@ export const levelConfig =
         currentBest: 0,
         nextLevel: "LevelSelect",
         exitUp: false,
-        exitDown: true,
+        exitDown: false,
         exitLeft: false,
-        exitRight: false,
+        exitRight: true,
         cameraFocusOffset: { x: 225, y: 0 }
     },
     "Level_1_8": {
@@ -172,9 +172,9 @@ export const levelConfig =
         currentBest: 0,
         nextLevel: "LevelSelect",
         exitUp: false,
-        exitDown: true,
+        exitDown: false,
         exitLeft: false,
-        exitRight: false,
+        exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 }
     }, "Level_1_9": {
         name: "[PLACE HOLDER]",

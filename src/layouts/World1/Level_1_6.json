@@ -3780,7 +3780,8 @@
 					"uid": 360,
 					"instanceVariables": {
 						"Sines": false,
-						"IsScared": false
+						"IsScared": false,
+						"Static": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -4482,7 +4483,8 @@
 					"uid": 404,
 					"instanceVariables": {
 						"Sines": true,
-						"IsScared": false
+						"IsScared": false,
+						"Static": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -4754,7 +4756,8 @@
 					"uid": 476,
 					"instanceVariables": {
 						"Sines": true,
-						"IsScared": false
+						"IsScared": false,
+						"Static": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -4820,7 +4823,8 @@
 					"uid": 497,
 					"instanceVariables": {
 						"Sines": true,
-						"IsScared": false
+						"IsScared": false,
+						"Static": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -5276,7 +5280,8 @@
 					"uid": 508,
 					"instanceVariables": {
 						"Sines": true,
-						"IsScared": false
+						"IsScared": false,
+						"Static": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -7328,7 +7333,8 @@
 					"uid": 551,
 					"instanceVariables": {
 						"Sines": true,
-						"IsScared": false
+						"IsScared": false,
+						"Static": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -8950,7 +8956,8 @@
 					"uid": 388,
 					"instanceVariables": {
 						"Sines": true,
-						"IsScared": false
+						"IsScared": false,
+						"Static": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -9016,7 +9023,8 @@
 					"uid": 389,
 					"instanceVariables": {
 						"Sines": true,
-						"IsScared": false
+						"IsScared": false,
+						"Static": false
 					},
 					"behaviors": {
 						"Bullet": {

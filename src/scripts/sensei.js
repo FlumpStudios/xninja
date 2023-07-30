@@ -35,7 +35,7 @@ export default class SenseiInstance extends enemy {
 		this.hasStopped = diff > -0.1 && diff < 0.1;
 		this.previousX = this.x;
 
-		if ((!this.instVars.Sines || this.instVars.IsScared) && this.hasStopped) {
+		if ((!this.instVars.Sines || this.instVars.IsScared) && this.hasStopped && !this.instVars.Static) {
 			this.hasStopped = false;
 			this.width = this.width * -1;
 		}

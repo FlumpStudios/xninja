@@ -663,11 +663,11 @@
 				],
 				"sid": 939919153250672,
 				"name": "Kickflip",
-				"isLooping": true,
+				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 7
+				"speed": 10
 			}
 		],
 		"subfolders": []
