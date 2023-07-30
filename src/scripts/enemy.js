@@ -73,10 +73,10 @@ export default class enemy extends globalThis.ISpriteInstance {
         
         if(player.opacity < 1)
         {
-            return this.testOverlap(player);
+           return false;
         }
         
-        return this.testOverlap(player) || this.behaviors.LineOfSight.hasLOStoPosition(player.x, player.y);
+        return this.behaviors.LineOfSight.hasLOStoPosition(player.x, player.y);
     }
 
     handleEscaped = (runtime, destructor) => {

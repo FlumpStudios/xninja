@@ -531,7 +531,8 @@
 					"instanceVariables": {
 						"Sines": true,
 						"IsScared": false,
-						"Static": false
+						"Static": false,
+						"IsStunned": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -2900,7 +2901,8 @@
 					"instanceVariables": {
 						"Sines": true,
 						"IsScared": false,
-						"Static": false
+						"Static": false,
+						"IsStunned": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -2967,7 +2969,8 @@
 					"instanceVariables": {
 						"Sines": true,
 						"IsScared": false,
-						"Static": false
+						"Static": false,
+						"IsStunned": false
 					},
 					"behaviors": {
 						"Bullet": {

@@ -840,7 +840,8 @@
 					"instanceVariables": {
 						"Sines": true,
 						"IsScared": false,
-						"Static": false
+						"Static": false,
+						"IsStunned": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -957,7 +958,8 @@
 					"instanceVariables": {
 						"Sines": true,
 						"IsScared": false,
-						"Static": false
+						"Static": false,
+						"IsStunned": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1024,7 +1026,8 @@
 					"instanceVariables": {
 						"Sines": true,
 						"IsScared": false,
-						"Static": false
+						"Static": false,
+						"IsStunned": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1233,7 +1236,8 @@
 					"instanceVariables": {
 						"Sines": true,
 						"IsScared": false,
-						"Static": false
+						"Static": false,
+						"IsStunned": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1300,7 +1304,8 @@
 					"instanceVariables": {
 						"Sines": true,
 						"IsScared": false,
-						"Static": false
+						"Static": false,
+						"IsStunned": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1472,7 +1477,8 @@
 					"instanceVariables": {
 						"Sines": true,
 						"IsScared": false,
-						"Static": false
+						"Static": false,
+						"IsStunned": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1863,6 +1869,35 @@
 						"height": 25,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Exlaim",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 982,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 480,
+						"y": 368,
+						"width": 6,
+						"height": 17,
+						"originX": 0.5,
+						"originY": 0.5294117647058824,
 						"color": [
 							1,
 							1,

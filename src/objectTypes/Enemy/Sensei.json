@@ -24,6 +24,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 899872330738767
+		},
+		{
+			"name": "IsStunned",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 854022677882019
 		}
 	],
 	"behaviorTypes": [

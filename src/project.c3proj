@@ -237,7 +237,8 @@
 			"Tilemap",
 			"RampStartZone",
 			"RampEndZone",
-			"CameraFocus"
+			"CameraFocus",
+			"Exlaim"
 		],
 		"subfolders": [
 			{

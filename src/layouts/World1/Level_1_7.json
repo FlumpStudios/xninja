@@ -2022,9 +2022,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 11096,
-						"y": 888,
+						"y": 812,
 						"width": 112,
-						"height": 144,
+						"height": 296,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -3320,7 +3320,8 @@
 					"instanceVariables": {
 						"Sines": false,
 						"IsScared": false,
-						"Static": false
+						"Static": false,
+						"IsStunned": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -3738,7 +3739,8 @@
 					"instanceVariables": {
 						"Sines": false,
 						"IsScared": false,
-						"Static": false
+						"Static": false,
+						"IsStunned": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -3805,7 +3807,8 @@
 					"instanceVariables": {
 						"Sines": false,
 						"IsScared": false,
-						"Static": false
+						"Static": false,
+						"IsStunned": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -5431,7 +5434,8 @@
 					"instanceVariables": {
 						"Sines": false,
 						"IsScared": false,
-						"Static": true
+						"Static": true,
+						"IsStunned": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -6296,7 +6300,8 @@
 					"instanceVariables": {
 						"Sines": true,
 						"IsScared": false,
-						"Static": false
+						"Static": false,
+						"IsStunned": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -6947,7 +6952,8 @@
 					"instanceVariables": {
 						"Sines": true,
 						"IsScared": false,
-						"Static": false
+						"Static": false,
+						"IsStunned": false
 					},
 					"behaviors": {
 						"Bullet": {

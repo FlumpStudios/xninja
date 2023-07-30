@@ -30,6 +30,8 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
     setAnimationToAttack = () => this.setAnimation(this.#currentAttackAnimation);
     setAnimationToJump = () => this.setAnimation(this.#currentJumpAnimation);
     setAnimationToKickFlip = () => this.setAnimation("Kickflip");
+    setAnimationToShuv = () => this.setAnimation("Shuv");
+
     getCurrentJumpAnimation = () => this.#currentRunAnimation;
     getCurrentAttackAnimation = () => this.#currentAttackAnimation;
     getCurrentJumpAnimation = () => this.#currentJumpAnimation;
@@ -49,23 +51,23 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         }
     }
 
-    pinCameraOffet = (runtime) =>
-    {
-         const cam = runtime.objects.CameraFocus.getFirstInstance();
+    pinCameraOffet = (runtime) => {
+        const cam = runtime.objects.CameraFocus.getFirstInstance();
 
-         if(!cam){
+        if (!cam) {
             throw "Cannot find camera in scene";
-         }
-         const cameOffset = config.levelConfig[runtime.layout.name].cameraFocusOffset;
+        }
+        const cameOffset = config.levelConfig[runtime.layout.name].cameraFocusOffset;
 
-         cam.x = this.x + cameOffset.x;
-         cam.y = this.y + cameOffset.y;
+        cam.x = this.x + cameOffset.x;
+        cam.y = this.y + cameOffset.y;
     }
 
 
     setStealthMode = (on, runtime) => {
         const player = this;
         const stealthBar = runtime.objects.StealthBar.getFirstInstance();
+        if (!stealthBar) { return; }
 
         if (this.#stealthLocked) {
             stealthBar.colorRgb = [1, 0, 0];
@@ -100,7 +102,11 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
             if (runtime.layout.scale < 1.5) {
                 if (player.x > 150 && player.x < runtime.layout.width - 150) {
                     if (player.y > 50 && player.y < runtime.layout.height - 50) {
-                        runtime.layout.scale += (runtime.dt * 0.25);
+
+
+                        if (player.x > (runtime.layout.scrollX - 200)) {
+                            runtime.layout.scale += (runtime.dt * 0.25);
+                        }
                     }
                 }
             }
@@ -180,12 +186,12 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         if (starsThrown < 1) { return; }
         if (this.width < 0) {
             const star = runtime.objects.DeathStar.createInstance(config.layers.game, player.x - 12, player.y + 7);
-            star.behaviors.Bullet.speed = config.DEATH_STAR_SPEED + this.behaviors.Platform.speed;  
+            star.behaviors.Bullet.speed = config.DEATH_STAR_SPEED + this.behaviors.Platform.speed;
             star.behaviors.Bullet.angleOfMotion = Math.PI;
         }
         else {
             const star = runtime.objects.DeathStar.createInstance(config.layers.game, player.x + 12, player.y + 7);
-            star.behaviors.Bullet.speed = config.DEATH_STAR_SPEED + this.behaviors.Platform.speed;            
+            star.behaviors.Bullet.speed = config.DEATH_STAR_SPEED + this.behaviors.Platform.speed;
             star.behaviors.Bullet.angleOfMotion = 0;
         }
 
@@ -204,6 +210,14 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
             this.behaviors.Platform.jumpSustain = config.JUMP_SUSTAIN;
         }
 
+        if (this.#isSkating) {
+            for (const e of runtime.objects.RampEndZone.instances()) {
+                if (e.testOverlap(this)) {
+                    return;;
+                }
+            }
+        }
+
         this.behaviors.Platform.simulateControl("jump");
         waitForMillisecond(50).then(() => {
             if (this) {
@@ -214,7 +228,9 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
 
     killPlayer = (runtime) => {
         if (!this.isVisible) { return; }
+        runtime.objects.StealthBar.getFirstInstance().destroy();
         this.isVisible = false;
+        this.behaviors.Platform.isEnabled = false;
         runtime.objects.Blood.createInstance(config.layers.game, this.x, this.y);
         waitForMillisecond(config.TIME_IN_DEATH_STATE).then(() => {
             resetLevel(runtime);
@@ -247,6 +263,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         for (const skateboardPickUp of runtime.objects.SkateboardPickUp.instances()) {
             if (skateboardPickUp.testOverlap(this)) {
                 this.setToSkating(runtime);
+                this.setAnimationToRun();
                 skateboardPickUp.destroy();
             }
         }
@@ -269,9 +286,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
     }
 
     setRunning = (runtime) => {
-
         if (this.#isSkating) { return; }
-
         if (this.isInWater(runtime)) {
             this.setSwimming(runtime);
             return;
@@ -356,12 +371,18 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         for (const e of runtime.objects.RampEndZone.instances()) {
             if (e.testOverlap(this)) {
                 this.behaviors.Platform.simulateControl("jump");
-                
-                if (this.animationName != "kickflip") {
-                    this.setAnimationToKickFlip();
-                }
 
-                waitForMillisecond(200).then(() => {
+
+
+                waitForMillisecond(50).then(() => {
+                    if (this.animationName != "Shuv" && this.animationName != "Kickflip") {
+                        if (Math.floor(Math.random() * 10) <= 5) {
+                            this.setAnimationToKickFlip();
+                        }
+                        else {
+                            this.setAnimationToShuv();
+                        }
+                    }
                     this.angle = 0;
                 });
             }
@@ -375,7 +396,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         this.checkEnemyCollisions(runtime);
         this.checkPickupCollisions(runtime);
         this.pinCameraOffet(runtime);
-        
+
         if (this.#isSkating) {
             this.checkRampCollision(runtime);
             this.movePlayerRight(runtime);

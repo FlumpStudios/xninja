@@ -239,6 +239,14 @@
 					"parameters": {
 						"animation": "\"Kickflip\""
 					}
+				},
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Player",
+					"sid": 761391160184665,
+					"parameters": {
+						"animation": "\"Shuv\""
+					}
 				}
 			],
 			"actions": [
@@ -260,7 +268,8 @@
 					}
 				}
 			],
-			"sid": 660834524184669
+			"sid": 660834524184669,
+			"isOrBlock": true
 		}
 	],
 	"sid": 976359301470145
