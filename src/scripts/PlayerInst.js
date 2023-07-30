@@ -2,9 +2,6 @@ import { waitForMillisecond, isMirrored } from "./utils.js"
 import { resetLevel } from "./game.js";
 import * as config from "./config.js";
 
-const SLASH_POSITION_OFFSET = 24;
-
-
 export default class PlayerInst extends globalThis.ISpriteInstance {
     constructor() {
         super();
@@ -42,10 +39,10 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         const player = this;
         for (const Slash of runtime.objects.Slash.instances()) {
             if (isMirrored(Slash)) {
-                Slash.x = player.x + SLASH_POSITION_OFFSET * -1;
+                Slash.x = player.x + config.SLASH_POSITION_OFFSET * -1;
                 Slash.y = player.y;
             } else {
-                Slash.x = player.x + SLASH_POSITION_OFFSET;
+                Slash.x = player.x + config.SLASH_POSITION_OFFSET;
                 Slash.y = player.y;
             }
         }
@@ -167,10 +164,10 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
             if (this) {
                 this.setAnimationToRun();
                 if (isMirrored(this)) {
-                    runtime.objects.Slash.createInstance(config.layers.game, this.x - SLASH_POSITION_OFFSET, this.y);
+                    runtime.objects.Slash.createInstance(config.layers.game, this.x - config.SLASH_POSITION_OFFSET, this.y);
                 }
                 else {
-                    runtime.objects.Slash.createInstance(config.layers.game, this.x + SLASH_POSITION_OFFSET, this.y);
+                    runtime.objects.Slash.createInstance(config.layers.game, this.x + config.SLASH_POSITION_OFFSET, this.y);
                 }
             }
         });

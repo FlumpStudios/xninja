@@ -18,6 +18,7 @@ export const RUN_SPEED = 450;
 export const SKATE_SPEED = 600;
 export const WATER_MOVE_SPEED = 150;
 export const DEATH_STAR_SPEED = 500;
+export const SLASH_POSITION_OFFSET = 24;
 
 export const layers = {
     farBackground: 0,

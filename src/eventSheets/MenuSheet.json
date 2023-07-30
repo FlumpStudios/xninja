@@ -37,11 +37,11 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "TitleBackground_tile",
-							"sid": 731874859997732,
+							"sid": 626490098003053,
 							"parameters": {
 								"instance-variable": "TickSinceStart",
 								"comparison": 5,
-								"value": "2"
+								"value": "3"
 							}
 						}
 					],
