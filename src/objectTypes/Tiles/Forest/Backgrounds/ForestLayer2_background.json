@@ -1,0 +1,20 @@
+{
+	"name": "ForestLayer2_background",
+	"plugin-id": "TiledBg",
+	"sid": 581336090911717,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 640,
+		"height": 640,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 5915271,
+		"useCollisionPoly": true
+	}
+}

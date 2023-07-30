@@ -1,0 +1,28 @@
+{
+	"name": "LevelSelectTitle_spritefont",
+	"plugin-id": "Spritefont2",
+	"sid": 201757613505708,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "MenuIndex",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 884450652610678
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 1989153,
+		"useCollisionPoly": true
+	}
+}

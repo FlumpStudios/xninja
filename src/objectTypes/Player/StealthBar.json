@@ -1,0 +1,43 @@
+{
+	"name": "StealthBar",
+	"plugin-id": "Sprite",
+	"sid": 558812010963908,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 808630660983795
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 3,
+						"originX": 0,
+						"originY": 0.6666666666666666,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4743954,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 769250226225881,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

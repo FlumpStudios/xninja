@@ -1,0 +1,34 @@
+{
+	"name": "TitleBackground_tile",
+	"plugin-id": "TiledBg",
+	"sid": 865290331441637,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "TickSinceStart",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 196646486591254
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 346784660392308
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 640,
+		"height": 480,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6931285,
+		"useCollisionPoly": true
+	}
+}

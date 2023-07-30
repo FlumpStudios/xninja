@@ -1,0 +1,267 @@
+{
+	"name": "GameSheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "VisionCone",
+					"sid": 353121907983228
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "VisionCone",
+					"sid": 696722540840846
+				}
+			],
+			"sid": 777803451440835
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "VisionCone",
+					"sid": 799056228164544
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-bottom",
+					"objectClass": "VisionCone",
+					"sid": 786896743913413
+				}
+			],
+			"sid": 360920485971440
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Player",
+					"sid": 352488080668277
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "Player",
+					"sid": 511364498012499
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "StealthBar",
+					"sid": 903603668475825,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Player",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 147160431170968
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Lightning",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 982945743935106,
+							"parameters": {
+								"interval-seconds": "random(3,10)"
+							}
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 585004644103864,
+							"parameters": {
+								"first-value": "LightningSheet.Count",
+								"comparison": 4,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "LightningSheet",
+							"sid": 122944215688475,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 865912549593850,
+							"parameters": {
+								"seconds": "random(0.05,0.2)"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 264562183242992,
+							"parameters": {
+								"object-to-create": "Lightning1",
+								"layer": "1",
+								"x": "random(100,900)",
+								"y": "random(100,150)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 328100469547735,
+							"parameters": {
+								"object-to-create": "Lightning2",
+								"layer": "1",
+								"x": "random(1250,3000)",
+								"y": "random(100,150)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LightningSheet",
+							"sid": 650655339666543,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 693968397175411,
+							"parameters": {
+								"seconds": "random(0,0.2)"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LightningSheet",
+							"sid": 348976239396123,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 436292429552758,
+							"parameters": {
+								"seconds": "random(0.05,0.2)"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LightningSheet",
+							"sid": 811017137867779,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Lightning1",
+							"sid": 941247356638429
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Lightning2",
+							"sid": 937174154576830
+						}
+					],
+					"sid": 704393662226651
+				}
+			],
+			"sid": 134796754411717
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Startup",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 808577377304890
+						}
+					],
+					"actions": [
+						{
+							"id": "fast-forward",
+							"objectClass": "Rain",
+							"sid": 201946101425566,
+							"parameters": {
+								"time": "3"
+							}
+						}
+					],
+					"sid": 134576895875067
+				}
+			],
+			"sid": 534802868517245
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Player",
+					"sid": 981499085580185,
+					"parameters": {
+						"animation": "\"Kickflip\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 219911638673227,
+					"parameters": {
+						"animation": "\"skate\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Player",
+					"sid": 963620302378007,
+					"parameters": {
+						"speed": "5"
+					}
+				}
+			],
+			"sid": 660834524184669
+		}
+	],
+	"sid": 976359301470145
+}

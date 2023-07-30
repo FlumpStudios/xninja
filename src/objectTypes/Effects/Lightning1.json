@@ -1,0 +1,55 @@
+{
+	"name": "Lightning1",
+	"plugin-id": "Sprite",
+	"sid": 864884426831015,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 190,
+						"height": 322,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7186649,
+						"collisionPoly": {
+							"points": [
+								0.4421052631578947,
+								0.024844720496894408,
+								0.9578947368421052,
+								0.6118012422360248,
+								0.9631578947368421,
+								0.6801242236024845,
+								0.3526315789473684,
+								0.9596273291925466,
+								0.03684210526315789,
+								0.5186335403726708,
+								0.06315789473684211,
+								0.4503105590062112,
+								0.33157894736842103,
+								0.12111801242236025
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 180472739257259,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

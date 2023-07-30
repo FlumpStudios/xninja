@@ -1,0 +1,31 @@
+{
+	"name": "MovingPlatformEdge_tile",
+	"plugin-id": "TiledBg",
+	"sid": 898263164901851,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 468688058276330
+		},
+		{
+			"behaviorId": "jumpthru",
+			"name": "Jumpthru",
+			"sid": 912660960455030
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 16,
+		"height": 16,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "D:\\X-Ninja\\Assets\\Tiles\\tile137.png",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8977019,
+		"useCollisionPoly": true
+	}
+}

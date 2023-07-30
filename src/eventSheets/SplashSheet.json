@@ -1,0 +1,69 @@
+{
+	"name": "SplashSheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 652476279828840
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Flump",
+					"sid": 278894002318092,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"angle": "90"
+					}
+				}
+			],
+			"sid": 731575306380190
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Flump",
+					"sid": 219856977789042,
+					"parameters": {
+						"object": "LogoStopMarker"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Flump",
+					"sid": 681003792843783,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 997570143560966,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 991337655077356,
+					"parameters": {
+						"layout": "MainMenu"
+					}
+				}
+			],
+			"sid": 876418855425662
+		}
+	],
+	"sid": 226624385918205
+}

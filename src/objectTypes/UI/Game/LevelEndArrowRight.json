@@ -1,0 +1,61 @@
+{
+	"name": "LevelEndArrowRight",
+	"plugin-id": "Sprite",
+	"sid": 275484553739514,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 834176713239363
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 36,
+						"height": 29,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8659364,
+						"collisionPoly": {
+							"points": [
+								0.3888888888888889,
+								0,
+								0.4444444444444444,
+								0.034482758620689655,
+								1,
+								0.5172413793103449,
+								0.4444444444444444,
+								0.9655172413793104,
+								0.3611111111111111,
+								1,
+								0,
+								0.7586206896551724,
+								0,
+								0.2413793103448276
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 301444658332866,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

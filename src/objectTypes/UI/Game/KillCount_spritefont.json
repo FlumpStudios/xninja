@@ -1,0 +1,28 @@
+{
+	"name": "KillCount_spritefont",
+	"plugin-id": "Spritefont2",
+	"sid": 381536431869147,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Kills",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 830286077695161
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 1883241,
+		"useCollisionPoly": true
+	}
+}

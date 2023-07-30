@@ -1,0 +1,33 @@
+{
+	"name": "TimeRemaining_spritefont",
+	"plugin-id": "Spritefont2",
+	"sid": 306427387670681,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Time",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 768149760901991
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "inverse",
+			"name": "Inverse"
+		}
+	],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 9597506,
+		"useCollisionPoly": true
+	}
+}

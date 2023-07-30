@@ -1,0 +1,55 @@
+{
+	"name": "MenuBorder",
+	"plugin-id": "Sprite",
+	"sid": 951796170014096,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 203883041342967
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 164,
+						"height": 57,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9265886,
+						"collisionPoly": {
+							"points": [
+								0.03389830508474576,
+								0,
+								1,
+								0.07142857142857142,
+								0.9661016949152542,
+								1,
+								0,
+								0.9285714285714286
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 896411505192419,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

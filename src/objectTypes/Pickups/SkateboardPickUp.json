@@ -1,0 +1,73 @@
+{
+	"name": "SkateboardPickUp",
+	"plugin-id": "Sprite",
+	"sid": 195636622148004,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 568344345150935
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine2",
+			"sid": 442122583211555
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine3",
+			"sid": 707207950576893
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 30,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3932899,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.5,
+								0.9444444444444444,
+								0.75,
+								0.7777777777777778,
+								1,
+								0.2222222222222222,
+								1,
+								0.05555555555555555,
+								0.75,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 562655603062940,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

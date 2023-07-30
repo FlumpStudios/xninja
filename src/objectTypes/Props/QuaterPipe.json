@@ -1,0 +1,55 @@
+{
+	"name": "QuaterPipe",
+	"plugin-id": "Sprite",
+	"sid": 722935763977646,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 679307142605824
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 244,
+						"height": 137,
+						"originX": 0.47950819672131145,
+						"originY": 0.27007299270072993,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1132638,
+						"collisionPoly": {
+							"points": [
+								0.48224038504511996,
+								0.7049876767643489,
+								0.8516052368560101,
+								0.06729010653901833,
+								0.9959016393442623,
+								0.9927007299270073,
+								0.10109286490685303,
+								0.9610706709887279
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 672624092083424,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

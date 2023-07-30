@@ -1,0 +1,20 @@
+{
+	"name": "ClearGround_tile",
+	"plugin-id": "TiledBg",
+	"sid": 655165642663084,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 32,
+		"height": 32,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3743223,
+		"useCollisionPoly": true
+	}
+}

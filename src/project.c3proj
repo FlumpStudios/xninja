@@ -1,0 +1,771 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 35000,
+	"name": "XNinja",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": true,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "gamepad",
+			"name": "Gamepad",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Physics",
+			"name": "Physics",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "jumpthru",
+			"name": "Jump-thru",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "brightness",
+			"name": "Brightness",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "bulge",
+			"name": "Bulge",
+			"author": "Brad Larson",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowhorizontal",
+			"name": "Glow horizontal",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowvertical",
+			"name": "Glow vertical",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "grayscale",
+			"name": "Grayscale",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "inverse",
+			"name": "Inverse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "pulse",
+			"name": "Pulse",
+			"author": "Danguafer/Silexars",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "scanlines",
+			"name": "Scan lines",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "vignette",
+			"name": "Vignette",
+			"author": "Brad Larson",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "water",
+			"name": "Water",
+			"author": "Viktor Korsun",
+			"bundled": false
+		}
+	],
+	"uniqueId": "3phjf8c2bcezm",
+	"objectTypes": {
+		"items": [
+			"Tilemap",
+			"RampStartZone",
+			"RampEndZone",
+			"CameraFocus"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"ColourFill_tile",
+					"Water",
+					"CastleIndoor_tile"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"BedRock_tile",
+							"BedrockCorner_tile",
+							"BedrockEdge_tile",
+							"BedrockFill2_tile",
+							"BedrockFill_tile",
+							"MovingPlatform_tile",
+							"MovingPlatformEdge_tile",
+							"PillPlatform_tile",
+							"PillPlatformEdge_tile",
+							"ClearGround_tile",
+							"Brick"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"ForestLayer1_background",
+									"ForestLayer2_background",
+									"ForestLayer3_background",
+									"ForestBackground_tile"
+								],
+								"subfolders": [],
+								"name": "Backgrounds"
+							}
+						],
+						"name": "Forest"
+					}
+				],
+				"name": "Tiles"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"MenuBorder",
+							"UIStar_1",
+							"PressStart",
+							"UIStar_2",
+							"UIStar_3",
+							"UIStar_4",
+							"UIStar_5",
+							"UIStar_6",
+							"UIStar_7",
+							"UIStar_8",
+							"UIStar_9",
+							"UIStar_10",
+							"UIStar_11",
+							"UIStar_12",
+							"UIStar_13",
+							"UIStar_14",
+							"UIStar_15",
+							"UIStar_16",
+							"MainMenuSpriteStopBar",
+							"TitleBackground_tile",
+							"LogoStopMarker",
+							"Flump",
+							"EmptyStar"
+						],
+						"subfolders": [],
+						"name": "Menu"
+					},
+					{
+						"items": [
+							"EscapedCount_spritefont",
+							"EscapedLabel_spritefont",
+							"KillCount_spritefont",
+							"KillsLabel_spritefont",
+							"LevelEndArrowLeft",
+							"TimeRemaining_spritefont",
+							"Stars_spritefont",
+							"StarsCount_spritefont",
+							"LevelEndArrowTop",
+							"LevelEndArrowRight",
+							"LevelEndArrowBottom",
+							"Ui_Clock"
+						],
+						"subfolders": [],
+						"name": "Game"
+					}
+				],
+				"name": "UI"
+			},
+			{
+				"items": [
+					"Player",
+					"Slash",
+					"VisionCone",
+					"DeathStar",
+					"PlayerDecoy",
+					"StealthBar"
+				],
+				"subfolders": [],
+				"name": "Player"
+			},
+			{
+				"items": [
+					"Blood",
+					"Sensei",
+					"SenseiDecoy"
+				],
+				"subfolders": [],
+				"name": "Enemy"
+			},
+			{
+				"items": [
+					"Spike",
+					"SpikeSine"
+				],
+				"subfolders": [],
+				"name": "Obstacles"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Borders",
+							"Borders2",
+							"Borders3"
+						],
+						"subfolders": [],
+						"name": "Player"
+					},
+					{
+						"items": [
+							"EnemyBouncers"
+						],
+						"subfolders": [],
+						"name": "Enemies"
+					}
+				],
+				"name": "Blockers"
+			},
+			{
+				"items": [
+					"Torch",
+					"QuaterPipe"
+				],
+				"subfolders": [],
+				"name": "Props"
+			},
+			{
+				"items": [
+					"DeathStarPickUp",
+					"SkateboardPickUp"
+				],
+				"subfolders": [],
+				"name": "Pickups"
+			},
+			{
+				"items": [
+					"LevelEndBox"
+				],
+				"subfolders": [],
+				"name": "Zones"
+			},
+			{
+				"items": [
+					"Lightning1",
+					"Lightning2",
+					"LightningSheet",
+					"Rain"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"Fader",
+							"StealthFade",
+							"WhiteFadeOut_Tile"
+						],
+						"subfolders": [],
+						"name": "Faders"
+					}
+				],
+				"name": "Effects"
+			},
+			{
+				"items": [
+					"Level_Best",
+					"Level_Name",
+					"LevelName_spritefont",
+					"LevelName_spritefont2",
+					"LevelName_spritefont3",
+					"LevelName_spritefont4",
+					"LevelName_spritefont5",
+					"LevelName_spritefont6",
+					"LevelName_spritefont7",
+					"LevelSelectTitle_spritefont",
+					"PauseLable",
+					"PauseOption",
+					"Silver_Text",
+					"Gold_Text",
+					"Bronze_Text"
+				],
+				"subfolders": [],
+				"name": "Spritefonts"
+			},
+			{
+				"items": [
+					"GameplayGamepad",
+					"Keyboard",
+					"Mouse",
+					"Browser"
+				],
+				"subfolders": [],
+				"name": "Controls"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Level_sandBox"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Level_1_1",
+					"Level_1_2",
+					"Level_1_3",
+					"Level_1_4",
+					"Level_1_5",
+					"Level_1_6",
+					"Level_1_7"
+				],
+				"subfolders": [],
+				"name": "World1"
+			},
+			{
+				"items": [
+					"MainMenu",
+					"Splash",
+					"LevelSelect"
+				],
+				"subfolders": [],
+				"name": "Menus"
+			}
+		]
+	},
+	"eventSheets": {
+		"items": [
+			"GameSheet",
+			"MenuSheet",
+			"SplashSheet",
+			"LevelSelect"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [
+				{
+					"name": "main.js",
+					"type": "application/javascript",
+					"sid": 874835054155014,
+					"script-info": {
+						"purpose": "main"
+					}
+				},
+				{
+					"name": "player.js",
+					"type": "application/javascript",
+					"sid": 747750558326995,
+					"script-info": {
+						"purpose": "imports-for-events"
+					}
+				},
+				{
+					"name": "controls.js",
+					"type": "application/javascript",
+					"sid": 338016467282861,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "utils.js",
+					"type": "application/javascript",
+					"sid": 326548921067073,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "sensei.js",
+					"type": "application/javascript",
+					"sid": 518983204432390,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "levelInstance.js",
+					"type": "application/javascript",
+					"sid": 908607223806517,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "enemy.js",
+					"type": "application/javascript",
+					"sid": 315893390060043,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "globals.js",
+					"type": "application/javascript",
+					"sid": 364518423717993,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "config.js",
+					"type": "application/javascript",
+					"sid": 536859080067499,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "game.js",
+					"type": "application/javascript",
+					"sid": 392490418933831,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ui.js",
+					"type": "application/javascript",
+					"sid": 990943115641557,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "PlayerInst.js",
+					"type": "application/javascript",
+					"sid": 682961338020815,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "levelSelect.js",
+					"type": "application/javascript",
+					"sid": 463758626906186,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "levelSelectControls.js",
+					"type": "application/javascript",
+					"sid": 993677205612113,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "pause.js",
+					"type": "application/javascript",
+					"sid": 206996698548537,
+					"script-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 814828361985607,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 565203349204074,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-114.png",
+					"type": "image/png",
+					"sid": 668922396488958,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 215186827027251,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 893541147215523,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 909767580692544,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "www.flumpstudios.com",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "any",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "progress-logo",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": true,
+		"exportFileStructure": "flat",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 640,
+	"viewportHeight": 480,
+	"firstLayout": "Splash"
+}

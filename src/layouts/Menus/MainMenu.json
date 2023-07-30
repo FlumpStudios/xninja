@@ -1,0 +1,312 @@
+{
+	"name": "MainMenu",
+	"layers": [
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "TitleBackground_tile",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 14,
+					"instanceVariables": {
+						"TickSinceStart": 0
+					},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 1,
+								"wait-time": 0,
+								"fade-out-time": 0,
+								"destroy": true,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 0,
+						"y": 1,
+						"width": 640,
+						"height": 480,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PressStart",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 17,
+					"instanceVariables": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 317,
+						"y": 362,
+						"width": 177,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SenseiDecoy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Patrol",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 499,
+					"instanceVariables": {
+						"Sines": false,
+						"IsScared": false
+					},
+					"behaviors": {
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": true,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": -620,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": false
+							}
+						}
+					},
+					"world": {
+						"x": 519,
+						"y": -344,
+						"width": -64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PlayerDecoy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Run",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 498,
+					"instanceVariables": {},
+					"behaviors": {
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": true,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
+						},
+						"Bullet": {
+							"properties": {
+								"speed": 620,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						}
+					},
+					"world": {
+						"x": 121,
+						"y": -276,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.2550057090157924,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MainMenuSpriteStopBar",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 374,
+					"instanceVariables": {},
+					"behaviors": {
+						"Physics": {
+							"properties": {
+								"immovable": true,
+								"collision-mask": "use-collision-polygon",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 320,
+						"y": 259,
+						"width": 731,
+						"height": -27,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 694871390277191,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0,
+				0,
+				0,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"sid": 781682966028206,
+	"nonworld-instances": [],
+	"effectTypes": [
+		{
+			"effectId": "scanlines",
+			"name": "ScanLines",
+			"instance": {
+				"isEnabled": false,
+				"parameters": {
+					"line-height": 2
+				}
+			}
+		},
+		{
+			"effectId": "grayscale",
+			"name": "Grayscale",
+			"instance": {
+				"isEnabled": false,
+				"parameters": {
+					"intensity": 0.5
+				}
+			}
+		}
+	],
+	"width": 1280,
+	"height": 960,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "MenuSheet"
+}

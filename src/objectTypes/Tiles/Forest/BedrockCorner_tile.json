@@ -1,0 +1,26 @@
+{
+	"name": "BedrockCorner_tile",
+	"plugin-id": "TiledBg",
+	"sid": 164192766140332,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 618522369281244
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 32,
+		"height": 32,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6740582,
+		"useCollisionPoly": true
+	}
+}

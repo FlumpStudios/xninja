@@ -1,0 +1,20 @@
+{
+	"name": "CastleIndoor_tile",
+	"plugin-id": "TiledBg",
+	"sid": 335031947097591,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 640,
+		"height": 900,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6176630,
+		"useCollisionPoly": true
+	}
+}

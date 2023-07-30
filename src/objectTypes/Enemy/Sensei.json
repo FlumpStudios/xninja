@@ -1,0 +1,104 @@
+{
+	"name": "Sensei",
+	"plugin-id": "Sprite",
+	"sid": 414566295369876,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Sines",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 748972714421179
+		},
+		{
+			"name": "IsScared",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 882792281706871
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 506207624879458
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 842682158899517
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 441698793033019
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\X-Ninja\\Assets\\Sprites\\Sensei\\spr_boss_0.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5588844,
+						"collisionPoly": {
+							"points": [
+								0.0859375,
+								0.203125,
+								0.90625,
+								0.203125,
+								0.90625,
+								1,
+								0.101563,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\X-Ninja\\Assets\\Sprites\\Sensei\\spr_boss_1.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4096630,
+						"collisionPoly": {
+							"points": [
+								0.0859375,
+								0.203125,
+								0.90625,
+								0.203125,
+								0.90625,
+								1,
+								0.101563,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 223314415026960,
+				"name": "Patrol",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

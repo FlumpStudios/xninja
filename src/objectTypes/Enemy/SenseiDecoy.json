@@ -1,0 +1,87 @@
+{
+	"name": "SenseiDecoy",
+	"plugin-id": "Sprite",
+	"sid": 429434964673970,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Sines",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 442117263631759
+		},
+		{
+			"name": "IsScared",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 460995974392671
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 550250001117905
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 619875597059788
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\X-Ninja\\Assets\\Sprites\\Sensei\\spr_boss_0.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3079230,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\X-Ninja\\Assets\\Sprites\\Sensei\\spr_boss_1.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7872319,
+						"collisionPoly": {
+							"points": [
+								0.0859375,
+								0.203125,
+								0.90625,
+								0.203125,
+								0.90625,
+								1,
+								0.101563,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 114569863042555,
+				"name": "Patrol",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"name": "SpikeSine",
+	"plugin-id": "Sprite",
+	"sid": 740178446183946,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 287722709588542
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 8,
+						"height": 8,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\X-Ninja\\Assets\\Sprites\\Obstacles\\Spike.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9718570,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.5,
+								0,
+								0.75,
+								0.25,
+								0.875,
+								0.5,
+								1,
+								1,
+								0,
+								1,
+								0.125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 414987076304148,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

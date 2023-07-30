@@ -1,0 +1,233 @@
+{
+	"name": "MenuSheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 114055005113999
+				},
+				{
+					"id": "on-button-pressed",
+					"objectClass": "GameplayGamepad",
+					"sid": 127277706449249,
+					"parameters": {
+						"gamepad": "0",
+						"button": "button-a"
+					}
+				},
+				{
+					"id": "on-button-pressed",
+					"objectClass": "GameplayGamepad",
+					"sid": 892988770830569,
+					"parameters": {
+						"gamepad": "0",
+						"button": "start-menu"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 802881581771048,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "TitleBackground_tile",
+							"sid": 731874859997732,
+							"parameters": {
+								"instance-variable": "TickSinceStart",
+								"comparison": 5,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "PlayerDecoy",
+							"sid": 359363653156599,
+							"behaviorType": "Physics",
+							"parameters": {
+								"mode": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "SenseiDecoy",
+							"sid": 539958015087547,
+							"behaviorType": "Physics",
+							"parameters": {
+								"mode": "disabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "PlayerDecoy",
+							"sid": 764546123064245,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "SenseiDecoy",
+							"sid": 554573526866229,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 560259068140584,
+							"parameters": {
+								"seconds": "0.285"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 879372824428898,
+							"parameters": {
+								"layout": "LevelSelect"
+							}
+						}
+					],
+					"sid": 820878123045476
+				}
+			],
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 673788793260225
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "PressStart",
+					"sid": 411225800147673,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.5",
+						"off-time": "0.5",
+						"duration": "1.0"
+					}
+				}
+			],
+			"sid": 268954544998877
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-flash-ended",
+					"objectClass": "PressStart",
+					"sid": 204960336698917,
+					"behaviorType": "Flash"
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "PressStart",
+					"sid": 993004559379647,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.5",
+						"off-time": "0.5",
+						"duration": "1.0"
+					}
+				}
+			],
+			"sid": 672537812966010
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 692855902645790,
+					"parameters": {
+						"key": 27
+					}
+				},
+				{
+					"id": "on-button-pressed",
+					"objectClass": "GameplayGamepad",
+					"sid": 286523763529480,
+					"parameters": {
+						"gamepad": "0",
+						"button": "button-b"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 659202299240640,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "TitleBackground_tile",
+							"sid": 617956880536542,
+							"parameters": {
+								"instance-variable": "TickSinceStart",
+								"comparison": 5,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "close",
+							"objectClass": "Browser",
+							"sid": 836379353305538
+						}
+					],
+					"sid": 645398035655577
+				}
+			],
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 191171367710719,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "TitleBackground_tile",
+					"sid": 319965803757418,
+					"parameters": {
+						"instance-variable": "TickSinceStart",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 401373021332457
+		}
+	],
+	"sid": 557864277610586
+}

@@ -1,0 +1,94 @@
+{
+	"name": "Torch",
+	"plugin-id": "Sprite",
+	"sid": 289558588950453,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		},
+		{
+			"effectId": "glowvertical",
+			"name": "GlowVertical"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3827131,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9195936,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2580414,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3567102,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8372660,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 908013000334281,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

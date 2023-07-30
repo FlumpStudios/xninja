@@ -1,0 +1,25 @@
+{
+	"name": "KillsLabel_spritefont",
+	"plugin-id": "Spritefont2",
+	"sid": 659693866125365,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "inverse",
+			"name": "Inverse"
+		}
+	],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7029125,
+		"useCollisionPoly": true
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"name": "WhiteFadeOut_Tile",
+	"plugin-id": "TiledBg",
+	"sid": 857009805041260,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 513759191669790
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 2,
+		"height": 2,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 5226807,
+		"useCollisionPoly": true
+	}
+}

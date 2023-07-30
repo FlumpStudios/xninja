@@ -1,0 +1,63 @@
+{
+	"name": "VisionCone",
+	"plugin-id": "Sprite",
+	"sid": 750232200346970,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 597649799702678
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine2",
+			"sid": 169346184900599
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 234294535386201
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 166,
+						"height": 97,
+						"originX": 0,
+						"originY": 0.4948453608247423,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7527691,
+						"collisionPoly": {
+							"points": [
+								0.6445783132530121,
+								0.17525773195876287,
+								0.6445783132530121,
+								0.8350515463917526,
+								0.012048192771084338,
+								0.5051546391752577
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 838371920443693,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"name": "PillPlatformEdge_tile",
+	"plugin-id": "TiledBg",
+	"sid": 658444054036890,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "jumpthru",
+			"name": "Jumpthru",
+			"sid": 389412809134993
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 16,
+		"height": 16,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "D:\\X-Ninja\\Assets\\Tiles\\16x\\tile127.png",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8979693,
+		"useCollisionPoly": true
+	}
+}

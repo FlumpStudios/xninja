@@ -1,0 +1,83 @@
+{
+	"name": "DeathStarPickUp",
+	"plugin-id": "Sprite",
+	"sid": 613969840349800,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 182298396289143
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine2",
+			"sid": 279905272376935
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine3",
+			"sid": 542698829834348
+		},
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 443862974593605
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 27,
+						"height": 25,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 309601,
+						"collisionPoly": {
+							"points": [
+								0.4462250712250712,
+								0.2880769230769232,
+								0.5582264957264955,
+								0.2942307692307694,
+								0.7425213675213675,
+								0.43961538461538463,
+								0.7368233618233618,
+								0.5625,
+								0.5865384615384617,
+								0.7519230769230769,
+								0.48878205128205093,
+								0.7550000000000001,
+								0.2973646723646722,
+								0.5896153846153851,
+								0.2959401709401709,
+								0.4821153846153847
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 876105820671550,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

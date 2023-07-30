@@ -1,0 +1,21 @@
+{
+	"name": "Tilemap",
+	"plugin-id": "Tilemap",
+	"sid": 522413157971414,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 416,
+		"height": 416,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "D:\\X-Ninja\\Assets\\Tiles\\Master 32x.png",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 3086669,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

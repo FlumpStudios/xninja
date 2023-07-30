@@ -1,0 +1,291 @@
+{
+	"name": "PlayerDecoy",
+	"plugin-id": "Sprite",
+	"sid": 281060658391742,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 228432184548258
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 600274350900176
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\X-Ninja\\Assets\\Sprites\\Ninja\\run1.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4247522,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\X-Ninja\\Assets\\Sprites\\Ninja\\run3.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9555631,
+						"collisionPoly": {
+							"points": [
+								0.101563,
+								0.3125,
+								0.882813,
+								0.3125,
+								0.882813,
+								1,
+								0.101563,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\X-Ninja\\Assets\\Sprites\\Ninja\\run4.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6696740,
+						"collisionPoly": {
+							"points": [
+								0.101563,
+								0.3125,
+								0.882813,
+								0.3125,
+								0.882813,
+								1,
+								0.101563,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\X-Ninja\\Assets\\Sprites\\Ninja\\run5.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6929823,
+						"collisionPoly": {
+							"points": [
+								0.101563,
+								0.3125,
+								0.882813,
+								0.3125,
+								0.882813,
+								1,
+								0.101563,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6972990,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0.1875,
+								0.1875,
+								0.1875,
+								0.8125,
+								0.25,
+								0.9375,
+								0.625,
+								0.9375,
+								0.75,
+								0.625,
+								1,
+								0.4375,
+								1,
+								0.125,
+								0.75,
+								0.0625,
+								0.6875,
+								0,
+								0.5,
+								0,
+								0.4375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 544192190267087,
+				"name": "Run",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\X-Ninja\\Assets\\Sprites\\Ninja\\jump.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6773825,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.5,
+								0.1875,
+								0.8125,
+								0.1875,
+								0.9375,
+								0.5,
+								0.875,
+								0.875,
+								0.5,
+								0.8125,
+								0.1875,
+								0.8125,
+								0.0625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 979299546646771,
+				"name": "Jump",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2640053,
+						"collisionPoly": {
+							"points": [
+								0.3125,
+								0.3125,
+								0.8125,
+								0.3125,
+								0.9375,
+								0.6875,
+								0.9375,
+								0.8125,
+								0.8125,
+								1,
+								0.1875,
+								1,
+								0,
+								0.5625,
+								0,
+								0.5,
+								0.0625,
+								0.4375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 527668951944234,
+				"name": "Throw",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7797255,
+						"collisionPoly": {
+							"points": [
+								0.3125,
+								0.3125,
+								0.8125,
+								0.3125,
+								0.9375,
+								0.6875,
+								0.9375,
+								0.8125,
+								0.8125,
+								1,
+								0.1875,
+								1,
+								0,
+								0.5625,
+								0,
+								0.5,
+								0.0625,
+								0.4375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 529908459170600,
+				"name": "Slice",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
