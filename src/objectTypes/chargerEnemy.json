@@ -1,0 +1,208 @@
+{
+	"name": "chargerEnemy",
+	"plugin-id": "Sprite",
+	"sid": 644892344256833,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Sines",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 419500570786409
+		},
+		{
+			"name": "IsScared",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 342673390705985
+		},
+		{
+			"name": "Static",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 123903688577290
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 609844571171686
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 868027989442898
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 908555828585087
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 14,
+						"height": 19,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4868060,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.14285714285714285,
+								0,
+								0.5714285714285714,
+								0.10526315789473684,
+								0.7857142857142857,
+								0.2631578947368421,
+								1,
+								0.6842105263157895,
+								1,
+								0.7894736842105263,
+								0.8571428571428571,
+								0.9473684210526315,
+								0.7857142857142857,
+								1,
+								0.2857142857142857,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 14,
+						"height": 19,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2680005,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5714285714285714,
+								0.15789473684210525,
+								0.7857142857142857,
+								0.3157894736842105,
+								1,
+								0.7368421052631579,
+								1,
+								0.8421052631578947,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 456324342728204,
+				"name": "Patrol",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 20,
+						"height": 17,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3804697,
+						"collisionPoly": {
+							"points": [
+								0.35,
+								0,
+								0.4,
+								0,
+								1,
+								0.7058823529411765,
+								1,
+								0.7647058823529411,
+								0.55,
+								1,
+								0.2,
+								1,
+								0,
+								0.7647058823529411,
+								0,
+								0.6470588235294118,
+								0.2,
+								0.17647058823529413
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 20,
+						"height": 17,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9656863,
+						"collisionPoly": {
+							"points": [
+								0.35,
+								0.11764705882352941,
+								0.4,
+								0.11764705882352941,
+								1,
+								0.7647058823529411,
+								1,
+								0.8235294117647058,
+								0.65,
+								1,
+								0.15,
+								1,
+								0,
+								0.8235294117647058,
+								0,
+								0.7058823529411765,
+								0.2,
+								0.29411764705882354
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 299204994828999,
+				"name": "Charge",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 8
+			}
+		],
+		"subfolders": []
+	}
+}

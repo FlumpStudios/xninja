@@ -165,7 +165,7 @@ export const levelConfig =
         cameraFocusOffset: { x: 225, y: 0 }
     },
     "Level_1_8": {
-        name: "Sharp Escape",
+        name: "Cavern Story",
         startingStars: 0,
         bronzeTarget: 5,
         silverTarget: 3,

@@ -241,7 +241,8 @@
 			"Exlaim",
 			"GrindZone",
 			"GrindBar",
-			"Sparks"
+			"Sparks",
+			"chargerEnemy"
 		],
 		"subfolders": [
 			{
@@ -482,7 +483,8 @@
 					"Level_1_5",
 					"Level_1_6",
 					"Level_1_7",
-					"Level_1_8"
+					"Level_1_8",
+					"Level_1_9"
 				],
 				"subfolders": [],
 				"name": "World1"
@@ -626,6 +628,14 @@
 					"name": "pause.js",
 					"type": "application/javascript",
 					"sid": 206996698548537,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "chargerEnemy.js",
+					"type": "application/javascript",
+					"sid": 564336417692676,
 					"script-info": {
 						"purpose": "none"
 					}

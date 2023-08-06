@@ -7,7 +7,8 @@ import { keyboard, gamePad, mouse } from "./controls.js"
 import { setGlobalRuntime } from "./globals.js";
 import { gamePlay, runLevelStart } from "./game.js";
 import { uiUpdateLoop } from "./ui.js";
-import SenseiInstance from "./sensei.js"
+import SenseiInstance from "./sensei.js";
+import ChargerEnemyInstance from "./chargerEnemy.js";
 import PlayerInst from "./PlayerInst.js";
 import Level from "./levelInstance.js";
 import * as config from "./config.js"
@@ -22,6 +23,7 @@ runOnStartup(async runtime => {
 	setGlobalRuntime(runtime);
 	runtime.levelInstance = new Level(null);
 	runtime.objects.Sensei.setInstanceClass(SenseiInstance);
+	runtime.objects.chargerEnemy.setInstanceClass(ChargerEnemyInstance)
 	runtime.objects.Player.setInstanceClass(PlayerInst);
 	runtime.addEventListener("beforeprojectstart", () => OnBeforeProjectStart(runtime));
 });
@@ -111,6 +113,10 @@ const gameLoop = (runtime) => {
 
 	for (const senesiInst of runtime.objects.Sensei.instances()) {
 		senesiInst.handleSenseiBehavior(runtime);
+	}
+
+	for (const chargerEnemyInst of runtime.objects.chargerEnemy.instances()) {
+		chargerEnemyInst.handleChargerBehavior(runtime);
 	}
 
 	gamePlay(runtime);

@@ -84,7 +84,6 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
             stealthBar.isVisible = true;
         }
 
-
         if (on && !this.#stealthLocked) {
             runtime.levelInstance.setTimeMultiplier(2);
             stealthBar.width -= (config.STEALTH_BAR_DEPLETE_SPEED * runtime.dt);
@@ -246,6 +245,15 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
                 this.killPlayer(runtime);
             }
         }
+
+        for (const charger of runtime.objects.chargerEnemy.instances()) {
+            if (charger.testOverlap(this)) {
+                if (charger.instVars.IsScared) {
+                    this.killPlayer(runtime);
+                }
+            }
+        }
+
     }
 
     checkPickupCollisions = (runtime) => {
@@ -372,7 +380,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         const s = runtime.objects.Sparks.getFirstInstance();
         if (isGriding) {
             // Stop the pushing anim happening
-            this.animationFrame = 0;			
+            this.animationFrame = 0;
             if (s) {
                 s.isVisible = true;
                 s.x = this.x - 5;
