@@ -834,8 +834,8 @@
 						}
 					},
 					"world": {
-						"x": 6504,
-						"y": 312,
+						"x": 736,
+						"y": 128,
 						"width": 192,
 						"height": 1024,
 						"originX": 0.5,
@@ -1875,7 +1875,7 @@
 			}
 		}
 	],
-	"width": 3200,
+	"width": 640,
 	"height": 480,
 	"unboundedScrolling": false,
 	"vpX": 0.5,

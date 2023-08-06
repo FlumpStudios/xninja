@@ -1,0 +1,20 @@
+{
+	"name": "Sparks",
+	"plugin-id": "Particles",
+	"sid": 857931616394973,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 14,
+		"height": 14,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 5569696,
+		"useCollisionPoly": true
+	}
+}

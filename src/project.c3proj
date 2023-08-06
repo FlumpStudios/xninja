@@ -238,7 +238,10 @@
 			"RampStartZone",
 			"RampEndZone",
 			"CameraFocus",
-			"Exlaim"
+			"Exlaim",
+			"GrindZone",
+			"GrindBar",
+			"Sparks"
 		],
 		"subfolders": [
 			{

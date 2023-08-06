@@ -210,7 +210,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         if (this.#isSkating) {
             for (const e of runtime.objects.RampEndZone.instances()) {
                 if (e.testOverlap(this)) {
-                    return;;
+                    return;
                 }
             }
         }
@@ -358,7 +358,35 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         });
     }
 
+    current
     checkRampCollision = (runtime) => {
+        let isGriding = false;
+        const switchRnd = Math.floor(Math.random() * 10) <= 5;
+        for (const e of runtime.objects.GrindZone.instances()) {
+            if (e.testOverlap(this)) {
+                isGriding = true;
+                this.angle = e.instVars.PlayerAngle;
+            }
+        }
+
+        const s = runtime.objects.Sparks.getFirstInstance();
+        if (isGriding) {
+            // Stop the pushing anim happening
+            this.animationFrame = 0;			
+            if (s) {
+                s.isVisible = true;
+                s.x = this.x - 5;
+                s.y = this.y + 20;
+            }
+        }
+        else {
+            if (s) {
+                s.isVisible = false;
+            }
+            this.angle = 0;
+        }
+
+
         for (const e of runtime.objects.RampStartZone.instances()) {
             if (e.testOverlap(this)) {
                 this.angle = e.angle;
@@ -368,9 +396,6 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         for (const e of runtime.objects.RampEndZone.instances()) {
             if (e.testOverlap(this)) {
                 this.behaviors.Platform.simulateControl("jump");
-
-
-
                 waitForMillisecond(50).then(() => {
                     if (this.animationName != "Shuv" && this.animationName != "Kickflip") {
                         if (Math.floor(Math.random() * 10) <= 5) {
