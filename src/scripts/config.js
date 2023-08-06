@@ -175,7 +175,7 @@ export const levelConfig =
         exitUp: false,
         exitDown: false,
         exitLeft: false,
-        exitRight: false,
+        exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 }
     }, "Level_1_9": {
         name: "[PLACE HOLDER]",
