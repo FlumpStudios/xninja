@@ -171,14 +171,14 @@ export const levelConfig =
         silverTarget: 3,
         goldTarget: 1,
         currentBest: 0,
-        nextLevel: "LevelSelect",
+        nextLevel: "Level_1_9",
         exitUp: false,
         exitDown: false,
         exitLeft: false,
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 }
     }, "Level_1_9": {
-        name: "[PLACE HOLDER]",
+        name: "Charged",
         startingStars: 0,
         bronzeTarget: 5,
         silverTarget: 3,
@@ -186,10 +186,10 @@ export const levelConfig =
         currentBest: 0,
         nextLevel: "LevelSelect",
         exitUp: false,
-        exitDown: true,
+        exitDown: false,
         exitLeft: false,
-        exitRight: false,
-        cameraFocusOffset: { x: 0, y: 0 }
+        exitRight: true,
+        cameraFocusOffset: { x: 75, y: 0 }
     }, "Level_1_10": {
         name: "[PLACE HOLDER]",
         startingStars: 0,

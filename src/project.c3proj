@@ -242,7 +242,8 @@
 			"GrindZone",
 			"GrindBar",
 			"Sparks",
-			"chargerEnemy"
+			"chargerEnemy",
+			"PumpEndsTile"
 		],
 		"subfolders": [
 			{
