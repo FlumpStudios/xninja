@@ -1,31 +1,26 @@
 {
-	"name": "MovingPlatform_tile",
+	"name": "ClearGround_tile2",
 	"plugin-id": "TiledBg",
-	"sid": 117951384737104,
+	"sid": 892698046735294,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Sin",
 			"name": "Sine",
-			"sid": 638279194860755
-		},
-		{
-			"behaviorId": "jumpthru",
-			"name": "Jumpthru",
-			"sid": 877732190698699
+			"sid": 553489315088608
 		}
 	],
 	"effectTypes": [],
 	"image": {
-		"width": 16,
-		"height": 16,
+		"width": 32,
+		"height": 32,
 		"originX": 0.5,
 		"originY": 0.5,
-		"originalSource": "D:\\X-Ninja\\Assets\\Tiles\\tile136.png",
+		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
-		"imageSpriteId": 6510946,
+		"imageSpriteId": 5818700,
 		"useCollisionPoly": true
 	}
 }

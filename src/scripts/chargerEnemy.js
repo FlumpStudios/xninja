@@ -81,6 +81,7 @@ export default class ChargerEnemyInstance extends enemy {
 		this.handleDeathStarCollision(runtime, this.runCleanUp);
 		this.handleSlashCollision(runtime, this.runCleanUp);
 		this.handleSpikeCollisions(runtime, this.runCleanUp);
+		this.handleChargeEnemyCollision(runtime,this.runCleanUp);
 	}
 
 	set = false;

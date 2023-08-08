@@ -50,6 +50,18 @@ export default class enemy extends globalThis.ISpriteInstance {
         }
     }
 
+    handleChargeEnemyCollision = (runtime, destructor) => {
+        for (const charger of runtime.objects.chargerEnemy.instances()) {
+            if (charger.testOverlap(this)) {
+                if (charger.instVars.IsScared) {
+                    this.runKill(runtime);
+                    destructor();
+                }
+                // getGlobalRuntime().objects.DeathStarPickUp.createInstance(config.layers.game, this.x, this.y - 23);			
+            }
+        }
+    }
+
     handleSpikeCollisions = (runtime, destructor) => {
         for (const spike of runtime.objects.Spike.instances()) {
             if (spike.testOverlap(this)) {
@@ -70,12 +82,11 @@ export default class enemy extends globalThis.ISpriteInstance {
     hasLineOfSightOfPlayer = (runtime) => {
         const player = runtime.objects.Player.getFirstInstance();
         if (!player) { return };
-        
-        if(player.opacity < 1)
-        {
-           return false;
+
+        if (player.opacity < 1) {
+            return false;
         }
-        
+
         return this.behaviors.LineOfSight.hasLOStoPosition(player.x, player.y);
     }
 

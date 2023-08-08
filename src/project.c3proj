@@ -264,7 +264,8 @@
 							"PillPlatform_tile",
 							"PillPlatformEdge_tile",
 							"ClearGround_tile",
-							"Brick"
+							"Brick",
+							"ClearGround_tile2"
 						],
 						"subfolders": [
 							{
