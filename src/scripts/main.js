@@ -15,6 +15,7 @@ import * as config from "./config.js"
 import * as levelSelectControls from "./levelSelectControls.js";
 import { updateMenu as updateLevelSelectMenu } from "./levelSelect.js";
 import { pauseBehaviour } from "./pause.js"
+import  BatInstance from "./bat.js";
 
 runOnStartup(async runtime => {
 	// Code to run on the loading screen.
@@ -25,6 +26,7 @@ runOnStartup(async runtime => {
 	runtime.objects.Sensei.setInstanceClass(SenseiInstance);
 	runtime.objects.chargerEnemy.setInstanceClass(ChargerEnemyInstance)
 	runtime.objects.Player.setInstanceClass(PlayerInst);
+	runtime.objects.Bat.setInstanceClass(BatInstance);
 	runtime.addEventListener("beforeprojectstart", () => OnBeforeProjectStart(runtime));
 });
 
@@ -117,6 +119,10 @@ const gameLoop = (runtime) => {
 
 	for (const chargerEnemyInst of runtime.objects.chargerEnemy.instances()) {
 		chargerEnemyInst.handleChargerBehavior(runtime);
+	}
+
+	for (const batEnemyInst of runtime.objects.Bat.instances()) {
+		batEnemyInst.handleBatBehavior(runtime);
 	}
 
 	gamePlay(runtime);

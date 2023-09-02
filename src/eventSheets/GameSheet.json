@@ -270,6 +270,24 @@
 			],
 			"sid": 660834524184669,
 			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Bat",
+					"sid": 676354080478565
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "Bat",
+					"sid": 553362020589561
+				}
+			],
+			"sid": 655805937566424
 		}
 	],
 	"sid": 976359301470145

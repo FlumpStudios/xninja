@@ -3848,10 +3848,18 @@
 					"uid": 367,
 					"instanceVariables": {},
 					"behaviors": {
-						"Solid": {
+						"Platform": {
 							"properties": {
-								"enabled": true,
-								"tags": "EnemyBouncer"
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
 							}
 						}
 					},
@@ -4019,10 +4027,18 @@
 					"uid": 424,
 					"instanceVariables": {},
 					"behaviors": {
-						"Solid": {
+						"Platform": {
 							"properties": {
-								"enabled": true,
-								"tags": "EnemyBouncer"
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
 							}
 						}
 					},
@@ -4190,10 +4206,18 @@
 					"uid": 429,
 					"instanceVariables": {},
 					"behaviors": {
-						"Solid": {
+						"Platform": {
 							"properties": {
-								"enabled": true,
-								"tags": "EnemyBouncer"
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
 							}
 						}
 					},
@@ -4361,10 +4385,18 @@
 					"uid": 473,
 					"instanceVariables": {},
 					"behaviors": {
-						"Solid": {
+						"Platform": {
 							"properties": {
-								"enabled": true,
-								"tags": "EnemyBouncer"
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
 							}
 						}
 					},
@@ -4894,10 +4926,18 @@
 					"uid": 477,
 					"instanceVariables": {},
 					"behaviors": {
-						"Solid": {
+						"Platform": {
 							"properties": {
-								"enabled": true,
-								"tags": "EnemyBouncer"
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
 							}
 						}
 					},

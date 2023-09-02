@@ -1907,6 +1907,108 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "senseZone",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1298,
+					"instanceVariables": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "opacity",
+								"wave": "sine",
+								"period": 2,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 25,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"effects": {
+						"Pulse": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 0.9,
+								"lighting": 0.25,
+								"speed": 8,
+								"frequency": 35,
+								"center-x": 0.5,
+								"center-y": 0.5
+							}
+						}
+					},
+					"world": {
+						"x": 245.5,
+						"y": 85.5,
+						"width": 176,
+						"height": 176,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bat",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Sleep",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1300,
+					"instanceVariables": {
+						"IsScared": false,
+						"patrolTime": 0,
+						"patrolSpeed": 25
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 60,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": false,
+								"step": false,
+								"enabled": false
+							}
+						}
+					},
+					"world": {
+						"x": 96,
+						"y": 80,
+						"width": 34.08695652173913,
+						"height": 52.8,
+						"originX": 0.5,
+						"originY": 0.7727272727272727,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 482254546497815,

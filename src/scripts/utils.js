@@ -32,6 +32,9 @@ export const isOutsideSidesOfLayout = (inst) => {
 export const toRadians = (x) =>
 	x * (Math.PI / 180);
 
+export const fromRadians = (x) =>
+	(x * 180) / Math.PI;
+
 // Rotate from angle 'start' towards angle 'end' by the angle
 // 'step' (all in radians).
 export const angleRotate = (start, end, step) => {
@@ -54,3 +57,8 @@ export const angleRotate = (start, end, step) => {
 export const waitForMillisecond = (ms) => new Promise(res => setTimeout(res, ms));
 
 export const isMirrored = (inst) => inst.width < 0;
+
+export const getAngleTo = (obj1, obj2) =>
+	Math.atan2(obj1.y - obj2.y, obj1.x - obj2.x);
+
+

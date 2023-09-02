@@ -51,8 +51,6 @@ export default class SenseiInstance extends enemy {
 
 		this.#handleVisionCone();
 
-
-
 		if (this.hasLineOfSightOfPlayer(runtime) && !this.instVars.IsScared) {
 			this.instVars.IsScared = true;
 			if (!this.exlaim) {

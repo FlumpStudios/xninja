@@ -78,12 +78,12 @@ export default class enemy extends globalThis.ISpriteInstance {
             }
         }
     }
-
+    
     hasLineOfSightOfPlayer = (runtime) => {
         const player = runtime.objects.Player.getFirstInstance();
         if (!player) { return };
 
-        if (player.opacity < 1) {
+        if (player.isStealthed()) {
             return false;
         }
 

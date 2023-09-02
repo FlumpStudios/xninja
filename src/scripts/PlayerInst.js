@@ -233,6 +233,8 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         });
     }
 
+    isStealthed = () => this.opacity < 1;
+
     checkEnemyCollisions = (runtime) => {
         for (const spike of runtime.objects.Spike.instances()) {
             if (spike.testOverlap(this)) {
@@ -246,6 +248,12 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
             }
         }
 
+        for (const bat of runtime.objects.Bat.instances()) {
+            if (bat.testOverlap(this) && bat.instVars.IsScared) {                
+                this.killPlayer(runtime);
+            }
+        }
+
         for (const charger of runtime.objects.chargerEnemy.instances()) {
             if (charger.testOverlap(this)) {
                 if (charger.instVars.IsScared) {
@@ -253,7 +261,6 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
                 }
             }
         }
-
     }
 
     checkPickupCollisions = (runtime) => {
