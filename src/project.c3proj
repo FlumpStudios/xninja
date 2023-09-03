@@ -244,7 +244,8 @@
 			"Sparks",
 			"chargerEnemy",
 			"PumpEndsTile",
-			"Bat"
+			"Bat",
+			"ShooterBlock"
 		],
 		"subfolders": [
 			{
@@ -489,7 +490,8 @@
 					"Level_1_7",
 					"Level_1_8",
 					"Level_1_9",
-					"Level_1_10"
+					"Level_1_10",
+					"Level_1_11"
 				],
 				"subfolders": [],
 				"name": "World1"

@@ -6,6 +6,8 @@ import * as config from "./config.js";
 
 export default class BatInstance extends enemy {
 
+	CHASE_SPEED = 350;
+
 	currentPatrolTime = 0;
 	senseZone = null;
 	senseZoneDestroyed = false;
@@ -36,6 +38,12 @@ export default class BatInstance extends enemy {
 		}
 	}
 
+
+	lockSenseZone = () => {
+		this.senseZone.x = this.x;
+		this.senseZone.y = this.y;
+	}
+
 	handleSenseZoneCollision = (runtime) => {
 		const player = runtime.objects.Player.getFirstInstance();
 		if (player.isStealthed()) { return; }
@@ -45,6 +53,7 @@ export default class BatInstance extends enemy {
 			this.senseZoneDestroyed = true;
 			this.setAnimation("Fly");
 			this.behaviors.Bullet.isEnabled = true;
+			this.behaviors.Bullet.speed = this.CHASE_SPEED;
 		}
 	}
 
@@ -52,17 +61,17 @@ export default class BatInstance extends enemy {
 		const player = runtime.objects.Player.getFirstInstance();
 
 		if (this.instVars.IsScared) {
-			if (player.x < this.x) {
-				this.width = this.initialWidth * -1;
-			}
-			else {
-				this.width = this.initialWidth;
-			}
-
 			if (player.isVisible) {
+				if (player.x < this.x) {
+					this.width = this.initialWidth * -1;
+				}
+				else {
+					this.width = this.initialWidth;
+				}
+
 				this.behaviors.Bullet.angleOfMotion = getAngleTo(player, this);
 			}
-		} else {			
+		} else {
 			this.currentPatrolTime += runtime.dt;
 
 			if (this.instVars.patrolTime > 0 && this.currentPatrolTime > this.instVars.patrolTime) {
@@ -78,9 +87,13 @@ export default class BatInstance extends enemy {
 			return;
 		}
 
+		if (!this.instVars.IsScared) {
+			this.handleSlashCollision(runtime, this.runCleanUp);
+		}
+
 		this.handleDeathStarCollision(runtime, this.runCleanUp);
-		this.handleSlashCollision(runtime, this.runCleanUp);
 		this.handleSpikeCollisions(runtime, this.runCleanUp);
+		this.lockSenseZone();
 		if (!this.instVars.IsScared) {
 			this.handleSenseZoneCollision(runtime);
 		}
