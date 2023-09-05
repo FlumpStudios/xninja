@@ -6,7 +6,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
     constructor() {
         super();
         this.setSolidCollisionFilter(false, "EnemyBouncer");
-        this.#hasPlayerEnteredLevelEndBox = false;
+        this.#hasPlayerEnteredLevelEndBox = false;        
     }
 
     #currentRunAnimation = "Run";

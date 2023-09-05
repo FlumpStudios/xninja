@@ -28,6 +28,31 @@ export const isOutsideSidesOfLayout = (inst) => {
 	return inst.x < 0 || inst.x > layout.width;
 }
 
+export const isOutOfScreen = (inst, runtime) => {
+	const scrollx = parseFloat(inst.layout.scrollX);
+	const scrolly = parseFloat(inst.layout.scrollY);
+	const height = parseFloat(runtime.viewportHeight);
+	const width = parseFloat(runtime.viewportWidth);
+
+	if (inst.x > scrollx + (width / 2)) {
+		return true;
+	}
+
+	if (inst.x < scrollx - (width / 2)) {
+		return true;
+	}
+
+	if (inst.y > scrolly + (height / 2)) {
+		return true;
+	}
+
+	if (inst.y < scrolly - (height / 2)) {
+		return true;
+	}
+
+	return false;
+}
+
 // Convert x from degrees to radians.
 export const toRadians = (x) =>
 	x * (Math.PI / 180);

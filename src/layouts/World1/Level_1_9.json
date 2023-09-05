@@ -5652,18 +5652,10 @@
 					"uid": 1240,
 					"instanceVariables": {},
 					"behaviors": {
-						"Platform": {
+						"Solid": {
 							"properties": {
-								"max-speed": 330,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": true,
-								"enabled": true
+								"enabled": true,
+								"tags": "EnemyBouncer"
 							}
 						}
 					},

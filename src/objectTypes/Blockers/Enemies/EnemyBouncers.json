@@ -6,9 +6,9 @@
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 257143512230127
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 199206878508833
 		}
 	],
 	"effectTypes": [],

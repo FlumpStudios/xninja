@@ -3848,26 +3848,18 @@
 					"uid": 367,
 					"instanceVariables": {},
 					"behaviors": {
-						"Platform": {
+						"Solid": {
 							"properties": {
-								"max-speed": 330,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": true,
-								"enabled": true
+								"enabled": true,
+								"tags": "EnemyBouncer"
 							}
 						}
 					},
 					"world": {
-						"x": 96,
-						"y": 448,
+						"x": 88,
+						"y": 444,
 						"width": 16,
-						"height": 40,
+						"height": 56,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -4027,26 +4019,18 @@
 					"uid": 424,
 					"instanceVariables": {},
 					"behaviors": {
-						"Platform": {
+						"Solid": {
 							"properties": {
-								"max-speed": 330,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": true,
-								"enabled": true
+								"enabled": true,
+								"tags": "EnemyBouncer"
 							}
 						}
 					},
 					"world": {
-						"x": 472,
-						"y": 528,
+						"x": 480,
+						"y": 532,
 						"width": 16,
-						"height": 40,
+						"height": 48,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -4206,26 +4190,18 @@
 					"uid": 429,
 					"instanceVariables": {},
 					"behaviors": {
-						"Platform": {
+						"Solid": {
 							"properties": {
-								"max-speed": 330,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": true,
-								"enabled": true
+								"enabled": true,
+								"tags": "EnemyBouncer"
 							}
 						}
 					},
 					"world": {
 						"x": 104,
-						"y": 608,
+						"y": 612,
 						"width": 16,
-						"height": 40,
+						"height": 48,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -4385,23 +4361,15 @@
 					"uid": 473,
 					"instanceVariables": {},
 					"behaviors": {
-						"Platform": {
+						"Solid": {
 							"properties": {
-								"max-speed": 330,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": true,
-								"enabled": true
+								"enabled": true,
+								"tags": "EnemyBouncer"
 							}
 						}
 					},
 					"world": {
-						"x": 480,
+						"x": 496,
 						"y": 688,
 						"width": 16,
 						"height": 40,
@@ -4926,18 +4894,10 @@
 					"uid": 477,
 					"instanceVariables": {},
 					"behaviors": {
-						"Platform": {
+						"Solid": {
 							"properties": {
-								"max-speed": 330,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": true,
-								"enabled": true
+								"enabled": true,
+								"tags": "EnemyBouncer"
 							}
 						}
 					},

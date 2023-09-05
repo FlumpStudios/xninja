@@ -288,6 +288,25 @@
 				}
 			],
 			"sid": 655805937566424
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-screen",
+					"objectClass": "DeathStar",
+					"sid": 937350409298838,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "DeathStar",
+					"sid": 673532699536384
+				}
+			],
+			"sid": 231666488203255
 		}
 	],
 	"sid": 976359301470145

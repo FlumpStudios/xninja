@@ -1,5 +1,5 @@
 import enemy from "./enemy.js";
-import { isOutsideLayout, isMirrored, waitForMillisecond } from "./utils.js";
+import { isOutsideLayout, isMirrored, waitForMillisecond, isOutOfScreen } from "./utils.js";
 import { getGlobalRuntime } from "./globals.js";
 import * as config from "./config.js";
 
@@ -33,7 +33,7 @@ export default class SenseiInstance extends enemy {
 
 	handleSenseiBehavior = (runtime) => {
 		this.#senseiPatrol(runtime);
-		if (isOutsideLayout(this)) {
+		if (isOutOfScreen(this, runtime) && this.instVars.IsScared) {
 			this.handleEscaped(runtime, this.runCleanUp);
 			return;
 		}
