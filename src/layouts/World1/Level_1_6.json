@@ -654,7 +654,9 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 348,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"isDangerous": false
+					},
 					"behaviors": {},
 					"effects": {
 						"Water": {

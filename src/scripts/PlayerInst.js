@@ -6,7 +6,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
     constructor() {
         super();
         this.setSolidCollisionFilter(false, "EnemyBouncer");
-        this.#hasPlayerEnteredLevelEndBox = false;        
+        this.#hasPlayerEnteredLevelEndBox = false;
     }
 
     #currentRunAnimation = "Run";
@@ -236,6 +236,11 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
     isStealthed = () => this.opacity < 1;
 
     checkEnemyCollisions = (runtime) => {
+        for (const water of runtime.objects.Water.instances()) {
+            if (water.testOverlap(this) && water.instVars.isDangerous) {
+                this.killPlayer(runtime);
+            }
+        }
         for (const spike of runtime.objects.Spike.instances()) {
             if (spike.testOverlap(this)) {
                 this.killPlayer(runtime);
@@ -249,7 +254,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         }
 
         for (const bat of runtime.objects.Bat.instances()) {
-            if (bat.testOverlap(this) && bat.instVars.IsScared) {                
+            if (bat.testOverlap(this) && bat.instVars.IsScared) {
                 this.killPlayer(runtime);
             }
         }

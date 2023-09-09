@@ -357,7 +357,9 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 344,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"isDangerous": false
+					},
 					"behaviors": {},
 					"effects": {
 						"Water": {
@@ -383,9 +385,9 @@
 						"originX": 0,
 						"originY": 0,
 						"color": [
-							1,
-							1,
-							1,
+							0.06666666666666667,
+							0,
+							0.5137254901960784,
 							1
 						],
 						"angle": 0,
@@ -6059,7 +6061,9 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 496,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"isDangerous": false
+					},
 					"behaviors": {},
 					"effects": {
 						"Water": {
@@ -6085,9 +6089,9 @@
 						"originX": 0,
 						"originY": 0,
 						"color": [
-							1,
-							1,
-							1,
+							0.06666666666666667,
+							0,
+							0.5137254901960784,
 							1
 						],
 						"angle": 0,

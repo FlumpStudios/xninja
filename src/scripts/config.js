@@ -202,7 +202,7 @@ export const levelConfig =
         exitDown: true,
         exitLeft: false,
         exitRight: false,
-        cameraFocusOffset: { x: 0, y: 0 }
+        cameraFocusOffset: { x: 130, y: 0 }
     }, "Level_1_11": {
         name: "[PLACE HOLDER]",
         startingStars: 0,
