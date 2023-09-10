@@ -199,9 +199,9 @@ export const levelConfig =
         currentBest: 0,
         nextLevel: "LevelSelect",
         exitUp: false,
-        exitDown: true,
+        exitDown: false,
         exitLeft: false,
-        exitRight: false,
+        exitRight: true,
         cameraFocusOffset: { x: 130, y: 0 }
     }, "Level_1_11": {
         name: "[PLACE HOLDER]",

@@ -660,7 +660,7 @@
 					"behaviors": {},
 					"effects": {
 						"Water": {
-							"isEnabled": true,
+							"isEnabled": false,
 							"parameters": {
 								"speed": 0.1,
 								"x-speed": 0.3,
@@ -682,9 +682,9 @@
 						"originX": 0,
 						"originY": 0,
 						"color": [
-							1,
-							1,
-							1,
+							0.06666666666666667,
+							0,
+							0.5137254901960784,
 							1
 						],
 						"angle": 0,
