@@ -491,7 +491,8 @@
 					"Level_1_8",
 					"Level_1_9",
 					"Level_1_10",
-					"Level_1_11"
+					"Level_1_11",
+					"Level_1_12"
 				],
 				"subfolders": [],
 				"name": "World1"
@@ -748,7 +749,7 @@
 		"authorEmail": "",
 		"authorWebsite": "www.flumpstudios.com",
 		"appId": "",
-		"pixelRounding": false,
+		"pixelRounding": true,
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
@@ -781,7 +782,7 @@
 		"framerateMode": "vsync",
 		"compositingMode": "standard",
 		"sampling": "nearest",
-		"downscaling": "medium",
+		"downscaling": "low",
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
 		"zNear": 1,

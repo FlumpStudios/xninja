@@ -12,7 +12,13 @@
 			"sid": 322193933701766
 		}
 	],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 802439403982459
+		}
+	],
 	"effectTypes": [
 		{
 			"effectId": "water",

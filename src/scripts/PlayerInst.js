@@ -241,6 +241,13 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
                 this.killPlayer(runtime);
             }
         }
+		
+		for (const water of runtime.objects.Water.instances()) {
+            if (water.testOverlap(this) && water.instVars.isDangerous) {
+                this.killPlayer(runtime);
+            }
+        }
+		
         for (const spike of runtime.objects.Spike.instances()) {
             if (spike.testOverlap(this)) {
                 this.killPlayer(runtime);
