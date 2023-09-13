@@ -211,11 +211,11 @@ export const levelConfig =
         goldTarget: 1,
         currentBest: 0,
         nextLevel: "LevelSelect",
-        exitUp: false,
-        exitDown: true,
+        exitUp: true,
+        exitDown: false,
         exitLeft: false,
         exitRight: false,
-        cameraFocusOffset: { x: 0, y: 0 }
+        cameraFocusOffset: { x: 0, y: -25 }
     }, "Level_1_12": {
         name: "[PLACE HOLDER]",
         startingStars: 0,

@@ -43,7 +43,7 @@ export const gamePlay = (runtime) => {
     if (getEnemyCount() <= 0 || player.getHasPlayerEnteredLevelEndBox()) {
         if (!runtime.levelInstance.isLevelInExitState()) {
             if (getCurrentConfig(runtime).exitUp) {
-                const arrow = runtime.objects.LevelEndArrowLeft.getFirstInstance();
+                const arrow = runtime.objects.LevelEndArrowTop.getFirstInstance();
                 arrow.behaviors.Flash.flash(0.1, 0.1, 1);
                 arrow.behaviors.Flash.addEventListener("flashend", e => arrow.behaviors.Flash.flash(0.1, 0.1, 1));
             }

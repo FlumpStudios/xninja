@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 35000,
+	"savedWithRelease": 35800,
 	"name": "XNinja",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -242,7 +242,6 @@
 			"GrindZone",
 			"GrindBar",
 			"Sparks",
-			"chargerEnemy",
 			"PumpEndsTile",
 			"Bat",
 			"ShooterBlock"
@@ -357,7 +356,8 @@
 				"items": [
 					"Blood",
 					"Sensei",
-					"SenseiDecoy"
+					"SenseiDecoy",
+					"chargerEnemy"
 				],
 				"subfolders": [],
 				"name": "Enemy"
