@@ -1951,15 +1951,15 @@
 					"world": {
 						"x": 240,
 						"y": 80,
-						"width": 200,
-						"height": 200,
+						"width": 150,
+						"height": 150,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							0.5
+							1
 						],
 						"angle": 0,
 						"zElevation": 0
