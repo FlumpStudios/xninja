@@ -210,7 +210,7 @@ export const levelConfig =
         silverTarget: 3,
         goldTarget: 1,
         currentBest: 0,
-        nextLevel: "LevelSelect",
+        nextLevel: "Level_1_12",
         exitUp: true,
         exitDown: false,
         exitLeft: false,
