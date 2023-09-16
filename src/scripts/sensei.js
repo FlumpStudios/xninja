@@ -31,6 +31,17 @@ export default class SenseiInstance extends enemy {
 		}
 	}
 
+	handleChargeEnemyCollision = (runtime, destructor) => {
+        for (const charger of runtime.objects.chargerEnemy.instances()) {
+            if (charger.testOverlap(this)) {
+                if (charger.instVars.IsScared) {
+                    this.runKill(runtime);
+                    destructor();
+                }                
+            }
+        }
+    }
+
 	handleSenseiBehavior = (runtime) => {
 		this.#senseiPatrol(runtime);
 		if (isOutOfScreen(this, runtime) && this.instVars.IsScared) {
@@ -81,6 +92,7 @@ export default class SenseiInstance extends enemy {
 		this.handleDeathStarCollision(runtime, this.runCleanUp);
 		this.handleSlashCollision(runtime, this.runCleanUp);
 		this.handleSpikeCollisions(runtime, this.runCleanUp);
+		this.handleChargeEnemyCollision(runtime, this.runCleanUp);
 	}
 
 	set = false;
