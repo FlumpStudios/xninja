@@ -40,7 +40,7 @@ export const gamePlay = (runtime) => {
         runtime.objects.DeathStarPickUp.createInstance(config.layers.game, 104, 336);
     }
 
-    if (getEnemyCount() <= 0 || player.getHasPlayerEnteredLevelEndBox()) {
+    if ((getEnemyCount() <= 0 && config.levelConfig[runtime.layout.name].requiresAllEnenmiesKilled) || player.getHasPlayerEnteredLevelEndBox()) {
         if (!runtime.levelInstance.isLevelInExitState()) {
             if (getCurrentConfig(runtime).exitUp) {
                 const arrow = runtime.objects.LevelEndArrowTop.getFirstInstance();
