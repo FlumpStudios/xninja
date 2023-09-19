@@ -228,24 +228,14 @@
 	"objectTypes": {
 		"items": [
 			"Tilemap",
-			"RampStartZone",
-			"RampEndZone",
-			"CameraFocus",
-			"Exlaim",
-			"GrindZone",
-			"GrindBar",
-			"Sparks",
-			"PumpEndsTile",
-			"Bat",
-			"ShooterBlock",
-			"Ghost"
+			"TimeBonus_spritefont"
 		],
 		"subfolders": [
 			{
 				"items": [
-					"ColourFill_tile",
 					"Water",
-					"CastleIndoor_tile"
+					"GrindBar",
+					"PumpEndsTile"
 				],
 				"subfolders": [
 					{
@@ -261,7 +251,10 @@
 							"PillPlatformEdge_tile",
 							"ClearGround_tile",
 							"Brick",
-							"ClearGround_tile2"
+							"ClearGround_tile2",
+							"ShooterBlock",
+							"CastleIndoor_tile",
+							"ColourFill_tile"
 						],
 						"subfolders": [
 							{
@@ -341,7 +334,8 @@
 					"DeathStar",
 					"PlayerDecoy",
 					"StealthBar",
-					"senseZone"
+					"senseZone",
+					"CameraFocus"
 				],
 				"subfolders": [],
 				"name": "Player"
@@ -351,7 +345,10 @@
 					"Blood",
 					"Sensei",
 					"SenseiDecoy",
-					"chargerEnemy"
+					"chargerEnemy",
+					"Bat",
+					"Ghost",
+					"Exlaim"
 				],
 				"subfolders": [],
 				"name": "Enemy"
@@ -404,7 +401,10 @@
 			},
 			{
 				"items": [
-					"LevelEndBox"
+					"LevelEndBox",
+					"GrindZone",
+					"RampEndZone",
+					"RampStartZone"
 				],
 				"subfolders": [],
 				"name": "Zones"
@@ -414,7 +414,8 @@
 					"Lightning1",
 					"Lightning2",
 					"LightningSheet",
-					"Rain"
+					"Rain",
+					"Sparks"
 				],
 				"subfolders": [
 					{
@@ -646,6 +647,14 @@
 					"name": "bat.js",
 					"type": "application/javascript",
 					"sid": 439431029531485,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ghostEnemy.js",
+					"type": "application/javascript",
+					"sid": 844062236658181,
 					"script-info": {
 						"purpose": "none"
 					}

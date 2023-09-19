@@ -15,7 +15,6 @@ export const runLevelStart = (runtime) => {
 }
 
 const goToNextLevel = (runtime) => {
-
     runtime.levelInstance.addToLevelTime(getEnemyCount() * config.ESCAPE_PENALTY);
     const currentBest = config.levelConfig[runtime.layout.name].currentBest;
     const currentTime = runtime.levelInstance.getLevelTime();
@@ -27,15 +26,31 @@ const goToNextLevel = (runtime) => {
 
 const getCurrentConfig = (runtime) => config.levelConfig[runtime.layout.name];
 
+
+
 export const gamePlay = (runtime) => {
+    const player = runtime.objects.Player.getFirstInstance();
 
-
-    if( runtime.levelInstance.getLevelTime() > 25)
-    {
-        runtime.objects.TimeRemaining_spritefont.getFirstInstance().colorRgb =  [1, 0, 0];
+    const levelTime = runtime.levelInstance.getLevelTime();
+    if (levelTime < 0) {
+        runtime.objects.TimeRemaining_spritefont.getFirstInstance().colorRgb = [0, 0, 1];
+    }
+    else if (levelTime > 25) {
+        runtime.objects.TimeRemaining_spritefont.getFirstInstance().colorRgb = [1, 0, 0];
+    }
+    else{
+        runtime.objects.TimeRemaining_spritefont.getFirstInstance().colorRgb = [1, 1, 1];
     }
 
-    const player = runtime.objects.Player.getFirstInstance();
+    if (levelTime > 30) {
+        if (!runtime.objects.Ghost.getFirstInstance()) {
+            runtime.objects.Ghost.createInstance(config.layers.game, player.x + 700, player.y - 500);
+        }
+    }
+
+    
+
+
     if (!player) { return; }
 
     // Level 2 hack to make sure there's always enough stars to complete level

@@ -14,6 +14,7 @@ export default class ChargerEnemyInstance extends enemy {
 		super();
 		const runTime = getGlobalRuntime();
 		this.visionCone = runTime.objects.VisionCone.createInstance(config.layers.game, this.x, this.y);
+		this.bonusWorth = -5;
 	}
 
 	runCleanUp = () => {

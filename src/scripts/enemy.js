@@ -6,6 +6,7 @@ export const getEnemyCount = () => enemyCount;
 export const setEnemyCount = (count) => enemyCount = count;
 
 export default class enemy extends globalThis.ISpriteInstance {
+    bonusWorth = 0;
     spawnLocation = { x: 0, y: 0 }
     spawnDimensions = { width: 0, height: 0 }
 
@@ -23,12 +24,23 @@ export default class enemy extends globalThis.ISpriteInstance {
     addToEnemyCount = () => ++enemyCount;
     removeFromEnemyCount = () => --enemyCount;
 
+    spawnBonusText = (runtime) => {
+        if (this.bonusWorth !== 0) {
+            runtime.levelInstance.addToLevelTime(this.bonusWorth);
+            const t = runtime.objects.TimeBonus_spritefont.createInstance(config.layers.game, this.x, this.y - 10);
+            t.text = this.bonusWorth.toString();
+            t.behaviors.Bullet.angleOfMotion = (Math.PI / 2) * -1;
+        }
+    }
+
     runKill = (runtime) => {
         const killCount = runtime.objects.KillCount_spritefont.getFirstInstance();
         killCount.text = runtime.levelInstance.addToKills().toString();
         runtime.objects.Blood.createInstance(config.layers.game, this.x, this.y);
+        this.spawnBonusText(runtime);
         this.removeFromEnemyCount();
     }
+
 
     handleDeathStarCollision = (runtime, destructor) => {
         for (const star of runtime.objects.DeathStar.instances()) {
@@ -78,7 +90,7 @@ export default class enemy extends globalThis.ISpriteInstance {
             }
         }
     }
-    
+
     hasLineOfSightOfPlayer = (runtime) => {
         const player = runtime.objects.Player.getFirstInstance();
         if (!player) { return };

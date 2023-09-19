@@ -26,6 +26,8 @@ export default class BatInstance extends enemy {
 			this.behaviors.Bullet.isEnabled = false;
 			this.setAnimation("Sleep");
 		}
+
+		this.bonusWorth = -1;
 	}
 
 	runCleanUp = () => {

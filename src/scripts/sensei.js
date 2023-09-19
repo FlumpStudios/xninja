@@ -3,7 +3,7 @@ import { isOutsideLayout, isMirrored, waitForMillisecond, isOutOfScreen } from "
 import { getGlobalRuntime } from "./globals.js";
 import * as config from "./config.js";
 
-export default class SenseiInstance extends enemy {
+export default class SenseiInstance extends enemy {	
 	visionCone = null;
 	visionConeDestroyed = false;
 	previousX = 0;
@@ -13,6 +13,7 @@ export default class SenseiInstance extends enemy {
 		super();
 		const runTime = getGlobalRuntime();
 		this.visionCone = runTime.objects.VisionCone.createInstance(config.layers.game, this.x, this.y);
+		this.bonusWorth = -3;
 	}
 
 	runCleanUp = () => {
@@ -29,7 +30,7 @@ export default class SenseiInstance extends enemy {
 			}
 			this.destroy();
 		}
-	}
+	}		
 
 	handleChargeEnemyCollision = (runtime, destructor) => {
         for (const charger of runtime.objects.chargerEnemy.instances()) {

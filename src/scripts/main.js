@@ -14,8 +14,9 @@ import Level from "./levelInstance.js";
 import * as config from "./config.js"
 import * as levelSelectControls from "./levelSelectControls.js";
 import { updateMenu as updateLevelSelectMenu } from "./levelSelect.js";
-import { pauseBehaviour } from "./pause.js"
+import { pauseBehaviour } from "./pause.js";
 import  BatInstance from "./bat.js";
+import GhostInstance from "./ghostEnemy.js";
 
 runOnStartup(async runtime => {
 	// Code to run on the loading screen.
@@ -27,6 +28,7 @@ runOnStartup(async runtime => {
 	runtime.objects.chargerEnemy.setInstanceClass(ChargerEnemyInstance)
 	runtime.objects.Player.setInstanceClass(PlayerInst);
 	runtime.objects.Bat.setInstanceClass(BatInstance);
+	runtime.objects.Ghost.setInstanceClass(GhostInstance);
 	runtime.addEventListener("beforeprojectstart", () => OnBeforeProjectStart(runtime));
 });
 
@@ -108,7 +110,12 @@ const createdInstance = (e, runtime) => {
 
 const gameLoop = (runtime) => {
 	runtime.levelInstance.addToLevelTime(runtime.dt * runtime.levelInstance.getTimeMultiplier());
-	runtime.objects.TimeRemaining_spritefont.getFirstInstance().text = runtime.levelInstance.getLevelTime().toString();
+	
+	
+	const levelTime = runtime.levelInstance.getLevelTime();
+	runtime.objects.TimeRemaining_spritefont.getFirstInstance().text = (levelTime > 0  ? levelTime.toString() : "0");
+
+
 	const player = runtime.objects.Player.getFirstInstance();
 
 	player.update(runtime);
@@ -123,6 +130,10 @@ const gameLoop = (runtime) => {
 
 	for (const batEnemyInst of runtime.objects.Bat.instances()) {
 		batEnemyInst.handleBatBehavior(runtime);
+	}
+
+	for (const ghost of runtime.objects.Ghost.instances()) {
+		ghost.handleGhostBehavior(runtime);
 	}
 
 	gamePlay(runtime);
