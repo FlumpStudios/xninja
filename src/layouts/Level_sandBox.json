@@ -2135,6 +2135,35 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Ghost",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1348,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 432,
+						"y": 120,
+						"width": 128,
+						"height": 144,
+						"originX": 0.52,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 482254546497815,
@@ -2233,14 +2262,6 @@
 						"Time": 0
 					},
 					"behaviors": {},
-					"effects": {
-						"Inverse": {
-							"isEnabled": true,
-							"parameters": {
-								"intensity": 0.8
-							}
-						}
-					},
 					"world": {
 						"x": 88,
 						"y": 460,
@@ -2280,14 +2301,6 @@
 					"uid": 41,
 					"instanceVariables": {},
 					"behaviors": {},
-					"effects": {
-						"Inverse": {
-							"isEnabled": true,
-							"parameters": {
-								"intensity": 1
-							}
-						}
-					},
 					"world": {
 						"x": 8,
 						"y": 460,
@@ -2327,14 +2340,6 @@
 					"uid": 0,
 					"instanceVariables": {},
 					"behaviors": {},
-					"effects": {
-						"Inverse": {
-							"isEnabled": true,
-							"parameters": {
-								"intensity": 0.8
-							}
-						}
-					},
 					"world": {
 						"x": 192,
 						"y": 460,

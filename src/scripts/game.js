@@ -28,6 +28,13 @@ const goToNextLevel = (runtime) => {
 const getCurrentConfig = (runtime) => config.levelConfig[runtime.layout.name];
 
 export const gamePlay = (runtime) => {
+
+
+    if( runtime.levelInstance.getLevelTime() > 25)
+    {
+        runtime.objects.TimeRemaining_spritefont.getFirstInstance().colorRgb =  [1, 0, 0];
+    }
+
     const player = runtime.objects.Player.getFirstInstance();
     if (!player) { return; }
 

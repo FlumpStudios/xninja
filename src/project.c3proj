@@ -197,13 +197,6 @@
 		},
 		{
 			"type": "effect",
-			"id": "inverse",
-			"name": "Inverse",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "effect",
 			"id": "pulse",
 			"name": "Pulse",
 			"author": "Danguafer/Silexars",
@@ -244,7 +237,8 @@
 			"Sparks",
 			"PumpEndsTile",
 			"Bat",
-			"ShooterBlock"
+			"ShooterBlock",
+			"Ghost"
 		],
 		"subfolders": [
 			{

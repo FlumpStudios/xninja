@@ -3583,14 +3583,6 @@
 						"Time": 0
 					},
 					"behaviors": {},
-					"effects": {
-						"Inverse": {
-							"isEnabled": true,
-							"parameters": {
-								"intensity": 0.8
-							}
-						}
-					},
 					"world": {
 						"x": 88,
 						"y": 460,
@@ -3630,14 +3622,6 @@
 					"uid": 721,
 					"instanceVariables": {},
 					"behaviors": {},
-					"effects": {
-						"Inverse": {
-							"isEnabled": true,
-							"parameters": {
-								"intensity": 1
-							}
-						}
-					},
 					"world": {
 						"x": 8,
 						"y": 460,
@@ -3677,14 +3661,6 @@
 					"uid": 722,
 					"instanceVariables": {},
 					"behaviors": {},
-					"effects": {
-						"Inverse": {
-							"isEnabled": true,
-							"parameters": {
-								"intensity": 0.8
-							}
-						}
-					},
 					"world": {
 						"x": 192,
 						"y": 460,

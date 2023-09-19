@@ -13,12 +13,7 @@
 		}
 	],
 	"behaviorTypes": [],
-	"effectTypes": [
-		{
-			"effectId": "inverse",
-			"name": "Inverse"
-		}
-	],
+	"effectTypes": [],
 	"image": {
 		"width": 128,
 		"height": 256,
@@ -27,7 +22,7 @@
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
-		"imageSpriteId": 9597506,
+		"imageSpriteId": 7710915,
 		"useCollisionPoly": true,
 		"tag": ""
 	}
