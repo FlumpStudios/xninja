@@ -1,5 +1,6 @@
 import * as config from "./config.js";
 import { getGlobalRuntime } from "./globals.js";
+import { getAngleTo } from "./utils.js";
 
 let enemyCount = 0;
 export const getEnemyCount = () => enemyCount;
@@ -102,8 +103,19 @@ export default class enemy extends globalThis.ISpriteInstance {
         return this.behaviors.LineOfSight.hasLOStoPosition(player.x, player.y);
     }
 
+    spawnEscapedPenaltyText = (runtime) => {
+        const t = runtime.objects.TimeBonus_spritefont.createInstance(config.layers.game, this.x, this.y - 10);
+        const player = runtime.objects.Player.getFirstInstance();
+        
+        t.text = "+" + (this.bonusWorth * -1).toString();
+        t.colorRgb = [1, 0, 0]
+        const angle = getAngleTo(player,t)
+        t.behaviors.Bullet.angleOfMotion = angle;
+    }
+
     handleEscaped = (runtime, destructor) => {
-        runtime.levelInstance.addToLevelTime(config.ESCAPE_PENALTY);
+        this.spawnEscapedPenaltyText(runtime);
+        runtime.levelInstance.addToLevelTime(cthis.bonusWorth * -1);
         const escapedCount = runtime.objects.EscapedCount_spritefont.getFirstInstance();
         escapedCount.text = runtime.levelInstance.addToEscaped().toString();
         this.removeFromEnemyCount();

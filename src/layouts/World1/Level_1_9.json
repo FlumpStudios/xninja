@@ -5918,10 +5918,10 @@
 						}
 					},
 					"world": {
-						"x": 1816,
-						"y": 384,
-						"width": 16,
-						"height": 40,
+						"x": 1840,
+						"y": 344,
+						"width": 48,
+						"height": 112,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

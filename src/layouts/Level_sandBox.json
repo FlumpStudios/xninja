@@ -2186,7 +2186,7 @@
 						"character-height": 16,
 						"character-set": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#\"'&()[]|`\\/@°+=*$£€<>",
 						"spacing-data": "",
-						"scale": 1,
+						"scale": 1.25,
 						"character-spacing": 0,
 						"line-height": 0,
 						"horizontal-alignment": "center",
@@ -2201,7 +2201,7 @@
 					"behaviors": {
 						"Bullet": {
 							"properties": {
-								"speed": 50,
+								"speed": 75,
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
@@ -2214,7 +2214,7 @@
 							"properties": {
 								"fade-in-time": 0,
 								"wait-time": 0,
-								"fade-out-time": 0.5,
+								"fade-out-time": 0.75,
 								"destroy": true,
 								"enabled": true,
 								"live-preview": false

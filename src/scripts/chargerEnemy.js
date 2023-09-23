@@ -35,8 +35,8 @@ export default class ChargerEnemyInstance extends enemy {
 
 	handleChargerBehavior = (runtime) => {
 		this.#chargerPatrol(runtime);
-		if (isOutsideLayout(this)) {
-			this.handleEscaped(runtime, this.runCleanUp);
+		if (isOutsideLayout(this) /*&& this.instVars.IsScared*/) {
+			// this.handleEscaped(runtime, this.runCleanUp);
 			return;
 		}
 
@@ -52,8 +52,6 @@ export default class ChargerEnemyInstance extends enemy {
 		this.behaviors.Bullet.angleOfMotion = isMirrored(this) ? Math.PI : 0;
 
 		this.#handleVisionCone();
-
-
 
 		if (this.hasLineOfSightOfPlayer(runtime) && !this.instVars.IsScared) {
 			this.instVars.IsScared = true;

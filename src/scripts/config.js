@@ -2,7 +2,6 @@ export const STEALTH_BAR_DEPLETE_SPEED = 50;
 export const STEALTH_BAR_REGEN_SPEED = 15;
 export const STEATH_MODE_TIME_STEP = 0.5
 export const MAX_STEALTH_BAR_WIDTH = 32;
-export const ESCAPE_PENALTY = 5;
 export const INFINATE_STAR_AMOUNT = 1000;
 export const LEVEL_PREFIX = "Level_";
 export const LEVEL_SELECT_NAME = "LevelSelect";
