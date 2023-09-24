@@ -15,7 +15,7 @@ import * as config from "./config.js"
 import * as levelSelectControls from "./levelSelectControls.js";
 import { updateMenu as updateLevelSelectMenu } from "./levelSelect.js";
 import { pauseBehaviour } from "./pause.js";
-import  BatInstance from "./bat.js";
+import BatInstance from "./bat.js";
 import GhostInstance from "./ghostEnemy.js";
 
 runOnStartup(async runtime => {
@@ -70,7 +70,7 @@ const tick = (runtime) => {
 	}
 	const gameStates = config.gameStates;
 	const currentGameState = config.getGameState();
-
+	screenEffects(runtime);
 	switch (currentGameState) {
 		case gameStates.game:
 			pauseBehaviour(runtime);
@@ -91,9 +91,6 @@ const tick = (runtime) => {
 		default: runtime.timeScale = 1;
 	}
 }
-
-
-
 const createdInstance = (e, runtime) => {
 	const player = runtime.objects.Player.getFirstInstance();
 	switch (e.instance.objectType.name) {
@@ -108,12 +105,52 @@ const createdInstance = (e, runtime) => {
 	}
 }
 
+const screenEffects = (runtime) => { 
+	if(config.CRT_ON)
+	{
+		runtime.layout.effects[config.effect_postions.bulge].isActive = true;
+		runtime.layout.effects[config.effect_postions.vignette].isActive = true;
+	}
+	else
+	{
+		runtime.layout.effects[config.effect_postions.bulge].isActive = false;
+		runtime.layout.effects[config.effect_postions.vignette].isActive = false;
+	}
+	
+	if(config.GLOW_ON)
+	{
+		runtime.layout.effects[config.effect_postions.glow].isActive = true;		
+	}
+	else
+	{
+		runtime.layout.effects[config.effect_postions.glow].isActive = false;		
+	}
+
+	if(config.SCANLINES_ON)
+	{
+		runtime.layout.effects[config.effect_postions.scanLines].isActive = true;		
+	}
+	else
+	{
+		runtime.layout.effects[config.effect_postions.scanLines].isActive = false;
+	}
+
+	if(config.GREY_SCALE_ON)
+	{
+		runtime.layout.effects[config.effect_postions.greyScale].isActive = true;		
+	}
+	else
+	{
+		runtime.layout.effects[config.effect_postions.greyScale].isActive = false;
+	}
+}
+
 const gameLoop = (runtime) => {
 	runtime.levelInstance.addToLevelTime(runtime.dt * runtime.levelInstance.getTimeMultiplier());
-	
-	
+
+
 	const levelTime = runtime.levelInstance.getLevelTime();
-	runtime.objects.TimeRemaining_spritefont.getFirstInstance().text = (levelTime > 0  ? levelTime.toString() : "0");
+	runtime.objects.TimeRemaining_spritefont.getFirstInstance().text = (levelTime > 0 ? levelTime.toString() : "0");
 
 
 	const player = runtime.objects.Player.getFirstInstance();

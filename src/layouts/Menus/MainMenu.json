@@ -282,22 +282,54 @@
 	"nonworld-instances": [],
 	"effectTypes": [
 		{
+			"effectId": "grayscale",
+			"name": "Grayscale",
+			"instance": {
+				"isEnabled": true,
+				"parameters": {
+					"intensity": 1
+				}
+			}
+		},
+		{
 			"effectId": "scanlines",
 			"name": "ScanLines",
 			"instance": {
-				"isEnabled": false,
+				"isEnabled": true,
 				"parameters": {
 					"line-height": 2
 				}
 			}
 		},
 		{
-			"effectId": "grayscale",
-			"name": "Grayscale",
+			"effectId": "vignette",
+			"name": "Vignette",
 			"instance": {
-				"isEnabled": false,
+				"isEnabled": true,
 				"parameters": {
-					"intensity": 0.5
+					"start-radius": 0.1,
+					"end-radius": 1
+				}
+			}
+		},
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal",
+			"instance": {
+				"isEnabled": true,
+				"parameters": {
+					"intensity": 0.6
+				}
+			}
+		},
+		{
+			"effectId": "bulge",
+			"name": "Bulge",
+			"instance": {
+				"isEnabled": true,
+				"parameters": {
+					"radius": 0.65,
+					"scale": 0.04
 				}
 			}
 		}

@@ -6000,9 +6000,9 @@
 			"effectId": "grayscale",
 			"name": "Grayscale",
 			"instance": {
-				"isEnabled": true,
+				"isEnabled": false,
 				"parameters": {
-					"intensity": 0
+					"intensity": 1
 				}
 			}
 		},
@@ -6033,7 +6033,7 @@
 			"instance": {
 				"isEnabled": false,
 				"parameters": {
-					"intensity": 0.75
+					"intensity": 0.6
 				}
 			}
 		},
@@ -6043,8 +6043,8 @@
 			"instance": {
 				"isEnabled": false,
 				"parameters": {
-					"radius": 0.5,
-					"scale": 0
+					"radius": 0.65,
+					"scale": 0.04
 				}
 			}
 		},

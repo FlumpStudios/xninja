@@ -2523,7 +2523,7 @@
 			"instance": {
 				"isEnabled": false,
 				"parameters": {
-					"intensity": 0.5
+					"intensity": 1
 				}
 			}
 		},
@@ -2543,8 +2543,8 @@
 			"instance": {
 				"isEnabled": false,
 				"parameters": {
-					"start-radius": 0.4,
-					"end-radius": 0.75
+					"start-radius": 0.1,
+					"end-radius": 1
 				}
 			}
 		},
@@ -2554,7 +2554,7 @@
 			"instance": {
 				"isEnabled": false,
 				"parameters": {
-					"intensity": 0.75
+					"intensity": 0.6
 				}
 			}
 		},
@@ -2564,8 +2564,8 @@
 			"instance": {
 				"isEnabled": false,
 				"parameters": {
-					"radius": 0.5,
-					"scale": 0.05
+					"radius": 0.65,
+					"scale": 0.04
 				}
 			}
 		},

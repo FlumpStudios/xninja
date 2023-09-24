@@ -115,7 +115,7 @@ export default class enemy extends globalThis.ISpriteInstance {
 
     handleEscaped = (runtime, destructor) => {
         this.spawnEscapedPenaltyText(runtime);
-        runtime.levelInstance.addToLevelTime(cthis.bonusWorth * -1);
+        runtime.levelInstance.addToLevelTime(this.bonusWorth * -1);
         const escapedCount = runtime.objects.EscapedCount_spritefont.getFirstInstance();
         escapedCount.text = runtime.levelInstance.addToEscaped().toString();
         this.removeFromEnemyCount();

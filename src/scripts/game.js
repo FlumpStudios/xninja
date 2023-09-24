@@ -26,8 +26,6 @@ const goToNextLevel = (runtime) => {
 
 const getCurrentConfig = (runtime) => config.levelConfig[runtime.layout.name];
 
-
-
 export const gamePlay = (runtime) => {
     const player = runtime.objects.Player.getFirstInstance();
 

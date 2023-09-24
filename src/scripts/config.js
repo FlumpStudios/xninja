@@ -1,3 +1,8 @@
+export let CRT_ON = false;
+export let SCANLINES_ON = false;
+export let GREY_SCALE_ON = true;
+export let GLOW_ON = true;
+
 export const STEALTH_BAR_DEPLETE_SPEED = 50;
 export const STEALTH_BAR_REGEN_SPEED = 15;
 export const STEATH_MODE_TIME_STEP = 0.5
@@ -18,6 +23,15 @@ export const SKATE_SPEED = 600;
 export const WATER_MOVE_SPEED = 150;
 export const DEATH_STAR_SPEED = 500;
 export const SLASH_POSITION_OFFSET = 24;
+
+export const effect_postions = {
+    greyScale: 0,
+    scanLines: 1,
+    vignette:2,
+    glow: 3,
+    bulge:4,
+    brightness: 5
+}
 
 export const layers = {
     farBackground: 0,
