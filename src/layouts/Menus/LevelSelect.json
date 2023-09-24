@@ -3492,7 +3492,7 @@
 			"effectId": "grayscale",
 			"name": "Grayscale",
 			"instance": {
-				"isEnabled": true,
+				"isEnabled": false,
 				"parameters": {
 					"intensity": 1
 				}
@@ -3502,7 +3502,7 @@
 			"effectId": "scanlines",
 			"name": "ScanLines",
 			"instance": {
-				"isEnabled": true,
+				"isEnabled": false,
 				"parameters": {
 					"line-height": 2
 				}
@@ -3512,7 +3512,7 @@
 			"effectId": "vignette",
 			"name": "Vignette",
 			"instance": {
-				"isEnabled": true,
+				"isEnabled": false,
 				"parameters": {
 					"start-radius": 0.1,
 					"end-radius": 1
@@ -3523,7 +3523,7 @@
 			"effectId": "glowhorizontal",
 			"name": "GlowHorizontal",
 			"instance": {
-				"isEnabled": true,
+				"isEnabled": false,
 				"parameters": {
 					"intensity": 0.6
 				}
@@ -3533,10 +3533,20 @@
 			"effectId": "bulge",
 			"name": "Bulge",
 			"instance": {
-				"isEnabled": true,
+				"isEnabled": false,
 				"parameters": {
 					"radius": 0.65,
 					"scale": 0.04
+				}
+			}
+		},
+		{
+			"effectId": "brightness",
+			"name": "Brightness",
+			"instance": {
+				"isEnabled": false,
+				"parameters": {
+					"brightness": 1
 				}
 			}
 		}

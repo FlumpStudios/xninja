@@ -8076,7 +8076,7 @@
 			"effectId": "grayscale",
 			"name": "Grayscale",
 			"instance": {
-				"isEnabled": true,
+				"isEnabled": false,
 				"parameters": {
 					"intensity": 1
 				}
@@ -8128,7 +8128,7 @@
 			"effectId": "brightness",
 			"name": "Brightness",
 			"instance": {
-				"isEnabled": true,
+				"isEnabled": false,
 				"parameters": {
 					"brightness": 0.8
 				}

@@ -8917,7 +8917,7 @@
 			"effectId": "brightness",
 			"name": "Brightness",
 			"instance": {
-				"isEnabled": true,
+				"isEnabled": false,
 				"parameters": {
 					"brightness": 0.8
 				}

@@ -1,7 +1,9 @@
-export let CRT_ON = false;
-export let SCANLINES_ON = false;
-export let GREY_SCALE_ON = true;
+export let CRT_ON = true;
+export let SCANLINES_ON = true;
+export let GREY_SCALE_ON = false;
 export let GLOW_ON = true;
+export let VIGNETTE_ON = true;
+export let BRIGHTNESS_ADJUST_ON = false;
 
 export const STEALTH_BAR_DEPLETE_SPEED = 50;
 export const STEALTH_BAR_REGEN_SPEED = 15;

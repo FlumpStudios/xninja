@@ -2146,6 +2146,16 @@
 					"scale": 0.04
 				}
 			}
+		},
+		{
+			"effectId": "brightness",
+			"name": "Brightness",
+			"instance": {
+				"isEnabled": false,
+				"parameters": {
+					"brightness": 1
+				}
+			}
 		}
 	],
 	"width": 640,

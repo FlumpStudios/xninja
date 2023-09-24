@@ -15,7 +15,6 @@ export const runLevelStart = (runtime) => {
 }
 
 const goToNextLevel = (runtime) => {
-    runtime.levelInstance.addToLevelTime(getEnemyCount() * config.ESCAPE_PENALTY);
     const currentBest = config.levelConfig[runtime.layout.name].currentBest;
     const currentTime = runtime.levelInstance.getLevelTime();
     if (currentBest === 0 || (currentTime < currentBest)) {
