@@ -12,7 +12,7 @@ import ChargerEnemyInstance from "./chargerEnemy.js";
 import PlayerInst from "./PlayerInst.js";
 import Level from "./levelInstance.js";
 import * as config from "./config.js"
-import * as levelSelectControls from "./levelSelectControls.js";
+import * as menuControls from "./menuControls.js";
 import { updateMenu as updateLevelSelectMenu } from "./levelSelect.js";
 import { pauseBehaviour } from "./pause.js";
 import BatInstance from "./bat.js";
@@ -46,7 +46,6 @@ let currentLayout = "";
 let previousLayout = "";
 
 const tick = (runtime) => {
-	screenEffects(runtime);
 	previousLayout = currentLayout;
 	currentLayout = runtime.layout.name;
 	if (previousLayout !== currentLayout) {
@@ -85,8 +84,11 @@ const tick = (runtime) => {
 			pauseBehaviour(runtime);
 			gamePad(runtime);
 			break;
+		case gameStates.mainMenu:
+			menuControls.gamePad(runtime);
+			break;
 		case gameStates.levelSelect:
-			levelSelectControls.gamePad(runtime);
+			menuControls.gamePad(runtime);
 			updateLevelSelectMenu(runtime);
 			break;
 		default: runtime.timeScale = 1;
@@ -104,53 +106,6 @@ const createdInstance = (e, runtime) => {
 		default:
 			break;
 	}
-}
-
-const screenEffects = (runtime) => {
-
-	if (config.BRIGHTNESS_ADJUST_ON) {
-		runtime.layout.effects[config.effect_postions.brightness].isActive = true;
-	}
-	else {
-		runtime.layout.effects[config.effect_postions.brightness].isActive = false;
-	}
-	if (config.CRT_ON) {
-		runtime.layout.effects[config.effect_postions.bulge].isActive = true;
-	}
-	else {
-		runtime.layout.effects[config.effect_postions.bulge].isActive = false;
-	}
-
-	if (config.VIGNETTE_ON) {
-		runtime.layout.effects[config.effect_postions.vignette].isActive = true;
-	}
-	else {
-		runtime.layout.effects[config.effect_postions.vignette].isActive = false;
-	}
-
-
-	if (config.GLOW_ON) {
-		runtime.layout.effects[config.effect_postions.glow].isActive = true;
-	}
-	else {
-		runtime.layout.effects[config.effect_postions.glow].isActive = false;
-	}
-
-	if (config.SCANLINES_ON) {
-		runtime.layout.effects[config.effect_postions.scanLines].isActive = true;
-	}
-	else {
-		runtime.layout.effects[config.effect_postions.scanLines].isActive = false;
-	}
-
-	if (config.GREY_SCALE_ON) {
-		runtime.layout.effects[config.effect_postions.greyScale].isActive = true;
-	}
-	else {
-		runtime.layout.effects[config.effect_postions.greyScale].isActive = false;
-	}
-
-
 }
 
 const gameLoop = (runtime) => {

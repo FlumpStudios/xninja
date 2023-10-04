@@ -228,7 +228,12 @@
 	"objectTypes": {
 		"items": [
 			"Tilemap",
-			"TimeBonus_spritefont"
+			"TimeBonus_spritefont",
+			"OptionsText",
+			"DisplayModeOption",
+			"MenuArrow",
+			"ScreenOptionSelection",
+			"DisplayManager"
 		],
 		"subfolders": [
 			{
@@ -620,7 +625,7 @@
 					}
 				},
 				{
-					"name": "levelSelectControls.js",
+					"name": "menuControls.js",
 					"type": "application/javascript",
 					"sid": 993677205612113,
 					"script-info": {

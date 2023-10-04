@@ -1,4 +1,5 @@
 import * as levelSelect from "./levelSelect.js";
+import * as config from "./config.js"
 
 let wasLeftDown = false;
 let wasRightDown = false;
@@ -16,28 +17,36 @@ const checKeyUp = (runtime, key) =>
 export const keyboard = (runtime) => {
 	if (checKeyDown(runtime, "ArrowLeft") || checKeyDown(runtime, "KeyA")) {
 		if (!wasLeftDown) {
-			levelSelect.selectLeft(runtime);
+			if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+				levelSelect.selectLeft(runtime);
+			}
 		}
 		wasLeftDown = true;
 	}
 
 	if (checKeyDown(runtime, "ArrowRight") || checKeyDown(runtime, "KeyD")) {
 		if (!wasRightDown) {
-			levelSelect.selectRight(runtime);
+			if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+				levelSelect.selectRight(runtime);
+			}
 		}
 		wasRightDown = true;
 	}
 
 	if (checKeyDown(runtime, "ArrowUp") || checKeyDown(runtime, "KeyW")) {
 		if (!wasUpDown) {
-			levelSelect.selectUp(runtime);
+			if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+				levelSelect.selectUp(runtime);
+			}
 		}
 		wasUpDown = true;
 	}
 
 	if (checKeyDown(runtime, "ArrowDown") || checKeyDown(runtime, "KeyS")) {
 		if (!wasDownDown) {
-			levelSelect.selectDown(runtime);
+			if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+				levelSelect.selectDown(runtime);
+			}
 		}
 		wasDownDown = true;
 	}
@@ -45,14 +54,18 @@ export const keyboard = (runtime) => {
 
 	if (checKeyDown(runtime, "Enter")) {
 		if (!wasEnterDown) {
-			levelSelect.confirm(runtime);
+			if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+				levelSelect.confirm(runtime);
+			}
 		}
 		wasEnterDown = true;
 	}
 
 	if (checKeyDown(runtime, "Escape")) {
-		if (!wasEnterDown) {
-			levelSelect.back(runtime);
+		if (!wasEscapeDown) {
+			if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+				levelSelect.back(runtime);
+			}
 		}
 		wasEscapeDown = true;
 	}
@@ -77,7 +90,7 @@ export const keyboard = (runtime) => {
 	if (checKeyUp(runtime, "Enter")) {
 		wasEnterDown = false;
 	}
-	if (checKeyUp(runtime, "Escape") ) {
+	if (checKeyUp(runtime, "Escape")) {
 		wasEscapeDown = false;
 	}
 
@@ -136,7 +149,14 @@ export const gamePad = (runtime) => {
 
 		if (gp.axes[axis_left_hori] > dead_zone || gp.buttons[action_right].value > 0 || gp.buttons[action_right].pressed) {
 			if (!was_action_right_down) {
-				levelSelect.selectRight(runtime);
+				if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+					levelSelect.selectRight(runtime);
+				}
+				else if (runtime.layout.name === config.MAIN_MENU_NAME) {
+					if (runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex === 1) {
+						runtime.objects.DisplayManager.getFirstInstance().instVars.EffectIndex++;
+					}
+				}
 				was_action_right_down = true;
 			}
 		}
@@ -146,7 +166,14 @@ export const gamePad = (runtime) => {
 
 		if (gp.axes[axis_left_hori] < -dead_zone || gp.buttons[action_left].value > 0 || gp.buttons[action_left].pressed) {
 			if (!was_action_left_down) {
-				levelSelect.selectLeft(runtime);
+				if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+					levelSelect.selectLeft(runtime);
+				}
+				else if (runtime.layout.name === config.MAIN_MENU_NAME) {
+					if (runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex === 1) {
+						runtime.objects.DisplayManager.getFirstInstance().instVars.EffectIndex--;
+					}
+				}
 				was_action_left_down = true;
 			}
 		}
@@ -156,7 +183,12 @@ export const gamePad = (runtime) => {
 
 		if (gp.axes[axis_left_vert] > dead_zone || gp.buttons[action_down].value > 0 || gp.buttons[action_down].pressed) {
 			if (!was_action_down_down) {
-				levelSelect.selectDown(runtime);
+				if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+					levelSelect.selectDown(runtime);
+				}
+				else if (runtime.layout.name === config.MAIN_MENU_NAME) {
+					runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex++;
+				}
 				was_action_down_down = true;
 			}
 		}
@@ -164,7 +196,12 @@ export const gamePad = (runtime) => {
 
 		if (gp.axes[axis_left_vert] < -dead_zone || gp.buttons[action_up].value > 0 || gp.buttons[action_up].pressed) {
 			if (!was_action_up_down) {
-				levelSelect.selectUp(runtime);
+				if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+					levelSelect.selectUp(runtime);
+				}
+				else if (runtime.layout.name === config.MAIN_MENU_NAME) {
+					runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex--;
+				}
 				was_action_up_down = true;
 			}
 		}
@@ -172,7 +209,9 @@ export const gamePad = (runtime) => {
 
 		if (gp.buttons[action_confirm].value > 0 || gp.buttons[action_confirm].pressed) {
 			if (!was_action_confirm_down) {
-				levelSelect.confirm(runtime);
+				if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+					levelSelect.confirm(runtime);
+				}
 				was_action_confirm_down = true;
 			}
 		}
@@ -180,7 +219,9 @@ export const gamePad = (runtime) => {
 
 		if (gp.buttons[action_back].value > 0 || gp.buttons[action_back].pressed) {
 			if (!was_action_back_down) {
-				levelSelect.back(runtime);
+				if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+					levelSelect.back(runtime);
+				}
 				was_action_back_down = true;
 			}
 		}
@@ -188,11 +229,12 @@ export const gamePad = (runtime) => {
 
 		if (gp.buttons[action_confirm_alt].value > 0 || gp.buttons[action_confirm_alt].pressed) {
 			if (!was_action_confirm_down_alt) {
-				levelSelect.confirm(runtime);
+				if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+					levelSelect.confirm(runtime);
+				}
 				was_action_confirm_down_alt = true;
 			}
 		}
 		else { was_action_confirm_down_alt = false; }
-
 	}
 }
