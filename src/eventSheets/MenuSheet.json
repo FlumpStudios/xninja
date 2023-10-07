@@ -12,7 +12,7 @@
 				{
 					"id": "on-button-pressed",
 					"objectClass": "GameplayGamepad",
-					"sid": 127277706449249,
+					"sid": 565826886830316,
 					"parameters": {
 						"gamepad": "0",
 						"button": "button-a"
@@ -21,9 +21,81 @@
 				{
 					"id": "on-button-pressed",
 					"objectClass": "GameplayGamepad",
-					"sid": 892988770830569,
+					"sid": 517759044214554,
 					"parameters": {
 						"gamepad": "0",
+						"button": "start-menu"
+					}
+				},
+				{
+					"id": "on-button-pressed",
+					"objectClass": "GameplayGamepad",
+					"sid": 434938785016436,
+					"parameters": {
+						"gamepad": "1",
+						"button": "button-a"
+					}
+				},
+				{
+					"id": "on-button-pressed",
+					"objectClass": "GameplayGamepad",
+					"sid": 767041661060742,
+					"parameters": {
+						"gamepad": "1",
+						"button": "start-menu"
+					}
+				},
+				{
+					"id": "on-button-pressed",
+					"objectClass": "GameplayGamepad",
+					"sid": 335348968006216,
+					"parameters": {
+						"gamepad": "2",
+						"button": "button-a"
+					}
+				},
+				{
+					"id": "on-button-pressed",
+					"objectClass": "GameplayGamepad",
+					"sid": 933127793228371,
+					"parameters": {
+						"gamepad": "2",
+						"button": "start-menu"
+					}
+				},
+				{
+					"id": "on-button-pressed",
+					"objectClass": "GameplayGamepad",
+					"sid": 473604745080363,
+					"parameters": {
+						"gamepad": "3",
+						"button": "button-a"
+					}
+				},
+				{
+					"id": "on-button-pressed",
+					"objectClass": "GameplayGamepad",
+					"sid": 369912517596862,
+					"parameters": {
+						"gamepad": "3",
+						"button": "start-menu"
+					}
+				},
+				{
+					"id": "on-button-pressed",
+					"objectClass": "GameplayGamepad",
+					"sid": 994925635179911,
+					"parameters": {
+						"gamepad": "4",
+						"button": "button-a"
+					}
+				},
+				{
+					"id": "on-button-pressed",
+					"objectClass": "GameplayGamepad",
+					"sid": 373207182544900,
+					"parameters": {
+						"gamepad": "4",
 						"button": "start-menu"
 					}
 				}
@@ -237,6 +309,42 @@
 					"sid": 286523763529480,
 					"parameters": {
 						"gamepad": "0",
+						"button": "button-b"
+					}
+				},
+				{
+					"id": "on-button-pressed",
+					"objectClass": "GameplayGamepad",
+					"sid": 984991213809692,
+					"parameters": {
+						"gamepad": "1",
+						"button": "button-b"
+					}
+				},
+				{
+					"id": "on-button-pressed",
+					"objectClass": "GameplayGamepad",
+					"sid": 753510081234039,
+					"parameters": {
+						"gamepad": "2",
+						"button": "button-b"
+					}
+				},
+				{
+					"id": "on-button-pressed",
+					"objectClass": "GameplayGamepad",
+					"sid": 178470827287535,
+					"parameters": {
+						"gamepad": "3",
+						"button": "button-b"
+					}
+				},
+				{
+					"id": "on-button-pressed",
+					"objectClass": "GameplayGamepad",
+					"sid": 310437918720109,
+					"parameters": {
+						"gamepad": "4",
 						"button": "button-b"
 					}
 				}

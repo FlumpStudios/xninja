@@ -76,13 +76,14 @@ const tick = (runtime) => {
 			pauseBehaviour(runtime);
 			gamePad(runtime);
 			gameLoop(runtime);
-			//keyboard(runtime);
-			//mouse(runtime);
-
+			keyboard(runtime);
+			mouse(runtime);
 			break;
 		case gameStates.paused:
 			pauseBehaviour(runtime);
 			gamePad(runtime);
+			keyboard(runtime);
+			mouse(runtime);
 			break;
 		case gameStates.mainMenu:
 			menuControls.gamePad(runtime);

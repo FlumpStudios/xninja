@@ -1,6 +1,8 @@
 import * as levelSelect from "./levelSelect.js";
 import * as config from "./config.js"
 
+let activeIndex = 0;
+
 let wasLeftDown = false;
 let wasRightDown = false;
 let wasUpDown = false;
@@ -144,97 +146,114 @@ export const gamePad = (runtime) => {
 		// TODO HANDLE OTHER CONTROLS
 	} else {
 
-		const gp = navigator.getGamepads()[0];
-		if (!gp) { return; }
+		for (let i = 0; i < navigator.getGamepads().length; i++) {
+			if (!navigator.getGamepads() || !navigator.getGamepads()[i]) {
+				continue;
+			}
 
-		if (gp.axes[axis_left_hori] > dead_zone || gp.buttons[action_right].value > 0 || gp.buttons[action_right].pressed) {
-			if (!was_action_right_down) {
-				if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
-					levelSelect.selectRight(runtime);
+			for (const button of navigator.getGamepads()[i].buttons) {
+				if (button.value > 0) {
+					activeIndex = i;
 				}
-				else if (runtime.layout.name === config.MAIN_MENU_NAME) {
-					if (runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex === 1) {
-						runtime.objects.DisplayManager.getFirstInstance().instVars.EffectIndex++;
+			}
+		}
+
+		try {
+			const gp = navigator.getGamepads()[activeIndex];
+			if (!gp) { return; }
+
+			if (gp.axes[axis_left_hori] > dead_zone || gp.buttons[action_right].value > 0 || gp.buttons[action_right].pressed) {
+				if (!was_action_right_down) {
+					if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+						levelSelect.selectRight(runtime);
 					}
-				}
-				was_action_right_down = true;
-			}
-		}
-		else {
-			was_action_right_down = false;
-		}
-
-		if (gp.axes[axis_left_hori] < -dead_zone || gp.buttons[action_left].value > 0 || gp.buttons[action_left].pressed) {
-			if (!was_action_left_down) {
-				if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
-					levelSelect.selectLeft(runtime);
-				}
-				else if (runtime.layout.name === config.MAIN_MENU_NAME) {
-					if (runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex === 1) {
-						runtime.objects.DisplayManager.getFirstInstance().instVars.EffectIndex--;
+					else if (runtime.layout.name === config.MAIN_MENU_NAME) {
+						if (runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex === 1) {
+							runtime.objects.DisplayManager.getFirstInstance().instVars.EffectIndex++;
+						}
 					}
+					was_action_right_down = true;
 				}
-				was_action_left_down = true;
 			}
-		}
-		else {
-			was_action_left_down = false;
-		}
+			else {
+				was_action_right_down = false;
+			}
 
-		if (gp.axes[axis_left_vert] > dead_zone || gp.buttons[action_down].value > 0 || gp.buttons[action_down].pressed) {
-			if (!was_action_down_down) {
-				if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
-					levelSelect.selectDown(runtime);
+			if (gp.axes[axis_left_hori] < -dead_zone || gp.buttons[action_left].value > 0 || gp.buttons[action_left].pressed) {
+				if (!was_action_left_down) {
+					if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+						levelSelect.selectLeft(runtime);
+					}
+					else if (runtime.layout.name === config.MAIN_MENU_NAME) {
+						if (runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex === 1) {
+							runtime.objects.DisplayManager.getFirstInstance().instVars.EffectIndex--;
+						}
+					}
+					was_action_left_down = true;
 				}
-				else if (runtime.layout.name === config.MAIN_MENU_NAME) {
-					runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex++;
-				}
-				was_action_down_down = true;
 			}
-		}
-		else { was_action_down_down = false }
+			else {
+				was_action_left_down = false;
+			}
 
-		if (gp.axes[axis_left_vert] < -dead_zone || gp.buttons[action_up].value > 0 || gp.buttons[action_up].pressed) {
-			if (!was_action_up_down) {
-				if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
-					levelSelect.selectUp(runtime);
+			if (gp.axes[axis_left_vert] > dead_zone || gp.buttons[action_down].value > 0 || gp.buttons[action_down].pressed) {
+				if (!was_action_down_down) {
+					if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+						levelSelect.selectDown(runtime);
+					}
+					else if (runtime.layout.name === config.MAIN_MENU_NAME) {
+						runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex++;
+					}
+					was_action_down_down = true;
 				}
-				else if (runtime.layout.name === config.MAIN_MENU_NAME) {
-					runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex--;
-				}
-				was_action_up_down = true;
 			}
-		}
-		else { was_action_up_down = false }
+			else { was_action_down_down = false }
 
-		if (gp.buttons[action_confirm].value > 0 || gp.buttons[action_confirm].pressed) {
-			if (!was_action_confirm_down) {
-				if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
-					levelSelect.confirm(runtime);
+			if (gp.axes[axis_left_vert] < -dead_zone || gp.buttons[action_up].value > 0 || gp.buttons[action_up].pressed) {
+				if (!was_action_up_down) {
+					if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+						levelSelect.selectUp(runtime);
+					}
+					else if (runtime.layout.name === config.MAIN_MENU_NAME) {
+						runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex--;
+					}
+					was_action_up_down = true;
 				}
-				was_action_confirm_down = true;
 			}
-		}
-		else { was_action_confirm_down = false; }
+			else { was_action_up_down = false }
 
-		if (gp.buttons[action_back].value > 0 || gp.buttons[action_back].pressed) {
-			if (!was_action_back_down) {
-				if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
-					levelSelect.back(runtime);
+			if (gp.buttons[action_confirm].value > 0 || gp.buttons[action_confirm].pressed) {
+				if (!was_action_confirm_down) {
+					if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+						levelSelect.confirm(runtime);
+					}
+					was_action_confirm_down = true;
 				}
-				was_action_back_down = true;
 			}
-		}
-		else { was_action_back_down = false; }
+			else { was_action_confirm_down = false; }
 
-		if (gp.buttons[action_confirm_alt].value > 0 || gp.buttons[action_confirm_alt].pressed) {
-			if (!was_action_confirm_down_alt) {
-				if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
-					levelSelect.confirm(runtime);
+			if (gp.buttons[action_back].value > 0 || gp.buttons[action_back].pressed) {
+				if (!was_action_back_down) {
+					if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+						levelSelect.back(runtime);
+					}
+					was_action_back_down = true;
 				}
-				was_action_confirm_down_alt = true;
 			}
+			else { was_action_back_down = false; }
+
+			if (gp.buttons[action_confirm_alt].value > 0 || gp.buttons[action_confirm_alt].pressed) {
+				if (!was_action_confirm_down_alt) {
+					if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
+						levelSelect.confirm(runtime);
+					}
+					was_action_confirm_down_alt = true;
+				}
+			}
+			else { was_action_confirm_down_alt = false; }
 		}
-		else { was_action_confirm_down_alt = false; }
+		catch (e) {
+			console.warn(e);
+		}
 	}
 }
