@@ -17,6 +17,7 @@ import { updateMenu as updateLevelSelectMenu } from "./levelSelect.js";
 import { pauseBehaviour } from "./pause.js";
 import BatInstance from "./bat.js";
 import GhostInstance from "./ghostEnemy.js";
+import * as sfxManager from "./sfxManager.js";
 
 runOnStartup(async runtime => {
 	// Code to run on the loading screen.
@@ -40,6 +41,7 @@ async function OnBeforeProjectStart(runtime) {
 
 	runtime.addEventListener("tick", () => tick(runtime));
 	runtime.addEventListener("instancecreate", (e) => createdInstance(e, runtime));
+	await sfxManager.init(runtime);
 }
 
 let currentLayout = "";
@@ -87,9 +89,11 @@ const tick = (runtime) => {
 			break;
 		case gameStates.mainMenu:
 			menuControls.gamePad(runtime);
+			menuControls.keyboard(runtime);
 			break;
 		case gameStates.levelSelect:
 			menuControls.gamePad(runtime);
+			menuControls.keyboard(runtime);
 			updateLevelSelectMenu(runtime);
 			break;
 		default: runtime.timeScale = 1;

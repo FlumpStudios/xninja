@@ -5,9 +5,12 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-any-key-pressed",
+					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 114055005113999
+					"sid": 163799031448295,
+					"parameters": {
+						"key": 13
+					}
 				},
 				{
 					"id": "on-button-pressed",
@@ -187,6 +190,18 @@
 							"parameters": {
 								"layout": "LevelSelect"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Music",
+							"sid": 598839914265521,
+							"parameters": {
+								"audio-file": "sfx_sounds_button6",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 820878123045476
@@ -226,6 +241,18 @@
 							"parameters": {
 								"instance-variable": "MenuIndex",
 								"value": "0"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Music",
+							"sid": 598839914265521,
+							"parameters": {
+								"audio-file": "sfx_sounds_button6",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -803,7 +830,7 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "DisplayManager",
-					"sid": 930338901054506,
+					"sid": 207945929071415,
 					"parameters": {
 						"instance-variable": "EffectIndex",
 						"comparison": 2,
@@ -815,10 +842,10 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "DisplayManager",
-					"sid": 548303488078503,
+					"sid": 312254868896916,
 					"parameters": {
 						"instance-variable": "EffectIndex",
-						"value": "3"
+						"value": "0"
 					}
 				}
 			],
@@ -830,7 +857,7 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "DisplayManager",
-					"sid": 194159198938443,
+					"sid": 661180517360260,
 					"parameters": {
 						"instance-variable": "EffectIndex",
 						"comparison": 4,
@@ -842,14 +869,44 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "DisplayManager",
-					"sid": 550658737195829,
+					"sid": 572692426792539,
 					"parameters": {
 						"instance-variable": "EffectIndex",
-						"value": "0"
+						"value": "3"
 					}
 				}
 			],
 			"sid": 885583563861121
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 592870264445377
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Music",
+					"sid": 468115577407639
+				},
+				{
+					"id": "play",
+					"objectClass": "Music",
+					"sid": 338489007942529,
+					"parameters": {
+						"audio-file": "Fields of Ice",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 714533589518462
 		}
 	],
 	"sid": 557864277610586
