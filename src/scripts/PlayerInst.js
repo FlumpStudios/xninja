@@ -1,5 +1,6 @@
 import { waitForMillisecond, isMirrored } from "./utils.js"
 import { resetLevel } from "./game.js";
+import * as sfx from "./sfxManager.js";
 import * as config from "./config.js";
 
 export default class PlayerInst extends globalThis.ISpriteInstance {
@@ -159,6 +160,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
     attack = (runtime) => {
         if (this.isInWater(runtime)) { return; }
         this.setAnimationToAttack();
+        sfx.PlayJumpAttackSound();
         waitForMillisecond(100).then(() => {
             if (this) {
                 this.setAnimationToRun();
@@ -180,6 +182,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         const starsThrown = runtime.levelInstance.getStarcount();
 
         if (starsThrown < 1) { return; }
+        sfx.PlayThrowStarSound();
         if (this.width < 0) {
             const star = runtime.objects.DeathStar.createInstance(config.layers.game, player.x - 12, player.y + 7);
             star.behaviors.Bullet.speed = config.DEATH_STAR_SPEED + this.behaviors.Platform.speed;
@@ -213,8 +216,9 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
                 }
             }
         }
-
+        
         this.behaviors.Platform.simulateControl("jump");
+        
         waitForMillisecond(50).then(() => {
             if (this) {
                 this.setAnimationToJump();
@@ -224,6 +228,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
 
     killPlayer = (runtime) => {
         if (!this.isVisible) { return; }
+        sfx.PlayPlayerDeathsound();        
         runtime.objects.StealthBar.getFirstInstance().destroy();
         this.isVisible = false;
         this.behaviors.Platform.isEnabled = false;
@@ -241,13 +246,13 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
                 this.killPlayer(runtime);
             }
         }
-		
-		for (const water of runtime.objects.Water.instances()) {
+
+        for (const water of runtime.objects.Water.instances()) {
             if (water.testOverlap(this) && water.instVars.isDangerous) {
                 this.killPlayer(runtime);
             }
         }
-		
+
         for (const spike of runtime.objects.Spike.instances()) {
             if (spike.testOverlap(this)) {
                 this.killPlayer(runtime);

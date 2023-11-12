@@ -1,3 +1,4 @@
+import * as sfx from "./sfxManager.js";
 import { handlePausePressed, updatePauseIndex, handlePauseConfirm } from "./pause.js";
 import * as config from "./config.js";
 
@@ -29,7 +30,7 @@ export const mouse = (runtime) => {
 		if (activeIndex < 0) {
 			if (!wasLeftMouseDown) {
 				player.attack(runtime);
-				handlePauseConfirm(runtime);						
+				handlePauseConfirm(runtime);
 			}
 			wasLeftMouseDown = true;
 		}
@@ -130,6 +131,10 @@ export const keyboard = (runtime) => {
 				updatePauseIndex(-1, runtime);
 			}
 			player.jump(runtime);
+			// HACK: Hack to stop player jump sound playing too often. Should be in player inst class really.
+			if (!wasUpDown && !player.behaviors.Platform.isJumping && !player.behaviors.Platform.isFalling) {
+				sfx.PlayJumpSounds();
+			}
 			wasUpDown = true;
 		}
 	}
@@ -226,6 +231,7 @@ let was_action_slash_down = true;
 let was_action_left_down = true;
 let was_action_right_down = true;
 let was_action_pause_down = true;
+let was_action_jump_down = true;
 
 let was_action_pause_move_up_down = true;
 let was_action_pause_move_down_down = true;
@@ -333,7 +339,15 @@ export const gamePad = (runtime) => {
 			}
 
 			if (gp.buttons[action_jump].value > 0 || gp.buttons[action_jump].pressed) {
+				// HACK: Hack to stop player jump sound playing too often. Should be in player inst class really.			
+				if (!was_action_jump_down && !player.behaviors.Platform.isJumping && !player.behaviors.Platform.isFalling) {
+					sfx.PlayJumpSounds();
+					was_action_jump_down = true;
+				}
 				player.jump(runtime);
+			}
+			else {
+				was_action_jump_down =  false;
 			}
 
 			if (gp.buttons[action_run].value > 0 || gp.buttons[action_run].pressed) {

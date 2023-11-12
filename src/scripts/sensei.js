@@ -2,8 +2,9 @@ import enemy from "./enemy.js";
 import { isOutsideLayout, isMirrored, waitForMillisecond, isOutOfScreen } from "./utils.js";
 import { getGlobalRuntime } from "./globals.js";
 import * as config from "./config.js";
+import * as sfx from "./sfxManager.js";
 
-export default class SenseiInstance extends enemy {	
+export default class SenseiInstance extends enemy {
 	visionCone = null;
 	visionConeDestroyed = false;
 	previousX = 0;
@@ -30,18 +31,18 @@ export default class SenseiInstance extends enemy {
 			}
 			this.destroy();
 		}
-	}		
+	}
 
 	handleChargeEnemyCollision = (runtime, destructor) => {
-        for (const charger of runtime.objects.chargerEnemy.instances()) {
-            if (charger.testOverlap(this)) {
-                if (charger.instVars.IsScared) {
-                    this.runKill(runtime);
-                    destructor();
-                }                
-            }
-        }
-    }
+		for (const charger of runtime.objects.chargerEnemy.instances()) {
+			if (charger.testOverlap(this)) {
+				if (charger.instVars.IsScared) {
+					this.runKill(runtime, sfx.PlaySenseiDeathsound);
+					destructor();
+				}
+			}
+		}
+	}
 
 	handleSenseiBehavior = (runtime) => {
 		this.#senseiPatrol(runtime);
@@ -79,7 +80,7 @@ export default class SenseiInstance extends enemy {
 				if (this) {
 					try {
 						this.exlaim.isVisible = false;
-						this.instVars.IsStunned = false;				
+						this.instVars.IsStunned = false;
 						this.behaviors.Platform.isEnabled = true;
 						this.setSolidCollisionFilter(false, "Border EnemyBouncer");
 						this.behaviors.Platform.simulateControl("jump");
@@ -90,10 +91,10 @@ export default class SenseiInstance extends enemy {
 			});
 		}
 
-		this.handleDeathStarCollision(runtime, this.runCleanUp);
-		this.handleSlashCollision(runtime, this.runCleanUp);
-		this.handleSpikeCollisions(runtime, this.runCleanUp);
-		this.handleChargeEnemyCollision(runtime, this.runCleanUp);
+		this.handleDeathStarCollision(runtime, this.runCleanUp, sfx.PlaySenseiDeathsound);
+		this.handleSlashCollision(runtime, this.runCleanUp, sfx.PlaySenseiDeathsound);
+		this.handleSpikeCollisions(runtime, this.runCleanUp, sfx.PlaySenseiDeathsound);
+		this.handleChargeEnemyCollision(runtime, this.runCleanUp, sfx.PlaySenseiDeathsound);
 	}
 
 	set = false;

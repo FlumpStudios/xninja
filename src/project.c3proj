@@ -1292,6 +1292,110 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "Blip_Select.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 697280647277120,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Default.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 247930164689422,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Explosion.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 668633448873259,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Explosion2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 297016653726695,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Jump.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 907919785398258,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Laser1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 483133465621916,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Laser2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 824816649460539,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Pickup_Coin.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 599707161856987,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Powerup.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 963801652226221,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Randomize.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 324129377436213,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Randomize2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 579011450958328,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Randomize3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 144100954302096,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Randomize4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 310253848221094,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
@@ -1574,6 +1678,62 @@
 					"name": "sinister_abode.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 569277144886019,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "The Labyrinth - Chiptune Comp 03.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 386045298731184,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "The Fun Begins - Chiptune Comp 02.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 607694060873219,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "The Challenge  - Chiptune Comp 01.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 412855674664521,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "The Undefeated - Chiptune Comp 06 - Long Track.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 934402976423034,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Jump2Sky - Chiptune Comp 05 - Long Track.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 243135809368228,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Survive - Chiptune Comp 04.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 604815749158558,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Chiptune Techno.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 375994804450136,
 					"file-info": {
 						"purpose": "none"
 					}

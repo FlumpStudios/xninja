@@ -34,7 +34,10 @@ export default class enemy extends globalThis.ISpriteInstance {
         }
     }
 
-    runKill = (runtime) => {
+    runKill = (runtime, deathSound = null) => {
+        if (deathSound) {
+            deathSound();
+        }
         const killCount = runtime.objects.KillCount_spritefont.getFirstInstance();
         killCount.text = runtime.levelInstance.addToKills().toString();
         runtime.objects.Blood.createInstance(config.layers.game, this.x, this.y);
@@ -43,31 +46,31 @@ export default class enemy extends globalThis.ISpriteInstance {
     }
 
 
-    handleDeathStarCollision = (runtime, destructor) => {
+    handleDeathStarCollision = (runtime, destructor, sfx = null) => {
         for (const star of runtime.objects.DeathStar.instances()) {
             if (star.testOverlap(this)) {
-                this.runKill(runtime);
+                this.runKill(runtime, sfx);
                 star.destroy();
                 destructor();
             }
         }
     }
 
-    handleSlashCollision = (runtime, destructor) => {
+    handleSlashCollision = (runtime, destructor, sfx = null) => {
         for (const slash of runtime.objects.Slash.instances()) {
             if (slash.testOverlap(this)) {
-                this.runKill(runtime);
+                this.runKill(runtime, sfx);
                 // getGlobalRuntime().objects.DeathStarPickUp.createInstance(config.layers.game, this.x, this.y - 23);			
                 destructor();
             }
         }
     }
 
-    handleChargeEnemyCollision = (runtime, destructor) => {
+    handleChargeEnemyCollision = (runtime, destructor, sfx = null) => {
         for (const charger of runtime.objects.chargerEnemy.instances()) {
             if (charger.testOverlap(this)) {
                 if (charger.instVars.IsScared) {
-                    this.runKill(runtime);
+                    this.runKill(runtime), sfx;
                     destructor();
                 }
                 // getGlobalRuntime().objects.DeathStarPickUp.createInstance(config.layers.game, this.x, this.y - 23);			
@@ -75,10 +78,10 @@ export default class enemy extends globalThis.ISpriteInstance {
         }
     }
 
-    handleSpikeCollisions = (runtime, destructor) => {
+    handleSpikeCollisions = (runtime, destructor, sfx) => {
         for (const spike of runtime.objects.Spike.instances()) {
             if (spike.testOverlap(this)) {
-                this.runKill(runtime);
+                this.runKill(runtime, sfx);
                 destructor();
                 return;
             }
@@ -106,10 +109,10 @@ export default class enemy extends globalThis.ISpriteInstance {
     spawnEscapedPenaltyText = (runtime) => {
         const t = runtime.objects.TimeBonus_spritefont.createInstance(config.layers.game, this.x, this.y - 10);
         const player = runtime.objects.Player.getFirstInstance();
-        
+
         t.text = "+" + (this.bonusWorth * -1).toString();
         t.colorRgb = [1, 0, 0]
-        const angle = getAngleTo(player,t)
+        const angle = getAngleTo(player, t)
         t.behaviors.Bullet.angleOfMotion = angle;
     }
 
