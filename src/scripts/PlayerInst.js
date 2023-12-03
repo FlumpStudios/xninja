@@ -8,6 +8,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         super();
         this.setSolidCollisionFilter(false, "EnemyBouncer");
         this.#hasPlayerEnteredLevelEndBox = false;
+        sfx.SetVolume(0);
     }
 
     #currentRunAnimation = "Run";

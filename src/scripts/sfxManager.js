@@ -55,4 +55,6 @@ export function PlayThrowStarSound() {
     audioManager.playSound(throwStarSound);
 }
 
-
+export function SetVolume(vol) {
+    audioManager.changeVolume(vol)
+}
