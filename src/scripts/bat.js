@@ -3,6 +3,7 @@ import { getAngleTo } from "./utils.js";
 import { isOutsideLayout, isMirrored, waitForMillisecond } from "./utils.js";
 import { getGlobalRuntime } from "./globals.js";
 import * as config from "./config.js";
+import * as sfx from "./sfxManager.js";
 
 export default class BatInstance extends enemy {
 
@@ -50,6 +51,7 @@ export default class BatInstance extends enemy {
 		const player = runtime.objects.Player.getFirstInstance();
 		if (player.isStealthed()) { return; }
 		if (player.testOverlap(this.senseZone)) {
+			sfx.PlayEnemyScared();				
 			this.instVars.IsScared = true;
 			this.senseZone.destroy();
 			this.senseZoneDestroyed = true;
@@ -90,11 +92,11 @@ export default class BatInstance extends enemy {
 		}
 
 		if (!this.instVars.IsScared) {
-			this.handleSlashCollision(runtime, this.runCleanUp);
+			this.handleSlashCollision(runtime, this.runCleanUp,sfx.PlaySenseiDeathsound);
 		}
 
-		this.handleDeathStarCollision(runtime, this.runCleanUp);
-		this.handleSpikeCollisions(runtime, this.runCleanUp);
+		this.handleDeathStarCollision(runtime, this.runCleanUp,sfx.PlaySenseiDeathsound);
+		this.handleSpikeCollisions(runtime, this.runCleanUp,sfx.PlaySenseiDeathsound);
 		this.lockSenseZone();
 		if (!this.instVars.IsScared) {
 			this.handleSenseZoneCollision(runtime);

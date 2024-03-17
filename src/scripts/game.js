@@ -17,9 +17,9 @@ export const runLevelStart = (runtime) => {
 const goToNextLevel = (runtime) => {
     const currentBest = config.levelConfig[runtime.layout.name].currentBest;
     const currentTime = runtime.levelInstance.getLevelTime();
-    if (currentBest === 0 || (currentTime < currentBest)) {
+    //if (currentBest === 0 || (currentTime < currentBest)) {
         config.levelConfig[runtime.layout.name].currentBest = currentTime
-    }
+//    }
     runtime.goToLayout(getCurrentConfig(runtime).nextLevel);
 }
 
@@ -50,9 +50,9 @@ export const gamePlay = (runtime) => {
 
     if (!player) { return; }
 
-    // Level 2 hack to make sure there's always enough stars to complete level
+    // Level 4 hack to make sure there's always enough stars to complete level
     if (
-        runtime.layout.name === "Level_1_3"
+        runtime.layout.name === "Level_1_4"
         && runtime.levelInstance.getStarcount() <= 0
         && runtime.objects.DeathStarPickUp.getAllInstances().length < 1
         && !runtime.levelInstance.isLevelInExitState()) {

@@ -286,6 +286,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         for (const pickup of runtime.objects.DeathStarPickUp.instances()) {
             if (pickup.testOverlap(this)) {
                 runtime.levelInstance.addToStarCount(runtime);
+                sfx.PlayThrowStarPickupSound();
                 pickup.destroy();
             }
         }
@@ -294,6 +295,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
             if (skateboardPickUp.testOverlap(this)) {
                 this.setToSkating(runtime);
                 this.setAnimationToRun();
+                sfx.PlayerSkatePickup();
                 skateboardPickUp.destroy();
             }
         }

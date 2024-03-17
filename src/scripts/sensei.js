@@ -47,6 +47,7 @@ export default class SenseiInstance extends enemy {
 	handleSenseiBehavior = (runtime) => {
 		this.#senseiPatrol(runtime);
 		if (isOutOfScreen(this, runtime) && this.instVars.IsScared) {
+			sfx.PlayerEnemyEspcapeSound();
 			this.handleEscaped(runtime, this.runCleanUp);
 			return;
 		}
@@ -67,6 +68,7 @@ export default class SenseiInstance extends enemy {
 		if (this.hasLineOfSightOfPlayer(runtime) && !this.instVars.IsScared) {
 			this.instVars.IsScared = true;
 			if (!this.exlaim) {
+				sfx.PlayEnemyScared();
 				this.exlaim = runtime.objects.Exlaim.createInstance(config.layers.game, this.x, this.y - 25);
 				this.behaviors.Platform.maxSpeed = 0;
 				this.instVars.IsStunned = true;

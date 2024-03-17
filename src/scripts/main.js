@@ -118,7 +118,7 @@ const gameLoop = (runtime) => {
 
 
 	const levelTime = runtime.levelInstance.getLevelTime();
-	runtime.objects.TimeRemaining_spritefont.getFirstInstance().text = (levelTime > 0 ? levelTime.toString() : "0");
+	runtime.objects.TimeRemaining_spritefont.getFirstInstance().text = levelTime.toString(); //(levelTime > 0 ? levelTime.toString() : "0");
 
 
 	const player = runtime.objects.Player.getFirstInstance();

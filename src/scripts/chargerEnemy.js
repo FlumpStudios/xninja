@@ -2,6 +2,7 @@ import enemy from "./enemy.js";
 import { isOutsideLayout, isMirrored, waitForMillisecond } from "./utils.js";
 import { getGlobalRuntime } from "./globals.js";
 import * as config from "./config.js";
+import * as sfx from "./sfxManager.js";
 
 export default class ChargerEnemyInstance extends enemy {
 	visionCone = null;
@@ -9,7 +10,7 @@ export default class ChargerEnemyInstance extends enemy {
 	previousX = 0;
 	hasStopped = false;
 	exlaim = null;
-	
+
 	constructor() {
 		super();
 		const runTime = getGlobalRuntime();
@@ -56,31 +57,32 @@ export default class ChargerEnemyInstance extends enemy {
 		if (this.hasLineOfSightOfPlayer(runtime) && !this.instVars.IsScared) {
 			this.instVars.IsScared = true;
 			if (!this.exlaim) {
+				sfx.PlayEnemyScared();
 				this.exlaim = runtime.objects.Exlaim.createInstance(config.layers.game, this.x, this.y - 30);
 				this.behaviors.Platform.maxSpeed = 0;
 				this.instVars.IsStunned = true;
-                this.setAnimation("Charge")						
+				this.setAnimation("Charge")
 				this.behaviors.Bullet.speed = 0;
 			}
 
-			waitForMillisecond(300).then(() => {				
+			waitForMillisecond(300).then(() => {
 				if (this) {
 					try {
 						this.exlaim.isVisible = false;
-						this.instVars.IsStunned = false;				
+						this.instVars.IsStunned = false;
 						this.behaviors.Platform.isEnabled = true;
 						this.setSolidCollisionFilter(false, "Border EnemyBouncer");
 						this.behaviors.Bullet.speed = 600;
-                        // this.width = this.width * -1;
+						// this.width = this.width * -1;
 					} catch { }
 				}
 			});
 		}
 
-		this.handleDeathStarCollision(runtime, this.runCleanUp);
-		this.handleSlashCollision(runtime, this.runCleanUp);
-		this.handleSpikeCollisions(runtime, this.runCleanUp);
-		this.handleChargeEnemyCollision(runtime,this.runCleanUp);
+		this.handleDeathStarCollision(runtime, this.runCleanUp, sfx.PlaySenseiDeathsound);
+		this.handleSlashCollision(runtime, this.runCleanUp, sfx.PlaySenseiDeathsound);
+		this.handleSpikeCollisions(runtime, this.runCleanUp, sfx.PlaySenseiDeathsound);
+		this.handleChargeEnemyCollision(runtime, this.runCleanUp, sfx.PlaySenseiDeathsound);
 	}
 
 	set = false;

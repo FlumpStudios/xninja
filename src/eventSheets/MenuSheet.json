@@ -896,13 +896,13 @@
 				{
 					"id": "play",
 					"objectClass": "Music",
-					"sid": 898678959058419,
+					"sid": 634201649460014,
 					"parameters": {
 						"audio-file": "Mars",
 						"loop": "looping",
 						"volume": "0",
 						"stereo-pan": "0",
-						"tag-optional": "\"\""
+						"tag-optional": "\"MenuMusic\""
 					}
 				}
 			],

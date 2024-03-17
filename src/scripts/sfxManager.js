@@ -8,7 +8,10 @@ let throwStarSound = null;
 let attackSound = null;
 let playerDeath = null;
 let senseiDeathSound = null;
-
+let enemyScaredSound = null;
+let starPickupSound = null;
+let skatePickup = null
+let escapeSound = null;
 export const init = (async runtime => {
     // Initialise the audio manager. See AudioManager.js for details.
     audioManager = new AudioManager(runtime);
@@ -16,14 +19,18 @@ export const init = (async runtime => {
     // During the loading screen, load both sound files as
     // AudioBuffers and the music track all in parallel, so
     // they are ready for immediate playback on startup.
-    [menuMove, menuSelect, jumpSound, throwStarSound, attackSound, playerDeath, senseiDeathSound] = await Promise.all([
+    [menuMove, menuSelect, jumpSound, throwStarSound, attackSound, playerDeath, senseiDeathSound,enemyScaredSound,starPickupSound, skatePickup, escapeSound] = await Promise.all([
         audioManager.loadSound("sfx_menu_move1.webm"),
         audioManager.loadSound("sfx_sounds_button6.webm"),
         audioManager.loadSound("jump.webm"),
         audioManager.loadSound("Laser2.webm"),
         audioManager.loadSound("shot_01.webm"),
         audioManager.loadSound("retro_explosion_05.webm"),
-        audioManager.loadSound("retro_die_02.webm")
+        audioManager.loadSound("retro_die_02.webm"),
+        audioManager.loadSound("enemyScared.webm"),
+        audioManager.loadSound("starPickup.webm"),
+        audioManager.loadSound("skate_pickup.webm"),
+        audioManager.loadSound("escape.webm")
     ]);
 });
 
@@ -55,6 +62,24 @@ export function PlayThrowStarSound() {
     audioManager.playSound(throwStarSound);
 }
 
+export function PlayThrowStarPickupSound() {
+    audioManager.playSound(starPickupSound);
+}
+
+export function PlayEnemyScared() {
+    audioManager.playSound(enemyScaredSound);
+}
+
+export function PlayerSkatePickup() {
+    audioManager.playSound(skatePickup);
+}
+
+export function PlayerEnemyEspcapeSound() {
+    audioManager.playSound(escapeSound);
+}
+
 export function SetVolume(vol) {
-    audioManager.changeVolume(vol)
+    if (audioManager) {
+        audioManager.changeVolume(vol)
+    }
 }

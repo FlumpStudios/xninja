@@ -236,6 +236,74 @@
 				}
 			],
 			"sid": 574457697266927
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 188160902337643
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Music",
+					"sid": 921143091560055
+				},
+				{
+					"id": "play",
+					"objectClass": "Music",
+					"sid": 257873728598315,
+					"parameters": {
+						"audio-file": "Jump2Sky - Chiptune Comp 05 - Long Track",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"GameMusic\""
+					}
+				}
+			],
+			"sid": 130214479659480
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 287149027677450
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Music",
+					"sid": 977137085495611,
+					"parameters": {
+						"tag": "\"GameMusic\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Music",
+					"sid": 612820216917557
+				},
+				{
+					"id": "play",
+					"objectClass": "Music",
+					"sid": 668511544583838,
+					"parameters": {
+						"audio-file": "Mars",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"MenuMusic\""
+					}
+				}
+			],
+			"sid": 618671317168049
 		}
 	],
 	"sid": 131408356478582
