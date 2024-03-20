@@ -241,7 +241,15 @@
 			"MenuArrow",
 			"ScreenOptionSelection",
 			"DisplayManager",
-			"Music"
+			"Music",
+			"Sprite",
+			"Button_A",
+			"Button_X",
+			"Button_L_stick",
+			"Button_B",
+			"Sprite2",
+			"Button_LT",
+			"ButtonR2"
 		],
 		"subfolders": [
 			{
@@ -267,7 +275,8 @@
 							"ClearGround_tile2",
 							"ShooterBlock",
 							"CastleIndoor_tile",
-							"ColourFill_tile"
+							"ColourFill_tile",
+							"ClearGround_tile3"
 						],
 						"subfolders": [
 							{
@@ -459,7 +468,18 @@
 					"PauseOption",
 					"Silver_Text",
 					"Gold_Text",
-					"Bronze_Text"
+					"Bronze_Text",
+					"TutorialText2",
+					"PauseOption2",
+					"PauseOption3",
+					"PauseOption4",
+					"PauseOption5",
+					"PauseOption6",
+					"PauseOption7",
+					"PauseOption8",
+					"PauseOption9",
+					"PauseOption10",
+					"PauseOption11"
 				],
 				"subfolders": [],
 				"name": "Spritefonts"
@@ -501,7 +521,8 @@
 					"Level_1_10",
 					"Level_1_11",
 					"Level_1_12",
-					"Level_1_13"
+					"Level_1_13",
+					"Level_1_14"
 				],
 				"subfolders": [],
 				"name": "World1"

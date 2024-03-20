@@ -18,15 +18,17 @@ const checKeyUp = (runtime, key) =>
 	!runtime.keyboard.isKeyDown(key);
 
 export const keyboard = (runtime) => {
+	const menuIndex = runtime?.objects?.MenuArrow?.getFirstInstance()?.instVars.MenuIndex ?? undefined;
 	if (checKeyDown(runtime, "ArrowLeft") || checKeyDown(runtime, "KeyA")) {
 		if (!wasLeftDown) {
 			if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
 				levelSelect.selectLeft(runtime);
+				sfxManager.PlayMenuMove();
 			}
 			else if (runtime.layout.name === config.MAIN_MENU_NAME) {
-				if (runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex === 1) {
+				if (menuIndex === 1) {
 					runtime.objects.DisplayManager.getFirstInstance().instVars.EffectIndex--;
-					
+					sfxManager.PlayMenuMove();
 				}
 			}
 		}
@@ -37,10 +39,12 @@ export const keyboard = (runtime) => {
 		if (!wasRightDown) {
 			if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
 				levelSelect.selectRight(runtime);
+				sfxManager.PlayMenuMove();
 			}
 			else if (runtime.layout.name === config.MAIN_MENU_NAME) {
-				if (runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex === 1) {
+				if (menuIndex === 1) {
 					runtime.objects.DisplayManager.getFirstInstance().instVars.EffectIndex++;
+					sfxManager.PlayMenuMove();
 				}
 			}
 		}
@@ -54,8 +58,10 @@ export const keyboard = (runtime) => {
 				sfxManager.PlayMenuMove();
 			}
 			else if (runtime.layout.name === config.MAIN_MENU_NAME) {
-				runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex--;
-				sfxManager.PlayMenuMove();
+				if (menuIndex > -1) {
+					runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex--;
+					sfxManager.PlayMenuMove();
+				}
 			}
 		}
 		wasUpDown = true;
@@ -68,8 +74,10 @@ export const keyboard = (runtime) => {
 				sfxManager.PlayMenuMove();
 			}
 			else if (runtime.layout.name === config.MAIN_MENU_NAME) {
-				runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex++;
-				sfxManager.PlayMenuMove();
+				if (menuIndex > -1) {
+					runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex++;
+					sfxManager.PlayMenuMove();
+				}
 			}
 		}
 		wasDownDown = true;
@@ -171,7 +179,7 @@ export const gamePad = (runtime) => {
 	if (navigator.webkitGetGamepads) {
 		// TODO HANDLE OTHER CONTROLS
 	} else {
-
+		const menuIndex = runtime?.objects?.MenuArrow?.getFirstInstance()?.instVars.MenuIndex ?? undefined;
 		for (let i = 0; i < navigator.getGamepads().length; i++) {
 			if (!navigator.getGamepads() || !navigator.getGamepads()[i]) {
 				continue;
@@ -195,9 +203,11 @@ export const gamePad = (runtime) => {
 						sfxManager.PlayMenuMove();
 					}
 					else if (runtime.layout.name === config.MAIN_MENU_NAME) {
-						if (runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex === 1) {
-							runtime.objects.DisplayManager.getFirstInstance().instVars.EffectIndex++;
-							sfxManager.PlayMenuMove();
+						if (menuIndex === 1) {
+							if (menuIndex > -1) {
+								runtime.objects.DisplayManager.getFirstInstance().instVars.EffectIndex++;
+								sfxManager.PlayMenuMove();
+							}
 						}
 					}
 					was_action_right_down = true;
@@ -214,9 +224,11 @@ export const gamePad = (runtime) => {
 						sfxManager.PlayMenuMove();
 					}
 					else if (runtime.layout.name === config.MAIN_MENU_NAME) {
-						if (runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex === 1) {
-							runtime.objects.DisplayManager.getFirstInstance().instVars.EffectIndex--;
-							sfxManager.PlayMenuMove();
+						if (menuIndex === 1) {
+							if (menuIndex > -1) {
+								runtime.objects.DisplayManager.getFirstInstance().instVars.EffectIndex--;
+								sfxManager.PlayMenuMove();
+							}
 						}
 					}
 					was_action_left_down = true;
@@ -233,8 +245,10 @@ export const gamePad = (runtime) => {
 						sfxManager.PlayMenuMove();
 					}
 					else if (runtime.layout.name === config.MAIN_MENU_NAME) {
-						runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex++;
-						sfxManager.PlayMenuMove();
+						if (menuIndex > -1) {
+							runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex++;
+							sfxManager.PlayMenuMove();
+						}
 					}
 					was_action_down_down = true;
 				}
@@ -248,8 +262,10 @@ export const gamePad = (runtime) => {
 						sfxManager.PlayMenuMove();
 					}
 					else if (runtime.layout.name === config.MAIN_MENU_NAME) {
-						runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex--;
-						sfxManager.PlayMenuMove();
+						if (menuIndex > -1) {
+							runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex--;
+							sfxManager.PlayMenuMove();
+						}
 					}
 					was_action_up_down = true;
 				}

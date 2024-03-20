@@ -69,7 +69,6 @@ export class AudioManager {
 
 	// Play an AudioBuffer.
 	playSound(audioBuffer) {
-		console.log(audioBuffer);
 		const source = this.audioContext.createBufferSource();
 		source.buffer = audioBuffer;
 		source.connect(this.audioContext.destination);		

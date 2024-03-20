@@ -1,0 +1,32 @@
+{
+	"name": "ClearGround_tile3",
+	"plugin-id": "TiledBg",
+	"sid": 375149869860818,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 500795594668563
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 310126574344505
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 32,
+		"height": 32,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6545205,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

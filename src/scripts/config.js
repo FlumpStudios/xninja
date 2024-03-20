@@ -78,7 +78,8 @@ export const levelConfig =
         exitLeft: false,
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: true
+        requiresAllEnenmiesKilled: true,
+        hasSeenTutorial: true
     },
     "Level_1_1": {
         name: "It Starts",
@@ -93,7 +94,8 @@ export const levelConfig =
         exitLeft: false,
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: true
+        requiresAllEnenmiesKilled: true,
+        hasSeenTutorial: false
 
     },
     "Level_1_2": {
@@ -109,8 +111,8 @@ export const levelConfig =
         exitLeft: false,
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: true
-
+        requiresAllEnenmiesKilled: true,
+        hasSeenTutorial: false
     },
     "Level_1_3": {
         name: "Careful Now",
@@ -125,7 +127,8 @@ export const levelConfig =
         exitLeft: false,
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: true
+        requiresAllEnenmiesKilled: true,
+        hasSeenTutorial: false
     },
     "Level_1_4": {
         name: "No Escape",
@@ -140,14 +143,15 @@ export const levelConfig =
         exitLeft: false,
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: true
+        requiresAllEnenmiesKilled: true,
+        hasSeenTutorial: true
     },
     "Level_1_5": {
-        name: "Cloak & Ladder",
+        name: "RUN!",
         startingStars: 0,
-        bronzeTarget: 8,
-        silverTarget: 5,
-        goldTarget: 3,
+        bronzeTarget: 15,
+        silverTarget: 10,
+        goldTarget: 4,
         currentBest: 0,
         nextLevel: "Level_1_6",
         exitUp: false,
@@ -155,55 +159,59 @@ export const levelConfig =
         exitLeft: false,
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: false
+        requiresAllEnenmiesKilled: true,
+        hasSeenTutorial: false
     },
     "Level_1_6": {
+        name: "Cloak & Ladder",
+        startingStars: 0,
+        bronzeTarget: 8,
+        silverTarget: 5,
+        goldTarget: 3,
+        currentBest: 0,
+        nextLevel: "Level_1_7",
+        exitUp: false,
+        exitDown: false,
+        exitLeft: false,
+        exitRight: true,
+        cameraFocusOffset: { x: 0, y: 0 },
+        requiresAllEnenmiesKilled: false,
+        hasSeenTutorial: true
+    },
+    "Level_1_7": {
         name: "Wet Wet Wet",
         startingStars: 0,
         bronzeTarget: 30,
         silverTarget: 25,
         goldTarget: 20,
         currentBest: 0,
-        nextLevel: "Level_1_7",
+        nextLevel: "Level_1_8",
         exitUp: false,
         exitDown: true,
         exitLeft: false,
         exitRight: false,
         cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: false
+        requiresAllEnenmiesKilled: false,
+        hasSeenTutorial: true
     },
-    "Level_1_7": {
+    "Level_1_8": {
         name: "Downfell",
         startingStars: 0,
         bronzeTarget: 35,
         silverTarget: 30,
         goldTarget: 25,
         currentBest: 0,
-        nextLevel: "Level_1_8",
+        nextLevel: "Level_1_9",
         exitUp: false,
         exitDown: true,
         exitLeft: false,
         exitRight: false,
         cameraFocusOffset: { x: 0, y: 125 },
-        requiresAllEnenmiesKilled: false
-    },
-    "Level_1_8": {
-        name: "Skate & Destroy",
-        startingStars: 0,
-        bronzeTarget: 5,
-        silverTarget: 3,
-        goldTarget: 1,
-        currentBest: 0,
-        nextLevel: "Level_1_9",
-        exitUp: false,
-        exitDown: false,
-        exitLeft: false,
-        exitRight: true,
-        cameraFocusOffset: { x: 225, y: 0 },
-        requiresAllEnenmiesKilled: false
+        requiresAllEnenmiesKilled: false,
+        hasSeenTutorial: true
     },
     "Level_1_9": {
-        name: "Cave Story",
+        name: "Skate & Destroy",
         startingStars: 0,
         bronzeTarget: 5,
         silverTarget: 3,
@@ -214,10 +222,12 @@ export const levelConfig =
         exitDown: false,
         exitLeft: false,
         exitRight: true,
-        cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: false
-    }, "Level_1_10": {
-        name: "Charged",
+        cameraFocusOffset: { x: 225, y: 0 },
+        requiresAllEnenmiesKilled: false,
+        hasSeenTutorial: true
+    },
+    "Level_1_10": {
+        name: "Cave Story",
         startingStars: 0,
         bronzeTarget: 5,
         silverTarget: 3,
@@ -228,10 +238,11 @@ export const levelConfig =
         exitDown: false,
         exitLeft: false,
         exitRight: true,
-        cameraFocusOffset: { x: 75, y: 0 },
-        requiresAllEnenmiesKilled: false
+        cameraFocusOffset: { x: 0, y: 0 },
+        requiresAllEnenmiesKilled: false,
+        hasSeenTutorial: true
     }, "Level_1_11": {
-        name: "[PLACE HOLDER]",
+        name: "Charged",
         startingStars: 0,
         bronzeTarget: 5,
         silverTarget: 3,
@@ -242,50 +253,54 @@ export const levelConfig =
         exitDown: false,
         exitLeft: false,
         exitRight: true,
-        cameraFocusOffset: { x: 130, y: 0 },
-        requiresAllEnenmiesKilled: false
+        cameraFocusOffset: { x: 75, y: 0 },
+        requiresAllEnenmiesKilled: false,
+        hasSeenTutorial: true
     }, "Level_1_12": {
-        name: "[PLACE HOLDER]",
+        name: "Spikes b flyin",
         startingStars: 0,
         bronzeTarget: 5,
         silverTarget: 3,
         goldTarget: 1,
         currentBest: 0,
         nextLevel: "Level_1_13",
-        exitUp: true,
+        exitUp: false,
         exitDown: false,
         exitLeft: false,
-        exitRight: false,
-        cameraFocusOffset: { x: 0, y: -25 },
-        requiresAllEnenmiesKilled: false
+        exitRight: true,
+        cameraFocusOffset: { x: 130, y: 0 },
+        requiresAllEnenmiesKilled: false,
+        hasSeenTutorial: true
     }, "Level_1_13": {
-        name: "[PLACE HOLDER]",
+        name: "Rising Heat",
         startingStars: 0,
         bronzeTarget: 5,
         silverTarget: 3,
         goldTarget: 1,
         currentBest: 0,
         nextLevel: "Level_1_14",
-        exitUp: false,
+        exitUp: true,
         exitDown: false,
         exitLeft: false,
-        exitRight: true,
-        cameraFocusOffset: { x: 240, y: 0 },
-        requiresAllEnenmiesKilled: false
+        exitRight: false,
+        cameraFocusOffset: { x: 0, y: -25 },
+        requiresAllEnenmiesKilled: false,
+        hasSeenTutorial: true
     }, "Level_1_14": {
-        name: "[PLACE HOLDER]",
+        name: "Escape Plan",
         startingStars: 0,
         bronzeTarget: 5,
         silverTarget: 3,
         goldTarget: 1,
         currentBest: 0,
-        nextLevel: "LevelSelect",
+        nextLevel: "Level_1_15",
         exitUp: false,
-        exitDown: true,
+        exitDown: false,
         exitLeft: false,
-        exitRight: false,
-        cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: false
+        exitRight: true,
+        cameraFocusOffset: { x: 240, y: 0 },
+        requiresAllEnenmiesKilled: false,
+        hasSeenTutorial: true
     }, "Level_1_15": {
         name: "[PLACE HOLDER]",
         startingStars: 0,
@@ -299,20 +314,7 @@ export const levelConfig =
         exitLeft: false,
         exitRight: false,
         cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: false
-    }, "Level_1_16": {
-        name: "[PLACE HOLDER]",
-        startingStars: 0,
-        bronzeTarget: 5,
-        silverTarget: 3,
-        goldTarget: 1,
-        currentBest: 0,
-        nextLevel: "LevelSelect",
-        exitUp: false,
-        exitDown: true,
-        exitLeft: false,
-        exitRight: false,
-        cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: false
-    }
+        requiresAllEnenmiesKilled: false,
+        hasSeenTutorial: true
+    } 
 }

@@ -40,6 +40,7 @@ export const handlePauseConfirm = (runtime) => {
 }
 
 export const updatePauseIndex = (val, runtime) => {
+    console.log(runtime.objects);
     const inst = runtime.objects.PauseOption.getAllInstances();
 
     pauseMenuIndex += val;

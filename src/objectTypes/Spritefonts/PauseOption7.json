@@ -1,0 +1,21 @@
+{
+	"name": "PauseOption7",
+	"plugin-id": "Spritefont2",
+	"sid": 581734676563680,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 256,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7654247,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

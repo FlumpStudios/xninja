@@ -434,6 +434,14 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 153178328420931,
+					"parameters": {
+						"layer": "1"
+					}
+				},
+				{
 					"id": "compare-instance-variable",
 					"objectClass": "MenuArrow",
 					"sid": 289827455417572,
@@ -469,6 +477,14 @@
 						"comparison": 0,
 						"value": "1"
 					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 398724892767611,
+					"parameters": {
+						"layer": "1"
+					}
 				}
 			],
 			"actions": [
@@ -496,6 +512,14 @@
 						"comparison": 4,
 						"value": "1"
 					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 559908295345759,
+					"parameters": {
+						"layer": "1"
+					}
 				}
 			],
 			"actions": [
@@ -522,6 +546,14 @@
 						"instance-variable": "MenuIndex",
 						"comparison": 2,
 						"value": "0"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 464518574545334,
+					"parameters": {
+						"layer": "1"
 					}
 				}
 			],
@@ -815,10 +847,10 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "MenuArrow",
-					"sid": 978594901383295,
+					"sid": 234762785407251,
 					"parameters": {
 						"instance-variable": "MenuIndex",
-						"value": "0"
+						"value": "-1"
 					}
 				}
 			],
