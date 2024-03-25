@@ -6,7 +6,7 @@ import * as config from "./config.js";
 export const resetLevel = (runtime) => {
     config.setGameState(config.gameStates.game);
     setEnemyCount(0);
-    runLevelStart(runtime);
+    runLevelStart(runtime);    
     runtime.goToLayout(runtime.layout.name);
 }
 
@@ -42,7 +42,8 @@ export const gamePlay = (runtime) => {
 
     if (levelTime > currentConfig.bronzeTarget) {
         if (!runtime.objects.Ghost.getFirstInstance()) {
-            runtime.objects.Ghost.createInstance(config.layers.game, player.x + 700, player.y - 500);
+            const ghost = runtime.objects.Ghost.createInstance(config.layers.game, player.x + 700, player.y - 500);
+            ghost.behaviors.Bullet.speed = config.GHOST_SPEED;
         }
     }
 
@@ -58,6 +59,7 @@ export const gamePlay = (runtime) => {
     }
 
     if ((getEnemyCount() <= 0 && config.levelConfig[runtime.layout.name].requiresAllEnenmiesKilled) || player.getHasPlayerEnteredLevelEndBox()) {
+       
         if (!runtime.levelInstance.isLevelInExitState()) {
             if (currentConfig.exitUp) {
                 const arrow = runtime.objects.LevelEndArrowTop.getFirstInstance();

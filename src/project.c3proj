@@ -106,6 +106,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "NoSave",
+			"name": "No save",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Physics",
 			"name": "Physics",
 			"author": "Scirra",
@@ -249,7 +256,8 @@
 			"Button_B",
 			"Sprite2",
 			"Button_LT",
-			"ButtonR2"
+			"ButtonR2",
+			"Skull"
 		],
 		"subfolders": [
 			{
@@ -522,7 +530,8 @@
 					"Level_1_11",
 					"Level_1_12",
 					"Level_1_13",
-					"Level_1_14"
+					"Level_1_14",
+					"Level_1_15"
 				],
 				"subfolders": [],
 				"name": "World1"
@@ -531,7 +540,8 @@
 				"items": [
 					"MainMenu",
 					"Splash",
-					"LevelSelect"
+					"LevelSelect",
+					"LoaderPage"
 				],
 				"subfolders": [],
 				"name": "Menus"
@@ -543,7 +553,8 @@
 			"GameSheet",
 			"MenuSheet",
 			"SplashSheet",
-			"LevelSelect"
+			"LevelSelect",
+			"Loader"
 		],
 		"subfolders": []
 	},
@@ -1898,5 +1909,5 @@
 	},
 	"viewportWidth": 640,
 	"viewportHeight": 480,
-	"firstLayout": "Splash"
+	"firstLayout": "LoaderPage"
 }

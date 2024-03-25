@@ -31,6 +31,11 @@
 			"behaviorId": "Bullet",
 			"name": "Bullet",
 			"sid": 210914387627495
+		},
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 911430767060126
 		}
 	],
 	"effectTypes": [],

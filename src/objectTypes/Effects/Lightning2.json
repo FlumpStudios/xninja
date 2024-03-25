@@ -4,7 +4,13 @@
 	"sid": 852170113264912,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 482193347695849
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

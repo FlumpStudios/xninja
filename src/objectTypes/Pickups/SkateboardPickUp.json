@@ -19,6 +19,11 @@
 			"behaviorId": "Sin",
 			"name": "Sine3",
 			"sid": 707207950576893
+		},
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 114273350150408
 		}
 	],
 	"effectTypes": [],

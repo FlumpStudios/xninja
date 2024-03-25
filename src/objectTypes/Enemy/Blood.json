@@ -9,6 +9,11 @@
 			"behaviorId": "destroy",
 			"name": "DestroyOutsideLayout",
 			"sid": 306937962752708
+		},
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 518273341701344
 		}
 	],
 	"effectTypes": [],

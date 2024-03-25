@@ -11,11 +11,9 @@ export const updateMenu = (runtime) => {
 	
 	for (let i = 0; i < inst.length; i++) {
 		
-		const l = "Level_1_" + (i + 1).toString();
+		let levelStars = runtime.objects[(STAR_NAME + (i + 1))].getAllInstances();		
+		const l = "Level_1_" + (i + 1).toString();		
 		const starLevelConfig = config.levelConfig[l];
-		
-		let levelStars = runtime.objects[(STAR_NAME + (i + 1))].getAllInstances();
-
 		if(starLevelConfig.currentBest > 0)
 		{
 			levelStars[0].isVisible = true;
@@ -44,9 +42,6 @@ export const updateMenu = (runtime) => {
 				levelStars[i].isVisible = false;
 			}
 		}
-	
-
-		
 		
 		
 		if (i === menuIndex) {

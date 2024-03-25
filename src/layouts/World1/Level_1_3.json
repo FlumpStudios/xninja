@@ -283,7 +283,11 @@
 					},
 					"uid": 773,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": -8,
 						"y": -40,
@@ -418,6 +422,9 @@
 					"instanceVariables": {},
 					"behaviors": {
 						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"NoSave": {
 							"properties": {}
 						}
 					},
@@ -572,6 +579,9 @@
 								"cone-of-view": 20,
 								"use-collision-cells": true
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1350,7 +1360,11 @@
 					},
 					"uid": 324,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 224,
 						"y": 224,
@@ -1379,7 +1393,11 @@
 					},
 					"uid": 325,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 240,
 						"y": 224,
@@ -1408,7 +1426,11 @@
 					},
 					"uid": 326,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 256,
 						"y": 224,
@@ -1437,7 +1459,11 @@
 					},
 					"uid": 327,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 272,
 						"y": 224,
@@ -1642,7 +1668,11 @@
 					},
 					"uid": 2320,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 200,
 						"y": 288,
@@ -2391,12 +2421,16 @@
 					},
 					"uid": 663,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 0,
 						"y": 0,
 						"width": 640,
-						"height": 480,
+						"height": 488,
 						"originX": 0,
 						"originY": 0,
 						"color": [

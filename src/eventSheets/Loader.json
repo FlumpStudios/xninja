@@ -1,0 +1,35 @@
+{
+	"name": "Loader",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 896234245580893
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "System",
+					"sid": 601538662000916,
+					"parameters": {
+						"slot": "\"Xninja_save_2\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 127349747614026,
+					"parameters": {
+						"layout": "Splash"
+					}
+				}
+			],
+			"sid": 469452544908648
+		}
+	],
+	"sid": 520038224795235
+}

@@ -283,7 +283,11 @@
 					},
 					"uid": 775,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": -40,
 						"y": -112,
@@ -418,6 +422,9 @@
 					"instanceVariables": {},
 					"behaviors": {
 						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"NoSave": {
 							"properties": {}
 						}
 					},
@@ -572,6 +579,9 @@
 								"cone-of-view": 20,
 								"use-collision-cells": true
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -2906,6 +2916,9 @@
 								"cone-of-view": 20,
 								"use-collision-cells": true
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -2974,6 +2987,9 @@
 								"cone-of-view": 20,
 								"use-collision-cells": true
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3432,7 +3448,11 @@
 					},
 					"uid": 2326,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 216,
 						"y": 608,
@@ -3515,7 +3535,11 @@
 					},
 					"uid": 2328,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 216,
 						"y": 208,
@@ -4469,12 +4493,16 @@
 					},
 					"uid": 733,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 0,
 						"y": 0,
 						"width": 640,
-						"height": 480,
+						"height": 488,
 						"originX": 0,
 						"originY": 0,
 						"color": [

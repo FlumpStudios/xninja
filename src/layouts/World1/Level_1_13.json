@@ -968,7 +968,11 @@
 					},
 					"uid": 1305,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": -1432,
 						"y": 312,
@@ -1011,6 +1015,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1055,6 +1062,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1099,6 +1109,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1897,7 +1910,11 @@
 					},
 					"uid": 1847,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 368,
 						"y": 3056,
@@ -1926,7 +1943,11 @@
 					},
 					"uid": 1848,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 384,
 						"y": 3056,
@@ -1955,7 +1976,11 @@
 					},
 					"uid": 1849,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 400,
 						"y": 3056,
@@ -1984,7 +2009,11 @@
 					},
 					"uid": 1850,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 416,
 						"y": 3056,
@@ -2013,7 +2042,11 @@
 					},
 					"uid": 1851,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 432,
 						"y": 3056,
@@ -2042,7 +2075,11 @@
 					},
 					"uid": 1852,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 448,
 						"y": 3056,
@@ -2071,7 +2108,11 @@
 					},
 					"uid": 1853,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 464,
 						"y": 3056,
@@ -2100,7 +2141,11 @@
 					},
 					"uid": 1854,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 480,
 						"y": 3056,
@@ -2129,7 +2174,11 @@
 					},
 					"uid": 1855,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 496,
 						"y": 3056,
@@ -2158,7 +2207,11 @@
 					},
 					"uid": 1856,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 512,
 						"y": 3056,
@@ -2187,7 +2240,11 @@
 					},
 					"uid": 1857,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 528,
 						"y": 3056,
@@ -2216,7 +2273,11 @@
 					},
 					"uid": 1858,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 544,
 						"y": 3056,
@@ -2245,7 +2306,11 @@
 					},
 					"uid": 1859,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 560,
 						"y": 3056,
@@ -2546,6 +2611,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"effects": {
@@ -2820,6 +2888,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -2864,6 +2935,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -2908,6 +2982,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -2952,6 +3029,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -2996,6 +3076,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3040,6 +3123,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3084,6 +3170,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3128,6 +3217,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3172,6 +3264,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3216,6 +3311,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3437,6 +3535,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3481,6 +3582,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3525,6 +3629,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3569,6 +3676,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3613,6 +3723,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3657,6 +3770,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3701,6 +3817,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3745,6 +3864,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3789,6 +3911,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3833,6 +3958,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3981,7 +4109,11 @@
 					},
 					"uid": 1895,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 616,
 						"y": 1816,
@@ -4010,7 +4142,11 @@
 					},
 					"uid": 1896,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 56,
 						"y": 1712,
@@ -4039,7 +4175,11 @@
 					},
 					"uid": 1897,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 72,
 						"y": 1712,
@@ -4068,7 +4208,11 @@
 					},
 					"uid": 1898,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 88,
 						"y": 1712,
@@ -4288,6 +4432,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -4332,6 +4479,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -4376,6 +4526,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -4420,6 +4573,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5061,6 +5217,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5105,6 +5264,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5149,6 +5311,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5193,6 +5358,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5414,6 +5582,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5458,6 +5629,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5502,6 +5676,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5546,6 +5723,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5767,6 +5947,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5811,6 +5994,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5855,6 +6041,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5899,6 +6088,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -6120,6 +6312,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -6164,6 +6359,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -6208,6 +6406,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -6252,6 +6453,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -6629,6 +6833,9 @@
 					"instanceVariables": {},
 					"behaviors": {
 						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"NoSave": {
 							"properties": {}
 						}
 					},
@@ -14139,7 +14346,11 @@
 					},
 					"uid": 1460,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 552,
 						"y": 2224,
@@ -14168,7 +14379,11 @@
 					},
 					"uid": 1829,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 568,
 						"y": 2224,
@@ -14197,7 +14412,11 @@
 					},
 					"uid": 1831,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 584,
 						"y": 2224,
@@ -14226,7 +14445,11 @@
 					},
 					"uid": 1860,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 600,
 						"y": 2224,
@@ -14255,7 +14478,11 @@
 					},
 					"uid": 1861,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 616,
 						"y": 2224,
@@ -14284,7 +14511,11 @@
 					},
 					"uid": 1862,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 632,
 						"y": 2224,
@@ -14313,7 +14544,11 @@
 					},
 					"uid": 1863,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 648,
 						"y": 2224,
@@ -15765,6 +16000,9 @@
 								"cone-of-view": 20,
 								"use-collision-cells": true
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -16009,6 +16247,9 @@
 								"default-controls": false,
 								"enabled": true
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -16054,6 +16295,9 @@
 								"step": false,
 								"enabled": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -16728,7 +16972,11 @@
 					},
 					"uid": 1549,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": -8,
 						"y": 0,

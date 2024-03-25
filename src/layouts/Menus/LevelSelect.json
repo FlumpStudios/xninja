@@ -2106,64 +2106,6 @@
 					}
 				},
 				{
-					"type": "UIStar_5",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 617,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 496,
-						"y": 152,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "UIStar_5",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 618,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 520,
-						"y": 152,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "UIStar_7",
 					"properties": {
 						"initially-visible": true,
@@ -2955,35 +2897,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 378,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 392,
-						"y": 432,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "UIStar_16",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 379,
 					"instanceVariables": {},
 					"behaviors": {},
@@ -3233,7 +3146,7 @@
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 0.000019053524097589758,
 						"zElevation": 0
 					}
 				},
@@ -3359,6 +3272,93 @@
 					"world": {
 						"x": 168,
 						"y": 80,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UIStar_6",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 378,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 496,
+						"y": 152,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UIStar_6",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 617,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 520,
+						"y": 152,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Skull",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2342,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 392,
+						"y": 432,
 						"width": 16,
 						"height": 16,
 						"originX": 0.5,
@@ -4779,6 +4779,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {

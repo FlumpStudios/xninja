@@ -214,7 +214,11 @@
 					},
 					"uid": 781,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": -80,
 						"y": -616,
@@ -577,7 +581,11 @@
 					},
 					"uid": 792,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": -272,
 						"y": -1312,
@@ -652,7 +660,11 @@
 					},
 					"uid": 923,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5856,
 						"y": 312,
@@ -681,7 +693,11 @@
 					},
 					"uid": 924,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5872,
 						"y": 312,
@@ -710,7 +726,11 @@
 					},
 					"uid": 925,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5888,
 						"y": 312,
@@ -739,7 +759,11 @@
 					},
 					"uid": 864,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8952,
 						"y": 712,
@@ -768,7 +792,11 @@
 					},
 					"uid": 869,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8968,
 						"y": 712,
@@ -797,7 +825,11 @@
 					},
 					"uid": 926,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8984,
 						"y": 712,
@@ -826,7 +858,11 @@
 					},
 					"uid": 927,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8728,
 						"y": 712,
@@ -855,7 +891,11 @@
 					},
 					"uid": 928,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8744,
 						"y": 712,
@@ -884,7 +924,11 @@
 					},
 					"uid": 929,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8760,
 						"y": 712,
@@ -913,7 +957,11 @@
 					},
 					"uid": 952,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8776,
 						"y": 712,
@@ -942,7 +990,11 @@
 					},
 					"uid": 953,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8792,
 						"y": 712,
@@ -971,7 +1023,11 @@
 					},
 					"uid": 954,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8808,
 						"y": 712,
@@ -1000,7 +1056,11 @@
 					},
 					"uid": 955,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8824,
 						"y": 712,
@@ -1029,7 +1089,11 @@
 					},
 					"uid": 956,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8840,
 						"y": 712,
@@ -1058,7 +1122,11 @@
 					},
 					"uid": 957,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8856,
 						"y": 712,
@@ -1087,7 +1155,11 @@
 					},
 					"uid": 958,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8872,
 						"y": 712,
@@ -1116,7 +1188,11 @@
 					},
 					"uid": 959,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8888,
 						"y": 712,
@@ -1145,7 +1221,11 @@
 					},
 					"uid": 960,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8904,
 						"y": 712,
@@ -1174,7 +1254,11 @@
 					},
 					"uid": 961,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8920,
 						"y": 712,
@@ -1203,7 +1287,11 @@
 					},
 					"uid": 962,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 8936,
 						"y": 712,
@@ -1709,7 +1797,11 @@
 					},
 					"uid": 889,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 10807.39630983718,
 						"y": 819.63933198972,
@@ -2117,6 +2209,9 @@
 					"instanceVariables": {},
 					"behaviors": {
 						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"NoSave": {
 							"properties": {}
 						}
 					},
@@ -2535,6 +2630,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3012,6 +3110,9 @@
 								"cone-of-view": 20,
 								"use-collision-cells": true
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3431,6 +3532,9 @@
 								"cone-of-view": 20,
 								"use-collision-cells": true
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3499,6 +3603,9 @@
 								"cone-of-view": 20,
 								"use-collision-cells": true
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3611,7 +3718,11 @@
 					},
 					"uid": 847,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5632,
 						"y": 312,
@@ -3640,7 +3751,11 @@
 					},
 					"uid": 848,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5648,
 						"y": 312,
@@ -3669,7 +3784,11 @@
 					},
 					"uid": 849,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5664,
 						"y": 312,
@@ -3698,7 +3817,11 @@
 					},
 					"uid": 850,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5680,
 						"y": 312,
@@ -3727,7 +3850,11 @@
 					},
 					"uid": 851,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5696,
 						"y": 312,
@@ -3756,7 +3883,11 @@
 					},
 					"uid": 852,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5712,
 						"y": 312,
@@ -3785,7 +3916,11 @@
 					},
 					"uid": 853,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5728,
 						"y": 312,
@@ -3814,7 +3949,11 @@
 					},
 					"uid": 854,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5744,
 						"y": 312,
@@ -3843,7 +3982,11 @@
 					},
 					"uid": 855,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5760,
 						"y": 312,
@@ -3872,7 +4015,11 @@
 					},
 					"uid": 856,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5776,
 						"y": 312,
@@ -3901,7 +4048,11 @@
 					},
 					"uid": 857,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5792,
 						"y": 312,
@@ -3930,7 +4081,11 @@
 					},
 					"uid": 858,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5808,
 						"y": 312,
@@ -3959,7 +4114,11 @@
 					},
 					"uid": 859,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5824,
 						"y": 312,
@@ -3988,7 +4147,11 @@
 					},
 					"uid": 860,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5840,
 						"y": 312,
@@ -4451,6 +4614,9 @@
 								"cone-of-view": 20,
 								"use-collision-cells": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -4575,7 +4741,11 @@
 					},
 					"uid": 830,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 224,
 						"y": 784,
@@ -4881,7 +5051,11 @@
 					},
 					"uid": 892,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 10795.656222121803,
 						"y": 895.2307139080779,
@@ -5576,7 +5750,11 @@
 					},
 					"uid": 1395,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5856,
 						"y": 312,
@@ -5605,7 +5783,11 @@
 					},
 					"uid": 1396,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5872,
 						"y": 312,
@@ -5634,7 +5816,11 @@
 					},
 					"uid": 1397,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 5888,
 						"y": 312,
@@ -5701,6 +5887,9 @@
 								"cone-of-view": 20,
 								"use-collision-cells": true
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5769,6 +5958,9 @@
 								"cone-of-view": 20,
 								"use-collision-cells": true
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -6036,6 +6228,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"effects": {
@@ -6124,6 +6319,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"effects": {
@@ -7805,7 +8003,11 @@
 					},
 					"uid": 1022,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 0,
 						"y": 0,

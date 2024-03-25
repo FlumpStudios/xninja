@@ -8,12 +8,17 @@ export default class Level {
   #starCount = 0;
   #levelTime = 0;
   #timeMultiplier = 1;
+  #isLevelReady = false;
 
   constructor(level) {
     if (level && config.levelConfig[level]) {
       this.#starCount = config.levelConfig[level].startingStars;
     }
   }
+
+  getIsLevelReady = () => this.#isLevelReady;
+  
+  setIsLevelReady = (ready) => this.#isLevelReady = ready;
 
   setTimeMultiplier = (amount) => this.#timeMultiplier = amount;
   

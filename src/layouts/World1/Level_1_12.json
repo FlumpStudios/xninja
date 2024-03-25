@@ -945,6 +945,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -989,6 +992,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1033,6 +1039,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1073,7 +1082,11 @@
 					},
 					"uid": 1612,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": -60,
 						"y": -20,
@@ -1116,6 +1129,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1160,6 +1176,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1204,6 +1223,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1248,6 +1270,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1292,6 +1317,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1336,6 +1364,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1520,6 +1551,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"effects": {
@@ -1572,6 +1606,9 @@
 								"enabled": false,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1616,6 +1653,9 @@
 								"enabled": false,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1660,6 +1700,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1704,6 +1747,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1748,6 +1794,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1792,6 +1841,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1836,6 +1888,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1880,6 +1935,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -2041,6 +2099,9 @@
 					"instanceVariables": {},
 					"behaviors": {
 						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"NoSave": {
 							"properties": {}
 						}
 					},
@@ -2711,6 +2772,9 @@
 								"default-controls": false,
 								"enabled": true
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3654,6 +3718,9 @@
 								"enabled": false,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -3698,6 +3765,9 @@
 								"enabled": false,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -4174,7 +4244,11 @@
 					},
 					"uid": 1676,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 328,
 						"y": 936,
@@ -4203,7 +4277,11 @@
 					},
 					"uid": 1677,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 344,
 						"y": 936,
@@ -4232,7 +4310,11 @@
 					},
 					"uid": 1678,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 360,
 						"y": 936,
@@ -4261,7 +4343,11 @@
 					},
 					"uid": 1679,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 376,
 						"y": 936,
@@ -4290,7 +4376,11 @@
 					},
 					"uid": 1680,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 392,
 						"y": 936,
@@ -4319,7 +4409,11 @@
 					},
 					"uid": 1681,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 488,
 						"y": 936,
@@ -4348,7 +4442,11 @@
 					},
 					"uid": 1682,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 504,
 						"y": 936,
@@ -4377,7 +4475,11 @@
 					},
 					"uid": 1683,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 520,
 						"y": 936,
@@ -4406,7 +4508,11 @@
 					},
 					"uid": 1684,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 536,
 						"y": 936,
@@ -4435,7 +4541,11 @@
 					},
 					"uid": 1685,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 552,
 						"y": 936,
@@ -4556,7 +4666,11 @@
 					},
 					"uid": 1688,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 568,
 						"y": 936,
@@ -5166,6 +5280,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5210,6 +5327,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5254,6 +5374,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5298,6 +5421,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5342,6 +5468,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5386,6 +5515,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -5872,6 +6004,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -6036,6 +6171,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -6394,6 +6532,9 @@
 								"default-controls": false,
 								"enabled": true
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -7039,6 +7180,9 @@
 								"cone-of-view": 20,
 								"use-collision-cells": true
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -7956,6 +8100,9 @@
 								"step": false,
 								"enabled": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -8657,7 +8804,11 @@
 					},
 					"uid": 1779,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": -8,
 						"y": 0,

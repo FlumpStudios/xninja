@@ -41,6 +41,10 @@ async function OnBeforeProjectStart(runtime) {
 
 	runtime.addEventListener("tick", () => tick(runtime));
 	runtime.addEventListener("instancecreate", (e) => createdInstance(e, runtime));
+
+	runtime.addEventListener("save", (e) => onSave(e));
+	runtime.addEventListener("load", (e) => onLoad(e));
+
 	await sfxManager.init(runtime);
 }
 
@@ -113,10 +117,30 @@ const createdInstance = (e, runtime) => {
 	}
 }
 
+const onSave = (e) => {
+	if (e.saveData) {
+		e.saveData.levelConfig = config.levelConfig;
+	}
+	else {
+		e.saveData = { levelConfig: config.levelConfig }
+	}
+}
+
+const onLoad = (e) => {
+	console.log(e);
+	if (e.saveData?.levelConfig) {
+		config.SetLevelConfig(e.saveData.levelConfig);
+	}
+}
+
 const gameLoop = (runtime) => {
 	runtime.levelInstance.addToLevelTime(runtime.dt * runtime.levelInstance.getTimeMultiplier());
-
 	const levelTime = runtime.levelInstance.getLevelTime();
+
+	if (levelTime > 0.2) {
+		runtime.levelInstance.setIsLevelReady(true);
+	}
+
 	runtime.objects.TimeRemaining_spritefont.getFirstInstance().text = levelTime.toString(); //(levelTime > 0 ? levelTime.toString() : "0");
 
 	const player = runtime.objects.Player.getFirstInstance();
@@ -139,6 +163,8 @@ const gameLoop = (runtime) => {
 		ghost.handleGhostBehavior(runtime);
 	}
 
-	gamePlay(runtime);
-	uiUpdateLoop(runtime);
+	if (runtime.levelInstance.getIsLevelReady()) {
+		gamePlay(runtime);
+		uiUpdateLoop(runtime);
+	}
 }

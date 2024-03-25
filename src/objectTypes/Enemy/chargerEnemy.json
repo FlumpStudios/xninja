@@ -41,6 +41,11 @@
 			"behaviorId": "Platform",
 			"name": "Platform",
 			"sid": 908555828585087
+		},
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 162276871851863
 		}
 	],
 	"effectTypes": [],

@@ -939,6 +939,48 @@
 				}
 			],
 			"sid": 714533589518462
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-load-complete",
+					"objectClass": "System",
+					"sid": 887013978659229
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 694261006678605,
+					"parameters": {
+						"layout": "Splash"
+					}
+				}
+			],
+			"sid": 685154364512687
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-end-of-layout",
+					"objectClass": "System",
+					"sid": 972465367659037
+				}
+			],
+			"actions": [
+				{
+					"id": "save",
+					"objectClass": "System",
+					"sid": 896784427024551,
+					"parameters": {
+						"slot": "\"Xninja_save_2\""
+					}
+				}
+			],
+			"sid": 243995866978168
 		}
 	],
 	"sid": 557864277610586

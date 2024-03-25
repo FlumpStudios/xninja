@@ -283,7 +283,11 @@
 					},
 					"uid": 2402,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": -60,
 						"y": -20,
@@ -687,6 +691,9 @@
 					"instanceVariables": {},
 					"behaviors": {
 						"DestroyOutsideLayout": {
+							"properties": {}
+						},
+						"NoSave": {
 							"properties": {}
 						}
 					},
@@ -1108,7 +1115,11 @@
 					},
 					"uid": 2414,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 240,
 						"y": 88,
@@ -1263,6 +1274,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1427,6 +1441,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1591,6 +1608,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1755,6 +1775,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -1919,6 +1942,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -2083,6 +2109,9 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -2834,12 +2863,16 @@
 					},
 					"uid": 2440,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
 					"world": {
 						"x": 0,
 						"y": 0,
 						"width": 640,
-						"height": 480,
+						"height": 488,
 						"originX": 0,
 						"originY": 0,
 						"color": [

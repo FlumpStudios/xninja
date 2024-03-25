@@ -24,6 +24,11 @@
 			"behaviorId": "Rotate",
 			"name": "Rotate",
 			"sid": 443862974593605
+		},
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 425079327609166
 		}
 	],
 	"effectTypes": [

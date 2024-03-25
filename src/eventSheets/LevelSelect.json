@@ -304,6 +304,27 @@
 				}
 			],
 			"sid": 618671317168049
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-load-complete",
+					"objectClass": "System",
+					"sid": 163643966894338
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 121333261034006,
+					"parameters": {
+						"layout": "Splash"
+					}
+				}
+			],
+			"sid": 165734847536109
 		}
 	],
 	"sid": 131408356478582

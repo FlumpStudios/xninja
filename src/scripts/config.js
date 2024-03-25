@@ -18,6 +18,7 @@ export const SKATE_SPEED = 600;
 export const WATER_MOVE_SPEED = 150;
 export const DEATH_STAR_SPEED = 500;
 export const SLASH_POSITION_OFFSET = 24;
+export const GHOST_SPEED = 900;
 
 export const effect_postions = {
     greyScale: 0,
@@ -62,8 +63,8 @@ let currentGameState = gameStates.mainMenu;
 
 export const getGameState = () => currentGameState;
 export const setGameState = (gameState) => currentGameState = gameState;
-
-export const levelConfig =
+export const SetLevelConfig = (config) => levelConfig = config;
+export let levelConfig =
 {
     "LevelSelect": {
         name: "Level Select",
@@ -84,9 +85,9 @@ export const levelConfig =
     "Level_1_1": {
         name: "It Starts",
         startingStars: 0,
-        bronzeTarget: 15,
-        silverTarget: 10,
-        goldTarget: 4,
+        bronzeTarget: 10,
+        silverTarget: 4,
+        goldTarget: 2,
         currentBest: 0,
         nextLevel: "Level_1_2",
         exitUp: false,
@@ -101,9 +102,9 @@ export const levelConfig =
     "Level_1_2": {
         name: "Hump Day",
         startingStars: 0,
-        bronzeTarget: 15,
-        silverTarget: 10,
-        goldTarget: 4,
+        bronzeTarget: 10,
+        silverTarget: 1,
+        goldTarget: -0.2,
         currentBest: 0,
         nextLevel: "Level_1_3",
         exitUp: false,
@@ -117,9 +118,9 @@ export const levelConfig =
     "Level_1_3": {
         name: "Careful Now",
         startingStars: 0,
-        bronzeTarget: 8,
-        silverTarget: 6,
-        goldTarget: 4,
+        bronzeTarget: 10,
+        silverTarget: 1,
+        goldTarget: 0.2,
         currentBest: 0,
         nextLevel: "Level_1_4",
         exitUp: false,
@@ -133,9 +134,9 @@ export const levelConfig =
     "Level_1_4": {
         name: "No Escape",
         startingStars: 0,
-        bronzeTarget: 8,
-        silverTarget: 5,
-        goldTarget: 3,
+        bronzeTarget: 10,
+        silverTarget: 0,
+        goldTarget: -0.5,
         currentBest: 0,
         nextLevel: "Level_1_5",
         exitUp: false,
@@ -150,8 +151,8 @@ export const levelConfig =
         name: "RUN!",
         startingStars: 0,
         bronzeTarget: 15,
-        silverTarget: 10,
-        goldTarget: 4,
+        silverTarget: 2.5,
+        goldTarget: 1.7,
         currentBest: 0,
         nextLevel: "Level_1_6",
         exitUp: false,
@@ -165,9 +166,9 @@ export const levelConfig =
     "Level_1_6": {
         name: "Cloak & Ladder",
         startingStars: 0,
-        bronzeTarget: 8,
-        silverTarget: 5,
-        goldTarget: 3,
+        bronzeTarget: 15,
+        silverTarget: 2,
+        goldTarget: -1,
         currentBest: 0,
         nextLevel: "Level_1_7",
         exitUp: false,
@@ -182,8 +183,8 @@ export const levelConfig =
         name: "Wet Wet Wet",
         startingStars: 0,
         bronzeTarget: 30,
-        silverTarget: 25,
-        goldTarget: 20,
+        silverTarget: 10,
+        goldTarget: 3.5,
         currentBest: 0,
         nextLevel: "Level_1_8",
         exitUp: false,
@@ -197,9 +198,9 @@ export const levelConfig =
     "Level_1_8": {
         name: "Downfell",
         startingStars: 0,
-        bronzeTarget: 35,
-        silverTarget: 30,
-        goldTarget: 25,
+        bronzeTarget: 25,
+        silverTarget: 0,
+        goldTarget: -10,
         currentBest: 0,
         nextLevel: "Level_1_9",
         exitUp: false,
@@ -213,9 +214,9 @@ export const levelConfig =
     "Level_1_9": {
         name: "Skate & Destroy",
         startingStars: 0,
-        bronzeTarget: 5,
-        silverTarget: 3,
-        goldTarget: 1,
+        bronzeTarget: 40,
+        silverTarget: 15,
+        goldTarget: 3,
         currentBest: 0,
         nextLevel: "Level_1_10",
         exitUp: false,
@@ -229,9 +230,9 @@ export const levelConfig =
     "Level_1_10": {
         name: "Cave Story",
         startingStars: 0,
-        bronzeTarget: 5,
-        silverTarget: 3,
-        goldTarget: 1,
+        bronzeTarget: 30,
+        silverTarget: 10,
+        goldTarget: 6,
         currentBest: 0,
         nextLevel: "Level_1_11",
         exitUp: false,
@@ -244,9 +245,9 @@ export const levelConfig =
     }, "Level_1_11": {
         name: "Charged",
         startingStars: 0,
-        bronzeTarget: 5,
-        silverTarget: 3,
-        goldTarget: 1,
+        bronzeTarget: 30,
+        silverTarget: 5,
+        goldTarget: -1,
         currentBest: 0,
         nextLevel: "Level_1_12",
         exitUp: false,
@@ -259,9 +260,9 @@ export const levelConfig =
     }, "Level_1_12": {
         name: "Spikes b flyin",
         startingStars: 0,
-        bronzeTarget: 5,
-        silverTarget: 3,
-        goldTarget: 1,
+        bronzeTarget: 40,
+        silverTarget: 15,
+        goldTarget: 6,
         currentBest: 0,
         nextLevel: "Level_1_13",
         exitUp: false,
@@ -274,9 +275,9 @@ export const levelConfig =
     }, "Level_1_13": {
         name: "Rising Heat",
         startingStars: 0,
-        bronzeTarget: 5,
-        silverTarget: 3,
-        goldTarget: 1,
+        bronzeTarget: 40,
+        silverTarget: 30,
+        goldTarget: 24,
         currentBest: 0,
         nextLevel: "Level_1_14",
         exitUp: true,
@@ -289,9 +290,9 @@ export const levelConfig =
     }, "Level_1_14": {
         name: "Escape Plan",
         startingStars: 0,
-        bronzeTarget: 5,
-        silverTarget: 3,
-        goldTarget: 1,
+        bronzeTarget: 30,
+        silverTarget: 10,
+        goldTarget: 5,
         currentBest: 0,
         nextLevel: "Level_1_15",
         exitUp: false,

@@ -48,6 +48,11 @@
 			"behaviorId": "LOS",
 			"name": "LineOfSight",
 			"sid": 441698793033019
+		},
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 574782947024370
 		}
 	],
 	"effectTypes": [],

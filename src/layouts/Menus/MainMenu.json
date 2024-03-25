@@ -130,6 +130,9 @@
 								"step": false,
 								"enabled": false
 							}
+						},
+						"NoSave": {
+							"properties": {}
 						}
 					},
 					"world": {

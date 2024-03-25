@@ -9,6 +9,11 @@
 			"behaviorId": "Fade",
 			"name": "Fade",
 			"sid": 513759191669790
+		},
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 722821034523968
 		}
 	],
 	"effectTypes": [],

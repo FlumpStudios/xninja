@@ -1,13 +1,10 @@
-import enemy from "./enemy.js";
 import { getAngleTo } from "./utils.js";
 
-export default class GhostInstance extends enemy {
+export default class GhostInstance extends globalThis.ISpriteInstance {
 
-    CHASE_SPEED = 400;
     initialWidth = 0;
     constructor() {
         super();
-        this.behaviors.Bullet.speed = this.CHASE_SPEED;
         this.initialWidth = this.width;
     }
 
