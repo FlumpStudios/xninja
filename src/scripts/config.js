@@ -303,19 +303,19 @@ export let levelConfig =
         requiresAllEnenmiesKilled: false,
         hasSeenTutorial: true
     }, "Level_1_15": {
-        name: "[PLACE HOLDER]",
+        name: "AHHHH!",
         startingStars: 0,
-        bronzeTarget: 5,
-        silverTarget: 3,
-        goldTarget: 1,
+        bronzeTarget: 100,
+        silverTarget: 40,
+        goldTarget: 25,
         currentBest: 0,
         nextLevel: "LevelSelect",
-        exitUp: false,
-        exitDown: true,
-        exitLeft: false,
-        exitRight: false,
+        exitUp: true,
+        exitDown: false,
+        exitLeft: true,
+        exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: false,
+        requiresAllEnenmiesKilled: true,
         hasSeenTutorial: true
     } 
 }

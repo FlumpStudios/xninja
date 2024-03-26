@@ -260,6 +260,12 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
             }
         }
 
+        for (const spike of runtime.objects.Boss1.instances()) {
+            if (spike.testOverlap(this)) {
+                this.killPlayer(runtime);
+            }
+        }
+
         for (const spike of runtime.objects.SpikeSine.instances()) {
             if (spike.testOverlap(this)) {
                 this.killPlayer(runtime);
@@ -283,9 +289,17 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
 
     checkPickupCollisions = (runtime) => {
 
+        for (const pickup of runtime.objects.DeathStarPickUpX5.instances()) {
+            if (pickup.testOverlap(this)) {
+                runtime.levelInstance.addToStarCount(5);
+                sfx.PlayThrowStarPickupSound();
+                pickup.destroy();
+            }
+        }
+
         for (const pickup of runtime.objects.DeathStarPickUp.instances()) {
             if (pickup.testOverlap(this)) {
-                runtime.levelInstance.addToStarCount(runtime);
+                runtime.levelInstance.addToStarCount(1);
                 sfx.PlayThrowStarPickupSound();
                 pickup.destroy();
             }

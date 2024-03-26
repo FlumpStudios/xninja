@@ -37,8 +37,8 @@ export default class Level {
   addToEscaped = () => ++this.#escapeCount;
 
   removeFromStarCount = () => --this.#starCount;
-
-  addToStarCount = () => ++this.#starCount;
+  
+  addToStarCount = (amount) => this.#starCount += amount;
 
   resetKills = () => this.#killCount = 0;
 

@@ -7128,9 +7128,9 @@
 					"world": {
 						"x": 696,
 						"y": 40,
-						"width": 67.5,
-						"height": 62.5,
-						"originX": 0.5,
+						"width": 42.5,
+						"height": 42.5,
+						"originX": 0.5294117647058824,
 						"originY": 0.5,
 						"color": [
 							1,

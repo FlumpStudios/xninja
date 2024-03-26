@@ -46,6 +46,18 @@
 					}
 				},
 				{
+					"id": "play",
+					"objectClass": "Music",
+					"sid": 395686595649673,
+					"parameters": {
+						"audio-file": "Pickup_Coin",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 997570143560966,

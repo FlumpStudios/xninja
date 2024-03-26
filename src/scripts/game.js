@@ -6,7 +6,7 @@ import * as config from "./config.js";
 export const resetLevel = (runtime) => {
     config.setGameState(config.gameStates.game);
     setEnemyCount(0);
-    runLevelStart(runtime);    
+    runLevelStart(runtime);
     runtime.goToLayout(runtime.layout.name);
 }
 
@@ -36,7 +36,7 @@ export const gamePlay = (runtime) => {
     else if (levelTime > currentConfig.silverTarget) {
         runtime.objects.TimeRemaining_spritefont.getFirstInstance().colorRgb = [1, 0, 0];
     }
-    else{
+    else {
         runtime.objects.TimeRemaining_spritefont.getFirstInstance().colorRgb = [1, 1, 1];
     }
 
@@ -58,8 +58,16 @@ export const gamePlay = (runtime) => {
         runtime.objects.DeathStarPickUp.createInstance(config.layers.game, 104, 336);
     }
 
+    if (
+        runtime.layout.name === "Level_1_15"
+        && runtime.levelInstance.getStarcount() <= 0
+        && runtime.objects.DeathStarPickUpX5.getAllInstances().length < 1
+        && !runtime.levelInstance.isLevelInExitState()) {
+        runtime.objects.DeathStarPickUpX5.createInstance(config.layers.game, 320, 32);
+    }
+
     if ((getEnemyCount() <= 0 && config.levelConfig[runtime.layout.name].requiresAllEnenmiesKilled) || player.getHasPlayerEnteredLevelEndBox()) {
-       
+
         if (!runtime.levelInstance.isLevelInExitState()) {
             if (currentConfig.exitUp) {
                 const arrow = runtime.objects.LevelEndArrowTop.getFirstInstance();

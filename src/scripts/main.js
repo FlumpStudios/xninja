@@ -18,6 +18,7 @@ import { pauseBehaviour } from "./pause.js";
 import BatInstance from "./bat.js";
 import GhostInstance from "./ghostEnemy.js";
 import * as sfxManager from "./sfxManager.js";
+import Boss1Instance from "./boss1Instance.js";
 
 runOnStartup(async runtime => {
 	// Code to run on the loading screen.
@@ -30,6 +31,7 @@ runOnStartup(async runtime => {
 	runtime.objects.Player.setInstanceClass(PlayerInst);
 	runtime.objects.Bat.setInstanceClass(BatInstance);
 	runtime.objects.Ghost.setInstanceClass(GhostInstance);
+	runtime.objects.Boss1.setInstanceClass(Boss1Instance);
 	runtime.addEventListener("beforeprojectstart", () => OnBeforeProjectStart(runtime));
 });
 
@@ -161,6 +163,10 @@ const gameLoop = (runtime) => {
 
 	for (const ghost of runtime.objects.Ghost.instances()) {
 		ghost.handleGhostBehavior(runtime);
+	}
+
+	for (const boss1 of runtime.objects.Boss1.instances()) {
+		boss1.handleBossBahavior(runtime);
 	}
 
 	if (runtime.levelInstance.getIsLevelReady()) {

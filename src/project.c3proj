@@ -378,7 +378,8 @@
 					"chargerEnemy",
 					"Bat",
 					"Ghost",
-					"Exlaim"
+					"Exlaim",
+					"Boss1"
 				],
 				"subfolders": [],
 				"name": "Enemy"
@@ -424,7 +425,8 @@
 			{
 				"items": [
 					"DeathStarPickUp",
-					"SkateboardPickUp"
+					"SkateboardPickUp",
+					"DeathStarPickUpX5"
 				],
 				"subfolders": [],
 				"name": "Pickups"
@@ -725,6 +727,14 @@
 					"name": "sfxManager.js",
 					"type": "application/javascript",
 					"sid": 952446332488558,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "boss1Instance.js",
+					"type": "application/javascript",
+					"sid": 401851549805339,
 					"script-info": {
 						"purpose": "none"
 					}
