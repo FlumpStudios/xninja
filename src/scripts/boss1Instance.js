@@ -7,7 +7,7 @@ import * as sfx from "./sfxManager.js";
 export default class Boss1Instance extends globalThis.ISpriteInstance {
 	health = 20;
 	runningIntro = true;
-
+	hasPlayedDeathSounds = false;
 	constructor() {
 		super();
 		setEnemyCount(1);
@@ -19,8 +19,9 @@ export default class Boss1Instance extends globalThis.ISpriteInstance {
 		for (const star of runtime.objects.DeathStar.instances()) {
 			if (star.testOverlap(this)) {
 				star.destroy();
+				sfx.PlayBosSHit();
 				this.health--;
-				this.colorRgb = [1, 0, 0];
+				this.colorRgb = [1, 0, 0];				
 				waitForMillisecond(50).then(() => {
 					this.colorRgb = [1, 1, 1];
 				});
@@ -30,6 +31,11 @@ export default class Boss1Instance extends globalThis.ISpriteInstance {
 
 	handleBossBahavior = (runtime) => {
 		if (this.health < 0) {
+			if(!this.hasPlayedDeathSounds)
+			{
+				sfx.PlayBoss1Death();
+				this.hasPlayedDeathSounds = true;
+			}
 			this.y += (runtime.dt * 30);
 			this.colorRgb = [1, 0, 0];
 			this.behaviors.Bullet.isEnabled = false;
@@ -65,7 +71,7 @@ export default class Boss1Instance extends globalThis.ISpriteInstance {
 				this.behaviors.Bullet.isEnabled = false;
 			}
 
-			let speed = 250 - (this.health - 1) * 30;
+			let speed = 250 - ((this.health - 1) * 30);
 			this.behaviors.Bullet.speed = speed > 0 ? speed : 75;
 
 			this.handleDeathStarCollision(runtime);

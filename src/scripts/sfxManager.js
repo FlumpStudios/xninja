@@ -12,6 +12,8 @@ let enemyScaredSound = null;
 let starPickupSound = null;
 let skatePickup = null
 let escapeSound = null;
+let bossDeath = null;
+let bossHit = null;
 export const init = (async runtime => {
     // Initialise the audio manager. See AudioManager.js for details.
     audioManager = new AudioManager(runtime);
@@ -19,7 +21,7 @@ export const init = (async runtime => {
     // During the loading screen, load both sound files as
     // AudioBuffers and the music track all in parallel, so
     // they are ready for immediate playback on startup.
-    [menuMove, menuSelect, jumpSound, throwStarSound, attackSound, playerDeath, senseiDeathSound,enemyScaredSound,starPickupSound, skatePickup, escapeSound] = await Promise.all([
+    [menuMove, menuSelect, jumpSound, throwStarSound, attackSound, playerDeath, senseiDeathSound, enemyScaredSound, starPickupSound, skatePickup, escapeSound, bossDeath, bossHit] = await Promise.all([
         audioManager.loadSound("sfx_menu_move1.webm"),
         audioManager.loadSound("sfx_sounds_button6.webm"),
         audioManager.loadSound("jump.webm"),
@@ -30,7 +32,9 @@ export const init = (async runtime => {
         audioManager.loadSound("enemyScared.webm"),
         audioManager.loadSound("starPickup.webm"),
         audioManager.loadSound("skate_pickup.webm"),
-        audioManager.loadSound("escape.webm")
+        audioManager.loadSound("escape.webm"),
+        audioManager.loadSound("bossDeath.webm"),
+        audioManager.loadSound("synth_misc_10.webm")
     ]);
 });
 
@@ -76,6 +80,14 @@ export function PlayerSkatePickup() {
 
 export function PlayerEnemyEspcapeSound() {
     audioManager.playSound(escapeSound);
+}
+
+export function PlayBoss1Death() {
+    audioManager.playSound(bossDeath);
+}
+
+export function PlayBosSHit() {
+    audioManager.playSound(bossHit);
 }
 
 export function SetVolume(vol) {

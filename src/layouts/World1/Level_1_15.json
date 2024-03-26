@@ -289,8 +289,8 @@
 						}
 					},
 					"world": {
-						"x": 16,
-						"y": -8,
+						"x": -16,
+						"y": -40,
 						"width": 704,
 						"height": 568,
 						"originX": 0,
@@ -300,6 +300,49 @@
 							1,
 							1,
 							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "LightningSheet",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 414,
+					"instanceVariables": {},
+					"behaviors": {
+						"NoSave": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": -88,
+						"y": -32,
+						"width": 3088,
+						"height": 1104,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -2243,7 +2286,7 @@
 					},
 					"world": {
 						"x": 344,
-						"y": 568,
+						"y": 552,
 						"width": 200,
 						"height": 280,
 						"originX": 0.5,
@@ -2255,75 +2298,6 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Water",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0,
-						"enable-tile-randomization": false,
-						"x-random": 1,
-						"y-random": 1,
-						"angle-random": 1,
-						"blend-margin-x": 0.1,
-						"blend-margin-y": 0.1
-					},
-					"uid": 2349,
-					"instanceVariables": {
-						"isDangerous": true
-					},
-					"behaviors": {
-						"Bullet": {
-							"properties": {
-								"speed": 101,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": false
-							}
-						}
-					},
-					"effects": {
-						"Water": {
-							"isEnabled": true,
-							"parameters": {
-								"speed": 0.1,
-								"x-speed": 0.3,
-								"y-speed": 0.3,
-								"intensity": 1.5,
-								"frequency": 5,
-								"angle": 7,
-								"delta": 20,
-								"reflectivity": 25,
-								"emboss": 0.2
-							}
-						}
-					},
-					"world": {
-						"x": -80,
-						"y": 528,
-						"width": 136,
-						"height": 816,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							0.9921568627450981,
-							0.0196078431372549,
-							0.0196078431372549,
-							1
-						],
-						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
 				},
@@ -2597,7 +2571,123 @@
 			"name": "ForegroundEffects",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "Rain",
+					"properties": {
+						"rate": 150,
+						"spray-cone": 0,
+						"type": "continuous-spray",
+						"object": -1,
+						"initially-visible": true,
+						"live-preview": false,
+						"speed": 0,
+						"size": 5,
+						"opacity": 70,
+						"grow-rate": 0,
+						"x-randomiser": 1300,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 0,
+						"size-randomiser": 0,
+						"grow-rate-randomiser": 0,
+						"acceleration": -150,
+						"gravity": 200,
+						"angle-randomiser": 0,
+						"life-speed-randomiser": 100,
+						"opacity-randomiser": 0,
+						"destroy-mode": "fade-to-invisible",
+						"timeout": 10
+					},
+					"uid": 369,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 0,
+						"y": -48,
+						"width": 640,
+						"height": 100,
+						"originX": 0,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Water",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 2349,
+					"instanceVariables": {
+						"isDangerous": true
+					},
+					"behaviors": {
+						"Bullet": {
+							"properties": {
+								"speed": 101,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": false
+							}
+						}
+					},
+					"effects": {
+						"Water": {
+							"isEnabled": true,
+							"parameters": {
+								"speed": 0.1,
+								"x-speed": 0.3,
+								"y-speed": 0.3,
+								"intensity": 1.5,
+								"frequency": 5,
+								"angle": 7,
+								"delta": 20,
+								"reflectivity": 25,
+								"emboss": 0.2
+							}
+						}
+					},
+					"world": {
+						"x": -80,
+						"y": 536,
+						"width": 136,
+						"height": 816,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							0.9921568627450981,
+							0.0196078431372549,
+							0.0196078431372549,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 969701019645896,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -3182,7 +3272,7 @@
 					},
 					"world": {
 						"x": 0,
-						"y": -8,
+						"y": 0,
 						"width": 640,
 						"height": 496,
 						"originX": 0,
@@ -3450,7 +3540,7 @@
 			"instance": {
 				"isEnabled": false,
 				"parameters": {
-					"brightness": 1
+					"brightness": 0.7
 				}
 			}
 		}

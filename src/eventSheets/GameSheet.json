@@ -225,6 +225,44 @@
 						}
 					],
 					"sid": 134576895875067
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Boss1",
+							"sid": 935818884211633
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-all",
+							"objectClass": "Music",
+							"sid": 877510222884438
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 505985479553467,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Music",
+							"sid": 890933319797021,
+							"parameters": {
+								"audio-file": "Survive - Chiptune Comp 04",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 870548931649849
 				}
 			],
 			"sid": 534802868517245
