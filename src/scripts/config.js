@@ -19,6 +19,9 @@ export const WATER_MOVE_SPEED = 150;
 export const DEATH_STAR_SPEED = 500;
 export const SLASH_POSITION_OFFSET = 24;
 export const GHOST_SPEED = 900;
+export const STARS_REQUIRED_FOR_BOSS = 30;
+export const BOSS1_LEVEL = "Level_1_15";
+export const LOCKED_LEVEL_UI_LAYER = 4;
 
 export const effect_postions = {
     greyScale: 0,
@@ -54,6 +57,9 @@ export const gameStates = {
     mainMenu: 3
 }
 
+let totalStarCount = 0;
+export const setTotalStarCount = (count) => totalStarCount = count;
+export const getTotalStarCount = () => totalStarCount;
 
 let currentTimeStep = 1;
 export const setCurrentTimestep = (val) => currentTimeStep = val;
@@ -294,7 +300,7 @@ export let levelConfig =
         silverTarget: 10,
         goldTarget: 5,
         currentBest: 0,
-        nextLevel: "Level_1_15",
+        nextLevel: "LevelSelect",
         exitUp: false,
         exitDown: false,
         exitLeft: false,

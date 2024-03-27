@@ -19,6 +19,23 @@
 					"parameters": {
 						"angle": "90"
 					}
+				},
+				{
+					"id": "request-fullscreen",
+					"objectClass": "Browser",
+					"sid": 304621726843690,
+					"parameters": {
+						"mode": "stretch-letterbox-scale",
+						"navigation-ui": "auto"
+					}
+				},
+				{
+					"id": "set-cursor-style",
+					"objectClass": "Mouse",
+					"sid": 377443032377845,
+					"parameters": {
+						"cursor-style": "none"
+					}
 				}
 			],
 			"sid": 731575306380190
@@ -311,6 +328,24 @@
 				}
 			],
 			"sid": 234392270026908
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 444688846222187
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Music",
+					"sid": 716469199601123
+				}
+			],
+			"sid": 947390056570582
 		}
 	],
 	"sid": 226624385918205

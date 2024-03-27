@@ -58,6 +58,8 @@ export const gamePlay = (runtime) => {
         runtime.objects.DeathStarPickUp.createInstance(config.layers.game, 104, 336);
     }
 
+    // Boss1 hack to make sure there's always enough stars to complete level
+    
     if (
         runtime.layout.name === "Level_1_15"
         && runtime.levelInstance.getStarcount() <= 0

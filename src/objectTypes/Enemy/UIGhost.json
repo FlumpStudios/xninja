@@ -1,0 +1,56 @@
+{
+	"name": "UIGhost",
+	"plugin-id": "Sprite",
+	"sid": 138652958645546,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 947635610527282
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 25,
+						"height": 34,
+						"originX": 0.52,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3202004,
+						"collisionPoly": {
+							"points": [
+								0.04,
+								0,
+								0.96,
+								0,
+								0.96,
+								0.9705882352941176,
+								0.04,
+								0.9705882352941176
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 0,
+						"tag": ""
+					}
+				],
+				"sid": 436786573833859,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 6
+			}
+		],
+		"subfolders": []
+	}
+}

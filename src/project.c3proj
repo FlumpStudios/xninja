@@ -330,7 +330,8 @@
 							"TitleBackground_tile",
 							"LogoStopMarker",
 							"Flump",
-							"EmptyStar"
+							"EmptyStar",
+							"ReuiqredStar"
 						],
 						"subfolders": [],
 						"name": "Menu"
@@ -379,7 +380,8 @@
 					"Bat",
 					"Ghost",
 					"Exlaim",
-					"Boss1"
+					"Boss1",
+					"UIGhost"
 				],
 				"subfolders": [],
 				"name": "Enemy"
@@ -454,7 +456,8 @@
 						"items": [
 							"Fader",
 							"StealthFade",
-							"WhiteFadeOut_Tile"
+							"WhiteFadeOut_Tile",
+							"LevelLockedFader"
 						],
 						"subfolders": [],
 						"name": "Faders"
@@ -489,7 +492,8 @@
 					"PauseOption8",
 					"PauseOption9",
 					"PauseOption10",
-					"PauseOption11"
+					"PauseOption11",
+					"StarsRequiredText"
 				],
 				"subfolders": [],
 				"name": "Spritefonts"

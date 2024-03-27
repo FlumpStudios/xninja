@@ -928,9 +928,9 @@
 				{
 					"id": "play",
 					"objectClass": "Music",
-					"sid": 634201649460014,
+					"sid": 420318234135644,
 					"parameters": {
-						"audio-file": "Mars",
+						"audio-file": "The Undefeated - Chiptune Comp 06 - Long Track",
 						"loop": "looping",
 						"volume": "0",
 						"stereo-pan": "0",
@@ -974,9 +974,9 @@
 				{
 					"id": "save",
 					"objectClass": "System",
-					"sid": 896784427024551,
+					"sid": 523354800363954,
 					"parameters": {
-						"slot": "\"Xninja_save_2\""
+						"slot": "\"Xninja_save_4\""
 					}
 				}
 			],

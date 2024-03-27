@@ -787,7 +787,7 @@
 						"x": -272,
 						"y": -736,
 						"width": 1312,
-						"height": 3208,
+						"height": 3424,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -10780,7 +10780,7 @@
 			],
 			"sid": 690685697739746,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"isInitiallyInteractive": true,
 			"isHTMLElementsLayer": false,
 			"color": [

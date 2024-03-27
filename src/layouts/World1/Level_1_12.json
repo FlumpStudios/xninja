@@ -1090,8 +1090,8 @@
 					"world": {
 						"x": -60,
 						"y": -20,
-						"width": 728,
-						"height": 568,
+						"width": 2640,
+						"height": 1712,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1490,6 +1490,45 @@
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
+				{
+					"type": "ClearGround_tile",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 1752,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 567.36034579852,
+						"y": -15.999247871207444,
+						"width": 1056,
+						"height": 824,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.280833635153606,
+						"zElevation": 0
+					}
+				},
 				{
 					"type": "MovingPlatform_tile",
 					"properties": {
@@ -7484,45 +7523,6 @@
 					}
 				},
 				{
-					"type": "ClearGround_tile",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0,
-						"enable-tile-randomization": false,
-						"x-random": 1,
-						"y-random": 1,
-						"angle-random": 1,
-						"blend-margin-x": 0.1,
-						"blend-margin-y": 0.1
-					},
-					"uid": 1752,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 567.36034579852,
-						"y": -15.999247871207444,
-						"width": 1040,
-						"height": 824,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.280833635153606,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "ShooterBlock",
 					"properties": {
 						"initially-visible": true,
@@ -8812,7 +8812,7 @@
 					"world": {
 						"x": -8,
 						"y": 0,
-						"width": 640,
+						"width": 736,
 						"height": 480,
 						"originX": 0,
 						"originY": 0,
@@ -8990,7 +8990,7 @@
 			],
 			"sid": 323691834598084,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"isInitiallyInteractive": true,
 			"isHTMLElementsLayer": false,
 			"color": [
