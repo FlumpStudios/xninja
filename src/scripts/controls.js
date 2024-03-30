@@ -169,7 +169,7 @@ export const keyboard = (runtime) => {
 		}
 	}
 
-	if (checKeyUp(runtime, "ArrowUp") && checKeyUp(runtime, "KeyW"), checKeyUp(runtime, "Space")) {
+	if (checKeyUp(runtime, "ArrowUp") && checKeyUp(runtime, "KeyW") && checKeyUp(runtime, "Space")) {
 		wasUpDown = false;
 	}
 
