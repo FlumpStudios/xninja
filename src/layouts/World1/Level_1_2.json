@@ -1148,7 +1148,7 @@
 								"max-fall-speed": 1000,
 								"double-jump": false,
 								"jump-sustain": 275,
-								"default-controls": true,
+								"default-controls": false,
 								"enabled": true
 							}
 						}

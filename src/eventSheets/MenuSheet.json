@@ -588,11 +588,11 @@
 				{
 					"id": "set-layout-effect-parameter",
 					"objectClass": "System",
-					"sid": 361580133030088,
+					"sid": 575511144894652,
 					"parameters": {
 						"effect": "\"GlowHorizontal\"",
 						"parameter-index": "0",
-						"value": "150"
+						"value": "80"
 					}
 				},
 				{
@@ -901,10 +901,10 @@
 				{
 					"id": "set-instvar-value",
 					"objectClass": "DisplayManager",
-					"sid": 572692426792539,
+					"sid": 362213557130587,
 					"parameters": {
 						"instance-variable": "EffectIndex",
-						"value": "3"
+						"value": "2"
 					}
 				}
 			],

@@ -1523,7 +1523,7 @@
 								"max-fall-speed": 1000,
 								"double-jump": false,
 								"jump-sustain": 275,
-								"default-controls": true,
+								"default-controls": false,
 								"enabled": true
 							}
 						}
@@ -1777,7 +1777,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 64.1800580012295,
+						"x": 85.51440105635949,
 						"y": 92.59409825793588,
 						"width": 238.92637114951165,
 						"height": 21.538178476496142,
@@ -1810,6 +1810,35 @@
 						"y": 100.94221619298494,
 						"width": 22.58823529411765,
 						"height": 22.58823529411765,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ZKey",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2469,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 73.0909239657713,
+						"y": 101.29352034537249,
+						"width": 17.239165458840944,
+						"height": 17.723521739910183,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

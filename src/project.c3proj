@@ -257,7 +257,13 @@
 			"Sprite2",
 			"Button_LT",
 			"ButtonR2",
-			"Skull"
+			"Skull",
+			"Keypad",
+			"Keypad2",
+			"Keypad3",
+			"ZKey",
+			"Shift",
+			"Button_LT2"
 		],
 		"subfolders": [
 			{
@@ -1913,7 +1919,7 @@
 		"zNear": 1,
 		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "progress-logo",
+		"loaderStyle": "progress",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",

@@ -684,7 +684,7 @@
 								"max-fall-speed": 1000,
 								"double-jump": false,
 								"jump-sustain": 275,
-								"default-controls": true,
+								"default-controls": false,
 								"enabled": true
 							}
 						}
@@ -935,9 +935,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 232,
+						"x": 272,
 						"y": 120,
-						"width": 264,
+						"width": 96,
 						"height": 24,
 						"originX": 0,
 						"originY": 0,
@@ -974,7 +974,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 232,
+						"x": 272,
 						"y": 152,
 						"width": 264,
 						"height": 24,
@@ -1013,9 +1013,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 232,
+						"x": 272,
 						"y": 184,
-						"width": 264,
+						"width": 112,
 						"height": 24,
 						"originX": 0,
 						"originY": 0,
@@ -1104,6 +1104,93 @@
 						"y": 128,
 						"width": 26.117647058823533,
 						"height": 22.58823529411765,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Keypad",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 85,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 248,
+						"y": 128,
+						"width": 32,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Keypad2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2464,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 248,
+						"y": 160,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Keypad3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2466,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 248,
+						"y": 192,
+						"width": 16,
+						"height": 16,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

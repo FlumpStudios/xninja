@@ -1,0 +1,58 @@
+{
+	"name": "Keypad",
+	"plugin-id": "Sprite",
+	"sid": 514325765900751,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 63,
+						"height": 28,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6740721,
+						"collisionPoly": {
+							"points": [
+								0.3829787234042553,
+								0.01818181818181818,
+								0.6170212765957447,
+								0.01818181818181818,
+								0.9787234042553191,
+								0.6,
+								0.9787234042553191,
+								0.9636363636363636,
+								0.9574468085106383,
+								1,
+								0.0425531914893617,
+								1,
+								0.02127659574468085,
+								0.9636363636363636,
+								0.031914893617021274,
+								0.5636363636363636
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 347198807040570,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

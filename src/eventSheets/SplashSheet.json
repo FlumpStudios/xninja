@@ -33,9 +33,15 @@
 					"id": "set-cursor-style",
 					"objectClass": "Mouse",
 					"sid": 377443032377845,
+					"disabled": true,
 					"parameters": {
 						"cursor-style": "none"
 					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Music",
+					"sid": 144918397210119
 				}
 			],
 			"sid": 731575306380190
@@ -54,24 +60,29 @@
 			],
 			"actions": [
 				{
-					"id": "set-enabled",
-					"objectClass": "Flump",
-					"sid": 681003792843783,
-					"behaviorType": "Bullet",
-					"parameters": {
-						"state": "disabled"
-					}
+					"id": "stop-all",
+					"objectClass": "Music",
+					"sid": 600814860829458
 				},
 				{
 					"id": "play",
 					"objectClass": "Music",
-					"sid": 395686595649673,
+					"sid": 968279179121499,
 					"parameters": {
 						"audio-file": "Pickup_Coin",
 						"loop": "not-looping",
 						"volume": "0",
 						"stereo-pan": "0",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Flump",
+					"sid": 681003792843783,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"state": "disabled"
 					}
 				},
 				{
@@ -111,11 +122,11 @@
 				{
 					"id": "set-layout-effect-parameter",
 					"objectClass": "System",
-					"sid": 879759673171959,
+					"sid": 586362724712556,
 					"parameters": {
 						"effect": "\"GlowHorizontal\"",
 						"parameter-index": "0",
-						"value": "150"
+						"value": "80"
 					}
 				},
 				{
@@ -328,24 +339,6 @@
 				}
 			],
 			"sid": 234392270026908
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 444688846222187
-				}
-			],
-			"actions": [
-				{
-					"id": "stop-all",
-					"objectClass": "Music",
-					"sid": 716469199601123
-				}
-			],
-			"sid": 947390056570582
 		}
 	],
 	"sid": 226624385918205

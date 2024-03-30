@@ -44,9 +44,9 @@ export const mouse = (runtime) => {
 			wasMiddleMouseDown = true;
 		}
 	}
-
+	
 	if (activeIndex < 0) {
-		if (checkMouseDown(runtime, 2)) {
+		if (checkMouseDown(runtime, 2) || checKeyDown(runtime, "KeyC")) {
 			player.setStealthMode(true, runtime);
 		} else {
 			player.setStealthMode(false, runtime);
@@ -66,13 +66,33 @@ let wasUpDown = false;
 let wasDownDown = false;
 
 let wasEnterDown = false;
-
-
 let wasLeftDown = false;
 let wasRightDown = false;
 let wasEscapeDown = false;
+let wasEDown = false;
+let wasXDown = false;
+
 export const keyboard = (runtime) => {
 	const player = runtime.objects.Player.getFirstInstance();
+
+	if (checKeyDown(runtime, "KeyE") || checKeyDown(runtime, "KeyZ") )  {
+		if (activeIndex < 0) {
+			if (!wasEDown) {
+				player.secondaryAttack(runtime);
+			}
+			wasEDown = true;
+		}
+	}
+
+	if (checKeyDown(runtime, "KeyX"))  {
+		if (activeIndex < 0) {
+			if (!wasXDown) {
+				player.attack(runtime);
+			}
+			wasXDown = true;
+		}
+	}
+
 	if (checKeyDown(runtime, "ArrowLeft") || checKeyDown(runtime, "KeyA")) {
 		if (activeIndex < 0) {
 			player.movePlayerleft(runtime);
@@ -125,16 +145,16 @@ export const keyboard = (runtime) => {
 		wasEscapeDown = false;
 	}
 
-	if (checKeyDown(runtime, "ArrowUp") || checKeyDown(runtime, "KeyW")) {
+	if (checKeyDown(runtime, "ArrowUp") || checKeyDown(runtime, "KeyW") || checKeyDown(runtime, "Space") ) {
 		if (activeIndex < 0) {
 			if (!wasUpDown) {
 				updatePauseIndex(-1, runtime);
 			}
-			player.jump(runtime);
 			// HACK: Hack to stop player jump sound playing too often. Should be in player inst class really.
 			if (!wasUpDown && !player.behaviors.Platform.isJumping && !player.behaviors.Platform.isFalling) {
 				sfx.PlayJumpSounds();
 			}
+			player.jump(runtime);
 			wasUpDown = true;
 		}
 	}
@@ -149,7 +169,7 @@ export const keyboard = (runtime) => {
 		}
 	}
 
-	if (checKeyUp(runtime, "ArrowUp") && checKeyUp(runtime, "KeyW")) {
+	if (checKeyUp(runtime, "ArrowUp") && checKeyUp(runtime, "KeyW"), checKeyUp(runtime, "Space")) {
 		wasUpDown = false;
 	}
 
@@ -159,6 +179,10 @@ export const keyboard = (runtime) => {
 
 	if (checKeyUp(runtime, "Enter")) {
 		wasEnterDown = false;
+	}
+
+	if (checKeyUp(runtime, "KeyX")) {
+		wasXDown = false;
 	}
 
 
@@ -176,6 +200,12 @@ export const keyboard = (runtime) => {
 	if (checKeyUp(runtime, "ArrowLeft") && checKeyUp(runtime, "KeyA")) {
 		if (activeIndex < 0) {
 			wasLeftDown = false;
+		}
+	}
+
+	if (checKeyUp(runtime, "KeyE") || checKeyUp(runtime, "KeyZ") )  {
+		if (activeIndex < 0) {
+			wasEDown = false;
 		}
 	}
 

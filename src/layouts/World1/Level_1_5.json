@@ -953,7 +953,7 @@
 								"max-fall-speed": 1000,
 								"double-jump": false,
 								"jump-sustain": 275,
-								"default-controls": true,
+								"default-controls": false,
 								"enabled": true
 							}
 						}
@@ -1204,7 +1204,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 304,
+						"x": 328,
 						"y": 112,
 						"width": 80,
 						"height": 24,
@@ -1233,10 +1233,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 280,
+						"x": 264,
 						"y": 120,
-						"width": 32,
-						"height": 47,
+						"width": 40,
+						"height": 56,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -2241,6 +2241,35 @@
 						"height": 16,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Shift",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2470,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 304,
+						"y": 120,
+						"width": 41.77777777777778,
+						"height": 26.746268656716417,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

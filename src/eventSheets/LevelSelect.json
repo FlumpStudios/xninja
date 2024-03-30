@@ -19,11 +19,11 @@
 				{
 					"id": "set-layout-effect-parameter",
 					"objectClass": "System",
-					"sid": 692506366677017,
+					"sid": 393911907198477,
 					"parameters": {
 						"effect": "\"GlowHorizontal\"",
 						"parameter-index": "0",
-						"value": "150"
+						"value": "80"
 					}
 				},
 				{

@@ -19,7 +19,7 @@ export const WATER_MOVE_SPEED = 150;
 export const DEATH_STAR_SPEED = 500;
 export const SLASH_POSITION_OFFSET = 24;
 export const GHOST_SPEED = 900;
-export const STARS_REQUIRED_FOR_BOSS = 30;
+export const STARS_REQUIRED_FOR_BOSS = 25;
 export const BOSS1_LEVEL = "Level_1_15";
 export const LOCKED_LEVEL_UI_LAYER = 4;
 
@@ -140,7 +140,7 @@ export let levelConfig =
     "Level_1_4": {
         name: "No Escape",
         startingStars: 0,
-        bronzeTarget: 10,
+        bronzeTarget: 30,
         silverTarget: 0,
         goldTarget: -0.5,
         currentBest: 0,
@@ -156,7 +156,7 @@ export let levelConfig =
     "Level_1_5": {
         name: "RUN!",
         startingStars: 0,
-        bronzeTarget: 15,
+        bronzeTarget: 20,
         silverTarget: 2.5,
         goldTarget: 1.7,
         currentBest: 0,
@@ -172,7 +172,7 @@ export let levelConfig =
     "Level_1_6": {
         name: "Cloak & Ladder",
         startingStars: 0,
-        bronzeTarget: 15,
+        bronzeTarget: 30,
         silverTarget: 2,
         goldTarget: -1,
         currentBest: 0,
@@ -188,7 +188,7 @@ export let levelConfig =
     "Level_1_7": {
         name: "Wet Wet Wet",
         startingStars: 0,
-        bronzeTarget: 30,
+        bronzeTarget: 60,
         silverTarget: 10,
         goldTarget: 3.5,
         currentBest: 0,
@@ -204,7 +204,7 @@ export let levelConfig =
     "Level_1_8": {
         name: "Downfell",
         startingStars: 0,
-        bronzeTarget: 25,
+        bronzeTarget: 60,
         silverTarget: 0,
         goldTarget: -10,
         currentBest: 0,
@@ -220,7 +220,7 @@ export let levelConfig =
     "Level_1_9": {
         name: "Skate & Destroy",
         startingStars: 0,
-        bronzeTarget: 40,
+        bronzeTarget: 50,
         silverTarget: 15,
         goldTarget: 3,
         currentBest: 0,
