@@ -4,12 +4,16 @@ X-Ninja is a project I started with my 7-year-old son, Alex, to teach him the ba
 
 If people enjoy the game and there's demand, we'll start working on Episode 2.
 
-Music by [Oblidivm](https://oblidivmmusic.blogspot.com).
+The game was developed using Construct 3 with the scripting done via Javascript. Feel free to mod, or make new levels and worlds, go wild :)
 
-X-ninja [Discord server](https://discord.gg/6RZBt4NU).
+If you have any questions you can fire them over at the X-ninja [Discord server](https://discord.gg/6RZBt4NU).
 
-Play the game in your browser [here](https://flump-studios.itch.io/x-ninja-browser).
 
-Download the PC version [here](https://flump-studios.itch.io/xninja). (Available for Windows, linux and mac)
+You can play the game in your browser over [here](https://flump-studios.itch.io/x-ninja-browser).
+
+Or download the PC version [here](https://flump-studios.itch.io/xninja). (Available for Windows, linux and mac)
 
 If you would like to support the game, you can do so by using the donate button at either of the above.
+
+
+Music by [Oblidivm](https://oblidivmmusic.blogspot.com).
