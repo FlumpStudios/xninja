@@ -69,7 +69,9 @@
 					"objectClass": "Music",
 					"sid": 968279179121499,
 					"parameters": {
-						"audio-file": "Pickup_Coin",
+						"audio-file": {
+							"path": "pickup_Coin"
+						},
 						"loop": "not-looping",
 						"volume": "0",
 						"stereo-pan": "0",
@@ -90,7 +92,8 @@
 					"objectClass": "System",
 					"sid": 997570143560966,
 					"parameters": {
-						"seconds": "2"
+						"seconds": "2",
+						"use-timescale": true
 					}
 				},
 				{

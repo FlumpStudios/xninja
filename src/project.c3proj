@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 37900,
+	"savedWithRelease": 47603,
 	"name": "XNinja",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -149,7 +149,7 @@
 		{
 			"type": "behavior",
 			"id": "destroy",
-			"name": "Destroy outside layout",
+			"name": "Destroy outside",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -516,6 +516,7 @@
 			}
 		]
 	},
+	"functionsName": "Functions",
 	"autosaveData": null,
 	"containers": [],
 	"families": {
@@ -750,7 +751,8 @@
 					}
 				}
 			],
-			"subfolders": []
+			"subfolders": [],
+			"autoReloadOnPreview": true
 		},
 		"sound": {
 			"items": [
@@ -1347,7 +1349,7 @@
 					}
 				},
 				{
-					"name": "Blip_Select.webm",
+					"name": "blip_Select.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 697280647277120,
 					"file-info": {
@@ -1355,7 +1357,7 @@
 					}
 				},
 				{
-					"name": "Default.webm",
+					"name": "default.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 247930164689422,
 					"file-info": {
@@ -1363,7 +1365,7 @@
 					}
 				},
 				{
-					"name": "Explosion.webm",
+					"name": "explosion.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 668633448873259,
 					"file-info": {
@@ -1371,7 +1373,7 @@
 					}
 				},
 				{
-					"name": "Explosion2.webm",
+					"name": "explosion2.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 297016653726695,
 					"file-info": {
@@ -1379,7 +1381,7 @@
 					}
 				},
 				{
-					"name": "Jump.webm",
+					"name": "jump.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 907919785398258,
 					"file-info": {
@@ -1387,7 +1389,7 @@
 					}
 				},
 				{
-					"name": "Laser1.webm",
+					"name": "laser1.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 483133465621916,
 					"file-info": {
@@ -1395,7 +1397,7 @@
 					}
 				},
 				{
-					"name": "Laser2.webm",
+					"name": "laser2.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 824816649460539,
 					"file-info": {
@@ -1403,7 +1405,7 @@
 					}
 				},
 				{
-					"name": "Pickup_Coin.webm",
+					"name": "pickup_Coin.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 599707161856987,
 					"file-info": {
@@ -1411,7 +1413,7 @@
 					}
 				},
 				{
-					"name": "Powerup.webm",
+					"name": "powerup.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 963801652226221,
 					"file-info": {
@@ -1419,7 +1421,7 @@
 					}
 				},
 				{
-					"name": "Randomize.webm",
+					"name": "randomize.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 324129377436213,
 					"file-info": {
@@ -1427,7 +1429,7 @@
 					}
 				},
 				{
-					"name": "Randomize2.webm",
+					"name": "randomize2.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 579011450958328,
 					"file-info": {
@@ -1435,7 +1437,7 @@
 					}
 				},
 				{
-					"name": "Randomize3.webm",
+					"name": "randomize3.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 144100954302096,
 					"file-info": {
@@ -1873,9 +1875,14 @@
 		"items": [],
 		"subfolders": []
 	},
+	"models3d": {
+		"items": [],
+		"subfolders": []
+	},
 	"properties": {
 		"description": "",
 		"version": "1.0",
+		"autoIncrementVersion": false,
 		"author": "",
 		"authorEmail": "",
 		"authorWebsite": "www.flumpstudios.com",
@@ -1908,10 +1915,10 @@
 		],
 		"orientations": "any",
 		"webgpu": "auto",
+		"multitexturing": "auto",
 		"gpuPreference": "high-performance",
-		"scriptsType": "module",
 		"framerateMode": "vsync",
-		"compositingMode": "standard",
+		"fixedFramerate": 30,
 		"sampling": "nearest",
 		"downscaling": "low",
 		"renderingMode": "auto",
@@ -1921,11 +1928,11 @@
 		"maxSpriteSheetSize": 2048,
 		"loaderStyle": "progress",
 		"preloadSounds": true,
+		"uidAllocationMode": "increment",
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
-		"autoReloadScriptsOnPreview": true,
-		"exportFileStructure": "flat",
-		"uidAllocationMode": "increment"
+		"exportFileStructure": "folders",
+		"scriptsType": "module"
 	},
 	"viewportWidth": 640,
 	"viewportHeight": 480,

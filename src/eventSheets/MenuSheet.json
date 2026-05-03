@@ -180,7 +180,8 @@
 							"objectClass": "System",
 							"sid": 560259068140584,
 							"parameters": {
-								"seconds": "0.285"
+								"seconds": "0.285",
+								"use-timescale": true
 							}
 						},
 						{
@@ -196,7 +197,9 @@
 							"objectClass": "Music",
 							"sid": 598839914265521,
 							"parameters": {
-								"audio-file": "sfx_sounds_button6",
+								"audio-file": {
+									"path": "sfx_sounds_button6"
+								},
 								"loop": "not-looping",
 								"volume": "0",
 								"stereo-pan": "0",
@@ -248,7 +251,9 @@
 							"objectClass": "Music",
 							"sid": 598839914265521,
 							"parameters": {
-								"audio-file": "sfx_sounds_button6",
+								"audio-file": {
+									"path": "sfx_sounds_button6"
+								},
 								"loop": "not-looping",
 								"volume": "0",
 								"stereo-pan": "0",
@@ -930,7 +935,9 @@
 					"objectClass": "Music",
 					"sid": 420318234135644,
 					"parameters": {
-						"audio-file": "The Undefeated - Chiptune Comp 06 - Long Track",
+						"audio-file": {
+							"path": "The Undefeated - Chiptune Comp 06 - Long Track"
+						},
 						"loop": "looping",
 						"volume": "0",
 						"stereo-pan": "0",

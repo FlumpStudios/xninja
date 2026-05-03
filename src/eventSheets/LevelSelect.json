@@ -257,7 +257,9 @@
 					"objectClass": "Music",
 					"sid": 257873728598315,
 					"parameters": {
-						"audio-file": "Jump2Sky - Chiptune Comp 05 - Long Track",
+						"audio-file": {
+							"path": "Jump2Sky - Chiptune Comp 05 - Long Track"
+						},
 						"loop": "looping",
 						"volume": "0",
 						"stereo-pan": "0",
@@ -295,7 +297,9 @@
 					"objectClass": "Music",
 					"sid": 668511544583838,
 					"parameters": {
-						"audio-file": "Mars",
+						"audio-file": {
+							"path": "Mars"
+						},
 						"loop": "looping",
 						"volume": "0",
 						"stereo-pan": "0",

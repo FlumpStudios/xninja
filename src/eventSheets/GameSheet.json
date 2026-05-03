@@ -113,7 +113,8 @@
 							"objectClass": "System",
 							"sid": 865912549593850,
 							"parameters": {
-								"seconds": "random(0.05,0.2)"
+								"seconds": "random(0.05,0.2)",
+								"use-timescale": true
 							}
 						},
 						{
@@ -155,7 +156,8 @@
 							"objectClass": "System",
 							"sid": 693968397175411,
 							"parameters": {
-								"seconds": "random(0,0.2)"
+								"seconds": "random(0,0.2)",
+								"use-timescale": true
 							}
 						},
 						{
@@ -171,7 +173,8 @@
 							"objectClass": "System",
 							"sid": 436292429552758,
 							"parameters": {
-								"seconds": "random(0.05,0.2)"
+								"seconds": "random(0.05,0.2)",
+								"use-timescale": true
 							}
 						},
 						{
@@ -246,7 +249,8 @@
 							"objectClass": "System",
 							"sid": 505985479553467,
 							"parameters": {
-								"seconds": "2"
+								"seconds": "2",
+								"use-timescale": true
 							}
 						},
 						{
@@ -254,7 +258,9 @@
 							"objectClass": "Music",
 							"sid": 890933319797021,
 							"parameters": {
-								"audio-file": "Survive - Chiptune Comp 04",
+								"audio-file": {
+									"path": "Survive - Chiptune Comp 04"
+								},
 								"loop": "not-looping",
 								"volume": "0",
 								"stereo-pan": "0",

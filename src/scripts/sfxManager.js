@@ -25,7 +25,7 @@ export const init = (async runtime => {
         audioManager.loadSound("sfx_menu_move1.webm"),
         audioManager.loadSound("sfx_sounds_button6.webm"),
         audioManager.loadSound("jump.webm"),
-        audioManager.loadSound("Laser2.webm"),
+        audioManager.loadSound("laser2.webm"),
         audioManager.loadSound("shot_01.webm"),
         audioManager.loadSound("retro_explosion_05.webm"),
         audioManager.loadSound("retro_die_02.webm"),

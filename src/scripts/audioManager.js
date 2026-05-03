@@ -17,10 +17,13 @@ export class AudioManager {
 		else
 			throw new Error("AudioContext not supported");
 
-		if (this.audioContext) { 
+		if (this.audioContext) {
 			this.gainNode = this.audioContext.createGain();
-			this.gainNode.connect(this.audioContext.destination);					
+			this.gainNode.connect(this.audioContext.destination);
 		}
+
+		const testAudio = new Audio();
+		this.isWebMOpusSupported = testAudio.canPlayType('audio/webm; codecs=opus') !== '';
 	}
 
 	// This wraps the audioContext's decodeAudioData in a promise, since
@@ -30,7 +33,7 @@ export class AudioManager {
 	// which can be used as a fallback.
 	decodeAudioData(arrayBuffer, isWebM) {
 		// Note if a non-WebM file is passed, always use the built-in decoder.
-		if (this.runtime.assets.isWebMOpusSupported || !isWebM) {
+		if (this.isWebMOpusSupported || !isWebM) {
 			// Built-in support for WebM Opus: use built-in decoder,
 			// and wrap in a promise so it can be used with 'await'.
 			return new Promise((resolve, reject) => {
@@ -89,7 +92,7 @@ export class AudioManager {
 		// loadSound() since it can use Construct's decoder. This is
 		// less efficient, but there are no other options for playing
 		// WebM Opus audio. Construct's Audio plugin works the same way.
-		if (isWebM && !this.runtime.assets.isWebMOpusSupported)
+		if (isWebM && !this.isWebMOpusSupported)
 			return this.loadSound(url);
 
 		// Otherwise if there is built-in support for WebM Opus continue
