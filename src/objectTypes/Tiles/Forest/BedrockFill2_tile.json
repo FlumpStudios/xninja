@@ -3,6 +3,7 @@
 	"plugin-id": "TiledBg",
 	"sid": 551417609692233,
 	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
@@ -14,6 +15,7 @@
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
+		"fileType": "image/png",
 		"imageSpriteId": 3502129,
 		"useCollisionPoly": true,
 		"tag": ""

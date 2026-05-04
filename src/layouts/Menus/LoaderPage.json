@@ -24,6 +24,7 @@
 				1
 			],
 			"isTransparent": false,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -36,12 +37,17 @@
 			"global": false
 		}
 	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
 	"sid": 459014334776491,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1280,
 	"height": 960,
 	"unboundedScrolling": false,
+	"sampling": "auto",
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",

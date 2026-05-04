@@ -3,6 +3,7 @@
 	"plugin-id": "Sprite",
 	"sid": 951758307025517,
 	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
 		{
 			"name": "MenuIndex",
@@ -26,6 +27,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+						"fileType": "image/png",
 						"imageSpriteId": 3418699,
 						"collisionPoly": {
 							"points": [

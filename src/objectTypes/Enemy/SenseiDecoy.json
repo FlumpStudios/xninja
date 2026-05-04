@@ -3,6 +3,7 @@
 	"plugin-id": "Sprite",
 	"sid": 429434964673970,
 	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
 		{
 			"name": "Sines",
@@ -49,6 +50,7 @@
 						"originalSource": "D:\\X-Ninja\\Assets\\Sprites\\Sensei\\spr_boss_0.png",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+						"fileType": "image/png",
 						"imageSpriteId": 3079230,
 						"useCollisionPoly": true,
 						"duration": 1,
@@ -62,6 +64,7 @@
 						"originalSource": "D:\\X-Ninja\\Assets\\Sprites\\Sensei\\spr_boss_1.png",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+						"fileType": "image/png",
 						"imageSpriteId": 7872319,
 						"collisionPoly": {
 							"points": [

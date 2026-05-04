@@ -3,6 +3,7 @@
 	"plugin-id": "TiledBg",
 	"sid": 865290331441637,
 	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
 		{
 			"name": "TickSinceStart",
@@ -28,6 +29,7 @@
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
+		"fileType": "image/png",
 		"imageSpriteId": 9403894,
 		"useCollisionPoly": true,
 		"tag": ""

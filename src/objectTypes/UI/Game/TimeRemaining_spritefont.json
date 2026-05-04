@@ -3,6 +3,7 @@
 	"plugin-id": "Spritefont2",
 	"sid": 306427387670681,
 	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
 		{
 			"name": "Time",
@@ -22,6 +23,7 @@
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
+		"fileType": "image/png",
 		"imageSpriteId": 7710915,
 		"useCollisionPoly": true,
 		"tag": ""

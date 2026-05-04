@@ -189,7 +189,7 @@
 							"objectClass": "System",
 							"sid": 879372824428898,
 							"parameters": {
-								"layout": "LevelSelect"
+								"layout": "WorldSelect"
 							}
 						},
 						{

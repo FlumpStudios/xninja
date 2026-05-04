@@ -553,8 +553,9 @@
 				"items": [
 					"MainMenu",
 					"Splash",
-					"LevelSelect",
-					"LoaderPage"
+					"WorldSelect",
+					"LoaderPage",
+					"LevelSelect"
 				],
 				"subfolders": [],
 				"name": "Menus"
@@ -567,7 +568,8 @@
 			"MenuSheet",
 			"SplashSheet",
 			"LevelSelect",
-			"Loader"
+			"Loader",
+			"WorldSelect"
 		],
 		"subfolders": []
 	},
@@ -746,6 +748,14 @@
 					"name": "boss1Instance.js",
 					"type": "application/javascript",
 					"sid": 401851549805339,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "worldSelect.js",
+					"type": "application/javascript",
+					"sid": 285525533021437,
 					"script-info": {
 						"purpose": "none"
 					}

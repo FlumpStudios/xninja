@@ -2,7 +2,7 @@ import * as config from "./config.js";
 
 let menuIndex = 0;
 
-const getSelectedLevel = () => "Level_1_" + (menuIndex + 1).toString();
+const getSelectedLevel = () => config.getCurrentWorld() + "_" + (menuIndex + 1).toString();
 
 const STAR_NAME = "UIStar_";
 
@@ -11,11 +11,11 @@ export const updateMenu = (runtime) => {
 	let starCount = 0;
 
 	const inst = runtime.objects.MenuBorder.getAllInstances();
-
+	
 	for (let i = 0; i < inst.length; i++) {
 
 		let levelStars = runtime.objects[(STAR_NAME + (i + 1))].getAllInstances();
-		const l = "Level_1_" + (i + 1).toString();
+		const l = config.getCurrentWorld() + "_" + (i + 1).toString();
 		const starLevelConfig = config.levelConfig[l];
 		if (starLevelConfig.currentBest > 0 || starLevelConfig.currentBest < 0) {
 			levelStars[0].isVisible = true;
@@ -105,5 +105,5 @@ export const confirm = (runtime) => {
 }
 
 export const back = (runtime) => {
-	runtime.goToLayout("MainMenu");
+	runtime.goToLayout(config.WORLD_SELECT_NAME);
 }

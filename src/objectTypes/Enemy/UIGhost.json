@@ -3,6 +3,7 @@
 	"plugin-id": "Sprite",
 	"sid": 138652958645546,
 	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
@@ -24,6 +25,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+						"fileType": "image/png",
 						"imageSpriteId": 3202004,
 						"collisionPoly": {
 							"points": [

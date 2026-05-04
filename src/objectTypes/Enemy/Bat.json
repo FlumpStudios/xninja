@@ -3,6 +3,7 @@
 	"plugin-id": "Sprite",
 	"sid": 835452227306323,
 	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
 		{
 			"name": "IsScared",
@@ -51,6 +52,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+						"fileType": "image/png",
 						"imageSpriteId": 4695936,
 						"collisionPoly": {
 							"points": [
@@ -96,6 +98,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+						"fileType": "image/png",
 						"imageSpriteId": 7597882,
 						"collisionPoly": {
 							"points": [
@@ -137,6 +140,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+						"fileType": "image/png",
 						"imageSpriteId": 6482195,
 						"collisionPoly": {
 							"points": [
@@ -180,6 +184,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+						"fileType": "image/png",
 						"imageSpriteId": 9215502,
 						"collisionPoly": {
 							"points": [
@@ -223,6 +228,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+						"fileType": "image/png",
 						"imageSpriteId": 3821856,
 						"collisionPoly": {
 							"points": [
@@ -277,6 +283,7 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+						"fileType": "image/png",
 						"imageSpriteId": 3980947,
 						"useCollisionPoly": true,
 						"duration": 1,

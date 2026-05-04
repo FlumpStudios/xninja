@@ -3,6 +3,7 @@
 	"plugin-id": "TiledBg",
 	"sid": 898263164901851,
 	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
@@ -25,6 +26,7 @@
 		"originalSource": "D:\\X-Ninja\\Assets\\Tiles\\tile137.png",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
+		"fileType": "image/png",
 		"imageSpriteId": 8977019,
 		"useCollisionPoly": true,
 		"tag": ""

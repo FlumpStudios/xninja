@@ -5,6 +5,7 @@ export const MAX_STEALTH_BAR_WIDTH = 32;
 export const INFINATE_STAR_AMOUNT = 1000;
 export const LEVEL_PREFIX = "Level_";
 export const LEVEL_SELECT_NAME = "LevelSelect";
+export const WORLD_SELECT_NAME = "WorldSelect";
 export const MAIN_MENU_NAME = "MainMenu";
 export const SPLASH_NAME = "Splash";
 export const JUMP_STRENGTH = 400;
@@ -54,8 +55,14 @@ export const gameStates = {
     game: 0,
     levelSelect: 1,
     paused: 2,
-    mainMenu: 3
+    mainMenu: 3,
+    worldSelect: 4
 }
+
+
+let currentWorld = "Level_1";
+export const setCurrentWorld = (world) => currentWorld = world;
+export const getCurrentWorld = () => currentWorld;
 
 let totalStarCount = 0;
 export const setTotalStarCount = (count) => totalStarCount = count;
@@ -70,6 +77,22 @@ let currentGameState = gameStates.mainMenu;
 export const getGameState = () => currentGameState;
 export const setGameState = (gameState) => currentGameState = gameState;
 export const SetLevelConfig = (config) => levelConfig = config;
+
+export let worldConfig = {
+    "Level_1": {
+        name: "The Dark Forest",        
+        backgroundLayers: 0
+    },
+    "Level_2": {
+        name: "City of Devils",        
+        backgroundLayers: 1
+    },
+    "Level_3": {
+        name: "Death Cape",        
+        backgroundLayers: 1
+    }
+}
+
 export let levelConfig =
 {
     "LevelSelect": {

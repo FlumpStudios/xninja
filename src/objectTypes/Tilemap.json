@@ -3,6 +3,7 @@
 	"plugin-id": "Tilemap",
 	"sid": 522413157971414,
 	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
@@ -14,6 +15,7 @@
 		"originalSource": "D:\\X-Ninja\\Assets\\Tiles\\Master 32x.png",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
+		"fileType": "image/png",
 		"imageSpriteId": 3086669,
 		"useCollisionPoly": true,
 		"tag": ""

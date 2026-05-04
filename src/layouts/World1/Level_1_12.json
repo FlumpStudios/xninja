@@ -26,8 +26,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1522,
+					"sid": 166270650255409,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 0,
 						"y": 0,
@@ -41,8 +45,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -64,6 +68,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 0,
@@ -100,8 +105,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1523,
+					"sid": 592177513542745,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 0,
 						"y": 0,
@@ -115,8 +124,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -138,6 +147,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 0,
@@ -174,8 +184,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1524,
+					"sid": 453617114475227,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 0,
 						"y": 0,
@@ -189,8 +203,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -212,6 +226,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 0.5,
 			"parallaxY": 0.1,
 			"scaleRate": 0,
@@ -248,8 +263,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1525,
+					"sid": 483942292276264,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 0,
 						"y": 0,
@@ -263,8 +282,8 @@
 							0.39215686274509803,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -277,6 +296,8 @@
 						"live-preview": false
 					},
 					"uid": 1694,
+					"sid": 871535707767478,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
@@ -293,6 +314,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 80,
 						"y": 328,
@@ -306,8 +329,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -320,6 +343,8 @@
 						"live-preview": false
 					},
 					"uid": 1962,
+					"sid": 502028014073969,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
@@ -336,6 +361,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 288,
 						"y": 328,
@@ -349,8 +376,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -363,6 +390,8 @@
 						"live-preview": false
 					},
 					"uid": 1963,
+					"sid": 735132496316929,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
@@ -379,6 +408,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 512,
 						"y": 320,
@@ -392,8 +423,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -406,6 +437,8 @@
 						"live-preview": false
 					},
 					"uid": 1964,
+					"sid": 802565747550952,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
@@ -422,6 +455,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1728,
 						"y": 584,
@@ -435,8 +470,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -449,6 +484,8 @@
 						"live-preview": false
 					},
 					"uid": 1965,
+					"sid": 351703258948258,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
@@ -465,6 +502,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1504,
 						"y": 584,
@@ -478,8 +517,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -492,6 +531,8 @@
 						"live-preview": false
 					},
 					"uid": 1974,
+					"sid": 686070608230610,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
@@ -508,6 +549,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1736,
 						"y": 440,
@@ -521,8 +564,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -544,6 +587,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 0.8,
 			"parallaxY": 0.8,
 			"scaleRate": 0,
@@ -580,11 +624,14 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1526,
+					"sid": 640222529360138,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						},
@@ -603,6 +650,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1024,
 						"y": 1048,
@@ -616,8 +665,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -640,11 +689,14 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1527,
+					"sid": 685619017808333,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						},
@@ -663,6 +715,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1192,
 						"y": 1048,
@@ -676,8 +730,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -700,11 +754,14 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1528,
+					"sid": 680594649050100,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						},
@@ -723,6 +780,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1360,
 						"y": 1048,
@@ -736,8 +795,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -760,6 +819,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1529,
+					"sid": 484179050919229,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -779,10 +840,13 @@
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1056,
 						"y": 1112,
@@ -796,8 +860,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -820,6 +884,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1605,
+					"sid": 237923415876680,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -839,10 +905,13 @@
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1224,
 						"y": 1112,
@@ -856,8 +925,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -880,6 +949,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1608,
+					"sid": 285959464541523,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -899,10 +970,13 @@
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1392,
 						"y": 1112,
@@ -916,8 +990,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -930,6 +1004,8 @@
 						"live-preview": false
 					},
 					"uid": 1609,
+					"sid": 897341254617861,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -950,6 +1026,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1120,
 						"y": 992,
@@ -963,8 +1041,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -977,6 +1055,8 @@
 						"live-preview": false
 					},
 					"uid": 1610,
+					"sid": 394531710122269,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -997,6 +1077,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1480,
 						"y": 992,
@@ -1010,8 +1092,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -1024,6 +1106,8 @@
 						"live-preview": false
 					},
 					"uid": 1611,
+					"sid": 494011088506988,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1044,6 +1128,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1304,
 						"y": 992,
@@ -1057,8 +1143,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -1081,12 +1167,16 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1612,
+					"sid": 107954473593381,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"NoSave": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": -60,
 						"y": -20,
@@ -1100,8 +1190,8 @@
 							1,
 							0
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1114,6 +1204,8 @@
 						"live-preview": false
 					},
 					"uid": 1613,
+					"sid": 223091044284652,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1134,6 +1226,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1760,
 						"y": 240,
@@ -1147,8 +1241,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -1161,6 +1255,8 @@
 						"live-preview": false
 					},
 					"uid": 1614,
+					"sid": 641690158666822,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1181,6 +1277,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1952,
 						"y": 240,
@@ -1194,8 +1292,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -1208,6 +1306,8 @@
 						"live-preview": false
 					},
 					"uid": 1615,
+					"sid": 704914597793790,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1228,6 +1328,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1856,
 						"y": 240,
@@ -1241,8 +1343,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -1255,6 +1357,8 @@
 						"live-preview": false
 					},
 					"uid": 1616,
+					"sid": 928116933985600,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1275,6 +1379,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2048,
 						"y": 240,
@@ -1288,8 +1394,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -1302,6 +1408,8 @@
 						"live-preview": false
 					},
 					"uid": 1617,
+					"sid": 255073535690604,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1322,6 +1430,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2144,
 						"y": 240,
@@ -1335,8 +1445,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -1349,6 +1459,8 @@
 						"live-preview": false
 					},
 					"uid": 1618,
+					"sid": 589971315555280,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1369,6 +1481,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2240,
 						"y": 240,
@@ -1382,8 +1496,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -1406,6 +1520,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1619,
+					"sid": 104848904652726,
+					"tags": "",
 					"instanceVariables": {
 						"isDangerous": true
 					},
@@ -1438,6 +1554,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 920,
 						"y": 1088,
@@ -1451,8 +1569,8 @@
 							0.0196078431372549,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -1474,6 +1592,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 0,
@@ -1500,6 +1619,8 @@
 						"live-preview": false
 					},
 					"uid": 1623,
+					"sid": 478223032781312,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1520,6 +1641,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 464,
 						"y": 720,
@@ -1533,8 +1656,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -1547,6 +1670,8 @@
 						"live-preview": false
 					},
 					"uid": 1624,
+					"sid": 246862793055922,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1567,6 +1692,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 416,
 						"y": 680,
@@ -1580,8 +1707,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -1594,6 +1721,8 @@
 						"live-preview": false
 					},
 					"uid": 1626,
+					"sid": 877696845969192,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1614,6 +1743,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 416,
 						"y": 592,
@@ -1627,8 +1758,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -1641,6 +1772,8 @@
 						"live-preview": false
 					},
 					"uid": 1625,
+					"sid": 941359481810855,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1661,6 +1794,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 456,
 						"y": 560,
@@ -1674,8 +1809,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -1688,6 +1823,8 @@
 						"live-preview": false
 					},
 					"uid": 1627,
+					"sid": 784664817393633,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1708,6 +1845,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 456,
 						"y": 480,
@@ -1721,8 +1860,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -1735,6 +1874,8 @@
 						"live-preview": false
 					},
 					"uid": 1628,
+					"sid": 309868760560320,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1755,6 +1896,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 416,
 						"y": 448,
@@ -1768,8 +1911,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -1792,8 +1935,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1752,
+					"sid": 849289879113561,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 567.36034579852,
 						"y": -15.999247871207444,
@@ -1807,8 +1954,8 @@
 							1,
 							1
 						],
-						"angle": 6.280833635153606,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.280833635153606
 					}
 				},
 				{
@@ -1831,6 +1978,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1699,
+					"sid": 372894081482257,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1853,6 +2002,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1776,
 						"y": 976,
@@ -1866,8 +2017,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1890,6 +2041,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1657,
+					"sid": 942552459399334,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1912,6 +2065,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 408.0000041705206,
 						"y": 512.0115523435592,
@@ -1925,8 +2080,8 @@
 							1,
 							1
 						],
-						"angle": 6.282463285644403,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.282463285644403
 					}
 				},
 				{
@@ -1949,6 +2104,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1669,
+					"sid": 488910011164495,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -1971,6 +2128,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 392.00000834104117,
 						"y": 400.02310468711835,
@@ -1984,8 +2143,8 @@
 							1,
 							1
 						],
-						"angle": 6.282463285644403,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.282463285644403
 					}
 				},
 				{
@@ -1998,6 +2157,8 @@
 						"live-preview": false
 					},
 					"uid": 1620,
+					"sid": 662401966224486,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -2062,6 +2223,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1800,
 						"y": 952,
@@ -2075,8 +2238,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2089,6 +2252,8 @@
 						"live-preview": false
 					},
 					"uid": 1621,
+					"sid": 373659715136387,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -2109,6 +2274,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 504,
 						"y": 776,
@@ -2122,8 +2289,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -2136,6 +2303,8 @@
 						"live-preview": false
 					},
 					"uid": 1622,
+					"sid": 525158401881796,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -2156,6 +2325,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 360,
 						"y": 776,
@@ -2169,8 +2340,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -2193,11 +2364,14 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1629,
+					"sid": 305305380235578,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						},
@@ -2216,6 +2390,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1152,
 						"y": 312,
@@ -2229,8 +2405,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -2243,6 +2419,8 @@
 						"live-preview": false
 					},
 					"uid": 1630,
+					"sid": 172863356748601,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Rotate": {
@@ -2254,7 +2432,9 @@
 							}
 						},
 						"DestroyOutsideLayout": {
-							"properties": {}
+							"properties": {
+								"region": "layout"
+							}
 						},
 						"Bullet": {
 							"properties": {
@@ -2268,6 +2448,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": -96,
 						"y": 1216,
@@ -2281,8 +2463,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2312,15 +2494,21 @@
 						"timeout": 0.75
 					},
 					"uid": 1631,
+					"sid": 134370681725503,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"DestroyOutsideLayout": {
-							"properties": {}
+							"properties": {
+								"region": "layout"
+							}
 						},
 						"NoSave": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": -432,
 						"y": 1392,
@@ -2334,8 +2522,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2358,15 +2546,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1632,
+					"sid": 949153738626319,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": -8,
 						"y": 400,
@@ -2380,8 +2573,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2394,15 +2587,20 @@
 						"live-preview": false
 					},
 					"uid": 1633,
+					"sid": 715750627809170,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": "Border"
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": -96,
 						"y": 612,
@@ -2416,8 +2614,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2430,6 +2628,8 @@
 						"live-preview": false
 					},
 					"uid": 1634,
+					"sid": 204123562621384,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -2466,6 +2666,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": -504,
 						"y": 968,
@@ -2479,8 +2681,8 @@
 							1,
 							0.75
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2503,8 +2705,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1635,
+					"sid": 189004780166444,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 0,
 						"y": 424,
@@ -2518,8 +2724,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2532,6 +2738,8 @@
 						"live-preview": false
 					},
 					"uid": 1636,
+					"sid": 951544357009996,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Platform": {
@@ -2562,6 +2770,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 24,
 						"y": 384,
@@ -2575,8 +2785,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2589,15 +2799,20 @@
 						"live-preview": false
 					},
 					"uid": 1637,
+					"sid": 737563582114720,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": "Border"
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2496,
 						"y": 712,
@@ -2611,8 +2826,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2625,6 +2840,8 @@
 						"live-preview": false
 					},
 					"uid": 1638,
+					"sid": 896678702810530,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Pin": {
@@ -2633,6 +2850,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 8,
 						"y": 368,
@@ -2646,8 +2865,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2660,6 +2879,8 @@
 						"live-preview": false
 					},
 					"uid": 1639,
+					"sid": 768545902675224,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"ScrollTo": {
@@ -2668,6 +2889,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 24,
 						"y": 384,
@@ -2681,8 +2904,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2705,8 +2928,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1640,
+					"sid": 192859713017386,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 544,
 						"y": 256,
@@ -2720,8 +2947,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2744,15 +2971,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1641,
+					"sid": 614718995735577,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 544,
 						"y": 288,
@@ -2766,8 +2998,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2790,15 +3022,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1642,
+					"sid": 402826311496258,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 832,
 						"y": 400,
@@ -2812,8 +3049,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -2836,15 +3073,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1643,
+					"sid": 910552879143906,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1640,
 						"y": 720,
@@ -2858,8 +3100,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2882,8 +3124,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1644,
+					"sid": 963840931384860,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1608,
 						"y": 216,
@@ -2897,8 +3143,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -2921,8 +3167,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1645,
+					"sid": 474617657522419,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1080,
 						"y": -16,
@@ -2936,8 +3186,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2950,6 +3200,8 @@
 						"live-preview": false
 					},
 					"uid": 1646,
+					"sid": 814682859806491,
+					"tags": "",
 					"instanceVariables": {
 						"Sines": true,
 						"IsScared": false,
@@ -2993,6 +3245,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2008,
 						"y": 696,
@@ -3006,8 +3260,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3030,15 +3284,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1647,
+					"sid": 309456764546241,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1640,
 						"y": 216,
@@ -3052,8 +3311,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -3076,15 +3335,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1648,
+					"sid": 388480541821631,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 544,
 						"y": 287.99999999999994,
@@ -3098,8 +3362,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -3122,8 +3386,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1649,
+					"sid": 245476448136620,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": -64,
 						"y": 0,
@@ -3137,8 +3405,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3161,15 +3429,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1650,
+					"sid": 140319928807973,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 288,
 						"y": 400,
@@ -3183,8 +3456,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3207,15 +3480,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1651,
+					"sid": 867714902580176,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 320,
 						"y": 576,
@@ -3229,8 +3507,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -3253,15 +3531,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1652,
+					"sid": 529957042011613,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 288,
 						"y": 432,
@@ -3275,8 +3558,8 @@
 							1,
 							1
 						],
-						"angle": 0.0029326756783427665,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0.0029326756783427665
 					}
 				},
 				{
@@ -3299,15 +3582,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1653,
+					"sid": 281250685260333,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 576,
 						"y": 496,
@@ -3321,8 +3609,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -3345,15 +3633,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1654,
+					"sid": 693544192946228,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 544,
 						"y": 496,
@@ -3367,8 +3660,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3391,6 +3684,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1655,
+					"sid": 743471887500831,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -3413,6 +3708,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 408,
 						"y": 512,
@@ -3426,8 +3723,8 @@
 							1,
 							1
 						],
-						"angle": 6.282463285644403,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.282463285644403
 					}
 				},
 				{
@@ -3450,6 +3747,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1656,
+					"sid": 293338074541459,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -3472,6 +3771,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 456,
 						"y": 528,
@@ -3485,8 +3786,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -3509,15 +3810,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1658,
+					"sid": 622895291513237,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 576,
 						"y": 576,
@@ -3531,8 +3837,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -3555,15 +3861,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1659,
+					"sid": 580902692292521,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 544,
 						"y": 576,
@@ -3577,8 +3888,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3601,15 +3912,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1660,
+					"sid": 590262489988539,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 288,
 						"y": 576,
@@ -3623,8 +3939,8 @@
 							1,
 							1
 						],
-						"angle": 0.0029326756783427665,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0.0029326756783427665
 					}
 				},
 				{
@@ -3647,15 +3963,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1661,
+					"sid": 151206257024646,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 320,
 						"y": 664,
@@ -3669,8 +3990,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -3693,6 +4014,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1662,
+					"sid": 751436255775971,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -3715,6 +4038,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 416,
 						"y": 640,
@@ -3728,8 +4053,8 @@
 							1,
 							1
 						],
-						"angle": 6.282463285644403,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.282463285644403
 					}
 				},
 				{
@@ -3752,6 +4077,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1663,
+					"sid": 772736703536549,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -3774,6 +4101,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 448,
 						"y": 656,
@@ -3787,8 +4116,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -3811,6 +4140,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1664,
+					"sid": 838306823255439,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -3833,6 +4164,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 376.00000834104117,
 						"y": 768.0231046871185,
@@ -3846,8 +4179,8 @@
 							1,
 							1
 						],
-						"angle": 6.282463285644403,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.282463285644403
 					}
 				},
 				{
@@ -3860,6 +4193,8 @@
 						"live-preview": false
 					},
 					"uid": 1665,
+					"sid": 102978500693744,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -3880,6 +4215,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 384,
 						"y": 752,
@@ -3893,8 +4230,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3907,6 +4244,8 @@
 						"live-preview": false
 					},
 					"uid": 1666,
+					"sid": 705602563818189,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -3927,6 +4266,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 480,
 						"y": 752,
@@ -3940,8 +4281,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3964,6 +4305,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1667,
+					"sid": 919395285100866,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -3986,6 +4329,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 392,
 						"y": 400,
@@ -3999,8 +4344,8 @@
 							1,
 							1
 						],
-						"angle": 6.282463285644403,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.282463285644403
 					}
 				},
 				{
@@ -4023,6 +4368,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1668,
+					"sid": 959051428309975,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -4045,6 +4392,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 472,
 						"y": 416,
@@ -4058,8 +4407,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -4082,15 +4431,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1670,
+					"sid": 678993029633524,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 288,
 						"y": 664,
@@ -4104,8 +4458,8 @@
 							1,
 							1
 						],
-						"angle": 0.0029326756783427665,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0.0029326756783427665
 					}
 				},
 				{
@@ -4128,15 +4482,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1671,
+					"sid": 266717862994702,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 576,
 						"y": 736,
@@ -4150,8 +4509,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -4174,15 +4533,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1672,
+					"sid": 428341195245702,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 544,
 						"y": 736,
@@ -4196,8 +4560,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4220,15 +4584,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1673,
+					"sid": 750005277097385,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 320,
 						"y": 952,
@@ -4242,8 +4611,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -4266,15 +4635,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1674,
+					"sid": 280045825969310,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 896,
 						"y": 952,
@@ -4288,8 +4662,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -4312,8 +4686,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1675,
+					"sid": 668282246884121,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 320,
 						"y": 984,
@@ -4327,8 +4705,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -4341,12 +4719,16 @@
 						"live-preview": false
 					},
 					"uid": 1676,
+					"sid": 952141435172798,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"NoSave": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 328,
 						"y": 936,
@@ -4360,8 +4742,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4374,12 +4756,16 @@
 						"live-preview": false
 					},
 					"uid": 1677,
+					"sid": 406688884712750,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"NoSave": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 344,
 						"y": 936,
@@ -4393,8 +4779,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4407,12 +4793,16 @@
 						"live-preview": false
 					},
 					"uid": 1678,
+					"sid": 250731996758103,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"NoSave": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 360,
 						"y": 936,
@@ -4426,8 +4816,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4440,12 +4830,16 @@
 						"live-preview": false
 					},
 					"uid": 1679,
+					"sid": 389595412076895,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"NoSave": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 376,
 						"y": 936,
@@ -4459,8 +4853,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4473,12 +4867,16 @@
 						"live-preview": false
 					},
 					"uid": 1680,
+					"sid": 636919483477231,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"NoSave": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 392,
 						"y": 936,
@@ -4492,8 +4890,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4506,12 +4904,16 @@
 						"live-preview": false
 					},
 					"uid": 1681,
+					"sid": 168542424071074,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"NoSave": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 488,
 						"y": 936,
@@ -4525,8 +4927,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4539,12 +4941,16 @@
 						"live-preview": false
 					},
 					"uid": 1682,
+					"sid": 775023057829586,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"NoSave": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 504,
 						"y": 936,
@@ -4558,8 +4964,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4572,12 +4978,16 @@
 						"live-preview": false
 					},
 					"uid": 1683,
+					"sid": 698363689835401,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"NoSave": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 520,
 						"y": 936,
@@ -4591,8 +5001,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4605,12 +5015,16 @@
 						"live-preview": false
 					},
 					"uid": 1684,
+					"sid": 930351920382736,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"NoSave": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 536,
 						"y": 936,
@@ -4624,8 +5038,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4638,12 +5052,16 @@
 						"live-preview": false
 					},
 					"uid": 1685,
+					"sid": 740196003412170,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"NoSave": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 552,
 						"y": 936,
@@ -4657,8 +5075,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4681,15 +5099,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1686,
+					"sid": 489003580660302,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 576,
 						"y": 832,
@@ -4703,8 +5126,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -4727,15 +5150,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1687,
+					"sid": 828726512192603,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 576,
 						"y": 832,
@@ -4749,8 +5177,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -4763,12 +5191,16 @@
 						"live-preview": false
 					},
 					"uid": 1688,
+					"sid": 207642499191722,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"NoSave": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 568,
 						"y": 936,
@@ -4782,8 +5214,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4806,15 +5238,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1689,
+					"sid": 533513869086895,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 896,
 						"y": 952,
@@ -4828,8 +5265,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4852,8 +5289,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1690,
+					"sid": 632787092108879,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": -8.036520645980332,
 						"y": 984.940712186223,
@@ -4867,8 +5308,8 @@
 							1,
 							1
 						],
-						"angle": 6.280833635153606,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.280833635153606
 					}
 				},
 				{
@@ -4891,15 +5332,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1691,
+					"sid": 145331479820601,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 928,
 						"y": 1400,
@@ -4913,8 +5359,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -4927,15 +5373,20 @@
 						"live-preview": false
 					},
 					"uid": 1695,
+					"sid": 515913971303240,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": "Border"
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1592,
 						"y": 1128,
@@ -4949,8 +5400,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4973,15 +5424,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1696,
+					"sid": 122275685837700,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1320,
 						"y": 800,
@@ -4995,8 +5451,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -5019,6 +5475,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1697,
+					"sid": 955366978372773,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -5041,6 +5499,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1776,
 						"y": 976,
@@ -5054,8 +5514,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5078,6 +5538,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1698,
+					"sid": 252259603814783,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -5100,6 +5562,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1872,
 						"y": 992,
@@ -5113,8 +5577,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -5137,6 +5601,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1700,
+					"sid": 530573515348994,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -5159,6 +5625,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1776,
 						"y": 960,
@@ -5172,8 +5640,8 @@
 							1,
 							1
 						],
-						"angle": 6.282463285644403,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.282463285644403
 					}
 				},
 				{
@@ -5196,6 +5664,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1701,
+					"sid": 250571938481436,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -5218,6 +5688,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1872,
 						"y": 976,
@@ -5231,8 +5703,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -5255,6 +5727,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1702,
+					"sid": 970514787390138,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -5277,6 +5751,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1792,
 						"y": 960,
@@ -5290,8 +5766,8 @@
 							1,
 							1
 						],
-						"angle": 6.282463285644403,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.282463285644403
 					}
 				},
 				{
@@ -5304,6 +5780,8 @@
 						"live-preview": false
 					},
 					"uid": 1703,
+					"sid": 303373815586615,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -5324,6 +5802,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1784,
 						"y": 944,
@@ -5337,8 +5817,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5351,6 +5831,8 @@
 						"live-preview": false
 					},
 					"uid": 1704,
+					"sid": 663710384191787,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -5371,6 +5853,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1800,
 						"y": 944,
@@ -5384,8 +5868,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5398,6 +5882,8 @@
 						"live-preview": false
 					},
 					"uid": 1705,
+					"sid": 477425598520351,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -5418,6 +5904,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1816,
 						"y": 944,
@@ -5431,8 +5919,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5445,6 +5933,8 @@
 						"live-preview": false
 					},
 					"uid": 1706,
+					"sid": 848179413434130,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -5465,6 +5955,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1832,
 						"y": 944,
@@ -5478,8 +5970,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5492,6 +5984,8 @@
 						"live-preview": false
 					},
 					"uid": 1707,
+					"sid": 219692462956662,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -5512,6 +6006,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1848,
 						"y": 944,
@@ -5525,8 +6021,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5539,6 +6035,8 @@
 						"live-preview": false
 					},
 					"uid": 1708,
+					"sid": 560035734576061,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -5559,6 +6057,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1864,
 						"y": 944,
@@ -5572,8 +6072,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5596,15 +6096,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1709,
+					"sid": 776253080604149,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1320,
 						"y": 832,
@@ -5618,8 +6123,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -5642,15 +6147,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1710,
+					"sid": 520409855311041,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1136,
 						"y": 800,
@@ -5664,8 +6174,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -5688,15 +6198,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1711,
+					"sid": 607425296310732,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1136,
 						"y": 832,
@@ -5710,8 +6225,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -5734,15 +6249,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1712,
+					"sid": 561203396189042,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1496,
 						"y": 800,
@@ -5756,8 +6276,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -5780,15 +6300,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1713,
+					"sid": 914295397140886,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1496,
 						"y": 832,
@@ -5802,8 +6327,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -5826,15 +6351,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1714,
+					"sid": 436731190962759,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2120,
 						"y": 688,
@@ -5848,8 +6378,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5872,15 +6402,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1715,
+					"sid": 621800628860872,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2152,
 						"y": 800,
@@ -5894,8 +6429,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -5918,11 +6453,14 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1716,
+					"sid": 379347059995549,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						},
@@ -5941,6 +6479,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2296,
 						"y": 944,
@@ -5954,8 +6494,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -5978,6 +6518,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1717,
+					"sid": 813223289733063,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -5997,10 +6539,13 @@
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2312,
 						"y": 944,
@@ -6014,8 +6559,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -6028,6 +6573,8 @@
 						"live-preview": false
 					},
 					"uid": 1718,
+					"sid": 210597565357521,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -6048,6 +6595,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2216,
 						"y": 960,
@@ -6061,8 +6610,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -6085,11 +6634,14 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1719,
+					"sid": 222055910052972,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						},
@@ -6108,6 +6660,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2304,
 						"y": 800,
@@ -6121,8 +6675,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -6145,6 +6699,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1720,
+					"sid": 795178416046989,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -6164,10 +6720,13 @@
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2312,
 						"y": 800,
@@ -6181,8 +6740,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -6195,6 +6754,8 @@
 						"live-preview": false
 					},
 					"uid": 1721,
+					"sid": 485166037719108,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -6215,6 +6776,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2224,
 						"y": 816,
@@ -6228,8 +6791,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -6252,15 +6815,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1722,
+					"sid": 679845787809662,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2152,
 						"y": 800,
@@ -6274,8 +6842,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -6298,8 +6866,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1723,
+					"sid": 462106583414342,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1528.0752534354683,
 						"y": 751.9999115142597,
@@ -6313,8 +6885,8 @@
 							1,
 							1
 						],
-						"angle": 6.280833635153606,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.280833635153606
 					}
 				},
 				{
@@ -6337,15 +6909,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1724,
+					"sid": 466346333402788,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2088,
 						"y": 688,
@@ -6359,8 +6936,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6383,8 +6960,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1725,
+					"sid": 704092372268806,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2120,
 						"y": 720,
@@ -6398,8 +6979,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -6422,15 +7003,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1726,
+					"sid": 920611143996734,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1640,
 						"y": 720,
@@ -6444,8 +7030,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -6468,8 +7054,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1727,
+					"sid": 548603959854773,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1640,
 						"y": 752,
@@ -6483,8 +7073,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -6497,15 +7087,20 @@
 						"live-preview": false
 					},
 					"uid": 1728,
+					"sid": 847577716965905,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": "EnemyBouncer"
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1904,
 						"y": 720,
@@ -6519,8 +7114,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6533,6 +7128,8 @@
 						"live-preview": false
 					},
 					"uid": 1729,
+					"sid": 894395172650310,
+					"tags": "",
 					"instanceVariables": {
 						"Sines": true,
 						"IsScared": false,
@@ -6576,6 +7173,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1776,
 						"y": 696,
@@ -6589,8 +7188,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6613,8 +7212,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1730,
+					"sid": 401632812959476,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2312,
 						"y": 528,
@@ -6628,8 +7231,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6652,15 +7255,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1731,
+					"sid": 740541862156781,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1720,
 						"y": 560.0000000000001,
@@ -6674,8 +7282,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -6698,15 +7306,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1732,
+					"sid": 423387271715762,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1720,
 						"y": 560,
@@ -6720,8 +7333,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -6744,8 +7357,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1733,
+					"sid": 658466353726070,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2337.016031985996,
 						"y": 432.0928722368412,
@@ -6759,8 +7376,8 @@
 							1,
 							1
 						],
-						"angle": 6.280833635153606,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.280833635153606
 					}
 				},
 				{
@@ -6783,15 +7400,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1734,
+					"sid": 450681459226456,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2312,
 						"y": 560,
@@ -6805,8 +7427,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6829,15 +7451,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1735,
+					"sid": 248052012523991,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1688,
 						"y": 528,
@@ -6851,8 +7478,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -6875,15 +7502,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1736,
+					"sid": 429593381176059,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2056,
 						"y": 496,
@@ -6897,8 +7529,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -6921,8 +7553,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1737,
+					"sid": 775184587002153,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2088,
 						"y": 496,
@@ -6936,8 +7572,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -6960,15 +7596,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1738,
+					"sid": 690370141290147,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2056,
 						"y": 464,
@@ -6982,8 +7623,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7006,15 +7647,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1739,
+					"sid": 812291513688375,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1720,
 						"y": 464,
@@ -7028,8 +7674,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -7052,15 +7698,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1740,
+					"sid": 582407720687139,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1720,
 						"y": 464,
@@ -7074,8 +7725,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -7098,15 +7749,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1741,
+					"sid": 994921535498685,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1688,
 						"y": 432,
@@ -7120,8 +7776,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -7144,15 +7800,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1742,
+					"sid": 458337866705880,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2400,
 						"y": 400,
@@ -7166,8 +7827,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -7180,6 +7841,8 @@
 						"live-preview": false
 					},
 					"uid": 1743,
+					"sid": 311800886867243,
+					"tags": "",
 					"instanceVariables": {
 						"Sines": false,
 						"IsScared": false,
@@ -7224,6 +7887,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2008,
 						"y": 480,
@@ -7237,8 +7902,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7261,8 +7926,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1744,
+					"sid": 777042171513425,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2056,
 						"y": 432,
@@ -7276,8 +7945,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7300,6 +7969,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1745,
+					"sid": 728761621447495,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Jumpthru": {
@@ -7308,6 +7979,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1640,
 						"y": 608,
@@ -7321,8 +7994,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7345,6 +8018,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1746,
+					"sid": 431189727050696,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Jumpthru": {
@@ -7353,6 +8028,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1640,
 						"y": 496,
@@ -7366,8 +8043,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7390,6 +8067,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1747,
+					"sid": 494056511142622,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Jumpthru": {
@@ -7398,6 +8077,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1640,
 						"y": 384,
@@ -7411,8 +8092,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7425,8 +8106,12 @@
 						"live-preview": false
 					},
 					"uid": 1748,
+					"sid": 954974815314598,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2368,
 						"y": 304,
@@ -7440,8 +8125,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7464,8 +8149,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1749,
+					"sid": 855072522127491,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2088.000287578656,
 						"y": 432.24457366527173,
@@ -7479,8 +8168,8 @@
 							1,
 							1
 						],
-						"angle": 6.280833635153606,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.280833635153606
 					}
 				},
 				{
@@ -7503,8 +8192,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1750,
+					"sid": 698789009913974,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1560.0001327286104,
 						"y": -15.887119846797656,
@@ -7518,8 +8211,8 @@
 							1,
 							1
 						],
-						"angle": 6.280833635153606,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.280833635153606
 					}
 				},
 				{
@@ -7542,15 +8235,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1753,
+					"sid": 329535674700012,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1776,
 						"y": 184,
@@ -7564,8 +8262,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -7588,15 +8286,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1754,
+					"sid": 581798580527973,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1872,
 						"y": 184,
@@ -7610,8 +8313,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -7634,15 +8337,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1755,
+					"sid": 350050383911396,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1968,
 						"y": 184,
@@ -7656,8 +8364,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -7680,15 +8388,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1756,
+					"sid": 834967161313150,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2064,
 						"y": 184,
@@ -7702,8 +8415,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -7726,15 +8439,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1757,
+					"sid": 660320524647431,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2160,
 						"y": 184,
@@ -7748,8 +8466,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -7772,15 +8490,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1758,
+					"sid": 354166887206032,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2256,
 						"y": 184,
@@ -7794,8 +8517,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -7818,15 +8541,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1759,
+					"sid": 112759599625005,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1776,
 						"y": 216,
@@ -7840,8 +8568,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -7864,15 +8592,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1760,
+					"sid": 602197869574105,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1872,
 						"y": 216,
@@ -7886,8 +8619,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -7910,15 +8643,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1761,
+					"sid": 334570671779671,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 1968,
 						"y": 216,
@@ -7932,8 +8670,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -7956,15 +8694,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1762,
+					"sid": 276566408205991,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2064,
 						"y": 216,
@@ -7978,8 +8721,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -8002,15 +8745,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1763,
+					"sid": 625297013583392,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2160,
 						"y": 216,
@@ -8024,8 +8772,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -8048,15 +8796,20 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1764,
+					"sid": 908647470676956,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
 							"properties": {
 								"enabled": true,
+								"use-instance-tags": false,
 								"tags": ""
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 2256,
 						"y": 216,
@@ -8070,8 +8823,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -8084,6 +8837,8 @@
 						"live-preview": false
 					},
 					"uid": 1692,
+					"sid": 954340776391863,
+					"tags": "",
 					"instanceVariables": {
 						"IsScared": false,
 						"patrolTime": 0,
@@ -8105,6 +8860,8 @@
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 824,
 						"y": 872,
@@ -8118,8 +8875,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -8141,6 +8898,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -8177,6 +8935,8 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1765,
+					"sid": 491519132149982,
+					"tags": "",
 					"instanceVariables": {
 						"isDangerous": true
 					},
@@ -8209,6 +8969,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 928,
 						"y": 1096,
@@ -8222,8 +8984,8 @@
 							0.0196078431372549,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -8245,6 +9007,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 0,
@@ -8281,8 +9044,12 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1766,
+					"sid": 964142506530952,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 0,
 						"y": 450,
@@ -8296,8 +9063,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8320,10 +9087,14 @@
 						"read-aloud": false
 					},
 					"uid": 1767,
+					"sid": 691254462482800,
+					"tags": "",
 					"instanceVariables": {
 						"Time": 0
 					},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 88,
 						"y": 460,
@@ -8337,8 +9108,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8361,8 +9132,12 @@
 						"read-aloud": false
 					},
 					"uid": 1768,
+					"sid": 654424588596339,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 8,
 						"y": 460,
@@ -8376,8 +9151,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8400,8 +9175,12 @@
 						"read-aloud": false
 					},
 					"uid": 1769,
+					"sid": 140471601512795,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 192,
 						"y": 460,
@@ -8415,8 +9194,8 @@
 							1,
 							1
 						],
-						"angle": 6.280310507962862,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.280310507962862
 					}
 				},
 				{
@@ -8439,10 +9218,14 @@
 						"read-aloud": false
 					},
 					"uid": 1770,
+					"sid": 957637466254692,
+					"tags": "",
 					"instanceVariables": {
 						"Kills": 0
 					},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 288,
 						"y": 460,
@@ -8456,8 +9239,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8480,8 +9263,12 @@
 						"read-aloud": false
 					},
 					"uid": 1771,
+					"sid": 986144343521167,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 352,
 						"y": 460,
@@ -8495,8 +9282,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8519,8 +9306,12 @@
 						"read-aloud": false
 					},
 					"uid": 1772,
+					"sid": 976073168956373,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 456,
 						"y": 460,
@@ -8534,8 +9325,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8558,8 +9349,12 @@
 						"read-aloud": false
 					},
 					"uid": 1773,
+					"sid": 667328168257950,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 520,
 						"y": 460,
@@ -8573,8 +9368,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8597,8 +9392,12 @@
 						"read-aloud": false
 					},
 					"uid": 1774,
+					"sid": 648498039338938,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 600,
 						"y": 460,
@@ -8612,8 +9411,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8626,12 +9425,16 @@
 						"live-preview": false
 					},
 					"uid": 1775,
+					"sid": 681477016691567,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Flash": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 32,
 						"y": 192,
@@ -8645,8 +9448,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8659,12 +9462,16 @@
 						"live-preview": false
 					},
 					"uid": 1776,
+					"sid": 312187357381883,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Flash": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 320,
 						"y": 32,
@@ -8678,8 +9485,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -8692,12 +9499,16 @@
 						"live-preview": false
 					},
 					"uid": 1777,
+					"sid": 126584605701599,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Flash": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 608,
 						"y": 192,
@@ -8711,8 +9522,8 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
+						"z": 0,
+						"angle": 3.141592653589793
 					}
 				},
 				{
@@ -8725,12 +9536,16 @@
 						"live-preview": false
 					},
 					"uid": 1778,
+					"sid": 412163457394779,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Flash": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 320,
 						"y": 416,
@@ -8744,8 +9559,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				}
 			],
@@ -8767,6 +9582,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 0,
 			"parallaxY": 0,
 			"scaleRate": 0,
@@ -8803,12 +9619,16 @@
 						"blend-margin-y": 0.1
 					},
 					"uid": 1779,
+					"sid": 688648277601071,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"NoSave": {
 							"properties": {}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": -8,
 						"y": 0,
@@ -8822,8 +9642,8 @@
 							1,
 							0.9
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8836,6 +9656,8 @@
 						"live-preview": false
 					},
 					"uid": 1780,
+					"sid": 516836064535480,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
 						"Sine": {
@@ -8853,6 +9675,8 @@
 							}
 						}
 					},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 320,
 						"y": 184,
@@ -8866,8 +9690,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8890,8 +9714,12 @@
 						"read-aloud": false
 					},
 					"uid": 1781,
+					"sid": 846211251697805,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 192,
 						"y": 152,
@@ -8905,8 +9733,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8929,8 +9757,12 @@
 						"read-aloud": false
 					},
 					"uid": 1782,
+					"sid": 363992881808608,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 192,
 						"y": 176,
@@ -8944,8 +9776,8 @@
 							1,
 							0.5
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8968,8 +9800,12 @@
 						"read-aloud": false
 					},
 					"uid": 1783,
+					"sid": 561582491990231,
+					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
+					"showing": true,
+					"locked": false,
 					"world": {
 						"x": 184,
 						"y": 200,
@@ -8983,8 +9819,8 @@
 							1,
 							0.5
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -9006,6 +9842,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 0,
 			"parallaxY": 0,
 			"scaleRate": 0,
@@ -9018,6 +9855,10 @@
 			"global": false
 		}
 	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
 	"sid": 237088004375298,
 	"nonworld-instances": [],
 	"effectTypes": [
@@ -9087,6 +9928,7 @@
 	"width": 2400,
 	"height": 1600,
 	"unboundedScrolling": false,
+	"sampling": "auto",
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",

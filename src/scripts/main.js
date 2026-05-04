@@ -14,6 +14,7 @@ import Level from "./levelInstance.js";
 import * as config from "./config.js"
 import * as menuControls from "./menuControls.js";
 import { updateMenu as updateLevelSelectMenu } from "./levelSelect.js";
+import { updateMenu as updateWorldSelectMenu } from "./worldSelect.js";
 import { pauseBehaviour } from "./pause.js";
 import BatInstance from "./bat.js";
 import GhostInstance from "./ghostEnemy.js";
@@ -64,6 +65,11 @@ const tick = (runtime) => {
 
 	if (config.getGameState() != config.gameStates.paused) {
 		runtime.timeScale = config.getCurrentTimestep();
+
+		if (currentLayout === config.WORLD_SELECT_NAME) {
+			config.setGameState(config.gameStates.worldSelect);
+		}
+
 		if (currentLayout === config.LEVEL_SELECT_NAME) {
 			config.setGameState(config.gameStates.levelSelect);
 		}
@@ -103,6 +109,11 @@ const tick = (runtime) => {
 			menuControls.gamePad(runtime);
 			menuControls.keyboard(runtime);
 			updateLevelSelectMenu(runtime);
+			break;
+		case gameStates.worldSelect:
+			menuControls.gamePad(runtime);
+			menuControls.keyboard(runtime);
+			updateWorldSelectMenu(runtime);
 			break;
 		default: runtime.timeScale = 1;
 	}

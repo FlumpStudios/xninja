@@ -1,5 +1,6 @@
 import * as sfxManager from "./sfxManager.js";
 import * as levelSelect from "./levelSelect.js";
+import * as worldselect from "./worldSelect.js";
 import * as config from "./config.js"
 
 let activeIndex = 0;
@@ -57,6 +58,10 @@ export const keyboard = (runtime) => {
 				levelSelect.selectUp(runtime);
 				sfxManager.PlayMenuMove();
 			}
+			else if (runtime.layout.name === config.WORLD_SELECT_NAME) {
+				worldselect.selectUp(runtime);
+				sfxManager.PlayMenuMove();
+			}
 			else if (runtime.layout.name === config.MAIN_MENU_NAME) {
 				if (menuIndex > -1) {
 					runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex--;
@@ -71,6 +76,10 @@ export const keyboard = (runtime) => {
 		if (!wasDownDown) {
 			if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
 				levelSelect.selectDown(runtime);
+				sfxManager.PlayMenuMove();
+			}
+			else if (runtime.layout.name === config.WORLD_SELECT_NAME) {
+				worldselect.selectDown(runtime);
 				sfxManager.PlayMenuMove();
 			}
 			else if (runtime.layout.name === config.MAIN_MENU_NAME) {
@@ -90,6 +99,11 @@ export const keyboard = (runtime) => {
 				sfxManager.PlayMenuSelect();
 				levelSelect.confirm(runtime);
 			}
+			else if (runtime.layout.name === config.WORLD_SELECT_NAME) {
+				sfxManager.PlayMenuSelect();
+				worldselect.confirm(runtime);
+				console.log("confirm");
+			}
 			else if (runtime.layout.name === config.MAIN_MENU_NAME) {
 
 			}
@@ -101,6 +115,9 @@ export const keyboard = (runtime) => {
 		if (!wasEscapeDown) {
 			if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
 				levelSelect.back(runtime);
+			}
+			else if (runtime.layout.name === config.WORLD_SELECT_NAME) {
+				worldselect.back(runtime);
 			}
 		}
 		wasEscapeDown = true;
@@ -244,6 +261,10 @@ export const gamePad = (runtime) => {
 						levelSelect.selectDown(runtime);
 						sfxManager.PlayMenuMove();
 					}
+					else if (runtime.layout.name === config.WORLD_SELECT_NAME) {
+						worldselect.selectDown(runtime);
+						sfxManager.PlayMenuMove();
+					}
 					else if (runtime.layout.name === config.MAIN_MENU_NAME) {
 						if (menuIndex > -1) {
 							runtime.objects.MenuArrow.getFirstInstance().instVars.MenuIndex++;
@@ -259,6 +280,10 @@ export const gamePad = (runtime) => {
 				if (!was_action_up_down) {
 					if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
 						levelSelect.selectUp(runtime);
+						sfxManager.PlayMenuMove();
+					}
+					if (runtime.layout.name === config.WORLD_SELECT_NAME) {
+						worldselect.selectUp(runtime);
 						sfxManager.PlayMenuMove();
 					}
 					else if (runtime.layout.name === config.MAIN_MENU_NAME) {
@@ -278,6 +303,10 @@ export const gamePad = (runtime) => {
 						levelSelect.confirm(runtime);
 						sfxManager.PlayMenuSelect();
 					}
+					else if (runtime.layout.name === config.WORLD_SELECT_NAME) {
+						worldselect.confirm(runtime);
+						sfxManager.PlayMenuSelect();
+					}
 					was_action_confirm_down = true;
 				}
 			}
@@ -287,6 +316,9 @@ export const gamePad = (runtime) => {
 				if (!was_action_back_down) {
 					if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
 						levelSelect.back(runtime);
+					}					
+					else if (runtime.layout.name === config.WORLD_SELECT_NAME) {
+						worldselect.back(runtime);
 					}
 					was_action_back_down = true;
 				}
@@ -297,6 +329,10 @@ export const gamePad = (runtime) => {
 				if (!was_action_confirm_down_alt) {
 					if (runtime.layout.name === config.LEVEL_SELECT_NAME) {
 						levelSelect.confirm(runtime);
+						sfxManager.PlayMenuSelect();
+					}
+					else if (runtime.layout.name === config.WORLD_SELECT_NAME) {
+						worldselect.confirm(runtime);
 						sfxManager.PlayMenuSelect();
 					}
 					was_action_confirm_down_alt = true;

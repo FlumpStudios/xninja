@@ -3,6 +3,7 @@
 	"plugin-id": "Sprite",
 	"sid": 740178446183946,
 	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
@@ -29,6 +30,7 @@
 						"originalSource": "D:\\X-Ninja\\Assets\\Sprites\\Obstacles\\Spike.png",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
+						"fileType": "image/png",
 						"imageSpriteId": 9718570,
 						"collisionPoly": {
 							"points": [

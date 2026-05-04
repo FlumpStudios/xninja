@@ -3,6 +3,7 @@
 	"plugin-id": "Spritefont2",
 	"sid": 381536431869147,
 	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [
 		{
 			"name": "Kills",
@@ -22,6 +23,7 @@
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
+		"fileType": "image/png",
 		"imageSpriteId": 1883241,
 		"useCollisionPoly": true,
 		"tag": ""

@@ -1,0 +1,303 @@
+{
+	"name": "WorldSelect",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "DisplayManager",
+					"sid": 671994516706558,
+					"parameters": {
+						"instance-variable": "EffectIndex",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-effect-parameter",
+					"objectClass": "System",
+					"sid": 161524423159468,
+					"parameters": {
+						"effect": "\"GlowHorizontal\"",
+						"parameter-index": "0",
+						"value": "80"
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 235540012399741,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Bulge\""
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 358864670699227,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Scanlines\""
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 437738453430396,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Vignette\""
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 327731667667728,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"GlowHorizontal\""
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 120217101655237,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Grayscale\""
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 879283043500593,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Brightness\""
+					}
+				}
+			],
+			"sid": 903869399811725
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "DisplayManager",
+					"sid": 386557053189747,
+					"parameters": {
+						"instance-variable": "EffectIndex",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-effect-parameter",
+					"objectClass": "System",
+					"sid": 229140040468260,
+					"parameters": {
+						"effect": "\"GlowHorizontal\"",
+						"parameter-index": "0",
+						"value": "200"
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 816899070898607,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Bulge\""
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 979661290728178,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Scanlines\""
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 879782103559403,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Vignette\""
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 887877714251035,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"GlowHorizontal\""
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 588862488262838,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Grayscale\""
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 500172403721878,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Brightness\""
+					}
+				}
+			],
+			"sid": 686089627097919
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "DisplayManager",
+					"sid": 803913321001653,
+					"parameters": {
+						"instance-variable": "EffectIndex",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 520581320211260,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Bulge\""
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 464264819526395,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Scanlines\""
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 658156971151177,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Vignette\""
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 615550352876346,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"GlowHorizontal\""
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 818482839436889,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Grayscale\""
+					}
+				},
+				{
+					"id": "set-layout-effect-enabled",
+					"objectClass": "System",
+					"sid": 531522293219344,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Brightness\""
+					}
+				}
+			],
+			"sid": 811578705604282
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 491825772368391
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Music",
+					"sid": 600142180599149,
+					"parameters": {
+						"tag": "\"GameMusic\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-all",
+					"objectClass": "Music",
+					"sid": 591818462426507
+				},
+				{
+					"id": "play",
+					"objectClass": "Music",
+					"sid": 840868054165982,
+					"parameters": {
+						"audio-file": {
+							"path": "Mars"
+						},
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"MenuMusic\""
+					}
+				}
+			],
+			"sid": 964631189394565
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-load-complete",
+					"objectClass": "System",
+					"sid": 118475195055994
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 514589767752659,
+					"parameters": {
+						"layout": "Splash"
+					}
+				}
+			],
+			"sid": 392931377005249
+		}
+	],
+	"sid": 112064455180673
+}
