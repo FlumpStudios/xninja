@@ -1,0 +1,23 @@
+{
+	"name": "BedrockFill_tile2",
+	"plugin-id": "TiledBg",
+	"sid": 221749371593940,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 32,
+		"height": 32,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "D:\\X-Ninja\\Assets\\Tiles\\tile055.png",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 9077336,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

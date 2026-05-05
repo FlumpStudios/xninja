@@ -266,7 +266,7 @@
 					"sid": 840868054165982,
 					"parameters": {
 						"audio-file": {
-							"path": "Mars"
+							"path": "mars"
 						},
 						"loop": "looping",
 						"volume": "0",

@@ -263,7 +263,8 @@
 			"Keypad3",
 			"ZKey",
 			"Shift",
-			"Button_LT2"
+			"Button_LT2",
+			"Sprite3"
 		],
 		"subfolders": [
 			{
@@ -305,6 +306,36 @@
 							}
 						],
 						"name": "Forest"
+					},
+					{
+						"items": [
+							"ShooterBlock2",
+							"PillPlatformEdge_tile2",
+							"PillPlatform_tile2",
+							"MovingPlatformEdge_tile2",
+							"MovingPlatform_tile2",
+							"ColourFill_tile2",
+							"BrickFill",
+							"Brick2",
+							"BedrockFill_tile2",
+							"BedrockFill2_tile2",
+							"BedrockEdge_tile2",
+							"BedrockCorner_tile2",
+							"BrickTop"
+						],
+						"subfolders": [
+							{
+								"items": [
+									"cityLayer1_background2",
+									"cityLayer2_background2",
+									"cityLayer3_background2",
+									"cityBackground_tile2"
+								],
+								"subfolders": [],
+								"name": "Backgrounds"
+							}
+						],
+						"name": "CIty"
 					}
 				],
 				"name": "Tiles"
@@ -393,11 +424,25 @@
 				"name": "Enemy"
 			},
 			{
-				"items": [
-					"Spike",
-					"SpikeSine"
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"Spike",
+							"SpikeSine"
+						],
+						"subfolders": [],
+						"name": "Forest"
+					},
+					{
+						"items": [
+							"SpikeSine2",
+							"Spike2"
+						],
+						"subfolders": [],
+						"name": "City"
+					}
 				],
-				"subfolders": [],
 				"name": "Obstacles"
 			},
 			{
@@ -559,6 +604,13 @@
 				],
 				"subfolders": [],
 				"name": "Menus"
+			},
+			{
+				"items": [
+					"Level_2_1"
+				],
+				"subfolders": [],
+				"name": "World2"
 			}
 		]
 	},
@@ -1359,9 +1411,17 @@
 					}
 				},
 				{
+					"name": "bossDeath.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 310253848221094,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
 					"name": "blip_Select.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 697280647277120,
+					"sid": 412626264114625,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -1369,7 +1429,7 @@
 				{
 					"name": "default.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 247930164689422,
+					"sid": 979327474232631,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -1377,15 +1437,7 @@
 				{
 					"name": "explosion.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 668633448873259,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "explosion2.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 297016653726695,
+					"sid": 728552444031531,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -1393,15 +1445,15 @@
 				{
 					"name": "jump.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 907919785398258,
+					"sid": 664352429303129,
 					"file-info": {
 						"purpose": "none"
 					}
 				},
 				{
-					"name": "laser1.webm",
+					"name": "explosion2.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 483133465621916,
+					"sid": 827100514327037,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -1409,7 +1461,15 @@
 				{
 					"name": "laser2.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 824816649460539,
+					"sid": 314459354279224,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "laser1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 890459157470153,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -1417,7 +1477,7 @@
 				{
 					"name": "pickup_Coin.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 599707161856987,
+					"sid": 419465411896353,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -1425,7 +1485,7 @@
 				{
 					"name": "powerup.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 963801652226221,
+					"sid": 433168383122184,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -1433,7 +1493,7 @@
 				{
 					"name": "randomize.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 324129377436213,
+					"sid": 666738063063424,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -1441,7 +1501,7 @@
 				{
 					"name": "randomize2.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 579011450958328,
+					"sid": 145323396763186,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -1449,15 +1509,7 @@
 				{
 					"name": "randomize3.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 144100954302096,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "bossDeath.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 310253848221094,
+					"sid": 853468032940509,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -1564,7 +1616,7 @@
 					}
 				},
 				{
-					"name": "Map (basic version).webm",
+					"name": "map_basic.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 795780430441763,
 					"file-info": {
@@ -1572,7 +1624,7 @@
 					}
 				},
 				{
-					"name": "Mars.webm",
+					"name": "mars.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 887482338065775,
 					"file-info": {
@@ -1580,7 +1632,7 @@
 					}
 				},
 				{
-					"name": "Mercury.webm",
+					"name": "mercury.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 430464082244276,
 					"file-info": {
@@ -1588,7 +1640,7 @@
 					}
 				},
 				{
-					"name": "Venus.webm",
+					"name": "venus.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 886504655235541,
 					"file-info": {
@@ -1596,7 +1648,7 @@
 					}
 				},
 				{
-					"name": "Warp Jingle.webm",
+					"name": "warp_jingle.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 836678712819040,
 					"file-info": {
@@ -1604,7 +1656,7 @@
 					}
 				},
 				{
-					"name": "BossIntro.webm",
+					"name": "bossIntro.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 357158372388139,
 					"file-info": {
@@ -1612,7 +1664,7 @@
 					}
 				},
 				{
-					"name": "BossMain.webm",
+					"name": "bossMain.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 679608616136709,
 					"file-info": {
@@ -1620,7 +1672,7 @@
 					}
 				},
 				{
-					"name": "Intro Jingle.webm",
+					"name": "intro_jingle.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 818734007296818,
 					"file-info": {
@@ -1628,7 +1680,7 @@
 					}
 				},
 				{
-					"name": "Map.webm",
+					"name": "map.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 932330469916923,
 					"file-info": {
@@ -1636,7 +1688,7 @@
 					}
 				},
 				{
-					"name": "Win Jingle.webm",
+					"name": "win_jingle.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 553232411493627,
 					"file-info": {
@@ -1732,7 +1784,7 @@
 					}
 				},
 				{
-					"name": "Fields of Ice.webm",
+					"name": "fields_of_Ice.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 430531359251158,
 					"file-info": {
@@ -1764,7 +1816,7 @@
 					}
 				},
 				{
-					"name": "The Challenge  - Chiptune Comp 01.webm",
+					"name": "the_challenge.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 412855674664521,
 					"file-info": {
@@ -1788,7 +1840,7 @@
 					}
 				},
 				{
-					"name": "Survive - Chiptune Comp 04.webm",
+					"name": "survive.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 604815749158558,
 					"file-info": {
@@ -1796,7 +1848,7 @@
 					}
 				},
 				{
-					"name": "Chiptune Techno.webm",
+					"name": "chiptune_techno.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 375994804450136,
 					"file-info": {

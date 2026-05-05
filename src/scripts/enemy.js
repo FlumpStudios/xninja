@@ -93,6 +93,21 @@ export default class enemy extends globalThis.ISpriteInstance {
                 destructor();
             }
         }
+
+        for (const spike of runtime.objects.Spike2.instances()) {
+            if (spike.testOverlap(this)) {
+                this.runKill(runtime, sfx);
+                destructor();
+                return;
+            }
+        }
+
+        for (const spike of runtime.objects.SpikeSine2.instances()) {
+            if (spike.testOverlap(this)) {
+                this.runKill(runtime);
+                destructor();
+            }
+        }
     }
 
     hasLineOfSightOfPlayer = (runtime) => {

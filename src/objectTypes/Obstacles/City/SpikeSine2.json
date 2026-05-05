@@ -1,0 +1,67 @@
+{
+	"name": "SpikeSine2",
+	"plugin-id": "Sprite",
+	"sid": 612113332150623,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 297468327659211
+		},
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 606668445425010
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 8,
+						"height": 8,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "D:\\X-Ninja\\Assets\\Sprites\\Obstacles\\Spike.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4819043,
+						"collisionPoly": {
+							"points": [
+								0.38157894736842085,
+								0.25219294899388367,
+								0.6249998996132302,
+								0.2456140183565909,
+								0.7456141689367464,
+								0.5021930326495255,
+								0.8837720302113314,
+								0.9956139347009492,
+								0.116228137099952,
+								1,
+								0.25877189636230463,
+								0.5109649122807018
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 784305032632171,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

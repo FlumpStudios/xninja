@@ -1,0 +1,23 @@
+{
+	"name": "Brick2",
+	"plugin-id": "TiledBg",
+	"sid": 427827320668129,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 63,
+		"height": 50,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 6020861,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}
