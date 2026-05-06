@@ -264,7 +264,9 @@
 			"ZKey",
 			"Shift",
 			"Button_LT2",
-			"Sprite3"
+			"Sprite3",
+			"Sprite4",
+			"Sprite5"
 		],
 		"subfolders": [
 			{
@@ -437,7 +439,9 @@
 					{
 						"items": [
 							"SpikeSine2",
-							"Spike2"
+							"Spike2",
+							"Electric",
+							"ElectricBolt"
 						],
 						"subfolders": [],
 						"name": "City"

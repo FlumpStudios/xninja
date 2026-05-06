@@ -108,6 +108,21 @@ export default class enemy extends globalThis.ISpriteInstance {
                 destructor();
             }
         }
+
+        for (const electric of runtime.objects.Electric.instances()) {
+            if (electric.testOverlap(this)) {
+                this.runKill(runtime);
+                destructor();
+            }
+        }
+
+        for (const electricBolt of runtime.objects.ElectricBolt.instances()) {
+            if (electricBolt.testOverlap(this)) {
+                this.runKill(runtime);
+                destructor();
+            }
+        }
+        
     }
 
     hasLineOfSightOfPlayer = (runtime) => {

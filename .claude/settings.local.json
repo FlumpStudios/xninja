@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(python *)",
+      "Bash(py -c ' *)",
+      "PowerShell(where.exe magick 2>$null; where.exe convert 2>$null; where.exe ffmpeg 2>$null; where.exe identify 2>$null; node -e \"console.log\\('node ok'\\)\" 2>$null)",
+      "PowerShell(npm list *)",
+      "Bash(npm list *)",
+      "Bash(node -e *)",
+      "Bash(node *)"
     ]
   }
 }
