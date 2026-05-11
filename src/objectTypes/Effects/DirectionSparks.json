@@ -1,0 +1,44 @@
+{
+	"name": "DirectionSparks",
+	"plugin-id": "Particles",
+	"sid": 160709983890701,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "OnTime",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 598928246567726
+		},
+		{
+			"name": "OffTime",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 391024882070730
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 576991060511741
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 14,
+		"height": 14,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 5822224,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

@@ -3400,7 +3400,8 @@
 						"Sines": false,
 						"IsScared": false,
 						"Static": false,
-						"IsStunned": false
+						"IsStunned": false,
+						"HasCone": true
 					},
 					"behaviors": {
 						"Bullet": {
@@ -3865,7 +3866,8 @@
 						"Sines": false,
 						"IsScared": false,
 						"Static": false,
-						"IsStunned": false
+						"IsStunned": false,
+						"HasCone": true
 					},
 					"behaviors": {
 						"Bullet": {
@@ -3940,7 +3942,8 @@
 						"Sines": false,
 						"IsScared": false,
 						"Static": false,
-						"IsStunned": false
+						"IsStunned": false,
+						"HasCone": true
 					},
 					"behaviors": {
 						"Bullet": {
@@ -5065,7 +5068,8 @@
 						"Sines": false,
 						"IsScared": false,
 						"Static": true,
-						"IsStunned": false
+						"IsStunned": false,
+						"HasCone": true
 					},
 					"behaviors": {
 						"Bullet": {
@@ -6474,7 +6478,8 @@
 						"Sines": true,
 						"IsScared": false,
 						"Static": false,
-						"IsStunned": false
+						"IsStunned": false,
+						"HasCone": true
 					},
 					"behaviors": {
 						"Bullet": {
@@ -6549,7 +6554,8 @@
 						"Sines": true,
 						"IsScared": false,
 						"Static": false,
-						"IsStunned": false
+						"IsStunned": false,
+						"HasCone": true
 					},
 					"behaviors": {
 						"Bullet": {

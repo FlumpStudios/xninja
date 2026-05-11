@@ -1,0 +1,58 @@
+{
+	"name": "StopSign",
+	"plugin-id": "Sprite",
+	"sid": 140492597335330,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "jumpthru",
+			"name": "Jumpthru",
+			"sid": 762996975237958
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 15,
+						"height": 44,
+						"originX": 0.5333333333333333,
+						"originY": 0.6818181818181818,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3540122,
+						"collisionPoly": {
+							"points": [
+								0.06666666666666667,
+								0.022727272727272728,
+								0.9333333333333333,
+								0.022727272727272728,
+								0.9285714285714285,
+								0.2646103896103896,
+								0.07142857142857147,
+								0.2646103896103897
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 771147825849920,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

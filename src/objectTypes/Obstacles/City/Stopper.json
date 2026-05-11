@@ -1,32 +1,50 @@
 {
-	"name": "Sprite3",
+	"name": "Stopper",
 	"plugin-id": "Sprite",
-	"sid": 198119243476996,
+	"sid": 712391273903557,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 293124799905557
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 42,
+						"height": 15,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.7333333333333333,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7374956,
+						"imageSpriteId": 7961460,
+						"collisionPoly": {
+							"points": [
+								0.023809523809523808,
+								0.06666666666666667,
+								0.9761904761904762,
+								0.06666666666666667,
+								0.9761904761904762,
+								1,
+								0.023809523809523808,
+								1
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 266385141074608,
+				"sid": 461486104114343,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

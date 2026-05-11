@@ -249,12 +249,10 @@
 			"ScreenOptionSelection",
 			"DisplayManager",
 			"Music",
-			"Sprite",
 			"Button_A",
 			"Button_X",
 			"Button_L_stick",
 			"Button_B",
-			"Sprite2",
 			"Button_LT",
 			"ButtonR2",
 			"Skull",
@@ -264,9 +262,8 @@
 			"ZKey",
 			"Shift",
 			"Button_LT2",
-			"Sprite3",
-			"Sprite4",
-			"Sprite5"
+			"Fog",
+			"fader2"
 		],
 		"subfolders": [
 			{
@@ -441,7 +438,18 @@
 							"SpikeSine2",
 							"Spike2",
 							"Electric",
-							"ElectricBolt"
+							"ElectricBolt",
+							"CityBox",
+							"Hydrant",
+							"Door",
+							"StopSign",
+							"ConcreteTop",
+							"Conduit",
+							"Window",
+							"HazardBar",
+							"SideConduit",
+							"Stopper",
+							"StreetLight"
 						],
 						"subfolders": [],
 						"name": "City"
@@ -504,7 +512,8 @@
 					"Lightning2",
 					"LightningSheet",
 					"Rain",
-					"Sparks"
+					"Sparks",
+					"DirectionSparks"
 				],
 				"subfolders": [
 					{
@@ -600,6 +609,14 @@
 			},
 			{
 				"items": [
+					"Level_2_1",
+					"Level_2_sandbox"
+				],
+				"subfolders": [],
+				"name": "World2"
+			},
+			{
+				"items": [
 					"MainMenu",
 					"Splash",
 					"WorldSelect",
@@ -608,13 +625,6 @@
 				],
 				"subfolders": [],
 				"name": "Menus"
-			},
-			{
-				"items": [
-					"Level_2_1"
-				],
-				"subfolders": [],
-				"name": "World2"
 			}
 		]
 	},
@@ -812,6 +822,30 @@
 					"name": "worldSelect.js",
 					"type": "application/javascript",
 					"sid": 285525533021437,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "electricBolt.js",
+					"type": "application/javascript",
+					"sid": 792089591681118,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "toggleEnabled.js",
+					"type": "application/javascript",
+					"sid": 696072969100365,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "sparksInst.js",
+					"type": "application/javascript",
+					"sid": 992679312033566,
 					"script-info": {
 						"purpose": "none"
 					}

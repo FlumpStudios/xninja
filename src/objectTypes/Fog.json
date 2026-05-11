@@ -1,0 +1,52 @@
+{
+	"name": "Fog",
+	"plugin-id": "Sprite",
+	"sid": 198119243476996,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 4096,
+						"height": 512,
+						"originX": 1.0009765625,
+						"originY": 0.458984375,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7374956,
+						"collisionPoly": {
+							"points": [
+								0.0012987012987012987,
+								0,
+								0.9987012987012988,
+								0,
+								0.9987012987012988,
+								0.9969418960244648,
+								0.0012987012987012987,
+								0.9969418960244648
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 266385141074608,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

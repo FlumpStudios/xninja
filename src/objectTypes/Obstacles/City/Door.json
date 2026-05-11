@@ -1,7 +1,7 @@
 {
-	"name": "Sprite4",
+	"name": "Door",
 	"plugin-id": "Sprite",
-	"sid": 849682465607898,
+	"sid": 279693775539164,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,33 +12,21 @@
 			{
 				"frames": [
 					{
-						"width": 34,
-						"height": 61,
+						"width": 16,
+						"height": 28,
 						"originX": 0.5,
-						"originY": 0.4918032786885246,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6034647,
-						"collisionPoly": {
-							"points": [
-								0.029411764705882353,
-								0,
-								0.9705882352941176,
-								0,
-								0.9705882352941176,
-								0.9836065573770492,
-								0.029411764705882353,
-								0.9836065573770492
-							]
-						},
+						"imageSpriteId": 2986368,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 206620795171619,
+				"sid": 374102162147424,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -358,244 +358,245 @@
 			"title": "Display",
 			"description": "",
 			"isActiveOnStart": true,
-			"children": [],
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DisplayManager",
+							"sid": 921397349034599,
+							"parameters": {
+								"instance-variable": "EffectIndex",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layout-effect-parameter",
+							"objectClass": "System",
+							"sid": 747615677495257,
+							"parameters": {
+								"effect": "\"GlowHorizontal\"",
+								"parameter-index": "0",
+								"value": "50"
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 245789091007988,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"Bulge\""
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 576170363719020,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"Scanlines\""
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 780832542249151,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"Vignette\""
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 387447466452576,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"GlowHorizontal\""
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 724402353559643,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"Grayscale\""
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 436779591050836,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"Brightness\""
+							}
+						}
+					],
+					"sid": 466102435662232
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DisplayManager",
+							"sid": 962343915064882,
+							"parameters": {
+								"instance-variable": "EffectIndex",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layout-effect-parameter",
+							"objectClass": "System",
+							"sid": 524790323832839,
+							"parameters": {
+								"effect": "\"GlowHorizontal\"",
+								"parameter-index": "0",
+								"value": "200"
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 977475652909046,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"Bulge\""
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 954949257051743,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"Scanlines\""
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 759776431302072,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"Vignette\""
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 602417741516524,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"GlowHorizontal\""
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 859104303166823,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"Grayscale\""
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 570529186855780,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"Brightness\""
+							}
+						}
+					],
+					"sid": 370472926770395
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "DisplayManager",
+							"sid": 896242186089859,
+							"parameters": {
+								"instance-variable": "EffectIndex",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 954765621486777,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"Bulge\""
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 346646274156169,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"Scanlines\""
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 781896321707672,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"Vignette\""
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 628762927057484,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"GlowHorizontal\""
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 866773109742272,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"Grayscale\""
+							}
+						},
+						{
+							"id": "set-layout-effect-enabled",
+							"objectClass": "System",
+							"sid": 533156673860935,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"Brightness\""
+							}
+						}
+					],
+					"sid": 903787707920198
+				}
+			],
 			"sid": 555692674329959
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "DisplayManager",
-					"sid": 591480626581819,
-					"parameters": {
-						"instance-variable": "EffectIndex",
-						"comparison": 0,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layout-effect-parameter",
-					"objectClass": "System",
-					"sid": 753369321147056,
-					"parameters": {
-						"effect": "\"GlowHorizontal\"",
-						"parameter-index": "0",
-						"value": "50"
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 620084067524890,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"Bulge\""
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 808102649430417,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"Scanlines\""
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 985787117836543,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"Vignette\""
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 342790544359660,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"GlowHorizontal\""
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 822540919929691,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"Grayscale\""
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 872179411607671,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"Brightness\""
-					}
-				}
-			],
-			"sid": 289606973077836
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "DisplayManager",
-					"sid": 629642748283570,
-					"parameters": {
-						"instance-variable": "EffectIndex",
-						"comparison": 0,
-						"value": "1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layout-effect-parameter",
-					"objectClass": "System",
-					"sid": 599546419443325,
-					"parameters": {
-						"effect": "\"GlowHorizontal\"",
-						"parameter-index": "0",
-						"value": "200"
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 176951628205841,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"Bulge\""
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 215623220250327,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"Scanlines\""
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 980922415700810,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"Vignette\""
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 472370485887489,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"GlowHorizontal\""
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 318875259738786,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"Grayscale\""
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 291958715120744,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"Brightness\""
-					}
-				}
-			],
-			"sid": 478879367469837
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "DisplayManager",
-					"sid": 454773805658520,
-					"parameters": {
-						"instance-variable": "EffectIndex",
-						"comparison": 0,
-						"value": "2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 458776756267544,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"Bulge\""
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 339316634219440,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"Scanlines\""
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 163229554818244,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"Vignette\""
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 703111685878791,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"GlowHorizontal\""
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 464447335948359,
-					"parameters": {
-						"mode": "disable",
-						"effect": "\"Grayscale\""
-					}
-				},
-				{
-					"id": "set-layout-effect-enabled",
-					"objectClass": "System",
-					"sid": 561353228811569,
-					"parameters": {
-						"mode": "enable",
-						"effect": "\"Brightness\""
-					}
-				}
-			],
-			"sid": 557470891506289
 		},
 		{
 			"eventType": "block",
@@ -638,6 +639,52 @@
 				}
 			],
 			"sid": 513922994123903
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 394971776711940
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "Fog",
+					"sid": 224565655919084,
+					"parameters": {
+						"distance": "-1"
+					}
+				}
+			],
+			"sid": 109446675507968
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Fog",
+					"sid": 237391819128339,
+					"parameters": {
+						"comparison": 2,
+						"x-co-ordinate": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Fog",
+					"sid": 428515666055095,
+					"parameters": {
+						"x": "8191"
+					}
+				}
+			],
+			"sid": 752082998602092
 		}
 	],
 	"sid": 976359301470145

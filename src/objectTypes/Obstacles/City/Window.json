@@ -1,32 +1,50 @@
 {
-	"name": "Sprite",
+	"name": "Window",
 	"plugin-id": "Sprite",
-	"sid": 911588603463835,
+	"sid": 877477269595747,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "jumpthru",
+			"name": "Jumpthru",
+			"sid": 193375290308481
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 18,
+						"height": 18,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4606564,
+						"imageSpriteId": 140170,
+						"collisionPoly": {
+							"points": [
+								0.0008680555555555555,
+								0.8882137345679018,
+								1,
+								0.8882137345679014,
+								1,
+								1,
+								0,
+								1
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 756803316118496,
+				"sid": 205340765660276,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

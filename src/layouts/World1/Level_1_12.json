@@ -7847,7 +7847,8 @@
 						"Sines": false,
 						"IsScared": false,
 						"Static": true,
-						"IsStunned": false
+						"IsStunned": false,
+						"HasCone": true
 					},
 					"behaviors": {
 						"Bullet": {

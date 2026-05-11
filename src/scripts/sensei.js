@@ -1,132 +1,168 @@
 import enemy from "./enemy.js";
-import { isOutsideLayout, isMirrored, waitForMillisecond, isOutOfScreen } from "./utils.js";
+import {
+  isOutsideLayout,
+  isMirrored,
+  waitForMillisecond,
+  isOutOfScreen,
+} from "./utils.js";
 import { getGlobalRuntime } from "./globals.js";
 import * as config from "./config.js";
 import * as sfx from "./sfxManager.js";
 
 export default class SenseiInstance extends enemy {
-	visionCone = null;
-	visionConeDestroyed = false;
-	previousX = 0;
-	hasStopped = false;
-	exlaim = null;
-	constructor() {
-		super();
-		const runTime = getGlobalRuntime();
-		this.visionCone = runTime.objects.VisionCone.createInstance(config.layers.game, this.x, this.y);
-		this.bonusWorth = -3;
-	}
+  visionCone = null;
+  visionConeDestroyed = false;
+  previousX = 0;
+  hasStopped = false;
+  exlaim = null;
+  constructor() {
+    super();
+    const runTime = getGlobalRuntime();
+    if (this.instVars.HasCone) {
+      this.visionCone = runTime.objects.VisionCone.createInstance(
+        config.layers.game,
+        this.x,
+        this.y,
+      );
+    }
+    this.bonusWorth = -3;
+  }
 
-	runCleanUp = () => {
-		if (this) {
-			if (!this.visionConeDestroyed) {
+  runCleanUp = () => {
+    if (this) {
+      if (this.visionCone && !this.visionConeDestroyed) {
+        if (this.exlaim) {
+          this.exlaim.isVisible = false;
+          this.exlaim.destroy();
+        }
 
-				if (this.exlaim) {
-					this.exlaim.isVisible = false;
-					this.exlaim.destroy();
-				}
+        this.visionCone.destroy();
+        this.visionConeDestroyed = true;
+      }
+      this.destroy();
+    }
+  };
 
-				this.visionCone.destroy();
-				this.visionConeDestroyed = true;
-			}
-			this.destroy();
-		}
-	}
+  handleChargeEnemyCollision = (runtime, destructor) => {
+    for (const charger of runtime.objects.chargerEnemy.instances()) {
+      if (charger.testOverlap(this)) {
+        if (charger.instVars.IsScared) {
+          this.runKill(runtime, sfx.PlaySenseiDeathsound);
+          destructor();
+        }
+      }
+    }
+  };
 
-	handleChargeEnemyCollision = (runtime, destructor) => {
-		for (const charger of runtime.objects.chargerEnemy.instances()) {
-			if (charger.testOverlap(this)) {
-				if (charger.instVars.IsScared) {
-					this.runKill(runtime, sfx.PlaySenseiDeathsound);
-					destructor();
-				}
-			}
-		}
-	}
+  handleSenseiBehavior = (runtime) => {
+    this.#senseiPatrol(runtime);
+    if (isOutOfScreen(this, runtime) && this.instVars.IsScared) {
+      sfx.PlayerEnemyEspcapeSound();
+      this.handleEscaped(runtime, this.runCleanUp);
+      return;
+    }
 
-	handleSenseiBehavior = (runtime) => {
-		this.#senseiPatrol(runtime);
-		if (isOutOfScreen(this, runtime) && this.instVars.IsScared) {
-			sfx.PlayerEnemyEspcapeSound();
-			this.handleEscaped(runtime, this.runCleanUp);
-			return;
-		}
+    const diff = this.previousX - this.x;
+    this.hasStopped = diff > -0.1 && diff < 0.1;
+    this.previousX = this.x;
 
-		const diff = this.previousX - this.x
-		this.hasStopped = diff > -0.1 && diff < 0.1;
-		this.previousX = this.x;
+    if (
+      (!this.instVars.Sines || this.instVars.IsScared) &&
+      this.hasStopped &&
+      !this.instVars.Static &&
+      !this.instVars.IsStunned
+    ) {
+      this.hasStopped = false;
+      this.width = this.width * -1;
+    }
 
-		if ((!this.instVars.Sines || this.instVars.IsScared) && this.hasStopped && !this.instVars.Static && !this.instVars.IsStunned) {
-			this.hasStopped = false;
-			this.width = this.width * -1;
-		}
+    this.behaviors.Bullet.angleOfMotion = isMirrored(this) ? Math.PI : 0;
 
-		this.behaviors.Bullet.angleOfMotion = isMirrored(this) ? Math.PI : 0;
+    this.#handleVisionCone();
 
-		this.#handleVisionCone();
+    if (this.hasLineOfSightOfPlayer(runtime) && !this.instVars.IsScared) {
+      this.instVars.IsScared = true;
+      if (!this.exlaim) {
+        sfx.PlayEnemyScared();
+        this.exlaim = runtime.objects.Exlaim.createInstance(
+          config.layers.game,
+          this.x,
+          this.y - 25,
+        );
+        this.behaviors.Platform.maxSpeed = 0;
+        this.instVars.IsStunned = true;
+        this.behaviors.Bullet.speed = 0;
+      }
 
-		if (this.hasLineOfSightOfPlayer(runtime) && !this.instVars.IsScared) {
-			this.instVars.IsScared = true;
-			if (!this.exlaim) {
-				sfx.PlayEnemyScared();
-				this.exlaim = runtime.objects.Exlaim.createInstance(config.layers.game, this.x, this.y - 25);
-				this.behaviors.Platform.maxSpeed = 0;
-				this.instVars.IsStunned = true;
-				this.behaviors.Bullet.speed = 0;
-			}
+      waitForMillisecond(200).then(() => {
+        // There is a chance the enemy doesn't exist after the wait, so just swallowing it for now.
+        this.behaviors.Platform.simulateControl("jump");
 
-			waitForMillisecond(200).then(() => {
-				// There is a chance the enemy doesn't exist after the wait, so just swallowing it for now.
-				this.behaviors.Platform.simulateControl("jump");
+        if (this) {
+          try {
+            this.exlaim.isVisible = false;
+            this.instVars.IsStunned = false;
+            this.behaviors.Platform.isEnabled = true;
+            this.setSolidCollisionFilter(false, "Border EnemyBouncer");
+            this.behaviors.Platform.simulateControl("jump");
+            this.behaviors.Bullet.speed = -800;
+            this.width = this.width * -1;
+          } catch {}
+        }
+      });
+    }
 
-				if (this) {
-					try {
-						this.exlaim.isVisible = false;
-						this.instVars.IsStunned = false;
-						this.behaviors.Platform.isEnabled = true;
-						this.setSolidCollisionFilter(false, "Border EnemyBouncer");
-						this.behaviors.Platform.simulateControl("jump");
-						this.behaviors.Bullet.speed = -800;
-						this.width = this.width * -1;
-					} catch { }
-				}
-			});
-		}
+    this.handleDeathStarCollision(
+      runtime,
+      this.runCleanUp,
+      sfx.PlaySenseiDeathsound,
+    );
+    this.handleSlashCollision(
+      runtime,
+      this.runCleanUp,
+      sfx.PlaySenseiDeathsound,
+    );
+    this.handleSpikeCollisions(
+      runtime,
+      this.runCleanUp,
+      sfx.PlaySenseiDeathsound,
+    );
+    this.handleChargeEnemyCollision(
+      runtime,
+      this.runCleanUp,
+      sfx.PlaySenseiDeathsound,
+    );
+  };
 
-		this.handleDeathStarCollision(runtime, this.runCleanUp, sfx.PlaySenseiDeathsound);
-		this.handleSlashCollision(runtime, this.runCleanUp, sfx.PlaySenseiDeathsound);
-		this.handleSpikeCollisions(runtime, this.runCleanUp, sfx.PlaySenseiDeathsound);
-		this.handleChargeEnemyCollision(runtime, this.runCleanUp, sfx.PlaySenseiDeathsound);
-	}
+  set = false;
 
-	set = false;
+  #senseiPatrol = (runtime) => {
+    if (Math.round(runtime.gameTime) % 2 === 1) {
+      if (!this.set) {
+        if (this.instVars.Sines) {
+          if (!this.instVars.IsScared) {
+            this.width = this.width * -1;
+          }
+        }
+        this.set = true;
+      }
+    } else {
+      this.set = false;
+    }
+  };
 
-	#senseiPatrol = (runtime) => {
-		if (Math.round(runtime.gameTime) % 2 === 1) {
-			if (!this.set) {
-				if (this.instVars.Sines) {
-					if (!this.instVars.IsScared) {
-						this.width = this.width * -1;
-					}
-				}
-				this.set = true;
-			}
-		}
-		else {
-			this.set = false;
-		}
-	}
+  #handleVisionCone = () => {
+    if (this.visionCone && !this.visionConeDestroyed) {
+      this.visionCone.x = this.x;
+      this.visionCone.y = this.y;
+      this.visionCone.width = isMirrored(this)
+        ? this.behaviors.LineOfSight.range * -1
+        : this.behaviors.LineOfSight.range;
 
-	#handleVisionCone = () => {
-		if (!this.visionConeDestroyed) {
-			this.visionCone.x = this.x;
-			this.visionCone.y = this.y;
-			this.visionCone.width = isMirrored(this) ? this.behaviors.LineOfSight.range * -1 : this.behaviors.LineOfSight.range;
-
-			if (this.instVars.IsScared) {
-				this.visionCone.destroy();
-				this.visionConeDestroyed = true;
-			}
-		}
-	}
+      if (this.instVars.IsScared) {
+        this.visionCone.destroy();
+        this.visionConeDestroyed = true;
+      }
+    }
+  };
 }

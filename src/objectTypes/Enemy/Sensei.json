@@ -32,6 +32,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 854022677882019
+		},
+		{
+			"name": "HasCone",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 197060770191745
 		}
 	],
 	"behaviorTypes": [

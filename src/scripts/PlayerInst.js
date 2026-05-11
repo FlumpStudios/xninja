@@ -246,8 +246,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
             if (water.testOverlap(this) && water.instVars.isDangerous) {
                 this.killPlayer(runtime);
             }
-        }
-        
+        }        
 
         for (const water of runtime.objects.Water.instances()) {
             if (water.testOverlap(this) && water.instVars.isDangerous) {
@@ -279,6 +278,13 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
             }
         }
 
+        // for (const conduit of runtime.objects.SideConduit.instances()) {
+        //     if (conduit.testOverlap(this)) {
+        //         this.killPlayer(runtime);
+        //     }
+        // }
+
+        
         for (const electricBolt of runtime.objects.ElectricBolt.instances()) {
             if (electricBolt.testOverlap(this)) {
                 this.killPlayer(runtime);

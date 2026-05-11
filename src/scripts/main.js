@@ -3,7 +3,7 @@
 // https://www.construct.net/en/tutorials/learn-javascript-construct-2833/page-4
 
 // Import any other script files here, e.g.:
-import { keyboard, gamePad, mouse } from "./controls.js"
+import { keyboard, gamePad, mouse } from "./controls.js";
 import { setGlobalRuntime } from "./globals.js";
 import { gamePlay, runLevelStart } from "./game.js";
 import { uiUpdateLoop } from "./ui.js";
@@ -11,7 +11,7 @@ import SenseiInstance from "./sensei.js";
 import ChargerEnemyInstance from "./chargerEnemy.js";
 import PlayerInst from "./PlayerInst.js";
 import Level from "./levelInstance.js";
-import * as config from "./config.js"
+import * as config from "./config.js";
 import * as menuControls from "./menuControls.js";
 import { updateMenu as updateLevelSelectMenu } from "./levelSelect.js";
 import { updateMenu as updateWorldSelectMenu } from "./worldSelect.js";
@@ -20,170 +20,205 @@ import BatInstance from "./bat.js";
 import GhostInstance from "./ghostEnemy.js";
 import * as sfxManager from "./sfxManager.js";
 import Boss1Instance from "./boss1Instance.js";
+import ElectricBoltInstance from "./electricBolt.js";
+import SparksInst from "./sparksInst.js";
 
-window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
+window.addEventListener(
+  "keydown",
+  function (e) {
+    if (
+      ["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(
+        e.code,
+      ) > -1
+    ) {
+      e.preventDefault();
+    }
+  },
+  false,
+);
 
-runOnStartup(async runtime => {
-	// Code to run on the loading screen.
-	// Note layouts, objects etc. are not yet available.
+runOnStartup(async (runtime) => {
+  // Code to run on the loading screen.
+  // Note layouts, objects etc. are not yet available.
 
-	setGlobalRuntime(runtime);
-	runtime.levelInstance = new Level(null);
-	runtime.objects.Sensei.setInstanceClass(SenseiInstance);
-	runtime.objects.chargerEnemy.setInstanceClass(ChargerEnemyInstance)
-	runtime.objects.Player.setInstanceClass(PlayerInst);
-	runtime.objects.Bat.setInstanceClass(BatInstance);
-	runtime.objects.Ghost.setInstanceClass(GhostInstance);
-	runtime.objects.Boss1.setInstanceClass(Boss1Instance);
-	runtime.addEventListener("beforeprojectstart", () => OnBeforeProjectStart(runtime));
+  setGlobalRuntime(runtime);
+  runtime.levelInstance = new Level(null);
+  runtime.objects.Sensei.setInstanceClass(SenseiInstance);
+  runtime.objects.chargerEnemy.setInstanceClass(ChargerEnemyInstance);
+  runtime.objects.Player.setInstanceClass(PlayerInst);
+  runtime.objects.Bat.setInstanceClass(BatInstance);
+  runtime.objects.Ghost.setInstanceClass(GhostInstance);
+  runtime.objects.Boss1.setInstanceClass(Boss1Instance);
+  runtime.objects.Electric.setInstanceClass(ElectricBoltInstance);
+  runtime.objects.DirectionSparks.setInstanceClass(SparksInst);  
+
+  runtime.addEventListener("beforeprojectstart", () =>
+    OnBeforeProjectStart(runtime),
+  );
 });
 
 async function OnBeforeProjectStart(runtime) {
-	// Code to run just before 'On start of layout' on
-	// the first layout. Loading has finished and initial
+  // Code to run just before 'On start of layout' on
+  // the first layout. Loading has finished and initial
 
-	// instances are created and available to use here.
+  // instances are created and available to use here.
 
-	runtime.addEventListener("tick", () => tick(runtime));
-	runtime.addEventListener("instancecreate", (e) => createdInstance(e, runtime));
+  runtime.addEventListener("tick", () => tick(runtime));
+  runtime.addEventListener("instancecreate", (e) =>
+    createdInstance(e, runtime),
+  );
 
-	runtime.addEventListener("save", (e) => onSave(e));
-	runtime.addEventListener("load", (e) => onLoad(e));
+  runtime.addEventListener("save", (e) => onSave(e));
+  runtime.addEventListener("load", (e) => onLoad(e));
 
-	await sfxManager.init(runtime);
+  await sfxManager.init(runtime);
 }
 
 let currentLayout = "";
 let previousLayout = "";
 
 const tick = (runtime) => {
-	previousLayout = currentLayout;
-	currentLayout = runtime.layout.name;
-	if (previousLayout !== currentLayout) {
-		runLevelStart(runtime);
-	}
+  previousLayout = currentLayout;
+  currentLayout = runtime.layout.name;
+  if (previousLayout !== currentLayout) {
+    runLevelStart(runtime);
+  }
 
-	if (config.getGameState() != config.gameStates.paused) {
-		runtime.timeScale = config.getCurrentTimestep();
+  if (config.getGameState() != config.gameStates.paused) {
+    runtime.timeScale = config.getCurrentTimestep();
 
-		if (currentLayout === config.WORLD_SELECT_NAME) {
-			config.setGameState(config.gameStates.worldSelect);
-		}
+    if (currentLayout === config.WORLD_SELECT_NAME) {
+      config.setGameState(config.gameStates.worldSelect);
+    }
 
-		if (currentLayout === config.LEVEL_SELECT_NAME) {
-			config.setGameState(config.gameStates.levelSelect);
-		}
+    if (currentLayout === config.LEVEL_SELECT_NAME) {
+      config.setGameState(config.gameStates.levelSelect);
+    }
 
-		if (currentLayout === config.MAIN_MENU_NAME || currentLayout === config.SPLASH_NAME) {
-			config.setGameState(config.gameStates.mainMenu);
-		}
+    if (
+      currentLayout === config.MAIN_MENU_NAME ||
+      currentLayout === config.SPLASH_NAME
+    ) {
+      config.setGameState(config.gameStates.mainMenu);
+    }
 
-		if (currentLayout.substring(0, 6) === config.LEVEL_PREFIX) {
-			config.setGameState(config.gameStates.game);
-		}
-	} else {
-		runtime.timeScale = 0;
-	}
-	const gameStates = config.gameStates;
-	const currentGameState = config.getGameState();
+    if (currentLayout.substring(0, 6) === config.LEVEL_PREFIX) {
+      config.setGameState(config.gameStates.game);
+    }
+  } else {
+    runtime.timeScale = 0;
+  }
+  const gameStates = config.gameStates;
+  const currentGameState = config.getGameState();
 
-	switch (currentGameState) {
-		case gameStates.game:
-			pauseBehaviour(runtime);
-			gamePad(runtime);
-			gameLoop(runtime);
-			keyboard(runtime);
-			mouse(runtime);
-			break;
-		case gameStates.paused:
-			pauseBehaviour(runtime);
-			gamePad(runtime);
-			keyboard(runtime);
-			mouse(runtime);
-			break;
-		case gameStates.mainMenu:
-			menuControls.gamePad(runtime);
-			menuControls.keyboard(runtime);
-			break;
-		case gameStates.levelSelect:
-			menuControls.gamePad(runtime);
-			menuControls.keyboard(runtime);
-			updateLevelSelectMenu(runtime);
-			break;
-		case gameStates.worldSelect:
-			menuControls.gamePad(runtime);
-			menuControls.keyboard(runtime);
-			updateWorldSelectMenu(runtime);
-			break;
-		default: runtime.timeScale = 1;
-	}
-}
+  switch (currentGameState) {
+    case gameStates.game:
+      pauseBehaviour(runtime);
+      gamePad(runtime);
+      gameLoop(runtime);
+      keyboard(runtime);
+      mouse(runtime);
+      break;
+    case gameStates.paused:
+      pauseBehaviour(runtime);
+      gamePad(runtime);
+      keyboard(runtime);
+      mouse(runtime);
+      break;
+    case gameStates.mainMenu:
+      menuControls.gamePad(runtime);
+      menuControls.keyboard(runtime);
+      break;
+    case gameStates.levelSelect:
+      menuControls.gamePad(runtime);
+      menuControls.keyboard(runtime);
+      updateLevelSelectMenu(runtime);
+      break;
+    case gameStates.worldSelect:
+      menuControls.gamePad(runtime);
+      menuControls.keyboard(runtime);
+      updateWorldSelectMenu(runtime);
+      break;
+    default:
+      runtime.timeScale = 1;
+  }
+};
 const createdInstance = (e, runtime) => {
-	const player = runtime.objects.Player.getFirstInstance();
-	switch (e.instance.objectType.name) {
-		case "DeathStar":
-			player.handleDeathStarSpawn(e.instance, runtime);
-			break;
-		case "Slash":
-			player.handleSlashCreated(e.instance, runtime);
-			break;
-		default:
-			break;
-	}
-}
+  const player = runtime.objects.Player.getFirstInstance();
+  switch (e.instance.objectType.name) {
+    case "DeathStar":
+      player.handleDeathStarSpawn(e.instance, runtime);
+      break;
+    case "Slash":
+      player.handleSlashCreated(e.instance, runtime);
+      break;
+    default:
+      break;
+  }
+};
 
 const onSave = (e) => {
-	if (e.saveData) {
-		e.saveData.levelConfig = config.levelConfig;
-	}
-	else {
-		e.saveData = { levelConfig: config.levelConfig }
-	}
-}
+  if (e.saveData) {
+    e.saveData.levelConfig = config.levelConfig;
+  } else {
+    e.saveData = { levelConfig: config.levelConfig };
+  }
+};
 
 const onLoad = (e) => {
-	console.log(e);
-	if (e.saveData?.levelConfig) {
-		config.SetLevelConfig(e.saveData.levelConfig);
-	}
-}
+  console.log(e);
+  if (e.saveData?.levelConfig) {
+    config.SetLevelConfig(e.saveData.levelConfig);
+  }
+};
 
 const gameLoop = (runtime) => {
-	runtime.levelInstance.addToLevelTime(runtime.dt * runtime.levelInstance.getTimeMultiplier());
-	const levelTime = runtime.levelInstance.getLevelTime();
+  runtime.levelInstance.addToLevelTime(
+    runtime.dt * runtime.levelInstance.getTimeMultiplier(),
+  );
+  const levelTime = runtime.levelInstance.getLevelTime();
 
-	if (levelTime > 0.2) {
-		runtime.levelInstance.setIsLevelReady(true);
-	}
+  if (levelTime > 0.2) {
+    runtime.levelInstance.setIsLevelReady(true);
+  }
 
-	runtime.objects.TimeRemaining_spritefont.getFirstInstance().text = levelTime.toString(); //(levelTime > 0 ? levelTime.toString() : "0");
+  runtime.objects.TimeRemaining_spritefont.getFirstInstance().text =
+    levelTime.toString(); //(levelTime > 0 ? levelTime.toString() : "0");
 
-	const player = runtime.objects.Player.getFirstInstance();
+  const player = runtime.objects.Player.getFirstInstance();
 
-	player.update(runtime);
+  player.update(runtime);
 
-	for (const senesiInst of runtime.objects.Sensei.instances()) {
-		senesiInst.handleSenseiBehavior(runtime);
-	}
+  for (const electricBolt of runtime.objects.Electric.instances()) {
+    electricBolt.update(runtime);
+  }
 
-	for (const chargerEnemyInst of runtime.objects.chargerEnemy.instances()) {
-		chargerEnemyInst.handleChargerBehavior(runtime);
-	}
+  for (const spark of runtime.objects.DirectionSparks.instances()) {
+    spark.update(runtime);
+  }
 
-	for (const batEnemyInst of runtime.objects.Bat.instances()) {
-		batEnemyInst.handleBatBehavior(runtime);
-	}
+  for (const senesiInst of runtime.objects.Sensei.instances()) {
+    senesiInst.handleSenseiBehavior(runtime);
+  }
 
-	for (const ghost of runtime.objects.Ghost.instances()) {
-		ghost.handleGhostBehavior(runtime);
-	}
+  for (const chargerEnemyInst of runtime.objects.chargerEnemy.instances()) {
+    chargerEnemyInst.handleChargerBehavior(runtime);
+  }
 
-	for (const boss1 of runtime.objects.Boss1.instances()) {
-		boss1.handleBossBahavior(runtime);
-	}
+  for (const batEnemyInst of runtime.objects.Bat.instances()) {
+    batEnemyInst.handleBatBehavior(runtime);
+  }
 
-	if (runtime.levelInstance.getIsLevelReady()) {
-		gamePlay(runtime);
-		uiUpdateLoop(runtime);
-	}
-}
+  for (const ghost of runtime.objects.Ghost.instances()) {
+    ghost.handleGhostBehavior(runtime);
+  }
+
+  for (const boss1 of runtime.objects.Boss1.instances()) {
+    boss1.handleBossBahavior(runtime);
+  }
+
+  if (runtime.levelInstance.getIsLevelReady()) {
+    gamePlay(runtime);
+    uiUpdateLoop(runtime);
+  }
+};
