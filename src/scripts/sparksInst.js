@@ -11,6 +11,7 @@ export default class sparksInst extends globalThis.IParticlesInstance {
     this.#toggleEnabled = new toggleEnabled(
       this.instVars.OnTime,
       this.instVars.OffTime,
+      this.instVars.Delay
     );
   }
 

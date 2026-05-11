@@ -18,6 +18,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 391024882070730
+		},
+		{
+			"name": "Delay",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 916958913228899
 		}
 	],
 	"behaviorTypes": [

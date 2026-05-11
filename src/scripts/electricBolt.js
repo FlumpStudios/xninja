@@ -5,13 +5,16 @@ export default class electricBolt extends globalThis.ISpriteInstance {
   #offTime = 0;
   #timer = 0;
   #toggleEnabled = null;
+  #randomAngleTime = 0;
 
   constructor() {
     super();
     this.#toggleEnabled = new toggleEnabled(
       this.instVars.OnTime,
       this.instVars.OffTime,
+      this.instVars.Delay
     );
+    this.#randomAngleTime = this.instVars.RandomAngleTime;
   }
 
   update = (runtime) => {

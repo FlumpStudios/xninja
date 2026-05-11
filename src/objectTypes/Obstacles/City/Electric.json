@@ -18,6 +18,20 @@
 			"desc": "",
 			"show": true,
 			"sid": 711354143750367
+		},
+		{
+			"name": "Delay",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 497708813779196
+		},
+		{
+			"name": "RandomAngleTime",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 122837068411302
 		}
 	],
 	"behaviorTypes": [],
@@ -34,8 +48,8 @@
 					{
 						"width": 83,
 						"height": 13,
-						"originX": 0.5309914356220062,
-						"originY": 0.041420118343195256,
+						"originX": 0.012048192771084338,
+						"originY": 0.5384615384615384,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -43,14 +57,14 @@
 						"imageSpriteId": 7072013,
 						"collisionPoly": {
 							"points": [
-								0.01081599123767792,
-								0.12106643356643358,
-								0.9861035049288055,
-								0.11888111888111888,
-								0.9854189485213576,
+								0.050246440306681184,
+								0.11407342657342659,
+								0.9477683461117188,
+								0.11188811188811189,
+								0.9459884994523542,
 								0.8719405594405597,
-								0.011363636363636288,
-								0.8321678321678324
+								0.04969879518072279,
+								0.8461538461538464
 							]
 						},
 						"useCollisionPoly": true,
@@ -60,8 +74,8 @@
 					{
 						"width": 87,
 						"height": 14,
-						"originX": 0.47621878715814503,
-						"originY": 0.41581632653061223,
+						"originX": 0.011494252873563218,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -86,8 +100,8 @@
 					{
 						"width": 90,
 						"height": 14,
-						"originX": 0.48863636363636365,
-						"originY": 0.42857142857142855,
+						"originX": 0.011111111111111112,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -112,8 +126,8 @@
 					{
 						"width": 81,
 						"height": 19,
-						"originX": 0.4613625971650663,
-						"originY": 0.3296398891966759,
+						"originX": 0.012345679012345678,
+						"originY": 0.3684210526315789,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -138,8 +152,8 @@
 					{
 						"width": 87,
 						"height": 18,
-						"originX": 0.47621878715814503,
-						"originY": 0.5,
+						"originX": 0.011494252873563218,
+						"originY": 0.3888888888888889,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -164,8 +178,8 @@
 					{
 						"width": 86,
 						"height": 18,
-						"originX": 0.494050838290968,
-						"originY": 0.4117647058823529,
+						"originX": 0.011627906976744186,
+						"originY": 0.3888888888888889,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
@@ -190,8 +204,8 @@
 					{
 						"width": 85,
 						"height": 13,
-						"originX": 0.49411764705882355,
-						"originY": 0.680473372781065,
+						"originX": 0.011764705882352941,
+						"originY": 0.5384615384615384,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,

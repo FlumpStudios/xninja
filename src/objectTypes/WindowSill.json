@@ -1,7 +1,7 @@
 {
-	"name": "StreetLight",
+	"name": "WindowSill",
 	"plugin-id": "Sprite",
-	"sid": 849682465607898,
+	"sid": 569769422820053,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,7 +9,12 @@
 		{
 			"behaviorId": "jumpthru",
 			"name": "Jumpthru",
-			"sid": 249285731480723
+			"sid": 899789772260390
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 558889058807833
 		}
 	],
 	"effectTypes": [],
@@ -18,33 +23,21 @@
 			{
 				"frames": [
 					{
-						"width": 34,
-						"height": 61,
+						"width": 18,
+						"height": 2,
 						"originX": 0.5,
-						"originY": 0.4918032786885246,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6034647,
-						"collisionPoly": {
-							"points": [
-								0.08823529411764705,
-								0.11475409836065564,
-								0.9558823529411765,
-								0,
-								0.9852941176470585,
-								0.0934426229508198,
-								0.09117647058823532,
-								0.20000000000000023
-							]
-						},
+						"imageSpriteId": 2530718,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 206620795171619,
+				"sid": 689114405328997,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

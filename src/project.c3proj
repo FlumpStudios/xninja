@@ -263,7 +263,8 @@
 			"Shift",
 			"Button_LT2",
 			"Fog",
-			"fader2"
+			"fader2",
+			"WindowSill"
 		],
 		"subfolders": [
 			{
@@ -610,7 +611,8 @@
 			{
 				"items": [
 					"Level_2_1",
-					"Level_2_sandbox"
+					"Level_2_sandbox",
+					"Level_2_2"
 				],
 				"subfolders": [],
 				"name": "World2"
