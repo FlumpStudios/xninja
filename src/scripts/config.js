@@ -367,7 +367,7 @@ export let levelConfig =
     "Level_2_2": {
         name: "[placeholder]",
         startingStars: 0,
-        bronzeTarget: 10,
+        bronzeTarget: 60,
         silverTarget: 1,
         goldTarget: -0.2,
         currentBest: 0,

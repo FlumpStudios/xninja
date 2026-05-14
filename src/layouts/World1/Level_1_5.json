@@ -1029,7 +1029,9 @@
 					"uid": 2410,
 					"sid": 779896045046854,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Dead": false
+					},
 					"behaviors": {
 						"Platform": {
 							"properties": {

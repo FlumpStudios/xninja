@@ -4,7 +4,15 @@
 	"sid": 111434030380001,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Dead",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 815994011019478
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Platform",

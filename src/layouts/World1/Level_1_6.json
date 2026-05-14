@@ -1030,7 +1030,8 @@
 						"IsScared": false,
 						"Static": false,
 						"IsStunned": false,
-						"HasCone": true
+						"HasCone": true,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -1752,7 +1753,9 @@
 					"uid": 716,
 					"sid": 470112551634738,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Dead": false
+					},
 					"behaviors": {
 						"Platform": {
 							"properties": {
@@ -3116,7 +3119,8 @@
 						"IsScared": false,
 						"Static": false,
 						"IsStunned": false,
-						"HasCone": true
+						"HasCone": true,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -3192,7 +3196,8 @@
 						"IsScared": false,
 						"Static": false,
 						"IsStunned": false,
-						"HasCone": true
+						"HasCone": true,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {

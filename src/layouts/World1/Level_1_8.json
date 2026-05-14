@@ -1155,7 +1155,9 @@
 					"uid": 351,
 					"sid": 783049513576823,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Dead": false
+					},
 					"behaviors": {
 						"Platform": {
 							"properties": {
@@ -4024,7 +4026,8 @@
 						"IsScared": false,
 						"Static": false,
 						"IsStunned": false,
-						"HasCone": true
+						"HasCone": true,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -4816,7 +4819,8 @@
 						"IsScared": false,
 						"Static": false,
 						"IsStunned": false,
-						"HasCone": true
+						"HasCone": true,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -5055,7 +5059,8 @@
 						"IsScared": false,
 						"Static": false,
 						"IsStunned": false,
-						"HasCone": true
+						"HasCone": true,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -5131,7 +5136,8 @@
 						"IsScared": false,
 						"Static": false,
 						"IsStunned": false,
-						"HasCone": true
+						"HasCone": true,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -5626,7 +5632,8 @@
 						"IsScared": false,
 						"Static": false,
 						"IsStunned": false,
-						"HasCone": true
+						"HasCone": true,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -7946,7 +7953,8 @@
 						"IsScared": false,
 						"Static": false,
 						"IsStunned": false,
-						"HasCone": true
+						"HasCone": true,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -9852,7 +9860,8 @@
 						"IsScared": false,
 						"Static": false,
 						"IsStunned": false,
-						"HasCone": true
+						"HasCone": true,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -9928,7 +9937,8 @@
 						"IsScared": false,
 						"Static": false,
 						"IsStunned": false,
-						"HasCone": true
+						"HasCone": true,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {

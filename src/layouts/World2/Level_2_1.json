@@ -917,6 +917,22 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"collision-filter-tags": "",
+								"collision-filter-mode": "exclusive",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -971,6 +987,22 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"collision-filter-tags": "",
+								"collision-filter-mode": "exclusive",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
 							}
 						}
 					},
@@ -1082,6 +1114,22 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"collision-filter-tags": "",
+								"collision-filter-mode": "exclusive",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -1137,6 +1185,22 @@
 								"use-instance-tags": false,
 								"tags": ""
 							}
+						},
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"collision-filter-tags": "",
+								"collision-filter-mode": "exclusive",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -1191,6 +1255,22 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"collision-filter-tags": "",
+								"collision-filter-mode": "exclusive",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
 							}
 						}
 					},
@@ -1301,6 +1381,22 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"collision-filter-tags": "",
+								"collision-filter-mode": "exclusive",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
 							}
 						}
 					},
@@ -2742,7 +2838,9 @@
 					"uid": 2634,
 					"sid": 944381547294403,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Dead": false
+					},
 					"behaviors": {
 						"Platform": {
 							"properties": {
@@ -2931,6 +3029,22 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"collision-filter-tags": "",
+								"collision-filter-mode": "exclusive",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
 							}
 						}
 					},
@@ -3604,7 +3718,8 @@
 						"IsScared": false,
 						"Static": false,
 						"IsStunned": false,
-						"HasCone": true
+						"HasCone": true,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -3961,7 +4076,8 @@
 						"IsScared": false,
 						"Static": true,
 						"IsStunned": false,
-						"HasCone": false
+						"HasCone": false,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -4041,7 +4157,8 @@
 						"IsScared": false,
 						"Static": true,
 						"IsStunned": false,
-						"HasCone": false
+						"HasCone": false,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -4369,7 +4486,8 @@
 						"IsScared": false,
 						"Static": false,
 						"IsStunned": false,
-						"HasCone": true
+						"HasCone": true,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -4461,6 +4579,22 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"collision-filter-tags": "",
+								"collision-filter-mode": "exclusive",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
 							}
 						}
 					},
@@ -4728,6 +4862,22 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"collision-filter-tags": "",
+								"collision-filter-mode": "exclusive",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
 							}
 						}
 					},
@@ -5686,6 +5836,22 @@
 								"enabled": true,
 								"use-instance-tags": false,
 								"tags": ""
+							}
+						},
+						"Physics": {
+							"properties": {
+								"immovable": false,
+								"collision-mask": "use-collision-polygon",
+								"collision-filter-tags": "",
+								"collision-filter-mode": "exclusive",
+								"prevent-rotation": false,
+								"density": 1,
+								"friction": 0.5,
+								"elasticity": 0.2,
+								"linear-damping": 0,
+								"angular-damping": 0.01,
+								"bullet": false,
+								"enabled": true
 							}
 						}
 					},

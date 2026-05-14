@@ -698,6 +698,13 @@
 					}
 				},
 				{
+					"id": "is-jumping",
+					"objectClass": "Player",
+					"sid": 546721665156178,
+					"behaviorType": "Platform",
+					"isInverted": true
+				},
+				{
 					"id": "compare-y",
 					"objectClass": "WindowSill",
 					"sid": 264360862333975,
@@ -711,9 +718,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 692137770749125,
+					"sid": 593768432494324,
 					"parameters": {
-						"seconds": "0.25",
+						"seconds": "0.2",
 						"use-timescale": true
 					}
 				},
@@ -728,6 +735,42 @@
 				}
 			],
 			"sid": 167657181701206
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "FallingBox",
+					"sid": 669082179744390,
+					"parameters": {
+						"object": "Player"
+					}
+				},
+				{
+					"id": "compare-velocity",
+					"objectClass": "FallingBox",
+					"sid": 967771968610058,
+					"behaviorType": "Physics",
+					"parameters": {
+						"which": "y-velocity",
+						"comparison": 4,
+						"value": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Player",
+					"sid": 978771694352494,
+					"parameters": {
+						"instance-variable": "Dead",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 447163596100121
 		}
 	],
 	"sid": 976359301470145

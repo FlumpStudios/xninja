@@ -2280,7 +2280,9 @@
 					"uid": 1296,
 					"sid": 476585777756278,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Dead": false
+					},
 					"behaviors": {
 						"Platform": {
 							"properties": {
@@ -4198,7 +4200,8 @@
 						"IsScared": false,
 						"Static": true,
 						"IsStunned": false,
-						"HasCone": true
+						"HasCone": true,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {

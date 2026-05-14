@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 47603,
+	"savedWithRelease": 47604,
 	"name": "XNinja",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -264,7 +264,7 @@
 			"Button_LT2",
 			"Fog",
 			"fader2",
-			"WindowSill"
+			"Sprite"
 		],
 		"subfolders": [
 			{
@@ -450,7 +450,10 @@
 							"HazardBar",
 							"SideConduit",
 							"Stopper",
-							"StreetLight"
+							"StreetLight",
+							"FallingBox",
+							"SineFallingBox",
+							"WindowSill"
 						],
 						"subfolders": [],
 						"name": "City"

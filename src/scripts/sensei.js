@@ -18,12 +18,18 @@ export default class SenseiInstance extends enemy {
   constructor() {
     super();
     const runTime = getGlobalRuntime();
+    console.log("CREATING!");
     if (this.instVars.HasCone) {
       this.visionCone = runTime.objects.VisionCone.createInstance(
         config.layers.game,
         this.x,
         this.y,
       );
+    }
+    console.log("CONE");
+    console.log(this.visionCone);
+    if (this.instVars.ForceConeToTopOfLayer) {
+      this.visionCone.moveToTop();
     }
     this.bonusWorth = -3;
   }

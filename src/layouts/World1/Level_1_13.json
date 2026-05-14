@@ -6971,7 +6971,8 @@
 						"IsScared": false,
 						"Static": true,
 						"IsStunned": false,
-						"HasCone": true
+						"HasCone": true,
+						"ForceConeToTopOfLayer": false
 					},
 					"behaviors": {
 						"Bullet": {
@@ -17512,7 +17513,9 @@
 					"uid": 1432,
 					"sid": 925587858939239,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Dead": false
+					},
 					"behaviors": {
 						"Platform": {
 							"properties": {
