@@ -26,8 +26,6 @@ export default class SenseiInstance extends enemy {
         this.y,
       );
     }
-    console.log("CONE");
-    console.log(this.visionCone);
     if (this.instVars.ForceConeToTopOfLayer) {
       this.visionCone.moveToTop();
     }

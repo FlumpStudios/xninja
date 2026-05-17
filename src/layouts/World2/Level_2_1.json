@@ -766,9 +766,9 @@
 					"locked": false,
 					"world": {
 						"x": 2802,
-						"y": 879,
-						"width": 56,
-						"height": 351,
+						"y": 859,
+						"width": 68,
+						"height": 371,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -931,7 +931,7 @@
 								"linear-damping": 0,
 								"angular-damping": 0.01,
 								"bullet": false,
-								"enabled": true
+								"enabled": false
 							}
 						}
 					},
@@ -944,7 +944,7 @@
 					"world": {
 						"x": 2687,
 						"y": 1156,
-						"width": 272,
+						"width": 298,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -1002,7 +1002,7 @@
 								"linear-damping": 0,
 								"angular-damping": 0.01,
 								"bullet": false,
-								"enabled": true
+								"enabled": false
 							}
 						}
 					},
@@ -1128,7 +1128,7 @@
 								"linear-damping": 0,
 								"angular-damping": 0.01,
 								"bullet": false,
-								"enabled": true
+								"enabled": false
 							}
 						}
 					},
@@ -1199,7 +1199,7 @@
 								"linear-damping": 0,
 								"angular-damping": 0.01,
 								"bullet": false,
-								"enabled": true
+								"enabled": false
 							}
 						}
 					},
@@ -1210,9 +1210,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2878,
+						"x": 2880,
 						"y": 884,
-						"width": 334,
+						"width": 360,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -1270,7 +1270,7 @@
 								"linear-damping": 0,
 								"angular-damping": 0.01,
 								"bullet": false,
-								"enabled": true
+								"enabled": false
 							}
 						}
 					},
@@ -1295,61 +1295,6 @@
 						],
 						"z": 0,
 						"angle": 4.71238898038469
-					}
-				},
-				{
-					"type": "BedrockCorner_tile2",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0,
-						"enable-tile-randomization": false,
-						"x-random": 1,
-						"y-random": 1,
-						"angle-random": 1,
-						"blend-margin-x": 0.1,
-						"blend-margin-y": 0.1
-					},
-					"uid": 2833,
-					"sid": 228700159960900,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"use-instance-tags": false,
-								"tags": ""
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 228700159960900,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 2846,
-						"y": 852,
-						"width": 32,
-						"height": 32,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
 					}
 				},
 				{
@@ -1396,7 +1341,7 @@
 								"linear-damping": 0,
 								"angular-damping": 0.01,
 								"bullet": false,
-								"enabled": true
+								"enabled": false
 							}
 						}
 					},
@@ -1409,7 +1354,7 @@
 					"world": {
 						"x": 2716,
 						"y": 852,
-						"width": 130,
+						"width": 163,
 						"height": 32,
 						"originX": 0,
 						"originY": 0,
@@ -1420,7 +1365,7 @@
 							1
 						],
 						"z": 0,
-						"angle": 0
+						"angle": 6.2829290155086746
 					}
 				},
 				{
@@ -1454,10 +1399,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2695,
-						"y": 861,
-						"width": 111,
-						"height": 43,
+						"x": 2751,
+						"y": 860,
+						"width": 115,
+						"height": 46,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1501,10 +1446,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2806,
-						"y": 861,
-						"width": 64,
-						"height": 357,
+						"x": 2695,
+						"y": 860,
+						"width": 56,
+						"height": 288,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -2906,10 +2851,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2872,
-						"y": 488,
-						"width": 272,
-						"height": 304,
+						"x": 2944,
+						"y": 740,
+						"width": 138,
+						"height": 942,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -3044,7 +2989,7 @@
 								"linear-damping": 0,
 								"angular-damping": 0.01,
 								"bullet": false,
-								"enabled": true
+								"enabled": false
 							}
 						}
 					},
@@ -4594,7 +4539,7 @@
 								"linear-damping": 0,
 								"angular-damping": 0.01,
 								"bullet": false,
-								"enabled": true
+								"enabled": false
 							}
 						}
 					},
@@ -5851,7 +5796,7 @@
 								"linear-damping": 0,
 								"angular-damping": 0.01,
 								"bullet": false,
-								"enabled": true
+								"enabled": false
 							}
 						}
 					},
@@ -5865,7 +5810,7 @@
 						"x": 2735,
 						"y": 1156,
 						"width": 18,
-						"height": 32,
+						"height": 8,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -5954,10 +5899,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2695,
-						"y": 904,
-						"width": 56,
-						"height": 244,
+						"x": 2806,
+						"y": 860,
+						"width": 66,
+						"height": 351,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -6003,6 +5948,61 @@
 						"height": 120,
 						"originX": 0.5,
 						"originY": 0.4918032786885246,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "BedrockCorner_tile2",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 2833,
+					"sid": 856556140106724,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": false,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 856556140106724,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2848,
+						"y": 852,
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

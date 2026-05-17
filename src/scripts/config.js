@@ -354,13 +354,13 @@ export let levelConfig =
         silverTarget: 4,
         goldTarget: 2,
         currentBest: 0,
-        nextLevel: "Level_1_2",
+        nextLevel: "Level_2_2",
         exitUp: false,
         exitDown: false,
         exitLeft: false,
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: true,
+        requiresAllEnenmiesKilled: false,
         hasSeenTutorial: false
 
     },
@@ -371,13 +371,13 @@ export let levelConfig =
         silverTarget: 1,
         goldTarget: -0.2,
         currentBest: 0,
-        nextLevel: "Level_1_3",
+        nextLevel: "Level_2_3",
         exitUp: false,
         exitDown: false,
         exitLeft: false,
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: true,
+        requiresAllEnenmiesKilled: false,
         hasSeenTutorial: false
     },
     "Level_2_3": {
