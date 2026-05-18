@@ -22,6 +22,8 @@ import * as sfxManager from "./sfxManager.js";
 import Boss1Instance from "./boss1Instance.js";
 import ElectricBoltInstance from "./electricBolt.js";
 import SparksInst from "./sparksInst.js";
+import FallingBlock from "./fallingBlock.js";
+import FallingBlockTrigger from "./fallingBlockTrigger.js"
 
 window.addEventListener(
   "keydown",
@@ -51,6 +53,8 @@ runOnStartup(async (runtime) => {
   runtime.objects.Boss1.setInstanceClass(Boss1Instance);
   runtime.objects.Electric.setInstanceClass(ElectricBoltInstance);
   runtime.objects.DirectionSparks.setInstanceClass(SparksInst);  
+  runtime.objects.FallingBlock.setInstanceClass(FallingBlock);  
+  runtime.objects.FallingBlockTrigger.setInstanceClass(FallingBlockTrigger);  
 
   runtime.addEventListener("beforeprojectstart", () =>
     OnBeforeProjectStart(runtime),
@@ -191,6 +195,10 @@ const gameLoop = (runtime) => {
 
   for (const electricBolt of runtime.objects.Electric.instances()) {
     electricBolt.update(runtime);
+  }
+
+  for (const fallingBlockTrigger of runtime.objects.FallingBlockTrigger.instances()) {
+    fallingBlockTrigger.update(runtime);
   }
 
   for (const spark of runtime.objects.DirectionSparks.instances()) {

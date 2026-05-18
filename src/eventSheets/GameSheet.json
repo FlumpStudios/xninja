@@ -735,42 +735,6 @@
 				}
 			],
 			"sid": 167657181701206
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "FallingBox",
-					"sid": 669082179744390,
-					"parameters": {
-						"object": "Player"
-					}
-				},
-				{
-					"id": "compare-velocity",
-					"objectClass": "FallingBox",
-					"sid": 967771968610058,
-					"behaviorType": "Physics",
-					"parameters": {
-						"which": "y-velocity",
-						"comparison": 4,
-						"value": "10"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-boolean-instvar",
-					"objectClass": "Player",
-					"sid": 978771694352494,
-					"parameters": {
-						"instance-variable": "Dead",
-						"value": "true"
-					}
-				}
-			],
-			"sid": 447163596100121
 		}
 	],
 	"sid": 976359301470145

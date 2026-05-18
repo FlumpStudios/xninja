@@ -1,0 +1,34 @@
+{
+	"name": "PillPlatform_City_Physics",
+	"plugin-id": "TiledBg",
+	"sid": 918145502246254,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "jumpthru",
+			"name": "Jumpthru",
+			"sid": 107259306630047
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 901069117362635
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 16,
+		"height": 16,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "D:\\X-Ninja\\Assets\\Tiles\\16x\\tile128.png",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 7659200,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

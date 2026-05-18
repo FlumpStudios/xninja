@@ -264,7 +264,8 @@
 			"Button_LT2",
 			"Fog",
 			"fader2",
-			"Sprite"
+			"Sprite",
+			"RoundConduit"
 		],
 		"subfolders": [
 			{
@@ -321,7 +322,8 @@
 							"BedrockFill2_tile2",
 							"BedrockEdge_tile2",
 							"BedrockCorner_tile2",
-							"BrickTop"
+							"BrickTop",
+							"PillPlatform_City_Physics"
 						],
 						"subfolders": [
 							{
@@ -451,7 +453,7 @@
 							"SideConduit",
 							"Stopper",
 							"StreetLight",
-							"FallingBox",
+							"FallingBlock",
 							"SineFallingBox",
 							"WindowSill"
 						],
@@ -505,7 +507,8 @@
 					"LevelEndBox",
 					"GrindZone",
 					"RampEndZone",
-					"RampStartZone"
+					"RampStartZone",
+					"FallingBlockTrigger"
 				],
 				"subfolders": [],
 				"name": "Zones"
@@ -852,6 +855,22 @@
 					"name": "sparksInst.js",
 					"type": "application/javascript",
 					"sid": 992679312033566,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "fallingBlock.js",
+					"type": "application/javascript",
+					"sid": 793846626742354,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "fallingBlockTrigger.js",
+					"type": "application/javascript",
+					"sid": 844298977181733,
 					"script-info": {
 						"purpose": "none"
 					}

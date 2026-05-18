@@ -6,13 +6,14 @@ export default class electricBolt extends globalThis.ISpriteInstance {
   #timer = 0;
   #toggleEnabled = null;
   #randomAngleTime = 0;
+  #randAngleTimer = 0;
 
   constructor() {
     super();
     this.#toggleEnabled = new toggleEnabled(
       this.instVars.OnTime,
       this.instVars.OffTime,
-      this.instVars.Delay
+      this.instVars.Delay,
     );
     this.#randomAngleTime = this.instVars.RandomAngleTime;
   }
@@ -21,5 +22,14 @@ export default class electricBolt extends globalThis.ISpriteInstance {
     if (this.#toggleEnabled) {
       this.#toggleEnabled.update(this, runtime.dt);
     }
+    this.#randAngleTimer += runtime.dt;
+
+    if(this.#randomAngleTime > 0 && this.#randAngleTimer > this.#randomAngleTime)
+    {
+      console.log(this.angle);
+      this.angle = Math.random() * 360;
+      this.#randAngleTimer = 0;
+    }
+
   };
 }

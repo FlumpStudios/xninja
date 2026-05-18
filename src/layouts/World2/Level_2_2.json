@@ -5449,7 +5449,7 @@
 					}
 				},
 				{
-					"type": "FallingBox",
+					"type": "FallingBlock",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -5460,7 +5460,10 @@
 					"uid": 3035,
 					"sid": 688549505218130,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"RequiresTrigger": false,
+						"TriggerIndex": 0
+					},
 					"behaviors": {
 						"Physics": {
 							"properties": {
@@ -5503,7 +5506,7 @@
 					}
 				},
 				{
-					"type": "FallingBox",
+					"type": "FallingBlock",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -5514,7 +5517,10 @@
 					"uid": 3036,
 					"sid": 823905886636139,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"RequiresTrigger": false,
+						"TriggerIndex": 0
+					},
 					"behaviors": {
 						"Physics": {
 							"properties": {
@@ -5557,7 +5563,7 @@
 					}
 				},
 				{
-					"type": "FallingBox",
+					"type": "FallingBlock",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -5568,7 +5574,10 @@
 					"uid": 3037,
 					"sid": 834268124306955,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"RequiresTrigger": false,
+						"TriggerIndex": 0
+					},
 					"behaviors": {
 						"Physics": {
 							"properties": {
@@ -5611,7 +5620,7 @@
 					}
 				},
 				{
-					"type": "FallingBox",
+					"type": "FallingBlock",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -5622,7 +5631,10 @@
 					"uid": 3038,
 					"sid": 272373780300288,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"RequiresTrigger": false,
+						"TriggerIndex": 0
+					},
 					"behaviors": {
 						"Physics": {
 							"properties": {
@@ -5665,7 +5677,7 @@
 					}
 				},
 				{
-					"type": "FallingBox",
+					"type": "FallingBlock",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -5676,7 +5688,10 @@
 					"uid": 3039,
 					"sid": 292130239708339,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"RequiresTrigger": false,
+						"TriggerIndex": 0
+					},
 					"behaviors": {
 						"Physics": {
 							"properties": {
@@ -9148,8 +9163,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": -408,
-						"y": -399,
+						"x": -367,
+						"y": -410,
 						"width": 3480,
 						"height": 1937,
 						"originX": 0,

@@ -1,10 +1,25 @@
 {
-	"name": "FallingBox",
+	"name": "FallingBlock",
 	"plugin-id": "Sprite",
 	"sid": 201522177275749,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "RequiresTrigger",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 479276310556596
+		},
+		{
+			"name": "TriggerIndex",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 611532007234014
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Physics",

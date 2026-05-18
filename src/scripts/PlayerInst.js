@@ -327,7 +327,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
       }
     }
 
-    for (const box of runtime.objects.FallingBox.instances()) {
+    for (const box of runtime.objects.FallingBlock.instances()) {
       if (box.testOverlap(this)) {
         this.killPlayer(runtime);
       }
