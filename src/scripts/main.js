@@ -24,6 +24,7 @@ import ElectricBoltInstance from "./electricBolt.js";
 import SparksInst from "./sparksInst.js";
 import FallingBlock from "./fallingBlock.js";
 import FallingBlockTrigger from "./fallingBlockTrigger.js"
+import Rat from "./ratInstance.js";
 
 window.addEventListener(
   "keydown",
@@ -55,6 +56,7 @@ runOnStartup(async (runtime) => {
   runtime.objects.DirectionSparks.setInstanceClass(SparksInst);  
   runtime.objects.FallingBlock.setInstanceClass(FallingBlock);  
   runtime.objects.FallingBlockTrigger.setInstanceClass(FallingBlockTrigger);  
+  runtime.objects.Rat.setInstanceClass(Rat); 
 
   runtime.addEventListener("beforeprojectstart", () =>
     OnBeforeProjectStart(runtime),
@@ -216,6 +218,11 @@ const gameLoop = (runtime) => {
   for (const batEnemyInst of runtime.objects.Bat.instances()) {
     batEnemyInst.handleBatBehavior(runtime);
   }
+
+  for (const rat of runtime.objects.Rat.instances()) {
+    rat.handleRatBehavior(runtime);
+  }
+
 
   for (const ghost of runtime.objects.Ghost.instances()) {
     ghost.handleGhostBehavior(runtime);

@@ -274,7 +274,15 @@
 			"InsideApartmentFill",
 			"ElevatorDoor",
 			"flower1",
-			"IndoorLamp"
+			"IndoorLamp",
+			"Painting1",
+			"Mirror",
+			"Pixture2",
+			"Sprite2",
+			"DeerHead",
+			"Lamp",
+			"CityIndoorFloorSine",
+			"Rat"
 		],
 		"subfolders": [
 			{
@@ -882,6 +890,14 @@
 					"name": "fallingBlockTrigger.js",
 					"type": "application/javascript",
 					"sid": 844298977181733,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "ratInstance.js",
+					"type": "application/javascript",
+					"sid": 739887266457660,
 					"script-info": {
 						"purpose": "none"
 					}

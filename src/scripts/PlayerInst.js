@@ -315,6 +315,13 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
       }
     }
 
+    for (const rat of runtime.objects.Rat.instances()) {
+      if (rat.testOverlap(this)) {
+        this.killPlayer(runtime);
+      }
+    }
+    
+
     for (const bat of runtime.objects.Bat.instances()) {
       if (bat.testOverlap(this) && bat.instVars.IsScared) {
         this.killPlayer(runtime);

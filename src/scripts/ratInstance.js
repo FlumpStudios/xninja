@@ -4,12 +4,14 @@ import {
   isMirrored,
   waitForMillisecond,
   isOutOfScreen,
+  getAngleTo,
 } from "./utils.js";
 import { getGlobalRuntime } from "./globals.js";
 import * as config from "./config.js";
 import * as sfx from "./sfxManager.js";
 
-export default class SenseiInstance extends enemy {
+export default class RatInstance extends enemy {
+  #orignalSpeed = 0;
   visionCone = null;
   visionConeDestroyed = false;
   previousX = 0;
@@ -29,6 +31,8 @@ export default class SenseiInstance extends enemy {
       this.visionCone.moveToTop();
     }
     this.bonusWorth = -3;
+
+    this.#orignalSpeed = this.behaviors.Bullet.speed;
   }
 
   runCleanUp = () => {
@@ -57,7 +61,7 @@ export default class SenseiInstance extends enemy {
     }
   };
 
-  handleSenseiBehavior = (runtime) => {
+  handleRatBehavior = (runtime) => {
     this.#senseiPatrol(runtime);
     if (isOutOfScreen(this, runtime) && this.instVars.IsScared) {
       sfx.PlayerEnemyEspcapeSound();
@@ -84,32 +88,37 @@ export default class SenseiInstance extends enemy {
     this.#handleVisionCone();
 
     if (this.hasLineOfSightOfPlayer(runtime) && !this.instVars.IsScared) {
-      this.instVars.IsScared = true;
-      if (!this.exlaim) {
+      if (!this.instVars.IsScared) {
         sfx.PlayEnemyScared();
-        this.exlaim = runtime.objects.Exlaim.createInstance(
-          config.layers.game,
-          this.x,
-          this.y - 25,
-        );
-        this.behaviors.Platform.maxSpeed = 0;
         this.instVars.IsStunned = true;
         this.behaviors.Bullet.speed = 0;
       }
-
-      waitForMillisecond(200).then(() => {
+      this.instVars.IsScared = true;
+      
+      waitForMillisecond(25).then(() => {
         // There is a chance the enemy doesn't exist after the wait, so just swallowing it for now.
-        this.behaviors.Platform.simulateControl("jump");
+        // this.behaviors.Platform.simulateControl("jump");
 
         if (this) {
           try {
-            this.exlaim.isVisible = false;
+            const player = runtime.objects.Player.getFirstInstance();
+            // this.behaviors.Bullet.angleOfMotion = getAngleTo(player, this);
             this.instVars.IsStunned = false;
-            this.behaviors.Platform.isEnabled = true;
-            this.setSolidCollisionFilter(false, "Border EnemyBouncer");
-            this.behaviors.Platform.simulateControl("jump");
-            this.behaviors.Bullet.speed = -800;
-            this.width = this.width * -1;
+            // this.behaviors.Platform.isEnabled = true;
+            //this.setSolidCollisionFilter(false, "Border EnemyBouncer");
+            // this.behaviors.Platform.simulateControl("jump");
+            this.behaviors.Bullet.speed = 800;
+            //this.width = this.width * -1;
+
+            waitForMillisecond(2000).then(() => {
+              try {
+                this.visionCone.isVisible = true;
+                this.visionConeDestroyed = false;
+                this.instVars.IsStunned = false;
+                this.instVars.IsScared = false;
+                this.behaviors.Bullet.speed = this.#orignalSpeed;
+              } catch {}
+            });
           } catch {}
         }
       });
@@ -163,7 +172,7 @@ export default class SenseiInstance extends enemy {
         : this.behaviors.LineOfSight.range;
 
       if (this.instVars.IsScared) {
-        this.visionCone.destroy();
+        this.visionCone.isVisible = false;
         this.visionConeDestroyed = true;
       }
     }
