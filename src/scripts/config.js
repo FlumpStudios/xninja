@@ -387,13 +387,13 @@ export let levelConfig =
         silverTarget: 1,
         goldTarget: 0.2,
         currentBest: 0,
-        nextLevel: "Level_1_4",
+        nextLevel: "Level_2_4",
         exitUp: false,
         exitDown: false,
         exitLeft: false,
-        exitRight: true,
+        exitRight: false,
         cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: true,
+        requiresAllEnenmiesKilled: false,
         hasSeenTutorial: false
     },
     "Level_2_4": {

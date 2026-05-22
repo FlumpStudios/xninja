@@ -164,6 +164,7 @@ export const keyboard = (runtime) => {
 			if (!wasDownDown) {
 				updatePauseIndex(1, runtime);
 			}
+			console.log("Falling through");
 			player.fallThrough(runtime);
 			wasDownDown = true;
 		}
@@ -365,6 +366,7 @@ export const gamePad = (runtime) => {
 			}
 
 			if (gp.axes[axis_left_vert] > 0.8 || gp.buttons[action_fallThrough].value > 0 || gp.buttons[action_fallThrough].pressed) {
+				console.log("Falling through");
 				player.fallThrough(runtime);
 			}
 

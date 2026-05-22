@@ -265,7 +265,16 @@
 			"Fog",
 			"fader2",
 			"Sprite",
-			"RoundConduit"
+			"RoundConduit",
+			"TiledBackground",
+			"city_background_edge",
+			"openDoor",
+			"ExitDoor",
+			"CityIndoorFloor",
+			"InsideApartmentFill",
+			"ElevatorDoor",
+			"flower1",
+			"IndoorLamp"
 		],
 		"subfolders": [
 			{
@@ -388,7 +397,8 @@
 							"LevelEndArrowTop",
 							"LevelEndArrowRight",
 							"LevelEndArrowBottom",
-							"Ui_Clock"
+							"Ui_Clock",
+							"DoorArrow"
 						],
 						"subfolders": [],
 						"name": "Game"
@@ -619,7 +629,8 @@
 					"Level_2_1",
 					"Level_2_sandbox",
 					"Level_2_3",
-					"Level_2_2"
+					"Level_2_2",
+					"Level_2_4"
 				],
 				"subfolders": [],
 				"name": "World2"

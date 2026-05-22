@@ -100,10 +100,11 @@ export const gamePlay = (runtime) => {
             runtime.levelInstance.setLevelExitState(true);
         }
 
-        if (isOutsideSidesOfLayout(player)) {
+        if (isOutsideSidesOfLayout(player) || runtime.objects?.ExitDoor?.getFirstInstance()?.testOverlap(player)) {
             goToNextLevel(runtime);
         }
 
+        
         if (isOutsideBottomOfLayout(player)) {
             if (currentConfig.exitDown) {
                 goToNextLevel(runtime);

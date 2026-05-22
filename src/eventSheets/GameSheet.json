@@ -718,7 +718,34 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 593768432494324,
+					"sid": 335792344435980,
+					"parameters": {
+						"seconds": "0.3",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "WindowSill",
+					"sid": 900484826373583,
+					"parameters": {
+						"instance-variable": "falling",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "WindowSill",
+					"sid": 669882145597323,
+					"behaviorType": "Physics",
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 448483543276407,
 					"parameters": {
 						"seconds": "0.2",
 						"use-timescale": true
@@ -727,10 +754,10 @@
 				{
 					"id": "set-enabled",
 					"objectClass": "WindowSill",
-					"sid": 447641068828813,
-					"behaviorType": "Physics",
+					"sid": 321858147052675,
+					"behaviorType": "Jumpthru",
 					"parameters": {
-						"mode": "enabled"
+						"state": "disabled"
 					}
 				}
 			],
