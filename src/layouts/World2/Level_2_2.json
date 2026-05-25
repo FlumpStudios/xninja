@@ -1947,69 +1947,6 @@
 					}
 				},
 				{
-					"type": "Player",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Run",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 2975,
-					"sid": 903978663318050,
-					"tags": "",
-					"instanceVariables": {
-						"Dead": false
-					},
-					"behaviors": {
-						"Platform": {
-							"properties": {
-								"max-speed": 330,
-								"acceleration": 5000,
-								"deceleration": 5000,
-								"jump-strength": 400,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": false,
-								"jump-sustain": 275,
-								"default-controls": false,
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"Pulse": {
-							"isEnabled": false,
-							"parameters": {
-								"intensity": 0.25,
-								"lighting": 0,
-								"speed": 30,
-								"frequency": 50,
-								"center-x": 0.5,
-								"center-y": 0.5
-							}
-						}
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 62,
-						"y": 1193,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
 					"type": "LevelEndBox",
 					"properties": {
 						"initially-visible": false,
@@ -2071,45 +2008,6 @@
 						"height": 3,
 						"originX": 0,
 						"originY": 0.6666666666666666,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "CameraFocus",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 2978,
-					"sid": 789907103636194,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 62,
-						"y": 1201,
-						"width": 25,
-						"height": 25,
-						"originX": 0.5,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -7511,8 +7409,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": -383,
-						"y": -403,
+						"x": -349,
+						"y": -423,
 						"width": 3954,
 						"height": 1937,
 						"originX": 0,
@@ -10159,6 +10057,108 @@
 						"y": 1139,
 						"width": 45,
 						"height": 6,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "Player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Run",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2975,
+					"sid": 903978663318050,
+					"tags": "",
+					"instanceVariables": {
+						"Dead": false
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 5000,
+								"deceleration": 5000,
+								"jump-strength": 400,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 275,
+								"default-controls": false,
+								"enabled": true
+							}
+						}
+					},
+					"effects": {
+						"Pulse": {
+							"isEnabled": false,
+							"parameters": {
+								"intensity": 0.25,
+								"lighting": 0,
+								"speed": 30,
+								"frequency": 50,
+								"center-x": 0.5,
+								"center-y": 0.5
+							}
+						}
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 62,
+						"y": 1193,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "CameraFocus",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2978,
+					"sid": 789907103636194,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 62,
+						"y": 1201,
+						"width": 25,
+						"height": 25,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
