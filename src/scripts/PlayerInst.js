@@ -284,6 +284,12 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         this.killPlayer(runtime);
       }
     }
+    
+    for (const spike of runtime.objects.Spike.instances()) {
+      if (spike.testOverlap(this)) {
+        this.killPlayer(runtime);
+      }
+    }
 
     for (const spike of runtime.objects.Spike2.instances()) {
       if (spike.testOverlap(this)) {
@@ -317,10 +323,11 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
 
     for (const rat of runtime.objects.Rat.instances()) {
       if (rat.testOverlap(this)) {
-        this.killPlayer(runtime);
+        if (rat.instVars.IsScared) {
+          this.killPlayer(runtime);
+        }
       }
     }
-    
 
     for (const bat of runtime.objects.Bat.instances()) {
       if (bat.testOverlap(this) && bat.instVars.IsScared) {

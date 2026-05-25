@@ -390,7 +390,7 @@ export let levelConfig =
         nextLevel: "Level_2_4",
         exitUp: false,
         exitDown: false,
-        exitLeft: false,
+        exitLeft: false, 
         exitRight: false,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: false,
@@ -400,16 +400,16 @@ export let levelConfig =
         name: "[placeholder]",
         startingStars: 0,
         bronzeTarget: 30,
-        silverTarget: 0,
+        silverTarget: 10,
         goldTarget: -0.5,
         currentBest: 0,
-        nextLevel: "Level_1_5",
-        exitUp: false,
+        nextLevel: "Level_2_5",
+        exitUp: true,
         exitDown: false,
         exitLeft: false,
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: true,
+        requiresAllEnenmiesKilled: false,
         hasSeenTutorial: true
     },
     "Level_2_5": {
@@ -425,7 +425,7 @@ export let levelConfig =
         exitLeft: false,
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
-        requiresAllEnenmiesKilled: true,
+        requiresAllEnenmiesKilled: false,
         hasSeenTutorial: false
     },
     "Level_2_6": {

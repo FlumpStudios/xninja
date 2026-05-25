@@ -1,0 +1,29 @@
+{
+	"name": "PillPlatform_City_Physics_SOLID",
+	"plugin-id": "TiledBg",
+	"sid": 327963146458127,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 770478706991111
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 16,
+		"height": 16,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "D:\\X-Ninja\\Assets\\Tiles\\16x\\tile128.png",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 7606668,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

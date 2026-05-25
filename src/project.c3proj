@@ -340,7 +340,8 @@
 							"BedrockEdge_tile2",
 							"BedrockCorner_tile2",
 							"BrickTop",
-							"PillPlatform_City_Physics"
+							"PillPlatform_City_Physics",
+							"PillPlatform_City_Physics_SOLID"
 						],
 						"subfolders": [
 							{
@@ -473,7 +474,8 @@
 							"StreetLight",
 							"FallingBlock",
 							"SineFallingBox",
-							"WindowSill"
+							"WindowSill",
+							"ConcreteTopSolid"
 						],
 						"subfolders": [],
 						"name": "City"
@@ -638,7 +640,8 @@
 					"Level_2_sandbox",
 					"Level_2_3",
 					"Level_2_2",
-					"Level_2_4"
+					"Level_2_4",
+					"Level_2_5"
 				],
 				"subfolders": [],
 				"name": "World2"
