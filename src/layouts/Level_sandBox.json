@@ -1548,8 +1548,8 @@
 					"world": {
 						"x": 512,
 						"y": 1160,
-						"width": 16,
-						"height": 32,
+						"width": 20,
+						"height": 48,
 						"originX": 0.8125,
 						"originY": 0.5625,
 						"color": [
@@ -3044,10 +3044,6 @@
 			"global": false
 		}
 	],
-	"scene-graphs-folder-root": {
-		"items": [],
-		"subfolders": []
-	},
 	"sid": 429531528978624,
 	"nonworld-instances": [],
 	"effectTypes": [

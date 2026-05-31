@@ -284,6 +284,12 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         this.killPlayer(runtime);
       }
     }
+
+    for (const rocket of runtime.objects.Rocket.instances()) {
+      if (rocket.testOverlap(this) && !rocket.instVars.deflected) {
+        this.killPlayer(runtime);
+      }
+    }
     
     for (const spike of runtime.objects.Spike.instances()) {
       if (spike.testOverlap(this)) {
@@ -389,7 +395,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
     this.#currentJumpAnimation = "Ollie";
     this.#isSkating = true;
     this.animationSpeed = 5;
-    this.behaviors.Platform.maxSpeed = config.SKATE_SPEED;
+    this.behaviors.Platform.maxSpeed = config.levelConfig[runtime.layout.name].skateSpeed;
   };
 
   setToNotSkating = (runtime) => {

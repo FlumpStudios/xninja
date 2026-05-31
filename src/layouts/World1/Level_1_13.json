@@ -18911,10 +18911,6 @@
 			"global": false
 		}
 	],
-	"scene-graphs-folder-root": {
-		"items": [],
-		"subfolders": []
-	},
 	"sid": 940550084892727,
 	"nonworld-instances": [],
 	"effectTypes": [

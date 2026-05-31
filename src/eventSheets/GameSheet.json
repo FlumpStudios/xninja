@@ -762,6 +762,257 @@
 				}
 			],
 			"sid": 167657181701206
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Helicopter",
+					"sid": 572683883872769,
+					"parameters": {
+						"instance-variable": "canFire"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 772097723526429,
+					"parameters": {
+						"interval-seconds": "1.2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Helicopter",
+					"sid": 975952354261945,
+					"parameters": {
+						"object": "Rocket",
+						"layer": "5",
+						"image-point": "1",
+						"create-hierarchy": false,
+						"template-name": "\"Rocket\""
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "Rocket",
+					"sid": 217027214931469
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "Rocket",
+					"sid": 807399721948594,
+					"parameters": {
+						"angle": "180"
+					}
+				}
+			],
+			"sid": 486068907886353
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Slash",
+					"sid": 145466890744765,
+					"parameters": {
+						"object": "Rocket"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Rocket",
+					"sid": 677214710409927,
+					"parameters": {
+						"instance-variable": "deflected"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle",
+					"objectClass": "Rocket",
+					"sid": 449317694025893,
+					"parameters": {
+						"angle": "Rocket.Angle + 180"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "Rocket",
+					"sid": 655023370309928,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"angle": "Rocket.Bullet.AngleOfMotion + 180"
+					}
+				},
+				{
+					"id": "set-speed",
+					"objectClass": "Rocket",
+					"sid": 346108813244910,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "1600"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Rocket",
+					"sid": 162253812120644,
+					"parameters": {
+						"instance-variable": "deflected",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 992789296378183
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Rocket",
+					"sid": 894699309082807,
+					"parameters": {
+						"object": "Helicopter"
+					}
+				},
+				{
+					"id": "compare-speed",
+					"objectClass": "Rocket",
+					"sid": 792150773113816,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"comparison": 4,
+						"speed": "1500"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Rocket",
+					"sid": 895670938087584,
+					"parameters": {
+						"object": "Explosion",
+						"layer": "5",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Rocket",
+					"sid": 305784521890136
+				},
+				{
+					"id": "flash",
+					"objectClass": "Helicopter",
+					"sid": 190967981770152,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.05",
+						"off-time": "0.05",
+						"duration": "0.5"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Helicopter",
+					"sid": 967276681348419,
+					"parameters": {
+						"instance-variable": "health",
+						"value": "-1"
+					}
+				}
+			],
+			"sid": 949697148978172
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "DeathStar",
+					"sid": 948220724353928,
+					"parameters": {
+						"object": "Helicopter"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Rocket",
+					"sid": 651634148586850,
+					"parameters": {
+						"object": "Explosion",
+						"layer": "5",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Rocket",
+					"sid": 136471869207187
+				},
+				{
+					"id": "flash",
+					"objectClass": "Helicopter",
+					"sid": 259453728596189,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.05",
+						"off-time": "0.05",
+						"duration": "0.5"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Helicopter",
+					"sid": 911614068735215,
+					"parameters": {
+						"instance-variable": "health",
+						"value": "-1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "DeathStar",
+					"sid": 392714855523599
+				}
+			],
+			"sid": 234173053747493
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Explosion",
+					"sid": 959150231801833,
+					"parameters": {
+						"animation": "\"Animation 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Explosion",
+					"sid": 958282372945235
+				}
+			],
+			"sid": 170151070859058
 		}
 	],
 	"sid": 976359301470145

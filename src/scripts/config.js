@@ -1,4 +1,4 @@
-export const STEALTH_BAR_DEPLETE_SPEED = 50;
+﻿export const STEALTH_BAR_DEPLETE_SPEED = 50;
 export const STEALTH_BAR_REGEN_SPEED = 15;
 export const STEATH_MODE_TIME_STEP = 0.5
 export const MAX_STEALTH_BAR_WIDTH = 32;
@@ -15,7 +15,6 @@ export const WATER_JUMP_SUSTAIN = 0.0;
 export const TIME_IN_DEATH_STATE = 750;
 export const MOVE_SPEED = 325;
 export const RUN_SPEED = 450;
-export const SKATE_SPEED = 600;
 export const WATER_MOVE_SPEED = 150;
 export const DEATH_STAR_SPEED = 500;
 export const SLASH_POSITION_OFFSET = 24;
@@ -109,7 +108,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: true,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_1_1": {
         name: "It Starts",
@@ -125,7 +125,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: true,
-        hasSeenTutorial: false
+        hasSeenTutorial: false,
+        skateSpeed: 600
 
     },
     "Level_1_2": {
@@ -142,7 +143,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: true,
-        hasSeenTutorial: false
+        hasSeenTutorial: false,
+        skateSpeed: 600
     },
     "Level_1_3": {
         name: "Careful Now",
@@ -158,7 +160,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: true,
-        hasSeenTutorial: false
+        hasSeenTutorial: false,
+        skateSpeed: 600
     },
     "Level_1_4": {
         name: "No Escape",
@@ -174,7 +177,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: true,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_1_5": {
         name: "RUN!",
@@ -190,7 +194,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: true,
-        hasSeenTutorial: false
+        hasSeenTutorial: false,
+        skateSpeed: 600
     },
     "Level_1_6": {
         name: "Cloak & Ladder",
@@ -206,7 +211,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_1_7": {
         name: "Wet Wet Wet",
@@ -222,7 +228,8 @@ export let levelConfig =
         exitRight: false,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_1_8": {
         name: "Downfell",
@@ -238,7 +245,8 @@ export let levelConfig =
         exitRight: false,
         cameraFocusOffset: { x: 0, y: 125 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_1_9": {
         name: "Skate & Destroy",
@@ -254,7 +262,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 225, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_1_10": {
         name: "Cave Story",
@@ -270,7 +279,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }, "Level_1_11": {
         name: "Charged",
         startingStars: 0,
@@ -285,7 +295,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 75, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }, "Level_1_12": {
         name: "Spikes b flyin",
         startingStars: 0,
@@ -300,7 +311,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 130, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }, "Level_1_13": {
         name: "Rising Heat",
         startingStars: 0,
@@ -315,7 +327,8 @@ export let levelConfig =
         exitRight: false,
         cameraFocusOffset: { x: 0, y: -25 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }, "Level_1_14": {
         name: "Escape Plan",
         startingStars: 0,
@@ -330,7 +343,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 240, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }, "Level_1_15": {
         name: "AHHHH!",
         startingStars: 0,
@@ -345,7 +359,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: true,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
         "Level_2_1": {
         name: "[placeholder]",
@@ -361,7 +376,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: false
+        hasSeenTutorial: false,
+        skateSpeed: 600
 
     },
     "Level_2_2": {
@@ -378,7 +394,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: false
+        hasSeenTutorial: false,
+        skateSpeed: 600
     },
     "Level_2_3": {
         name: "[placeholder]",
@@ -394,7 +411,8 @@ export let levelConfig =
         exitRight: false,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: false
+        hasSeenTutorial: false,
+        skateSpeed: 450
     },
     "Level_2_4": {
         name: "[placeholder]",
@@ -410,23 +428,25 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 450
     },
     "Level_2_5": {
         name: "[placeholder]",
         startingStars: 0,
-        bronzeTarget: 20,
+        bronzeTarget: 1000,
         silverTarget: 2.5,
         goldTarget: 1.7,
         currentBest: 0,
         nextLevel: "Level_1_6",
         exitUp: false,
-        exitDown: false,
+        exitDown: true,
         exitLeft: false,
-        exitRight: true,
-        cameraFocusOffset: { x: 0, y: 0 },
+        exitRight: false,
+        cameraFocusOffset: { x: 250, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: false
+        hasSeenTutorial: false,
+        skateSpeed: 450
     },
     "Level_2_6": {
         name: "[placeholder]",
@@ -442,7 +462,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_2_7": {
         name: "[placeholder]",
@@ -458,7 +479,8 @@ export let levelConfig =
         exitRight: false,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_2_8": {
         name: "[placeholder]",
@@ -474,7 +496,8 @@ export let levelConfig =
         exitRight: false,
         cameraFocusOffset: { x: 0, y: 125 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_2_9": {
         name: "[placeholder]",
@@ -490,7 +513,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 225, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_2_10": {
         name: "[placeholder]",
@@ -506,7 +530,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }, "Level_2_11": {
         name: "[placeholder]",
         startingStars: 0,
@@ -521,7 +546,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 75, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }, "Level_2_12": {
         name: "[placeholder]",
         startingStars: 0,
@@ -536,7 +562,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 130, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }, "Level_2_13": {
         name: "[placeholder]",
         startingStars: 0,
@@ -551,7 +578,8 @@ export let levelConfig =
         exitRight: false,
         cameraFocusOffset: { x: 0, y: -25 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }, "Level_2_14": {
         name: "[placeholder]",
         startingStars: 0,
@@ -566,7 +594,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 240, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }, "Level_2_15": {
         name: "[placeholder]",
         startingStars: 0,
@@ -581,7 +610,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: true,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_3_1": {
         name: "[placeholder]",
@@ -597,7 +627,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: true,
-        hasSeenTutorial: false
+        hasSeenTutorial: false,
+        skateSpeed: 600
     },
     "Level_3_2": {
         name: "[placeholder]",
@@ -613,7 +644,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: true,
-        hasSeenTutorial: false
+        hasSeenTutorial: false,
+        skateSpeed: 600
     },
     "Level_3_3": {
         name: "[placeholder]",
@@ -629,7 +661,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: true,
-        hasSeenTutorial: false
+        hasSeenTutorial: false,
+        skateSpeed: 600
     },
     "Level_3_4": {
         name: "[placeholder]",
@@ -645,7 +678,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: true,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_3_5": {
         name: "[placeholder]",
@@ -661,7 +695,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: true,
-        hasSeenTutorial: false
+        hasSeenTutorial: false,
+        skateSpeed: 600
     },
     "Level_3_6": {
         name: "[placeholder]",
@@ -677,7 +712,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_3_7": {
         name: "[placeholder]",
@@ -693,7 +729,8 @@ export let levelConfig =
         exitRight: false,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_3_8": {
         name: "[placeholder]",
@@ -709,7 +746,8 @@ export let levelConfig =
         exitRight: false,
         cameraFocusOffset: { x: 0, y: 125 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_3_9": {
         name: "[placeholder]",
@@ -725,7 +763,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 225, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     },
     "Level_3_10": {
         name: "[placeholder]",
@@ -741,7 +780,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }, "Level_3_11": {
         name: "[placeholder]",
         startingStars: 0,
@@ -756,7 +796,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 75, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }, "Level_3_12": {
         name: "[placeholder]",
         startingStars: 0,
@@ -771,7 +812,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 130, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }, "Level_3_13": {
         name: "[placeholder]",
         startingStars: 0,
@@ -786,7 +828,8 @@ export let levelConfig =
         exitRight: false,
         cameraFocusOffset: { x: 0, y: -25 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }, "Level_3_14": {
         name: "[placeholder]",
         startingStars: 0,
@@ -801,7 +844,8 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 240, y: 0 },
         requiresAllEnenmiesKilled: false,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }, "Level_3_15": {
         name: "[placeholder]",
         startingStars: 0,
@@ -816,6 +860,7 @@ export let levelConfig =
         exitRight: true,
         cameraFocusOffset: { x: 0, y: 0 },
         requiresAllEnenmiesKilled: true,
-        hasSeenTutorial: true
+        hasSeenTutorial: true,
+        skateSpeed: 600
     }
 }

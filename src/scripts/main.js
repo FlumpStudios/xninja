@@ -23,8 +23,9 @@ import Boss1Instance from "./boss1Instance.js";
 import ElectricBoltInstance from "./electricBolt.js";
 import SparksInst from "./sparksInst.js";
 import FallingBlock from "./fallingBlock.js";
-import FallingBlockTrigger from "./fallingBlockTrigger.js"
+import FallingBlockTrigger from "./fallingBlockTrigger.js";
 import Rat from "./ratInstance.js";
+import Helicopter from "./helicopter.js";
 
 window.addEventListener(
   "keydown",
@@ -53,10 +54,11 @@ runOnStartup(async (runtime) => {
   runtime.objects.Ghost.setInstanceClass(GhostInstance);
   runtime.objects.Boss1.setInstanceClass(Boss1Instance);
   runtime.objects.Electric.setInstanceClass(ElectricBoltInstance);
-  runtime.objects.DirectionSparks.setInstanceClass(SparksInst);  
-  runtime.objects.FallingBlock.setInstanceClass(FallingBlock);  
-  runtime.objects.FallingBlockTrigger.setInstanceClass(FallingBlockTrigger);  
-  runtime.objects.Rat.setInstanceClass(Rat); 
+  runtime.objects.DirectionSparks.setInstanceClass(SparksInst);
+  runtime.objects.FallingBlock.setInstanceClass(FallingBlock);
+  runtime.objects.FallingBlockTrigger.setInstanceClass(FallingBlockTrigger);
+  runtime.objects.Rat.setInstanceClass(Rat);
+  runtime.objects.Helicopter.setInstanceClass(Helicopter);
 
   runtime.addEventListener("beforeprojectstart", () =>
     OnBeforeProjectStart(runtime),
@@ -207,6 +209,10 @@ const gameLoop = (runtime) => {
     spark.update(runtime);
   }
 
+  for (const helicopter of runtime.objects.Helicopter.instances()) {
+    helicopter.update(runtime);
+  }
+
   for (const senesiInst of runtime.objects.Sensei.instances()) {
     senesiInst.handleSenseiBehavior(runtime);
   }
@@ -222,7 +228,6 @@ const gameLoop = (runtime) => {
   for (const rat of runtime.objects.Rat.instances()) {
     rat.handleRatBehavior(runtime);
   }
-
 
   for (const ghost of runtime.objects.Ghost.instances()) {
     ghost.handleGhostBehavior(runtime);
