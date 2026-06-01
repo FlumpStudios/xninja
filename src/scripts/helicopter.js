@@ -16,9 +16,10 @@ export default class Helicopter extends globalThis.ISpriteInstance {
   update = (runtime) => {
     // Guard
     if (!this.#isAlive) {
+      this.animationSpeed = 0;
+      this.behaviors.Sine.isEnabled = false;
       return;
     }
-
 
     const player = runtime.objects.Player.getFirstInstance();
 
@@ -32,7 +33,7 @@ export default class Helicopter extends globalThis.ISpriteInstance {
 
     if (this.#isDying) {
       this.behaviors.Sine.isEnabled = false;
-      this.#downTimer++;
+      this.#downTimer += Math.round(runtime.dt * 60);
       this.y += runtime.dt * 100;
       if (this.#downTimer > 20 && this.#downTimer % 15 == 0) {
         this.width *= -1;
