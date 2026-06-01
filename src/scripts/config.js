@@ -438,7 +438,7 @@ export let levelConfig =
         silverTarget: 2.5,
         goldTarget: 1.7,
         currentBest: 0,
-        nextLevel: "Level_1_6",
+        nextLevel: "Level_2_6",
         exitUp: false,
         exitDown: true,
         exitLeft: false,

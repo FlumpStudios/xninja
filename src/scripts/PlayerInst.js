@@ -87,7 +87,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
       stealthBar.isVisible = true;
     }
 
-    if (on && !this.#stealthLocked) {
+    if (on && !this.#stealthLocked) {      
       runtime.levelInstance.setTimeMultiplier(2);
       stealthBar.width -= config.STEALTH_BAR_DEPLETE_SPEED * runtime.dt;
       player.opacity = 0.5;
@@ -97,8 +97,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
       if (this.#greyIntensity < 0.3) {
         this.#greyIntensity += runtime.dt * 1.5;
       }
-      runtime.objects.StealthFade.getFirstInstance().opacity =
-        this.#greyIntensity;
+      runtime.objects.StealthFade.getFirstInstance().opacity = this.#greyIntensity;
       if (runtime.layout.scale < 1.5) {
         if (player.x > 150 && player.x < runtime.layout.width - 150) {
           if (player.y > 50 && player.y < runtime.layout.height - 50) {

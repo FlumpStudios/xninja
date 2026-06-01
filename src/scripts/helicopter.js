@@ -1,6 +1,7 @@
 import * as config from "./config.js";
 
 export default class Helicopter extends globalThis.ISpriteInstance {
+  #isAlive = false;
   #playerOffset = 0;
   #isIntro = true;
   #isDying = false;
@@ -8,10 +9,17 @@ export default class Helicopter extends globalThis.ISpriteInstance {
   constructor() {
     super();
     this.#playerOffset = this.instVars.playerOffset;
+    this.#isAlive = this.instVars.isAlive;
     this.behaviors.Sine.isEnabled = false;
   }
 
   update = (runtime) => {
+    // Guard
+    if (!this.#isAlive) {
+      return;
+    }
+
+
     const player = runtime.objects.Player.getFirstInstance();
 
     if (this.#isIntro && !this.#isDying) {

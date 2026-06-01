@@ -286,7 +286,8 @@
 			"Helicopter",
 			"Rocket",
 			"Explosion",
-			"BazookaEnemy"
+			"BazookaEnemy",
+			"Cloud"
 		],
 		"subfolders": [
 			{
@@ -645,7 +646,8 @@
 					"Level_2_3",
 					"Level_2_2",
 					"Level_2_4",
-					"Level_2_5"
+					"Level_2_5",
+					"Level_2_6"
 				],
 				"subfolders": [],
 				"name": "World2"

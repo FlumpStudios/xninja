@@ -25,6 +25,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 823240704270748
+		},
+		{
+			"name": "isAlive",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 508487295159465
 		}
 	],
 	"behaviorTypes": [
