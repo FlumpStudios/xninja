@@ -87,7 +87,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
       stealthBar.isVisible = true;
     }
 
-    if (on && !this.#stealthLocked) {      
+    if (on && !this.#stealthLocked) {
       runtime.levelInstance.setTimeMultiplier(2);
       stealthBar.width -= config.STEALTH_BAR_DEPLETE_SPEED * runtime.dt;
       player.opacity = 0.5;
@@ -97,7 +97,8 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
       if (this.#greyIntensity < 0.3) {
         this.#greyIntensity += runtime.dt * 1.5;
       }
-      runtime.objects.StealthFade.getFirstInstance().opacity = this.#greyIntensity;
+      runtime.objects.StealthFade.getFirstInstance().opacity =
+        this.#greyIntensity;
       if (runtime.layout.scale < 1.5) {
         if (player.x > 150 && player.x < runtime.layout.width - 150) {
           if (player.y > 50 && player.y < runtime.layout.height - 50) {
@@ -289,7 +290,7 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
         this.killPlayer(runtime);
       }
     }
-    
+
     for (const spike of runtime.objects.Spike.instances()) {
       if (spike.testOverlap(this)) {
         this.killPlayer(runtime);
@@ -314,11 +315,11 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
       }
     }
 
-    // for (const conduit of runtime.objects.SideConduit.instances()) {
-    //     if (conduit.testOverlap(this)) {
-    //         this.killPlayer(runtime);
-    //     }
-    // }
+    for (const explosion of runtime.objects.Explosion.instances()) {
+      if (explosion.testOverlap(this)) {
+        this.killPlayer(runtime);
+      }
+    }
 
     for (const electricBolt of runtime.objects.ElectricBolt.instances()) {
       if (electricBolt.testOverlap(this)) {
@@ -394,7 +395,8 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
     this.#currentJumpAnimation = "Ollie";
     this.#isSkating = true;
     this.animationSpeed = 5;
-    this.behaviors.Platform.maxSpeed = config.levelConfig[runtime.layout.name].skateSpeed;
+    this.behaviors.Platform.maxSpeed =
+      config.levelConfig[runtime.layout.name].skateSpeed;
   };
 
   setToNotSkating = (runtime) => {
@@ -456,7 +458,9 @@ export default class PlayerInst extends globalThis.ISpriteInstance {
   };
 
   fallThrough = (runtime) => {
-    this.behaviors.Platform.fallThrough();
+    if (!this.#isSkating) {
+      this.behaviors.Platform.fallThrough();
+    }
   };
 
   handleDeathStarSpawn = (instance, runtime) => {

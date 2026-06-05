@@ -1,0 +1,88 @@
+{
+	"name": "FireSpawner",
+	"plugin-id": "Sprite",
+	"sid": 406108168747509,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "spawnInterval",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 892690516452780
+		},
+		{
+			"name": "fireAnimationSpeed",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 821832175751255
+		},
+		{
+			"name": "moveSpeed",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 299879861867001
+		},
+		{
+			"name": "onTime",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 335329021340429
+		},
+		{
+			"name": "offTime",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 659395203437699
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 50,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7076572,
+						"collisionPoly": {
+							"points": [
+								0.9992509363295881,
+								0.0004995004995005381,
+								0.9992509363295881,
+								0.9995004995004995,
+								0.0007490636704119424,
+								0.9995004995004995,
+								0.0007490636704119424,
+								0.0004995004995005381
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 235680902449009,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

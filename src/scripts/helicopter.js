@@ -14,10 +14,32 @@ export default class Helicopter extends globalThis.ISpriteInstance {
   }
 
   update = (runtime) => {
+    this.#downTimer += Math.round(runtime.dt * 60);
+
+    if (this.#downTimer > 100) {
+      this.#downTimer = 0;
+    }
+
     // Guard
-    if (!this.#isAlive) {
+    if (this.#isDying || !this.#isAlive) {
       this.animationSpeed = 0;
       this.behaviors.Sine.isEnabled = false;
+      if (this.#downTimer % 10 == 0) {
+        const explo = runtime.objects.Explosion.createInstance(
+          config.layers.game,
+          this.x + (Math.floor(Math.random() * 50) - 100) + 70,
+          this.y - Math.floor(Math.random() * 40),
+        );
+        if (!this.#isAlive) {
+          explo.behaviors.Bullet.angleOfMotion = 4.71;
+          explo.moveToBottom();
+        } else {
+          explo.behaviors.Bullet.angleOfMotion = 0;
+        }
+      }
+    }
+
+    if (!this.#isAlive) {
       return;
     }
 
@@ -32,19 +54,9 @@ export default class Helicopter extends globalThis.ISpriteInstance {
     }
 
     if (this.#isDying) {
-      this.behaviors.Sine.isEnabled = false;
-      this.#downTimer += Math.round(runtime.dt * 60);
       this.y += runtime.dt * 100;
       if (this.#downTimer > 20 && this.#downTimer % 15 == 0) {
         this.width *= -1;
-      }
-
-      if (this.#downTimer % 10 == 0) {
-        runtime.objects.Explosion.createInstance(
-          config.layers.game,
-          this.x + Math.floor(Math.random() * 40) - 60,
-          this.y - Math.floor(Math.random() * 40),
-        );
       }
     }
 

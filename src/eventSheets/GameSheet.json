@@ -950,8 +950,8 @@
 			"actions": [
 				{
 					"id": "spawn-another-object",
-					"objectClass": "Rocket",
-					"sid": 651634148586850,
+					"objectClass": "DeathStar",
+					"sid": 860899429736377,
 					"parameters": {
 						"object": "Explosion",
 						"layer": "5",
@@ -959,11 +959,6 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "Rocket",
-					"sid": 136471869207187
 				},
 				{
 					"id": "flash",

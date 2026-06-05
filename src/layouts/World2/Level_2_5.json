@@ -1735,7 +1735,7 @@
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
-								"set-angle": true,
+								"set-angle": false,
 								"step": false,
 								"enabled": true
 							}
@@ -8106,6 +8106,11 @@
 								"enabled": false,
 								"live-preview": false
 							}
+						},
+						"Jumpthru": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"showing": true,
@@ -8163,6 +8168,11 @@
 								"magnitude-random": 0,
 								"enabled": false,
 								"live-preview": false
+							}
+						},
+						"Jumpthru": {
+							"properties": {
+								"enabled": true
 							}
 						}
 					},
@@ -8222,6 +8232,11 @@
 								"enabled": false,
 								"live-preview": false
 							}
+						},
+						"Jumpthru": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"showing": true,
@@ -8279,6 +8294,11 @@
 								"magnitude-random": 0,
 								"enabled": false,
 								"live-preview": false
+							}
+						},
+						"Jumpthru": {
+							"properties": {
+								"enabled": true
 							}
 						}
 					},
@@ -8338,6 +8358,11 @@
 								"enabled": false,
 								"live-preview": false
 							}
+						},
+						"Jumpthru": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"showing": true,
@@ -8395,6 +8420,11 @@
 								"magnitude-random": 0,
 								"enabled": false,
 								"live-preview": false
+							}
+						},
+						"Jumpthru": {
+							"properties": {
+								"enabled": true
 							}
 						}
 					},
@@ -15696,6 +15726,11 @@
 								"enabled": false,
 								"live-preview": false
 							}
+						},
+						"Jumpthru": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"showing": true,
@@ -15753,6 +15788,11 @@
 								"magnitude-random": 0,
 								"enabled": false,
 								"live-preview": false
+							}
+						},
+						"Jumpthru": {
+							"properties": {
+								"enabled": true
 							}
 						}
 					},
@@ -43190,8 +43230,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": -415,
-						"y": -1484,
+						"x": -582,
+						"y": -2208,
 						"width": 21474,
 						"height": 4460,
 						"originX": 0,

@@ -26,6 +26,7 @@ import FallingBlock from "./fallingBlock.js";
 import FallingBlockTrigger from "./fallingBlockTrigger.js";
 import Rat from "./ratInstance.js";
 import Helicopter from "./helicopter.js";
+import FireSpawner from "./fireSpawner.js";
 
 window.addEventListener(
   "keydown",
@@ -59,6 +60,7 @@ runOnStartup(async (runtime) => {
   runtime.objects.FallingBlockTrigger.setInstanceClass(FallingBlockTrigger);
   runtime.objects.Rat.setInstanceClass(Rat);
   runtime.objects.Helicopter.setInstanceClass(Helicopter);
+  runtime.objects.FireSpawner.setInstanceClass(FireSpawner);
 
   runtime.addEventListener("beforeprojectstart", () =>
     OnBeforeProjectStart(runtime),
@@ -199,6 +201,10 @@ const gameLoop = (runtime) => {
 
   for (const electricBolt of runtime.objects.Electric.instances()) {
     electricBolt.update(runtime);
+  }
+
+  for (const fireSpawner of runtime.objects.FireSpawner.instances()) {
+    fireSpawner.update(runtime);
   }
 
   for (const fallingBlockTrigger of runtime.objects.FallingBlockTrigger.instances()) {

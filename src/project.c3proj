@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 48700,
+	"savedWithRelease": 48702,
 	"name": "XNinja",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -287,7 +287,8 @@
 			"Rocket",
 			"Explosion",
 			"BazookaEnemy",
-			"Cloud"
+			"Cloud",
+			"FireSpawner"
 		],
 		"subfolders": [
 			{
@@ -915,6 +916,14 @@
 					"name": "helicopter.js",
 					"type": "application/javascript",
 					"sid": 686258365378015,
+					"script-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "fireSpawner.js",
+					"type": "application/javascript",
+					"sid": 487112529410643,
 					"script-info": {
 						"purpose": "none"
 					}
