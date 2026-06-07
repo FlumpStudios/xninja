@@ -13,6 +13,20 @@ export default class Helicopter extends globalThis.ISpriteInstance {
     this.behaviors.Sine.isEnabled = false;
   }
 
+  spawnBonusText = (runtime) => {
+    runtime.levelInstance.addToLevelTime(config.HELICOPTER_TIME_BONUS);
+    const t = runtime.objects.TimeBonus_spritefont.createInstance(
+      config.layers.game,
+      this.x - 15,
+      this.y,
+    );
+    t.text = config.HELICOPTER_TIME_BONUS.toString();
+    t.behaviors.Bullet.angleOfMotion = (Math.PI / 2) * -1;
+    t.behaviors.Bullet.speed = 60;
+    t.characterScale = 2;
+    t.behaviors.Fade.fadeOutTime = 1.25;    
+  };
+
   update = (runtime) => {
     this.#downTimer += Math.round(runtime.dt * 60);
 
@@ -50,6 +64,9 @@ export default class Helicopter extends globalThis.ISpriteInstance {
     }
 
     if (this.instVars.health < 0) {
+      if (!this.#isDying) {
+        this.spawnBonusText(runtime);
+      }
       this.#isDying = true;
     }
 

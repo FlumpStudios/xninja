@@ -22,6 +22,7 @@ export const GHOST_SPEED = 900;
 export const STARS_REQUIRED_FOR_BOSS = 25;
 export const BOSS1_LEVEL = "Level_1_15";
 export const LOCKED_LEVEL_UI_LAYER = 4;
+export const HELICOPTER_TIME_BONUS = 10;
 
 export const effect_postions = {
     greyScale: 0,

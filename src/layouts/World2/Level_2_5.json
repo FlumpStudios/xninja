@@ -43157,7 +43157,7 @@
 					"tags": "",
 					"instanceVariables": {
 						"playerOffset": 500,
-						"health": 10,
+						"health": 9,
 						"canFire": false,
 						"isAlive": true
 					},
@@ -43230,8 +43230,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": -582,
-						"y": -2208,
+						"x": -496,
+						"y": -756,
 						"width": 21474,
 						"height": 4460,
 						"originX": 0,
