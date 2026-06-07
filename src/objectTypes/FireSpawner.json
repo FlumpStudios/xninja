@@ -39,6 +39,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 659395203437699
+		},
+		{
+			"name": "invertTimer",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 129725865395853
 		}
 	],
 	"behaviorTypes": [],
