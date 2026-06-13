@@ -62,7 +62,7 @@ export default class RatInstance extends enemy {
   };
 
   handleRatBehavior = (runtime) => {
-    this.#senseiPatrol(runtime);
+    this.#ratPatrol(runtime);
     if (isOutOfScreen(this, runtime) && this.instVars.IsScared) {
       sfx.PlayerEnemyEspcapeSound();
       this.handleEscaped(runtime, this.runCleanUp);
@@ -148,7 +148,7 @@ export default class RatInstance extends enemy {
 
   set = false;
 
-  #senseiPatrol = (runtime) => {
+  #ratPatrol = (runtime) => {
     if (Math.round(runtime.gameTime) % 2 === 1) {
       if (!this.set) {
         if (this.instVars.Sines) {

@@ -288,7 +288,15 @@
 			"Explosion",
 			"BazookaEnemy",
 			"Cloud",
-			"FireSpawner"
+			"FireSpawner",
+			"Sprite3",
+			"SewerFloor",
+			"SewerBrick",
+			"SewerTileEdge",
+			"grill",
+			"Barrel",
+			"MovingPlatform",
+			"SewerSpikeBrick"
 		],
 		"subfolders": [
 			{
@@ -359,6 +367,11 @@
 								],
 								"subfolders": [],
 								"name": "Backgrounds"
+							},
+							{
+								"items": [],
+								"subfolders": [],
+								"name": "Sewer"
 							}
 						],
 						"name": "CIty"
@@ -648,7 +661,8 @@
 					"Level_2_2",
 					"Level_2_4",
 					"Level_2_5",
-					"Level_2_6"
+					"Level_2_6",
+					"Level_2_7"
 				],
 				"subfolders": [],
 				"name": "World2"
